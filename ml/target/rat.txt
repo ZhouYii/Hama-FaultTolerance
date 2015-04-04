@@ -1,0 +1,99 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2015-03-20T20:45:46-05:00
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 62
+
+Apache Licensed: 62
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  AL    /usr/local/hama-trunk/ml/pom.xml
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/ann/AbstractLayeredNeuralNetwork.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/ann/AutoEncoder.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/ann/NeuralNetwork.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/ann/NeuralNetworkTrainer.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/ann/SmallLayeredNeuralNetwork.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/ann/SmallLayeredNeuralNetworkMessage.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/ann/SmallLayeredNeuralNetworkTrainer.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/classification/ClassifierAdapter.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/classification/ClassifierConfigurationAdapter.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/distance/CosineDistance.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/distance/DistanceMeasurer.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/distance/EuclidianDistance.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/kmeans/CenterMessage.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/kmeans/KMeansBSP.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/perception/MLPMessage.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/perception/MultiLayerPerceptron.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/perception/PerceptronTrainer.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/perception/SmallMLPMessage.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/perception/SmallMLPTrainer.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/perception/SmallMultiLayerPerceptron.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/recommendation/cf/function/MeanAbsError.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/recommendation/cf/function/OnlineUpdate.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/recommendation/cf/InputConverter.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/recommendation/cf/KeyValueParser.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/recommendation/cf/MovieLensConverter.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/recommendation/cf/OnlineCF.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/recommendation/cf/OnlineTrainBSP.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/recommendation/ItemSimilarity.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/recommendation/Preference.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/recommendation/Recommender.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/recommendation/RecommenderIO.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/recommendation/UserSimilarity.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/regression/CostFunction.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/regression/GradientDescentBSP.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/regression/HypothesisFunction.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/regression/LinearRegression.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/regression/LinearRegressionModel.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/regression/LogisticRegression.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/regression/LogisticRegressionModel.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/regression/RegressionModel.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/regression/VectorDoubleFileInputFormat.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/semiclustering/SemiClusterDetails.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/semiclustering/SemiClusteringVertex.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/semiclustering/SemiClusterMessage.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/semiclustering/SemiClusterTextReader.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/semiclustering/SemiClusterVertexOutputWriter.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/util/DefaultFeatureTransformer.java
+  AL    /usr/local/hama-trunk/ml/src/main/java/org/apache/hama/ml/util/FeatureTransformer.java
+  AL    /usr/local/hama-trunk/ml/src/test/java/org/apache/hama/ml/ann/TestAutoEncoder.java
+  AL    /usr/local/hama-trunk/ml/src/test/java/org/apache/hama/ml/ann/TestSmallLayeredNeuralNetwork.java
+  AL    /usr/local/hama-trunk/ml/src/test/java/org/apache/hama/ml/ann/TestSmallLayeredNeuralNetworkMessage.java
+  AL    /usr/local/hama-trunk/ml/src/test/java/org/apache/hama/ml/kmeans/TestKMeansBSP.java
+  AL    /usr/local/hama-trunk/ml/src/test/java/org/apache/hama/ml/MLTestBase.java
+  AL    /usr/local/hama-trunk/ml/src/test/java/org/apache/hama/ml/perception/TestSmallMLPMessage.java
+  AL    /usr/local/hama-trunk/ml/src/test/java/org/apache/hama/ml/perception/TestSmallMultiLayerPerceptron.java
+  AL    /usr/local/hama-trunk/ml/src/test/java/org/apache/hama/ml/recommendation/TestOnlineCF.java
+  AL    /usr/local/hama-trunk/ml/src/test/java/org/apache/hama/ml/regression/LinearRegressionModelTest.java
+  AL    /usr/local/hama-trunk/ml/src/test/java/org/apache/hama/ml/regression/LogisticRegressionModelTest.java
+  AL    /usr/local/hama-trunk/ml/src/test/java/org/apache/hama/ml/regression/TestLinearRegression.java
+  AL    /usr/local/hama-trunk/ml/src/test/java/org/apache/hama/ml/regression/TestLogisticRegression.java
+  AL    /usr/local/hama-trunk/ml/src/test/java/org/apache/hama/ml/regression/VectorDoubleFileInputFormatTest.java
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <mkdir dir="/usr/local/hama-trunk/core/target/generated-sources/java"/>
+  <exec executable="sh">
+    <arg line="/usr/local/hama-trunk/core/dev-support/saveVersion.sh 0.7.0-SNAPSHOT /usr/local/hama-trunk/core/target/generated-sources/annotations"/>
+  </exec>
+</target>
+</project>

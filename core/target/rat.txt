@@ -1,0 +1,318 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2015-03-20T20:43:12-05:00
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 281
+
+Apache Licensed: 281
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  AL    /usr/local/hama-trunk/core/dev-support/saveVersion.sh
+  AL    /usr/local/hama-trunk/core/pom.xml
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/BSP.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/BSPInterface.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/BSPJob.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/BSPJobClient.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/BSPJobContext.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/BSPJobID.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/BSPMaster.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/BSPMessageBundle.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/BSPMessageBundleInterface.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/BSPPeer.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/BSPPeerImpl.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/BSPTask.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/BSPTaskRunner.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/ClusterStatus.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/CombineFileInputFormat.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/CombineFileSplit.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/Combiner.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/CommitTaskAction.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/Counters.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/Directive.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/DirectiveException.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/DirectiveHandler.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/DispatchTasksDirective.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/FCFSQueue.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/FileInputFormat.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/FileOutputFormat.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/FileSplit.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/ft/AsyncRcvdMsgCheckpointImpl.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/ft/BSPFaultTolerantService.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/ft/FaultTolerantMasterService.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/ft/FaultTolerantPeerService.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/GroomServer.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/GroomServerAction.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/GroomServerManager.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/GroomServerStatus.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/GroomStatusListener.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/HashPartitioner.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/ID.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/InputFormat.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/InputSplit.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/JobChangeEvent.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/JobInProgress.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/JobInProgressListener.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/JobProfile.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/JobStatus.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/join/ComposableInputFormat.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/join/ComposableRecordReader.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/join/CompositeInputFormat.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/join/CompositeInputSplit.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/join/CompositeRecordReader.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/join/InnerJoinRecordReader.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/join/JoinRecordReader.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/join/MultiFilterRecordReader.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/join/OuterJoinRecordReader.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/join/OverrideRecordReader.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/join/Parser.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/join/ResetableIterator.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/join/StreamBackedIterator.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/join/TupleWritable.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/join/WrappedRecordReader.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/KeyValueLineRecordReader.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/KeyValueTextInputFormat.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/KillJobAction.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/KillTaskAction.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/LaunchTaskAction.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/LineRecordReader.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/Messagable.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/message/AbstractOutgoingMessageManager.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/message/compress/BSPMessageCompressor.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/message/compress/BSPMessageCompressorFactory.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/message/compress/Bzip2Compressor.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/message/compress/package.html
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/message/HamaAsyncMessageManagerImpl.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/message/HamaMessageManager.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/message/HamaMessageManagerImpl.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/message/MessageEventListener.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/message/MessageManager.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/message/MessageManagerFactory.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/message/OutgoingMessageManager.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/message/OutgoingPOJOMessageBundle.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/message/package.html
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/message/queue/MemoryQueue.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/message/queue/MessageQueue.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/message/queue/package.html
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/message/queue/SingleLockQueue.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/message/queue/SortedMemoryQueue.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/message/queue/SynchronizedQueue.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/MonitorManager.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/NonSplitSequenceFileInputFormat.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/NullInputFormat.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/NullOutputFormat.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/OutputCollector.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/OutputFormat.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/package.html
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/Partitioner.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/PartitioningRunner.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/Queue.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/QueueManager.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/RecordReader.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/RecordWriter.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/RecoverTaskAction.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/ReinitGroomAction.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/ReportGroomStatusDirective.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/RunningJob.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/Schedulable.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/SequenceFileInputFormat.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/SequenceFileOutputFormat.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/SequenceFileRecordReader.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/SequenceFileRecordWriter.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/SimpleTaskScheduler.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/SimpleTaskWorkerManager.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/Superstep.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/SuperstepBSP.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/sync/BSPMasterSyncClient.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/sync/BSPPeerSyncClient.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/sync/MasterSyncClient.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/sync/package.html
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/sync/PeerSyncClient.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/sync/SyncClient.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/sync/SyncEvent.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/sync/SyncEventListener.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/sync/SyncException.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/sync/SyncServer.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/sync/SyncServerRunner.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/sync/SyncServiceFactory.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/sync/ZKSyncBSPMasterClient.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/sync/ZKSyncClient.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/sync/ZKSyncEventFactory.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/sync/ZKSyncEventListener.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/sync/ZooKeeperSyncClientImpl.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/sync/ZooKeeperSyncServerImpl.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/Task.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/taskallocation/BestEffortDataLocalTaskAllocator.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/taskallocation/BSPResource.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/taskallocation/RawSplitResource.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/taskallocation/TaskAllocationStrategy.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/TaskAttemptContext.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/TaskAttemptID.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/TaskCompletionEvent.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/TaskID.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/TaskInProgress.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/TaskLog.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/TaskLogAppender.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/TaskLogServlet.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/TaskRunner.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/TaskScheduler.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/TaskStatus.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/TaskWorkerManager.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/TextInputFormat.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/TextOutputFormat.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/TrackedRecordReader.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/bsp/UpdatePeerAction.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/BSPMasterRunner.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/Constants.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/GroomServerRunner.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/HamaConfiguration.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/HamaVersionAnnotation.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/http/HttpServer.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/http/package.html
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/ipc/AsyncClient.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/ipc/AsyncRPC.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/ipc/AsyncServer.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/ipc/BSPPeerProtocol.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/ipc/Client.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/ipc/ConnectionHeader.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/ipc/GroomProtocol.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/ipc/HamaRPCProtocolVersion.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/ipc/JobSubmissionProtocol.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/ipc/MasterProtocol.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/ipc/package.html
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/ipc/RemoteException.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/ipc/RetryPolicies.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/ipc/RetryPolicy.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/ipc/RPC.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/ipc/Server.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/ipc/Status.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/ipc/VersionedProtocol.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/manager/LogView.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/manager/util/UITemplate.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/monitor/Configurator.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/monitor/fd/FDProvider.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/monitor/fd/NodeEventListener.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/monitor/fd/NodeStatus.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/monitor/fd/Sensor.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/monitor/fd/Supervisor.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/monitor/fd/UDPSensor.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/monitor/fd/UDPSupervisor.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/monitor/Federator.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/monitor/Metric.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/monitor/MetricsRecord.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/monitor/MetricsTag.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/monitor/Monitor.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/monitor/MonitorListener.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/monitor/ZKCollector.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/package.html
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/pipes/PipesApplication.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/pipes/PipesBSP.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/pipes/PipesNonJavaInputFormat.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/pipes/PipesPartitioner.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/pipes/protocol/BinaryProtocol.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/pipes/protocol/DownwardProtocol.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/pipes/protocol/MessageType.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/pipes/protocol/StreamingProtocol.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/pipes/protocol/UplinkReader.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/pipes/Submitter.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/pipes/util/DistributedCacheUtil.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/pipes/util/SequenceFileDumper.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/util/BSPNetUtils.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/util/BSPServletUtil.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/util/Bytes.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/util/ClusterUtil.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/util/DistCacheUtils.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/util/KryoSerializer.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/util/LRUCache.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/util/package.html
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/util/ProgramDriver.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/util/RandomVariable.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/util/ReflectionUtils.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/util/RunJar.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/util/SocketInputStream.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/util/SocketIOWithTimeout.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/util/SocketOutputStream.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/util/VersionInfo.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/util/ZKUtil.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/zookeeper/package.html
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/zookeeper/QuorumPeer.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/zookeeper/ZKServerTool.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/hama/ZooKeeperRunner.java
+  AL    /usr/local/hama-trunk/core/src/main/java/org/apache/overview.html
+  AL    /usr/local/hama-trunk/core/src/main/resources/webapp/bspmaster/bspjob.jsp
+  AL    /usr/local/hama-trunk/core/src/main/resources/webapp/bspmaster/bspmaster.jsp
+  AL    /usr/local/hama-trunk/core/src/main/resources/webapp/bspmaster/index.html
+  AL    /usr/local/hama-trunk/core/src/main/resources/webapp/bspmaster/machines.jsp
+  AL    /usr/local/hama-trunk/core/src/main/resources/webapp/commons/tpl/tpl.configlist.html
+  AL    /usr/local/hama-trunk/core/src/main/resources/webapp/commons/tpl/tpl.logview.html
+  AL    /usr/local/hama-trunk/core/src/main/resources/webapp/groomserver/groomserver.jsp
+  AL    /usr/local/hama-trunk/core/src/main/resources/webapp/groomserver/index.html
+  AL    /usr/local/hama-trunk/core/src/main/resources/webapp/static/hama.css
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/bsp/message/compress/TestBSPMessageCompressor.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/bsp/message/TestHamaAsyncMessageManager.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/bsp/message/TestHamaMessageManager.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/bsp/sync/TestSyncServiceFactory.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/bsp/TestBSPMasterGroomServer.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/bsp/TestBSPMessageBundle.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/bsp/TestBSPTaskFaults.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/bsp/TestCheckpoint.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/bsp/TestClusterStatus.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/bsp/TestCompositeInputFormat.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/bsp/TestFileInputFormat.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/bsp/TestKeyValueTextInputFormat.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/bsp/TestLocalRunner.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/bsp/TestPartitioning.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/bsp/TestPersistQueue.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/bsp/TestTaskAllocation.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/bsp/TestZooKeeper.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/examples/ClassSerializePrinting.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/HamaCluster.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/HamaClusterTestCase.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/HamaTestCase.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/ipc/TestAsyncIPC.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/ipc/TestAsyncRPC.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/ipc/TestIPC.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/ipc/TestRPC.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/manager/TestLogView.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/manager/util/TestUITemplate.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/MiniBSPCluster.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/MiniZooKeeperCluster.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/monitor/fd/TestFD.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/monitor/TestConfigurator.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/monitor/TestFederator.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/pipes/TestPipes.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/util/TestBytes.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/util/TestKryoSerializer.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/util/TestNumeric.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/util/TestRandomVariable.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/util/TestZKUtil.java
+  AL    /usr/local/hama-trunk/core/src/test/java/org/apache/hama/zookeeper/TestZKTools.java
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

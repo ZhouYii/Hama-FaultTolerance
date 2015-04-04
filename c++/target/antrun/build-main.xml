@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <taskdef resource="net/sf/antcontrib/antcontrib.properties" classpathref="maven.plugin.classpath"/>
+  <property environment="env"/>
+  <if>
+    <or>
+      <available filepath="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/hadoop/bin:/usr/local/hadoop/sbin:/usr/local/Cellar/hadoop/bin:/usr/local/Cellar/hadoop/sbin:/Users/Joey/GraphSamplingSystem/apache-cassandra-2.1.2/bin" file="cmake"/>
+      <available filepath="${env.Path}" file="cmake"/>
+      <available filepath="${env.path}" file="cmake"/>
+    </or>
+    <then>
+      <mkdir dir="/usr/local/hama-trunk/c++/target/native"/>
+      <property name="ant.hama.pipes.examples.install" value="/usr/local/hama-trunk/c++/target/native"/>
+      <exec dir="/usr/local/hama-trunk/c++/target/native" executable="cmake" failonerror="true">
+        <arg line="/usr/local/hama-trunk/c++/src/ -DJVM_ARCH_DATA_MODEL=64"/>
+      </exec>
+      <exec dir="/usr/local/hama-trunk/c++/target/native" executable="make" failonerror="true">
+        <arg line="VERBOSE=1"/>
+      </exec>
+      <exec dir="/usr/local/hama-trunk/c++/target/native" executable="make" failonerror="true"/>
+    </then>
+    <else>
+      <echo>CMAKE is missing! Skipping native build!</echo>
+      <property name="ant.hama.pipes.examples.install" value=""/>
+    </else>
+  </if>
+</target>
+</project>
