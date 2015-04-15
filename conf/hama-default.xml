@@ -162,13 +162,23 @@
   </property>
   <property>
     <name>bsp.ft.enabled</name>
-    <value>false</value>
+    <value>true</value>
     <description>Enable Fault Tolerance in BSP Task execution.</description>
   </property>
   <property>
     <name>bsp.checkpoint.enabled</name>
     <value>false</value>
     <description>Enable Hama to checkpoint the messages transferred among BSP tasks during the BSP synchronization period.</description>
+</property>
+  <property>
+     <name>bsp.monitor.fd.udp_host</name>
+     <value>master</value>
+     <description>Host for failure detector monitoring. This runs the UDP supervisor</description>
+   </property>
+   <property>
+     <name>bsp.monitor.fd.enabled</name>
+     <value>true</value>
+     <description>Starts the UDP sensors. What is the property below this for??</description>
   </property>
   <property>
     <name>bsp.checkpoint.interval</name>
@@ -296,7 +306,7 @@
   
   <property>
     <name>hama.zookeeper.quorum</name>
-    <value>localhost</value>
+    <value>master</value>
     <description>Comma separated list of servers in the ZooKeeper quorum.
     For example, "host1.mydomain.com,host2.mydomain.com,host3.mydomain.com".
     By default this is set to localhost for local and pseudo-distributed modes

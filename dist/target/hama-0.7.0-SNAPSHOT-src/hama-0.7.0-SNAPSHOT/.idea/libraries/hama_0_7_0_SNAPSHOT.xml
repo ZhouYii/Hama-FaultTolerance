@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="hama-0.7.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/target/hama-0.7.0-SNAPSHOT/hama-0.7.0-SNAPSHOT/hama-mesos-0.7.0-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/target/hama-0.7.0-SNAPSHOT/hama-0.7.0-SNAPSHOT/hama-graph-0.7.0-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/target/hama-0.7.0-SNAPSHOT/hama-0.7.0-SNAPSHOT/hama-commons-0.7.0-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/target/hama-0.7.0-SNAPSHOT/hama-0.7.0-SNAPSHOT/hama-examples-0.7.0-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/target/hama-0.7.0-SNAPSHOT/hama-0.7.0-SNAPSHOT/hama-yarn-0.7.0-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/target/hama-0.7.0-SNAPSHOT/hama-0.7.0-SNAPSHOT/hama-core-0.7.0-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dist/target/hama-0.7.0-SNAPSHOT/hama-0.7.0-SNAPSHOT/hama-ml-0.7.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

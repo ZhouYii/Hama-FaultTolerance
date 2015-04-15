@@ -136,9 +136,12 @@ public class AsyncRcvdMsgCheckpointImpl<M extends Writable> implements
       }
 
       long lowestSuperstepNumber = Long.MAX_VALUE;
+       
+      //String[] taskProgress = this.masterSyncClient.getChildKeySet(
+      //    this.masterSyncClient.constructKey(jobId, "checkpoint"), null);
 
       String[] taskProgress = this.masterSyncClient.getChildKeySet(
-          this.masterSyncClient.constructKey(jobId, "checkpoint"), null);
+          this.masterSyncClient.constructKey(jobId, "superstepRegisterAfterBarrier"), null);
 
       if (LOG.isDebugEnabled()) {
         StringBuffer list = new StringBuffer(25 * taskProgress.length);
@@ -150,7 +153,9 @@ public class AsyncRcvdMsgCheckpointImpl<M extends Writable> implements
         LOG.debug(list);
       }
 
-      if (taskProgress.length == this.tasks.length) {
+      // code used only when checkpointing is enabled
+      //if (taskProgress.length == this.tasks.length) {
+      if (false) {
         for (String taskProgres : taskProgress) {
           ArrayWritable progressInformation = new ArrayWritable(
               LongWritable.class);
@@ -181,7 +186,28 @@ public class AsyncRcvdMsgCheckpointImpl<M extends Writable> implements
             allTasksInProgress, taskCountInGroomMap, actionMap);
 
       } else {
-        restartJob(-1, groomStatuses, recoverySet, allTasksInProgress,
+        for (String taskProgres : taskProgress) {
+          ArrayWritable progressInformation = new ArrayWritable(LongWritable.class);  
+          boolean result = this.masterSyncClient.getInformation(
+            this.masterSyncClient.constructKey(jobId, "superstepRegisterAfterBarrier",
+                taskProgres), progressInformation);
+
+          if(!result) {
+            lowestSuperstepNumber = -1L;
+            break;
+          }
+
+          Writable[] progressArr = progressInformation.get();
+          LongWritable superstepProgress = (LongWritable) progressArr[0];
+        
+          if(superstepProgress != null) {
+            if(superstepProgress.get() < lowestSuperstepNumber) {
+              lowestSuperstepNumber = superstepProgress.get();
+            }
+          }
+        }
+
+        restartJob(lowestSuperstepNumber, groomStatuses, recoverySet, allTasksInProgress,
             taskCountInGroomMap, actionMap);
       }
 
@@ -222,7 +248,8 @@ public class AsyncRcvdMsgCheckpointImpl<M extends Writable> implements
         throws IOException {
       String path = conf.get("bsp.checkpoint.prefix_path", "/checkpoint/");
 
-      if (superstep >= 0) {
+      //if (superstep >= 0) {
+      if (false) {
         FileSystem fileSystem = FileSystem.get(conf);
         for (TaskInProgress allTask : allTasks) {
           String[] hosts = null;
@@ -257,20 +284,24 @@ public class AsyncRcvdMsgCheckpointImpl<M extends Writable> implements
             Task task = allTask.constructTask(serverStatus);
             populateAction(task, superstep, serverStatus, actionMap);
 
-          } else {
-            restartTask(allTask, superstep, groomStatuses, actionMap);
-          }
+          } //else {
+            //restartTask(allTask, superstep, groomStatuses, actionMap);
+          //}
         }
       } else {
         // Start the task from the beginning.
         for (TaskInProgress allTask : allTasks) {
           if (recoveryMap.containsKey(allTask.getTaskId())) {
-            this.allocationStrategy.getGroomToAllocate(groomStatuses,
+
+            GroomServerStatus serverStatus = this.allocationStrategy.getGroomToAllocate(groomStatuses,
                 this.allocationStrategy.selectGrooms(groomStatuses,
                     taskCountInGroomMap, new BSPResource[0], allTask),
                 taskCountInGroomMap, new BSPResource[0], allTask);
+            Task task = allTask.constructTask(serverStatus);
+            populateAction(task, superstep, serverStatus, actionMap);
+
           } else {
-            restartTask(allTask, superstep, groomStatuses, actionMap);
+            //restartTask(allTask, superstep, groomStatuses, actionMap);
           }
         }
       }
@@ -364,6 +395,27 @@ public class AsyncRcvdMsgCheckpointImpl<M extends Writable> implements
       return ckptPath;
     }
 
+    // Ask the alive bspPeers for information so as to construct own state after failure recovery
+    @Override
+    public TaskStatus.State onPeerInitialized(TaskStatus.State state)
+            throws Exception{
+
+        if(this.superstep >= 0 && state.equals(TaskStatus.State.RECOVERING)){
+            String thisPeerName = peer.getPeerName();
+            LOG.info("bspPeer " + thisPeerName + " started pinging alive peers for data");
+            
+            // TODO: Test this.
+            // We also need to fetch the outgoingMessageBundle for 'this'
+            // superstep from alive peer so that the recovering peer can do the
+            // next superstep. Combine that with getPrevSuperstepData() ??
+            //peer.getPrevSuperstepData();
+            LOG.info("Data recovery complete for peer " + thisPeerName);
+        }
+        this.messenger.registerListener(this);
+        return TaskStatus.State.RUNNING;
+    }
+    
+    /*
     @Override
     public TaskStatus.State onPeerInitialized(TaskStatus.State state)
         throws Exception {
@@ -412,6 +464,7 @@ public class AsyncRcvdMsgCheckpointImpl<M extends Writable> implements
       return TaskStatus.State.RUNNING;
 
     }
+    */
 
     public final boolean isReadyToCheckpoint() {
 
@@ -445,6 +498,17 @@ public class AsyncRcvdMsgCheckpointImpl<M extends Writable> implements
 
     @Override
     public void afterBarrier() throws Exception {
+
+      synchronized (this) {
+        ArrayWritable writableArray = new ArrayWritable(LongWritable.class);
+        Writable[] writeArr = new Writable[1];
+        writeArr[0] = new LongWritable(peer.getSuperstepCount());
+        writableArray.set(writeArr);
+
+        this.syncClient.storeInformation(this.syncClient.constructKey(
+            this.job.getJobID(), "superstepRegisterAfterBarrier",
+            String.valueOf(peer.getPeerIndex())), writableArray, true, null);
+      }
 
       synchronized (this) {
         if (checkpointState) {

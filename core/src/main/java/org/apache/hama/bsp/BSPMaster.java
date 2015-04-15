@@ -163,19 +163,21 @@ public class BSPMaster implements JobSubmissionProtocol, MasterProtocol,
       // for each dead groomserver in blacklist, mark all failed tasks as recovery state
       while (blackList.size() > 0) {
         GroomServerStatus deadGroomServer = blackList.remove(0);
+        System.out.println("Groom server " + deadGroomServer.getGroomName() + " is dead!");
         List<TaskStatus> deadTasks = deadGroomServer.getTaskReports();
         for (TaskStatus ts : deadTasks) {
             JobInProgress jip = taskScheduler.findJobById(ts.getJobId());
             TaskInProgress tip = jip.findTaskInProgress(ts.getTaskId()
                     .getTaskID());
-
+                                                
             ts.setRunState(TaskStatus.State.FAILED);
+            System.out.println("Checking if recovery possible for task!");
             if (jip.handleFailure(tip)) {
+                System.out.println("Recovering now.");
                 recoverTask(jip);
             }
         }
       }
-
 
       // update GroomServerStatus held in the groomServers cache.
       GroomServerStatus groomStatus = ((ReportGroomStatusDirective) directive)
@@ -343,9 +345,13 @@ public class BSPMaster implements JobSubmissionProtocol, MasterProtocol,
       infoServer.start();
 
       if (conf.getBoolean("bsp.monitor.fd.enabled", false)) {
+        System.out.println("Fault Tolerance is enabled.");
         this.supervisor.set(FDProvider.createSupervisor(conf.getClass(
             "bsp.monitor.fd.supervisor.class", UDPSupervisor.class,
             Supervisor.class), conf));
+      }
+      else{
+        System.out.println("Fault Tolerance is disabled.");
       }
 
       while (!Thread.currentThread().isInterrupted()) {

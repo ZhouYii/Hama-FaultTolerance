@@ -86,10 +86,26 @@ public class ZooKeeperSyncClientImpl extends ZKSyncClient implements
     numBSPTasks = conf.getInt("bsp.peers.num", 1);
   }
 
+  public boolean check(TaskAttemptID taskId, long superstep) 
+    throws SyncException {
+
+    try {
+      synchronized (zk) {
+        Stat s = zk.exists(getNodeName(taskId, superstep), false);
+        if(s == null) 
+          return false;
+        return true;
+      }
+    } catch (Exception e) {
+        throw new SyncException(e.toString());
+    }
+  }
+
   @Override
   public void enterBarrier(BSPJobID jobId, TaskAttemptID taskId, long superstep)
       throws SyncException {
     LOG.debug("[" + getPeerName() + "] enter the enterbarrier: " + superstep);
+    System.out.println(getPeerName() + " enter the enterbarrier: " + superstep);
 
     try {
       synchronized (zk) {

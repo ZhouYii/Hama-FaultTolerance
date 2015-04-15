@@ -393,41 +393,6 @@
         </configuration>
       </plugin>
       <plugin>
-        <groupId>org.apache.rat</groupId>
-        <artifactId>apache-rat-plugin</artifactId>
-        <version>0.10</version>
-        <executions>
-          <execution>
-            <phase>package</phase>
-            <goals>
-              <goal>check</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <excludes>
-            <exclude>.idea/**</exclude>
-            <exclude>.git/**</exclude>
-            <exclude>.gitignore</exclude>
-            <exclude>**/.classpath/**</exclude>
-            <exclude>**/.project</exclude>
-            <exclude>**/*.iml</exclude>
-            <exclude>**/.settings/**</exclude>
-            <exclude>**/*.asc</exclude>
-            <exclude>**/dependency-reduced-pom.xml</exclude>
-            <exclude>**/logs/**</exclude>
-            <exclude>**/docs/**</exclude>
-            <exclude>CHANGES.txt</exclude>
-            <exclude>conf/groomservers</exclude>
-            <exclude>src/site/resources/files/hama-eclipse-formatter.xml</exclude>
-            <exclude>**/src/test/resources/*.properties</exclude>
-            <exclude>**dependency-reduced-pom.xml</exclude>
-            <exclude>**/src/test/resources/*.txt</exclude>
-            <exclude>**/target/**</exclude>
-          </excludes>
-        </configuration>
-      </plugin>
-      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-gpg-plugin</artifactId>
         <executions>

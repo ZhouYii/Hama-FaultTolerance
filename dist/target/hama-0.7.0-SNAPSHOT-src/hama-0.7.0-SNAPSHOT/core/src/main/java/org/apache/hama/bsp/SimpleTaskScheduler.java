@@ -102,7 +102,7 @@ class SimpleTaskScheduler extends TaskScheduler {
      */
     @Override
     public void notify(NodeStatus status, String host) {
-      // TODO:
+        groomManager.moveToBlackList(host);
     }
   }
 

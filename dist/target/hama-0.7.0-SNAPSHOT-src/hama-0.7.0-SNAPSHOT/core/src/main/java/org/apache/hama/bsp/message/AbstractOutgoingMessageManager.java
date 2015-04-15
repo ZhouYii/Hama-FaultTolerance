@@ -32,6 +32,10 @@ public abstract class AbstractOutgoingMessageManager<M extends Writable>
   
   protected final HashMap<String, InetSocketAddress> peerSocketCache = new HashMap<String, InetSocketAddress>();
   protected HashMap<InetSocketAddress, BSPMessageBundle<M>> outgoingBundles =  new HashMap<InetSocketAddress, BSPMessageBundle<M>>();
+  // outgoing bundle from the previous superstep 
+  protected HashMap<InetSocketAddress, BSPMessageBundle<M>> prevOutgoingBundles = new HashMap<InetSocketAddress, BSPMessageBundle<M>>();
+  // temporary reference for switching
+  protected HashMap<InetSocketAddress, BSPMessageBundle<M>> temp;
 
   protected InetSocketAddress getSocketAddress(String peerName) {
     InetSocketAddress targetPeerAddress = null;

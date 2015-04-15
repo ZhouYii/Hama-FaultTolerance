@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="target1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mesos/target/hama-mesos-0.7.0-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mesos/target/hama-mesos-0.7.0-SNAPSHOT-javadoc.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

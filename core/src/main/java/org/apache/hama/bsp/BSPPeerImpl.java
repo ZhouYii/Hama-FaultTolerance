@@ -96,6 +96,9 @@ public final class BSPPeerImpl<K1, V1, K2, V2, M extends Writable> implements
 
   private long splitSize = 0L;
 
+  // Recovery
+  private boolean recoveryTask = false;
+
   /**
    * Protected default constructor for LocalBSPRunner.
    */
@@ -212,7 +215,9 @@ public final class BSPPeerImpl<K1, V1, K2, V2, M extends Writable> implements
             .onPeerInitialized(state);
 
         if (state == TaskStatus.State.RECOVERING) {
+          this.recoveryTask = true;
           if (newState == TaskStatus.State.RUNNING) {
+            LOG.info("[BSPPeerImpl.java] Changing taskState from RECOVERING to RUNNING");
             phase = TaskStatus.Phase.STARTING;
             stateString = "running";
             state = newState;
@@ -233,7 +238,8 @@ public final class BSPPeerImpl<K1, V1, K2, V2, M extends Writable> implements
       }
     }
 
-    doFirstSync(superstep);
+    if(this.recoveryTask == false)
+      doFirstSync(superstep);
 
     if (LOG.isDebugEnabled()) {
       LOG.info(new StringBuffer("BSP Peer successfully initialized for ")
@@ -281,6 +287,10 @@ public final class BSPPeerImpl<K1, V1, K2, V2, M extends Writable> implements
     return splitSize;
   }
 
+  public boolean isRecoveryTask() {
+    return recoveryTask;
+  }
+
   /**
    * @return the position in the input stream.
    */
@@ -309,6 +319,24 @@ public final class BSPPeerImpl<K1, V1, K2, V2, M extends Writable> implements
       --superstep;
     syncClient.enterBarrier(taskId.getJobID(), taskId, superstep);
     syncClient.leaveBarrier(taskId.getJobID(), taskId, superstep);
+  }
+
+  // At this point, the restarting peer has re-done the compute part
+  public void doFirstSyncAfterRecovery() throws SyncException {
+    //TODO: send out the messages from the current computation to the peers.
+    //Could reuse code from first part of sync(). At the receiving peer, handle
+    //duplicate messages (if any)
+
+    // TODO: this verifies if the peer crash happened between the enterBarrier() and
+    // leaveBarrier() calls. If yes, we have a problem because the alive peers
+    // have made a call to clearOutgoingMessages() which clears outgoing message
+    // bundles and their localQueues.
+    boolean check = syncClient.check(taskId, currentTaskStatus.getSuperstepCount());
+    if(!check)
+      enterBarrier();
+
+    leaveBarrier();
+    incrementCounter(PeerCounter.SUPERSTEP_SUM, 1L);
   }
 
   @SuppressWarnings("unchecked")
@@ -397,6 +425,7 @@ public final class BSPPeerImpl<K1, V1, K2, V2, M extends Writable> implements
     }
 
     long startBarrier = System.currentTimeMillis();
+
     enterBarrier();
 
     if (this.faultToleranceService != null) {
@@ -430,6 +459,15 @@ public final class BSPPeerImpl<K1, V1, K2, V2, M extends Writable> implements
 
   }
 
+  @Override
+  public final void getPrevSuperstepData() {
+      for(String peerName : allPeers) {
+          if(!peerName.equals(getPeerName())) {
+              messenger.getRecoveryData(peerName);
+          }   
+      }   
+  }
+  
   protected final void enterBarrier() throws SyncException {
     syncClient.enterBarrier(taskId.getJobID(), taskId,
         currentTaskStatus.getSuperstepCount());

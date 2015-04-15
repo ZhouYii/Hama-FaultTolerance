@@ -35,3 +35,6 @@
 
 # Tell Hama whether it should manage it's own instance of Zookeeper or not.
 # export HAMA_MANAGES_ZK=true 
+export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
+
+

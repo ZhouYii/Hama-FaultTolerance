@@ -101,25 +101,48 @@ public final class GraphJobRunner<V extends WritableComparable, E extends Writab
   // -1 is deactivated
   private int maxIteration = -1;
   private long iteration;
+  private boolean recoveryTask = false;
 
   private AggregationRunner<V, E, M> aggregationRunner;
   private VertexOutputWriter<Writable, Writable, V, E, M> vertexOutputWriter;
 
   private BSPPeer<Writable, Writable, Writable, Writable, GraphJobMessage> peer;
 
+  private void redoSuperstep() {
+    
+    // update the value of local variables
+    iteration = peer.getSuperstepCount(); 
+    //TODO : fix this! We are not calling countGlobalVertexCount() for
+    //recovering peer. We need to get from alive peer. Maybe similar to how to
+    //we superstep data?
+    numberVertices = 50;
+
+    // TODO : redo the compute part here. Don't call peer.sync()! It would be
+    // handled in peer.doFirstSyncAfterRecovery() which is called just after
+    // this function.
+  }
+
   @Override
   public final void setup(
       BSPPeer<Writable, Writable, Writable, Writable, GraphJobMessage> peer)
       throws IOException, SyncException, InterruptedException {
-
+ 
+    LOG.info("[GraphJobRunner] Entering setup.");  
+    recoveryTask = peer.isRecoveryTask();
+      
     setupFields(peer);
 
     loadVertices(peer);
 
-    countGlobalVertexCount(peer);
+    if(recoveryTask == false)
+      countGlobalVertexCount(peer);
 
     doInitialSuperstep(peer);
 
+    if(recoveryTask) {
+      redoSuperstep();
+      peer.doFirstSyncAfterRecovery();
+    }
   }
 
   @Override
@@ -138,7 +161,12 @@ public final class GraphJobRunner<V extends WritableComparable, E extends Writab
       // note that the messages must be parsed here
       GraphJobMessage firstVertexMessage = parseMessages(peer);
       // master/slaves needs to update
-      doAggregationUpdates(peer);
+      
+      // TODO: For recovery task, sendAggregatorValues() is not called in
+      // doInitialSuperstep(). This seems to mess up with the aggregator
+      // functionality.  
+      //doAggregationUpdates(peer);
+      
       // check if updated changed by our aggregators
       if (!updated) {
         break;
@@ -288,7 +316,10 @@ public final class GraphJobRunner<V extends WritableComparable, E extends Writab
     }
 
     vertices.finishSuperstep();
-    getAggregationRunner().sendAggregatorValues(peer, 1, this.changedVertexCnt);
+
+    if(recoveryTask == false)
+      getAggregationRunner().sendAggregatorValues(peer, 1, this.changedVertexCnt);
+
     iteration++;
   }
 

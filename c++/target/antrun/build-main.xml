@@ -10,15 +10,15 @@
       <available filepath="${env.path}" file="cmake"/>
     </or>
     <then>
-      <mkdir dir="/usr/local/hama-trunk/c++/target/native"/>
-      <property name="ant.hama.pipes.examples.install" value="/usr/local/hama-trunk/c++/target/native"/>
-      <exec dir="/usr/local/hama-trunk/c++/target/native" executable="cmake" failonerror="true">
-        <arg line="/usr/local/hama-trunk/c++/src/ -DJVM_ARCH_DATA_MODEL=64"/>
+      <mkdir dir="/usr/local/hama/c++/target/native"/>
+      <property name="ant.hama.pipes.examples.install" value="/usr/local/hama/c++/target/native"/>
+      <exec dir="/usr/local/hama/c++/target/native" executable="cmake" failonerror="true">
+        <arg line="/usr/local/hama/c++/src/ -DJVM_ARCH_DATA_MODEL=64"/>
       </exec>
-      <exec dir="/usr/local/hama-trunk/c++/target/native" executable="make" failonerror="true">
+      <exec dir="/usr/local/hama/c++/target/native" executable="make" failonerror="true">
         <arg line="VERBOSE=1"/>
       </exec>
-      <exec dir="/usr/local/hama-trunk/c++/target/native" executable="make" failonerror="true"/>
+      <exec dir="/usr/local/hama/c++/target/native" executable="make" failonerror="true"/>
     </then>
     <else>
       <echo>CMAKE is missing! Skipping native build!</echo>

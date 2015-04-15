@@ -68,6 +68,21 @@ public interface BSPPeer<K1, V1, K2, V2, M extends Writable> extends Constants {
   public void sync() throws IOException, SyncException, InterruptedException;
 
   /**
+   * Called from a recovering peer. Fetches data from alive peer to reconstruct its state.
+   */
+  public void getPrevSuperstepData();
+  
+  /**
+   * Returns true if the peer is running a recovery task
+   */
+  public boolean isRecoveryTask();
+
+  /*
+   * Handles first sync for recovering task
+   */
+  public void doFirstSyncAfterRecovery() throws SyncException;
+
+  /**
    * @return the count of current super-step
    */
   public long getSuperstepCount();
