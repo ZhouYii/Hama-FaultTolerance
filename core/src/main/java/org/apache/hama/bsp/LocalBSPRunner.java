@@ -364,7 +364,7 @@ public class LocalBSPRunner implements JobSubmissionProtocol {
     }
 
     @Override
-    public void getRecoveryData (String peerName) {
+    public void getRecoveryData (String peerName, boolean current) {
     }
   }
 
@@ -461,12 +461,13 @@ public class LocalBSPRunner implements JobSubmissionProtocol {
         superStepCount = superstep;
     }
 
-      @Override
-      public boolean check(TaskAttemptID taskId, long superstep) throws SyncException {
-          return true;
-      }
+    @Override
+    public boolean check(TaskAttemptID taskId, long superstep)
+      throws SyncException{
+      return false;
+    }
 
-      @Override
+    @Override
     public void register(BSPJobID jobId, TaskAttemptID taskId,
         String hostAddress, long port) {
     }

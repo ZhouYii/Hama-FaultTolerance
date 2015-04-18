@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="target9">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/graph/target/hama-graph-0.7.0-SNAPSHOT-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/graph/target/hama-graph-0.7.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

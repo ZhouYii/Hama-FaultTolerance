@@ -98,7 +98,7 @@ public class BestEffortDataLocalTaskAllocator implements TaskAllocationStrategy 
       Integer tasksInGroom = tasksInGroomMap.get(groom);
       tasksInGroom = (tasksInGroom == null) ? 0 : tasksInGroom;
 
-      if(tasksInGroom <= minTasks) {
+      if(tasksInGroom < minTasks) {
         groomServerWithMinTasks = location;
         minTasks = tasksInGroom;
       }
@@ -186,6 +186,7 @@ public class BestEffortDataLocalTaskAllocator implements TaskAllocationStrategy 
   public String[] selectGrooms(Map<String, GroomServerStatus> groomStatuses,
       Map<GroomServerStatus, Integer> taskCountInGroomMap,
       BSPResource[] resources, TaskInProgress taskInProgress) {
+
     if (!taskInProgress.canStartTask()) {
       if (LOG.isDebugEnabled()) {
         LOG.debug("Cannot start task based on id");

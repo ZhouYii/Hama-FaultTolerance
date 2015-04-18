@@ -24,6 +24,7 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.BindException;
 import java.net.InetSocketAddress;
+import java.util.Iterator;
 import java.util.Map;
 
 import org.apache.commons.logging.Log;
@@ -117,7 +118,7 @@ public final class HamaMessageManagerImpl<M extends Writable> extends
   }
 
   @Override
-  public void getRecoveryData(String peerName) {
+  public void getRecoveryData(String peerName, boolean current) {
     InetSocketAddress targetPeerAddress = BSPNetUtils.getAddress(peerName);
     
     try {
@@ -127,8 +128,9 @@ public final class HamaMessageManagerImpl<M extends Writable> extends
           + " to transfer messages to!");
       }
       else{
-        // make an RPC to alive peer with the requesting peer as argument 
-        bspPeerConnection.fetch(peer.getPeerName());
+        // make an RPC to alive peer with arguments: [requesting peer]
+        // [is data for previous/current superstep]
+        bspPeerConnection.fetch(peer.getPeerName(), current);
       }
     } catch (Exception e) {
       LOG.info("Could not recovery data from peer " + peerName);
@@ -204,12 +206,32 @@ public final class HamaMessageManagerImpl<M extends Writable> extends
   }
 
   @Override
-  public final void fetch(String requestingPeerName)
+  public final void fetch(String requestingPeerName, boolean current)
           throws IOException {
       LOG.info("bspPeer " + peer.getPeerName() + " received request for previous superstep data from bspPeer " + requestingPeerName);
       InetSocketAddress requestingPeerAddress = BSPNetUtils.getAddress(requestingPeerName);
-      BSPMessageBundle<M> bundle = outgoingMessageManager.getBundleFromPrevSuperstep(requestingPeerAddress);
-      transfer(requestingPeerAddress, bundle);
+      BSPMessageBundle<M> bundle = null;
+      
+      // if current == true, return messages for current superstep, else
+      // messages for previous superstep.
+      if(current) {
+        Iterator<Map.Entry<InetSocketAddress, BSPMessageBundle<M>>> it = outgoingMessageManager.getBundleIterator();
+        while(it.hasNext()) {
+          Map.Entry<InetSocketAddress, BSPMessageBundle<M>> entry = it.next();
+          if (entry.getKey().equals(requestingPeerAddress)) {
+            bundle = entry.getValue();
+            break;
+          }
+        }
+      }
+      else {
+        bundle = outgoingMessageManager.getBundleFromPrevSuperstep(requestingPeerAddress);
+      }
+      
+      if(bundle == null)
+        LOG.info("Found no bundle for requesting peer: " + requestingPeerName + " at peer: " + peer.getPeerName());
+      else
+        transfer(requestingPeerAddress, bundle);
       
       // TODO: We also need to transfer some portion of the localQueue
   }

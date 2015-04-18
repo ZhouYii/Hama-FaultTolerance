@@ -184,11 +184,11 @@ public final class HamaAsyncMessageManagerImpl<M extends Writable> extends
   }
 
   @Override
-  public void fetch(String requestingPeerName) throws IOException{
+  public void fetch(String requestingPeerName, boolean current) throws IOException{
   }                                             
 
   @Override
-  public void getRecoveryData (String peerName) {
+  public void getRecoveryData (String peerName, boolean current) {
   }
 
   @Override

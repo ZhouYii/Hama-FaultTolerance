@@ -1,0 +1,69 @@
+15/04/18 05:48:43 INFO bsp.GroomServer: BSPPeerChild starting
+15/04/18 05:48:45 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/04/18 05:48:45 INFO bsp.GroomServer: Starting peer for step 20 state = RECOVERING
+15/04/18 05:48:48 INFO bsp.GroomServer: instantiating BSPPeerImpl
+15/04/18 05:48:48 INFO ipc.Server: Starting Socket Reader #1 for port 61001
+15/04/18 05:48:48 INFO ipc.Server: IPC Server Responder: starting
+15/04/18 05:48:48 INFO ipc.Server: IPC Server listener on 61001: starting
+15/04/18 05:48:48 INFO ipc.Server: IPC Server handler 0 on 61001: starting
+15/04/18 05:48:48 INFO ipc.Server: IPC Server handler 1 on 61001: starting
+15/04/18 05:48:48 INFO ipc.Server: IPC Server handler 2 on 61001: starting
+15/04/18 05:48:48 INFO ipc.Server: IPC Server handler 3 on 61001: starting
+15/04/18 05:48:48 INFO message.HamaMessageManagerImpl: BSPPeer address:slave port:61001
+15/04/18 05:48:48 INFO ipc.Server: IPC Server handler 4 on 61001: starting
+15/04/18 05:48:50 INFO sync.ZKSyncClient: Initializing ZK Sync Client
+15/04/18 05:48:50 INFO sync.ZooKeeperSyncClientImpl: Start connecting to Zookeeper! At slave/172.28.128.5:61001
+15/04/18 05:48:50 INFO ft.AsyncRcvdMsgCheckpointImpl: bspPeer slave:61001 started pinging alive peers for data
+15/04/18 05:48:50 INFO message.HamaMessageManagerImpl: Could not recovery data from peer master:61001
+15/04/18 05:48:50 INFO message.HamaMessageManagerImpl: org.apache.hama.ipc.RemoteException: java.io.IOException: java.lang.NullPointerException
+	at org.apache.hama.graph.IncomingVertexMessageManager.getRelevantMessages(IncomingVertexMessageManager.java:67)
+	at org.apache.hama.bsp.message.HamaMessageManagerImpl.fetch(HamaMessageManagerImpl.java:269)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hama.ipc.RPC$Server.call(RPC.java:615)
+	at org.apache.hama.ipc.Server$Handler$1.run(Server.java:1211)
+	at org.apache.hama.ipc.Server$Handler$1.run(Server.java:1207)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hama.ipc.Server$Handler.run(Server.java:1206)
+
+15/04/18 05:48:50 INFO bsp.BSPPeerImpl: Skipping request to slave:61001-slave-slave
+15/04/18 05:48:50 INFO ft.AsyncRcvdMsgCheckpointImpl: Prev. superstep data recovery complete for slave:61001
+15/04/18 05:48:50 INFO bsp.BSPPeerImpl: Recovery task received 0 messages for previous superstep from alive peers
+15/04/18 05:48:50 INFO bsp.BSPPeerImpl: [BSPPeerImpl.java] Changing taskState from RECOVERING to RUNNING
+15/04/18 05:48:50 INFO bsp.GroomServer: instantiating BSPPeerImpl done, starting BSPTask now!
+15/04/18 05:48:50 INFO bsp.BSPTask: Starting runBSP from BSPTask
+15/04/18 05:48:50 INFO bsp.BSPTask: [BSPTask.java] Starting with bsp.setup
+15/04/18 05:48:50 INFO graph.GraphJobRunner: [GraphJobRunner] Entering setup.
+15/04/18 05:48:50 INFO graph.GraphJobRunner: 50 vertices are loaded into slave:61001
+15/04/18 05:48:50 INFO graph.GraphJobRunner: Recovering peer reading from log: 100 vertices
+15/04/18 05:48:50 INFO graph.GraphJobRunner: slave:61001
+15/04/18 05:48:50 INFO bsp.BSPPeerImpl: Skipping request to slave:61001-slave-slave
+15/04/18 05:48:50 INFO bsp.BSPPeerImpl: Is check true? false
+15/04/18 05:48:50 INFO bsp.BSPPeerImpl: Recovery task received 50 messages for current superstep from alive peers
+15/04/18 05:48:50 INFO bsp.BSPPeerImpl: Completed doFirstSyncAfterRecovery
+15/04/18 05:48:50 INFO bsp.BSPTask: [BSPTask.java] Starting with bsp.bsp
+15/04/18 05:48:50 INFO graph.GraphJobRunner: Entered GraphRunner.bsp. Is recovery task? true
+15/04/18 05:48:50 INFO graph.GraphJobRunner: slave:61001
+15/04/18 05:48:50 INFO graph.GraphJobRunner: slave:61001
+15/04/18 05:48:50 INFO graph.GraphJobRunner: slave:61001
+15/04/18 05:48:51 INFO graph.GraphJobRunner: slave:61001
+15/04/18 05:48:51 INFO graph.GraphJobRunner: slave:61001
+15/04/18 05:48:51 INFO graph.GraphJobRunner: slave:61001
+15/04/18 05:48:51 INFO graph.GraphJobRunner: slave:61001
+15/04/18 05:48:51 INFO graph.GraphJobRunner: slave:61001
+15/04/18 05:48:51 INFO graph.GraphJobRunner: slave:61001
+15/04/18 05:48:51 INFO graph.GraphJobRunner: slave:61001
+15/04/18 05:48:51 INFO bsp.BSPTask: [BSPTask.java] Done with bsp.bsp
+15/04/18 05:48:51 INFO ipc.Server: Stopping server on 61001
+15/04/18 05:48:51 INFO ipc.Server: IPC Server handler 3 on 61001: exiting
+15/04/18 05:48:51 INFO ipc.Server: IPC Server handler 1 on 61001: exiting
+15/04/18 05:48:51 INFO ipc.Server: IPC Server handler 2 on 61001: exiting
+15/04/18 05:48:51 INFO ipc.Server: Stopping IPC Server listener on 61001
+15/04/18 05:48:51 INFO ipc.Server: Stopping IPC Server Responder
+15/04/18 05:48:51 INFO ipc.Server: IPC Server handler 0 on 61001: exiting
+15/04/18 05:48:51 INFO ipc.Server: IPC Server handler 4 on 61001: exiting
+15/04/18 05:48:51 INFO Configuration.deprecation: mapred.cache.localFiles is deprecated. Instead, use mapreduce.job.cache.local.files

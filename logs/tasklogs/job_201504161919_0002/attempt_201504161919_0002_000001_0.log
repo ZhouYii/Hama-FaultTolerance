@@ -1,0 +1,31 @@
+15/04/16 19:20:01 INFO bsp.GroomServer: BSPPeerChild starting
+15/04/16 19:20:03 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/04/16 19:20:03 INFO bsp.GroomServer: Starting peer for step -1 state = RUNNING
+15/04/16 19:20:06 INFO bsp.GroomServer: instantiating BSPPeerImpl
+15/04/16 19:20:07 INFO ipc.Server: Starting Socket Reader #1 for port 61002
+15/04/16 19:20:07 INFO ipc.Server: IPC Server Responder: starting
+15/04/16 19:20:07 INFO ipc.Server: IPC Server listener on 61002: starting
+15/04/16 19:20:07 INFO ipc.Server: IPC Server handler 0 on 61002: starting
+15/04/16 19:20:07 INFO ipc.Server: IPC Server handler 1 on 61002: starting
+15/04/16 19:20:07 INFO ipc.Server: IPC Server handler 2 on 61002: starting
+15/04/16 19:20:07 INFO ipc.Server: IPC Server handler 3 on 61002: starting
+15/04/16 19:20:07 INFO message.HamaMessageManagerImpl: BSPPeer address:slave port:61002
+15/04/16 19:20:07 INFO ipc.Server: IPC Server handler 4 on 61002: starting
+15/04/16 19:20:08 INFO sync.ZKSyncClient: Initializing ZK Sync Client
+15/04/16 19:20:08 INFO sync.ZooKeeperSyncClientImpl: Start connecting to Zookeeper! At slave/172.28.128.5:61002
+15/04/16 19:20:08 INFO bsp.GroomServer: instantiating BSPPeerImpl done, starting BSPTask now!
+15/04/16 19:20:08 INFO bsp.BSPTask: Starting runBSP from BSPTask
+15/04/16 19:20:08 INFO bsp.BSPTask: [BSPTask.java] Starting with bsp.setup
+15/04/16 19:20:08 INFO bsp.BSPTask: [BSPTask.java] Starting with bsp.bsp
+15/04/16 19:20:09 INFO Configuration.deprecation: io.sort.mb is deprecated. Instead, use mapreduce.task.io.sort.mb
+15/04/16 19:20:09 INFO Configuration.deprecation: io.sort.factor is deprecated. Instead, use mapreduce.task.io.sort.factor
+15/04/16 19:20:09 INFO bsp.BSPTask: [BSPTask.java] Done with bsp.bsp
+15/04/16 19:20:09 INFO ipc.Server: Stopping server on 61002
+15/04/16 19:20:09 INFO ipc.Server: IPC Server handler 0 on 61002: exiting
+15/04/16 19:20:09 INFO ipc.Server: IPC Server handler 1 on 61002: exiting
+15/04/16 19:20:09 INFO ipc.Server: IPC Server handler 2 on 61002: exiting
+15/04/16 19:20:09 INFO ipc.Server: IPC Server handler 3 on 61002: exiting
+15/04/16 19:20:09 INFO ipc.Server: IPC Server handler 4 on 61002: exiting
+15/04/16 19:20:09 INFO ipc.Server: Stopping IPC Server listener on 61002
+15/04/16 19:20:09 INFO ipc.Server: Stopping IPC Server Responder
+15/04/16 19:20:09 INFO Configuration.deprecation: mapred.cache.localFiles is deprecated. Instead, use mapreduce.job.cache.local.files

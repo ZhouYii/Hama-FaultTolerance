@@ -1,0 +1,68 @@
+15/04/16 23:25:44 INFO bsp.GroomServer: BSPPeerChild starting
+15/04/16 23:25:48 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/04/16 23:25:49 INFO bsp.GroomServer: Starting peer for step -1 state = RUNNING
+15/04/16 23:25:54 INFO bsp.GroomServer: instantiating BSPPeerImpl
+15/04/16 23:25:54 INFO ipc.Server: Starting Socket Reader #1 for port 61002
+15/04/16 23:25:54 INFO ipc.Server: IPC Server Responder: starting
+15/04/16 23:25:54 INFO ipc.Server: IPC Server listener on 61002: starting
+15/04/16 23:25:54 INFO ipc.Server: IPC Server handler 0 on 61002: starting
+15/04/16 23:25:54 INFO ipc.Server: IPC Server handler 1 on 61002: starting
+15/04/16 23:25:54 INFO ipc.Server: IPC Server handler 2 on 61002: starting
+15/04/16 23:25:54 INFO ipc.Server: IPC Server handler 3 on 61002: starting
+15/04/16 23:25:54 INFO message.HamaMessageManagerImpl: BSPPeer address:master port:61002
+15/04/16 23:25:54 INFO ipc.Server: IPC Server handler 4 on 61002: starting
+15/04/16 23:25:57 INFO sync.ZKSyncClient: Initializing ZK Sync Client
+15/04/16 23:25:57 INFO sync.ZooKeeperSyncClientImpl: Start connecting to Zookeeper! At master/172.28.128.6:61002
+15/04/16 23:25:57 INFO bsp.GroomServer: instantiating BSPPeerImpl done, starting BSPTask now!
+15/04/16 23:25:57 INFO bsp.BSPTask: Starting runBSP from BSPTask
+15/04/16 23:25:57 INFO bsp.BSPTask: [BSPTask.java] Starting with bsp.setup
+15/04/16 23:25:57 INFO graph.GraphJobRunner: [GraphJobRunner] Entering setup.
+15/04/16 23:25:57 INFO graph.GraphJobRunner: 26 vertices are loaded into master:61002
+15/04/16 23:25:58 INFO bsp.BSPTask: [BSPTask.java] Starting with bsp.bsp
+15/04/16 23:25:58 INFO graph.GraphJobRunner: Entered GraphRunner.bsp. Is recovery task? false
+15/04/16 23:25:58 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:25:58 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:25:58 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:25:58 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:25:59 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:25:59 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:25:59 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:25:59 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:25:59 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:27:09 INFO message.HamaMessageManagerImpl: bspPeer master:61002 received request for previous superstep data from bspPeer slave:61002
+15/04/16 23:27:10 INFO message.HamaMessageManagerImpl: bspPeer master:61002 received request for previous superstep data from bspPeer slave:61002
+15/04/16 23:27:10 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:27:10 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:27:10 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:27:10 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:27:10 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:27:10 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:27:10 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:27:10 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:27:10 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:27:10 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:28:29 INFO message.HamaMessageManagerImpl: bspPeer master:61002 received request for previous superstep data from bspPeer slave:61002
+15/04/16 23:28:30 INFO message.HamaMessageManagerImpl: bspPeer master:61002 received request for previous superstep data from bspPeer slave:61002
+15/04/16 23:28:30 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:28:30 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:28:30 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:28:30 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:28:30 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:28:30 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:28:30 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:28:30 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:28:30 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:28:30 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:29:49 INFO message.HamaMessageManagerImpl: bspPeer master:61002 received request for previous superstep data from bspPeer slave:61002
+15/04/16 23:29:50 INFO message.HamaMessageManagerImpl: bspPeer master:61002 received request for previous superstep data from bspPeer slave:61002
+15/04/16 23:29:50 INFO graph.GraphJobRunner: master:61002
+15/04/16 23:29:50 INFO bsp.BSPTask: [BSPTask.java] Done with bsp.bsp
+15/04/16 23:29:51 INFO ipc.Server: Stopping server on 61002
+15/04/16 23:29:51 INFO ipc.Server: IPC Server handler 0 on 61002: exiting
+15/04/16 23:29:51 INFO ipc.Server: IPC Server handler 1 on 61002: exiting
+15/04/16 23:29:51 INFO ipc.Server: IPC Server handler 2 on 61002: exiting
+15/04/16 23:29:51 INFO ipc.Server: IPC Server handler 3 on 61002: exiting
+15/04/16 23:29:51 INFO ipc.Server: IPC Server handler 4 on 61002: exiting
+15/04/16 23:29:51 INFO ipc.Server: Stopping IPC Server listener on 61002
+15/04/16 23:29:51 INFO ipc.Server: Stopping IPC Server Responder
+15/04/16 23:29:51 INFO Configuration.deprecation: mapred.cache.localFiles is deprecated. Instead, use mapreduce.job.cache.local.files

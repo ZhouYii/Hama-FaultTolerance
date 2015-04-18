@@ -18,6 +18,7 @@
 package org.apache.hama.bsp;
 
 import java.io.IOException;
+import java.util.List;
 
 import org.apache.hadoop.io.Writable;
 import org.apache.hama.Constants;
@@ -44,6 +45,8 @@ public interface BSPPeer<K1, V1, K2, V2, M extends Writable> extends Constants {
    */
   public void send(String peerName, M msg) throws IOException;
 
+  public List<M> retrieveStateHints();
+
   /**
    * @return A message from the peer's received messages queue (a FIFO).
    * @throws IOException
@@ -68,10 +71,25 @@ public interface BSPPeer<K1, V1, K2, V2, M extends Writable> extends Constants {
   public void sync() throws IOException, SyncException, InterruptedException;
 
   /**
-   * Called from a recovering peer. Fetches data from alive peer to reconstruct its state.
+   * Called from a recovering peer. Fetches previous superstep data from alive peer to reconstruct state.
    */
   public void getPrevSuperstepData();
   
+  /**
+   * Called from a recovering peer. Fetches current superstep data from alive peer to reconstruct state.
+   */
+  public void getThisSuperstepData();
+
+  /**
+   * Store log to zookeeper
+   */
+  public void persistLog(Writable[] writeArr) throws IOException;
+
+  /**
+   * Get persisted log from zookeeper
+   */
+  public Writable[] getLog() throws IOException;
+
   /**
    * Returns true if the peer is running a recovery task
    */

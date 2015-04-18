@@ -216,6 +216,14 @@ public final class BSPPeerImpl<K1, V1, K2, V2, M extends Writable> implements
 
         if (state == TaskStatus.State.RECOVERING) {
           this.recoveryTask = true;
+
+          // If this is recovery task, then onPeerInitialized fetched messages
+          // from prevSuperstep outgoingBundles on alive peer, and placed it in
+          // localQForNextIteration. We move it to localQ for computation in
+          // GraphJobRunner.redoSuperstep 
+          messenger.clearOutgoingMessages();
+          LOG.info("Recovery task received " + messenger.getNumCurrentMessages() + " messages for previous superstep from alive peers");
+
           if (newState == TaskStatus.State.RUNNING) {
             LOG.info("[BSPPeerImpl.java] Changing taskState from RECOVERING to RUNNING");
             phase = TaskStatus.Phase.STARTING;
@@ -287,6 +295,27 @@ public final class BSPPeerImpl<K1, V1, K2, V2, M extends Writable> implements
     return splitSize;
   }
 
+  public void persistLog(Writable[] writeArr) throws IOException{
+    if (this.faultToleranceService != null) {
+      try {
+        this.faultToleranceService.persist(writeArr);
+      } catch (Exception e) {
+        throw new IOException(e);
+      }
+    }
+  }
+
+  public Writable[] getLog() throws IOException{
+    if (this.faultToleranceService != null) {
+      try {
+        return this.faultToleranceService.get();
+      } catch (Exception e) {
+        throw new IOException(e);
+      }
+    }
+    return null;
+  }
+
   public boolean isRecoveryTask() {
     return recoveryTask;
   }
@@ -321,22 +350,49 @@ public final class BSPPeerImpl<K1, V1, K2, V2, M extends Writable> implements
     syncClient.leaveBarrier(taskId.getJobID(), taskId, superstep);
   }
 
-  // At this point, the restarting peer has re-done the compute part
   public void doFirstSyncAfterRecovery() throws SyncException {
-    //TODO: send out the messages from the current computation to the peers.
-    //Could reuse code from first part of sync(). At the receiving peer, handle
-    //duplicate messages (if any)
 
-    // TODO: this verifies if the peer crash happened between the enterBarrier() and
-    // leaveBarrier() calls. If yes, we have a problem because the alive peers
-    // have made a call to clearOutgoingMessages() which clears outgoing message
-    // bundles and their localQueues.
+    // At this point, the restarting peer has re-done the compute part.
+    // Send out the messages from the current computation to the peers. At the
+    // receiving peer, there might be duplications depending upon the stage at
+    // which the recovering peer had failed (no duplicates if failure in
+    // compute part)
+    Iterator<Entry<InetSocketAddress, BSPMessageBundle<M>>> it;
+    it = messenger.getOutgoingBundles();
+
+    while (it.hasNext()) {
+      Entry<InetSocketAddress, BSPMessageBundle<M>> entry = it.next();
+      final InetSocketAddress addr = entry.getKey();
+
+      final BSPMessageBundle<M> bundle = entry.getValue();
+
+      // remove this message during runtime to save a bit of memory
+      it.remove();
+      try {
+        messenger.transfer(addr, bundle);
+      } catch (Exception e) {
+        LOG.error("Error while sending messages", e);
+      }
+    }
+
+    getThisSuperstepData();
+
+    // This verifies if the peer crash happened between the enterBarrier() and
+    // leaveBarrier() calls or not. The two cases should be handled separately
+    // since in one case recomputation of superstep is required, and in the
+    // other it is not. 
     boolean check = syncClient.check(taskId, currentTaskStatus.getSuperstepCount());
+    LOG.info("Is check true? " + check);
     if(!check)
       enterBarrier();
 
+    // Clear outgoing queues.
+    messenger.clearOutgoingMessages();
+    LOG.info("Recovery task received " + messenger.getNumCurrentMessages() + " messages for current superstep from alive peers");
+
     leaveBarrier();
     incrementCounter(PeerCounter.SUPERSTEP_SUM, 1L);
+    LOG.info("Completed doFirstSyncAfterRecovery");
   }
 
   @SuppressWarnings("unchecked")
@@ -461,13 +517,26 @@ public final class BSPPeerImpl<K1, V1, K2, V2, M extends Writable> implements
 
   @Override
   public final void getPrevSuperstepData() {
-      for(String peerName : allPeers) {
+    // TODO: We should only contact the peers which reside on other groomservers
+    // since the other peers on my groomserver have failed too.
+      for(String peerName : getAllPeerNames()) {
           if(!peerName.equals(getPeerName())) {
-              messenger.getRecoveryData(peerName);
+              messenger.getRecoveryData(peerName, false);
           }   
       }   
   }
   
+  @Override
+  public final void getThisSuperstepData() {
+    // TODO: We should only contact the peers which reside on other groomservers
+    // since the other peers on my groomserver have failed too.
+      for(String peerName : getAllPeerNames()) {
+          if(!peerName.equals(getPeerName())) {
+              messenger.getRecoveryData(peerName, true);
+          }   
+      }   
+  }
+
   protected final void enterBarrier() throws SyncException {
     syncClient.enterBarrier(taskId.getJobID(), taskId,
         currentTaskStatus.getSuperstepCount());

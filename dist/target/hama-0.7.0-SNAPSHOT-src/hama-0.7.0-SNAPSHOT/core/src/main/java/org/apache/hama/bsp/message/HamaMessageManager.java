@@ -48,5 +48,5 @@ public interface HamaMessageManager<M extends Writable> extends
   
   public void put(byte[] compressedBundle) throws IOException;
 
-  public void fetch(String requestingPeerName) throws IOException;
+  public void fetch(String requestingPeerName, boolean current) throws IOException;
 }

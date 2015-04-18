@@ -1,0 +1,6 @@
+slave:61002 enter the enterbarrier: -1
+znode size 2
+Size:2 numBSP=2 ,Writing ready!
+slave:61002 enter the leavebarrier: -1
+znode size:2
+znode size:0

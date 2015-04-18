@@ -86,23 +86,22 @@ public class OutgoingVertexMessageManager<M extends Writable> extends
 
   @Override
   public BSPMessageBundle<GraphJobMessage> getBundleFromPrevSuperstep(InetSocketAddress peerAddress) {
-    // TODO: Need to return back data from storage HashMap as well. Could do it
-    // similar to getBundleIterator() function below.
     return prevOutgoingBundles.get(peerAddress);
   }
 
   @Override
   public void clear() {
 
-    // switch
     prevOutgoingBundles.clear();
-    temp = prevOutgoingBundles;
-    prevOutgoingBundles = outgoingBundles;
-    outgoingBundles = temp;
-    //outgoingBundles.clear();
-    
-    // TODO: switch for storage
 
+    // save previous superstep bundles
+    Iterator<Entry<InetSocketAddress, BSPMessageBundle<GraphJobMessage>>> it = getBundleIterator();
+    while(it.hasNext()) {
+      Entry<InetSocketAddress, BSPMessageBundle<GraphJobMessage>> entry = it.next();
+      prevOutgoingBundles.put(entry.getKey(), entry.getValue());
+    }
+
+    outgoingBundles.clear();
     storage.clear();
   }
 

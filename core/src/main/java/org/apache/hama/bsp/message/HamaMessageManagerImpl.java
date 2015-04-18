@@ -24,6 +24,9 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.BindException;
 import java.net.InetSocketAddress;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.logging.Log;
@@ -117,7 +120,7 @@ public final class HamaMessageManagerImpl<M extends Writable> extends
   }
 
   @Override
-  public void getRecoveryData(String peerName) {
+  public void getRecoveryData(String peerName, boolean current) {
     InetSocketAddress targetPeerAddress = BSPNetUtils.getAddress(peerName);
     
     try {
@@ -127,8 +130,9 @@ public final class HamaMessageManagerImpl<M extends Writable> extends
           + " to transfer messages to!");
       }
       else{
-        // make an RPC to alive peer with the requesting peer as argument 
-        bspPeerConnection.fetch(peer.getPeerName());
+        // make an RPC to alive peer with arguments: [requesting peer]
+        // [is data for previous/current superstep]
+        bspPeerConnection.fetch(peer.getPeerName(), current);
       }
     } catch (Exception e) {
       LOG.info("Could not recovery data from peer " + peerName);
@@ -136,29 +140,53 @@ public final class HamaMessageManagerImpl<M extends Writable> extends
     }
   }
 
-  @Override
-  public final void transfer(InetSocketAddress addr, BSPMessageBundle<M> bundle)
-      throws IOException {
-    HamaMessageManager<M> bspPeerConnection = this.getBSPPeerConnection(addr);
-    if (bspPeerConnection == null) {
-      throw new IllegalArgumentException("Can not find " + addr.toString()
-          + " to transfer messages to!");
-    } else {
-      if (conf.getBoolean(Constants.MESSENGER_RUNTIME_COMPRESSION, false)) {
-        ByteArrayOutputStream byteBuffer = new ByteArrayOutputStream();
-        DataOutputStream bufferDos = new DataOutputStream(byteBuffer);
-        bundle.write(bufferDos);
+    @Override
+    public final void transfer(InetSocketAddress addr, BSPMessageBundle<M> bundle)
+            throws IOException {
+        HamaMessageManager<M> bspPeerConnection = this.getBSPPeerConnection(addr);
+        if (bspPeerConnection == null) {
+            throw new IllegalArgumentException("Can not find " + addr.toString()
+                    + " to transfer messages to!");
+        } else {
+            if (conf.getBoolean(Constants.MESSENGER_RUNTIME_COMPRESSION, false)) {
+                ByteArrayOutputStream byteBuffer = new ByteArrayOutputStream();
+                DataOutputStream bufferDos = new DataOutputStream(byteBuffer);
+                bundle.write(bufferDos);
 
-        byte[] compressed = compressor.compress(byteBuffer.toByteArray());
-        peer.incrementCounter(BSPPeerImpl.PeerCounter.TOTAL_COMPRESSED_BYTES_TRANSFERED, compressed.length);
-        peer.incrementCounter(BSPPeerImpl.PeerCounter.TOTAL_DECOMPRESSED_BYTES, byteBuffer.size());
-        bspPeerConnection.put(compressed);
-      } else {
-        peer.incrementCounter(BSPPeerImpl.PeerCounter.TOTAL_MESSAGE_BYTES_TRANSFERED, bundle.getLength());
-        bspPeerConnection.put(bundle);
-      }
+                byte[] compressed = compressor.compress(byteBuffer.toByteArray());
+                peer.incrementCounter(BSPPeerImpl.PeerCounter.TOTAL_COMPRESSED_BYTES_TRANSFERED, compressed.length);
+                peer.incrementCounter(BSPPeerImpl.PeerCounter.TOTAL_DECOMPRESSED_BYTES, byteBuffer.size());
+                bspPeerConnection.put(compressed);
+            } else {
+                peer.incrementCounter(BSPPeerImpl.PeerCounter.TOTAL_MESSAGE_BYTES_TRANSFERED, bundle.getLength());
+                bspPeerConnection.put(bundle);
+            }
+        }
     }
-  }
+
+
+    public final void transfer_(InetSocketAddress addr, BSPMessageBundle<M> bundle)
+            throws IOException {
+        HamaMessageManager<M> bspPeerConnection = this.getBSPPeerConnection(addr);
+        if (bspPeerConnection == null) {
+            throw new IllegalArgumentException("Can not find " + addr.toString()
+                    + " to transfer messages to!");
+        } else {
+            if (conf.getBoolean(Constants.MESSENGER_RUNTIME_COMPRESSION, false)) {
+                ByteArrayOutputStream byteBuffer = new ByteArrayOutputStream();
+                DataOutputStream bufferDos = new DataOutputStream(byteBuffer);
+                bundle.write(bufferDos);
+
+                byte[] compressed = compressor.compress(byteBuffer.toByteArray());
+                peer.incrementCounter(BSPPeerImpl.PeerCounter.TOTAL_COMPRESSED_BYTES_TRANSFERED, compressed.length);
+                peer.incrementCounter(BSPPeerImpl.PeerCounter.TOTAL_DECOMPRESSED_BYTES, byteBuffer.size());
+                bspPeerConnection.put_(compressed);
+            } else {
+                peer.incrementCounter(BSPPeerImpl.PeerCounter.TOTAL_MESSAGE_BYTES_TRANSFERED, bundle.getLength());
+                bspPeerConnection.put_(bundle);
+            }
+        }
+    }
 
   /**
    * @param addr socket address to which BSP Peer Connection will be established
@@ -186,10 +214,14 @@ public final class HamaMessageManagerImpl<M extends Writable> extends
     loopBackMessage(msg);
   }
 
-  @Override
-  public final void put(BSPMessageBundle<M> bundle) throws IOException {
-    loopBackBundle(bundle);
-  }
+    @Override
+    public final void put(BSPMessageBundle<M> bundle) throws IOException {
+        loopBackBundle(bundle);
+    }
+
+    public final void put_(BSPMessageBundle<M> bundle) throws IOException {
+        loopBackBundle_(bundle);
+    }
 
   @Override
   public final void put(byte[] compressedBundle) throws IOException {
@@ -203,16 +235,51 @@ public final class HamaMessageManagerImpl<M extends Writable> extends
     loopBackBundle(bundle);
   }
 
-  @Override
-  public final void fetch(String requestingPeerName)
+    @Override
+    public void put_(byte[] compressedBundle) throws IOException {
+
+    }
+
+    @Override
+  public final void fetch(String requestingPeerName, boolean current)
           throws IOException {
       LOG.info("bspPeer " + peer.getPeerName() + " received request for previous superstep data from bspPeer " + requestingPeerName);
       InetSocketAddress requestingPeerAddress = BSPNetUtils.getAddress(requestingPeerName);
-      BSPMessageBundle<M> bundle = outgoingMessageManager.getBundleFromPrevSuperstep(requestingPeerAddress);
-      transfer(requestingPeerAddress, bundle);
+      BSPMessageBundle<M> bundle = null;
       
+      // if current == true, return messages for current superstep, else
+      // messages for previous superstep.
+      if(current) {
+        Iterator<Map.Entry<InetSocketAddress, BSPMessageBundle<M>>> it = outgoingMessageManager.getBundleIterator();
+        while(it.hasNext()) {
+          Map.Entry<InetSocketAddress, BSPMessageBundle<M>> entry = it.next();
+          if (entry.getKey().equals(requestingPeerAddress)) {
+            bundle = entry.getValue();
+            break;
+          }
+        }
+        transfer(requestingPeerAddress, bundle);
+        return;
+      }
+      else {
+        bundle = outgoingMessageManager.getBundleFromPrevSuperstep(requestingPeerAddress);
+      }
+
       // TODO: We also need to transfer some portion of the localQueue
-  }
+       List<M> stateMsgs = localQueue.getRelevantMessages(requestingPeerName);
+       if (bundle == null)
+           bundle = new BSPMessageBundle<M>();
+
+       for (M m : stateMsgs)
+            bundle.addMessage(m);
+
+
+       if(bundle == null)
+            LOG.info("Found no bundle for requesting peer: " + requestingPeerName + " at peer: " + peer.getPeerName());
+       else
+            transfer_(requestingPeerAddress, bundle);
+
+    }
 
   @Override
   public final long getProtocolVersion(String arg0, long arg1)

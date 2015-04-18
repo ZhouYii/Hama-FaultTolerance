@@ -77,7 +77,7 @@ public abstract class Vertex<V extends WritableComparable, E extends Writable, M
   @Override
   public void sendMessage(Edge<V, E> e, M msg) throws IOException {
     runner.getPeer().send(getDestinationPeerName(e),
-        new GraphJobMessage(e.getDestinationVertexID(), msg));
+        new GraphJobMessage(e.getDestinationVertexID(), msg, vertexID));
   }
 
   /**
@@ -112,7 +112,7 @@ public abstract class Vertex<V extends WritableComparable, E extends Writable, M
         runner.getPeer().getNumPeers());
     String destPeer = runner.getPeer().getAllPeerNames()[partition];
     runner.getPeer().send(destPeer,
-        new GraphJobMessage(destinationVertexID, msg));
+        new GraphJobMessage(destinationVertexID, msg, vertexID));
   }
 
   private void alterVertexCounter(int i) throws IOException {

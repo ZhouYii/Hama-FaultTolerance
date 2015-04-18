@@ -1,0 +1,89 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2015-04-16T14:21:41-05:00
+Notes: 3
+Binaries: 11
+Archives: 0
+Standards: 38
+
+Apache Licensed: 38
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  AL    bin/grooms.sh
+  AL    bin/hama
+  AL    bin/hama-config.sh
+  AL    bin/hama-daemon.sh
+  AL    bin/hama-daemons.sh
+  AL    bin/start-bspd.sh
+  AL    bin/stop-bspd.sh
+  AL    bin/zookeepers.sh
+  AL    conf/hama-default.xml
+  AL    conf/hama-env.sh
+  AL    conf/hama-site.xml
+  AL    conf/log4j.properties
+  AL    contrib/avro-rpc/src/main/java/org/apache/hama/avro/AvroBSPMessageBundle.java
+  AL    contrib/avro-rpc/src/main/java/org/apache/hama/avro/AvroMessageManagerImpl.java
+  AL    contrib/avro-rpc/src/main/java/org/apache/hama/avro/Sender.java
+  AL    contrib/avro-rpc/src/main/java/org/apache/hama/avro/TestAvroMessageManager.java
+  AL    contrib/monitor-plugin/jvm-metrics/pom.xml
+  AL    contrib/monitor-plugin/jvm-metrics/src/main/java/org/apache/hama/monitor/plugin/JvmTask.java
+  N     LICENSE.txt
+  N     NOTICE.txt
+  AL    pom.xml
+  N     README.txt
+  AL    src/assemble/bin.xml
+  AL    src/assemble/src.xml
+  AL    src/site/resources/css/site.css
+  AL    src/site/resources/doap_Hama.rdf
+  B     src/site/resources/images/apache-hama-white.png
+  B     src/site/resources/images/favicon.ico
+  B     src/site/resources/images/hama_art_arthur.png
+  B     src/site/resources/images/hama_art_arthur_300x220.png
+  B     src/site/resources/images/hama_kim.png
+  B     src/site/resources/images/hama_logo.png
+  B     src/site/resources/images/hama_paint_logo.png
+  B     src/site/resources/images/hama_paint_logo_120x120.png
+  B     src/site/resources/images/headerlogo.png
+  B     src/site/resources/images/headerlogo.xcf
+  B     src/site/resources/images/mahout_vs_hama.png
+  AL    src/site/site.xml
+  AL    src/site/xdoc/artwork.xml
+  AL    src/site/xdoc/developers.xml
+  AL    src/site/xdoc/downloads.xml
+  AL    src/site/xdoc/getting_started_with_hama.xml
+  AL    src/site/xdoc/hama_bsp_tutorial.xml
+  AL    src/site/xdoc/hama_graph_tutorial.xml
+  AL    src/site/xdoc/hama_on_clouds.xml
+  AL    src/site/xdoc/index.xml
+  AL    src/site/xdoc/irc-channel.xml
+  AL    src/site/xdoc/issue-tracking.xml
+  AL    src/site/xdoc/mail-lists.xml
+  AL    src/site/xdoc/privacy_policy.xml
+  AL    src/site/xdoc/run_examples.xml
+  AL    src/site/xdoc/team-list.xml
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

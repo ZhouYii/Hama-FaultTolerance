@@ -20,6 +20,7 @@ package org.apache.hama.bsp.message;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map.Entry;
 
 import org.apache.hadoop.io.Writable;
@@ -75,7 +76,7 @@ public interface MessageManager<M extends Writable> {
   /**
    * Asks alive bspPeers to send data for restoration after failure.
    */
-  public void getRecoveryData (String peerName);
+  public void getRecoveryData (String peerName, boolean current);
   
   /**
    * Returns an bundle of messages grouped by peer.
@@ -127,4 +128,8 @@ public interface MessageManager<M extends Writable> {
    * on.
    */
   public InetSocketAddress getListenerAddress();
+
+
+
+    public List<M> retrieveStateHints();
 }

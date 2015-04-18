@@ -75,7 +75,7 @@ public interface MessageManager<M extends Writable> {
   /**
    * Asks alive bspPeers to send data for restoration after failure.
    */
-  public void getRecoveryData (String peerName);
+  public void getRecoveryData (String peerName, boolean current);
   
   /**
    * Returns an bundle of messages grouped by peer.

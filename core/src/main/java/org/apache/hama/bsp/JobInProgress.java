@@ -265,6 +265,7 @@ public class JobInProgress {
       numBSPTasks = splits.length;
       LOG.info("num BSPTasks: " + numBSPTasks);
 
+      // pagerank uses this path
       // adjust number of BSP tasks to actual number of splits
       this.tasks = new TaskInProgress[numBSPTasks];
       for (int i = 0; i < numBSPTasks; i++) {
@@ -367,7 +368,9 @@ public class JobInProgress {
     Task result = null;
     String[] selectedGrooms = taskAllocationStrategy.selectGrooms(
         groomStatuses, taskCountInGroomMap, resources, task);
-    System.out.println("Size of selectedGrooms set is " + selectedGrooms.length);
+
+    if(selectedGrooms != null)
+      System.out.println("Size of selectedGrooms set is " + selectedGrooms.length);
     
     // printing out the groom map.
     for(String l : groomStatuses.keySet())
@@ -704,6 +707,7 @@ public class JobInProgress {
     recoveryTasks.toArray(failedTasksInProgress);
 
     recoveryTasks.clear();
+    
     return failedTasksInProgress;
   }
 

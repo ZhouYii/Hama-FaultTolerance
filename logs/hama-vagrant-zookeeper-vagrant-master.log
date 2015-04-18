@@ -1,1 +1,7 @@
-2015-04-15 17:13:07,314 ERROR org.apache.zookeeper.server.quorum.QuorumPeerConfig: Invalid configuration, only one server specified (ignoring)
+2015-04-18 02:30:46,379 ERROR org.apache.zookeeper.server.quorum.QuorumPeerConfig: Invalid configuration, only one server specified (ignoring)
+2015-04-18 02:33:24,941 ERROR org.apache.zookeeper.server.quorum.QuorumPeerConfig: Invalid configuration, only one server specified (ignoring)
+2015-04-18 05:26:26,917 ERROR org.apache.zookeeper.server.quorum.QuorumPeerConfig: Invalid configuration, only one server specified (ignoring)
+2015-04-18 05:34:51,891 ERROR org.apache.zookeeper.server.quorum.QuorumPeerConfig: Invalid configuration, only one server specified (ignoring)
+2015-04-18 05:47:01,032 ERROR org.apache.zookeeper.server.quorum.QuorumPeerConfig: Invalid configuration, only one server specified (ignoring)
+2015-04-18 05:53:46,735 ERROR org.apache.zookeeper.server.quorum.QuorumPeerConfig: Invalid configuration, only one server specified (ignoring)
+2015-04-18 05:56:30,562 ERROR org.apache.zookeeper.server.quorum.QuorumPeerConfig: Invalid configuration, only one server specified (ignoring)

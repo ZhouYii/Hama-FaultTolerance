@@ -1,0 +1,60 @@
+slave:61002 enter the enterbarrier: 20
+znode size 2
+Size:2 numBSP=2 ,Writing ready!
+slave:61002 enter the leavebarrier: 20
+znode size:2
+znode size:0
+slave:61002 enter the enterbarrier: 21
+znode size 2
+Size:2 numBSP=2 ,Writing ready!
+slave:61002 enter the leavebarrier: 21
+znode size:2
+znode size:0
+slave:61002 enter the enterbarrier: 22
+znode size 2
+Size:2 numBSP=2 ,Writing ready!
+slave:61002 enter the leavebarrier: 22
+znode size:2
+znode size:0
+slave:61002 enter the enterbarrier: 23
+znode size 2
+Size:2 numBSP=2 ,Writing ready!
+slave:61002 enter the leavebarrier: 23
+znode size:2
+znode size:0
+slave:61002 enter the enterbarrier: 24
+znode size 2
+Size:2 numBSP=2 ,Writing ready!
+slave:61002 enter the leavebarrier: 24
+znode size:2
+znode size:0
+slave:61002 enter the enterbarrier: 25
+znode size 2
+Size:2 numBSP=2 ,Writing ready!
+slave:61002 enter the leavebarrier: 25
+znode size:2
+znode size:0
+slave:61002 enter the enterbarrier: 26
+znode size 2
+Size:2 numBSP=2 ,Writing ready!
+slave:61002 enter the leavebarrier: 26
+znode size:2
+znode size:0
+slave:61002 enter the enterbarrier: 27
+znode size 2
+Size:2 numBSP=2 ,Writing ready!
+slave:61002 enter the leavebarrier: 27
+znode size:2
+znode size:0
+slave:61002 enter the enterbarrier: 28
+znode size 2
+Size:2 numBSP=2 ,Writing ready!
+slave:61002 enter the leavebarrier: 28
+znode size:2
+znode size:0
+slave:61002 enter the enterbarrier: 29
+znode size 2
+Size:2 numBSP=2 ,Writing ready!
+slave:61002 enter the leavebarrier: 29
+znode size:2
+znode size:0

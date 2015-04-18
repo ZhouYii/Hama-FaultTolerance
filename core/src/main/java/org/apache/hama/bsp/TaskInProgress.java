@@ -263,7 +263,8 @@ public class TaskInProgress {
    * @return true if the task can start.
    */
   public boolean canStartTask() {
-    return (nextTaskId < (MAX_TASK_EXECS + maxTaskAttempts));
+    return true;
+    //return (nextTaskId < (MAX_TASK_EXECS + maxTaskAttempts));
   }
 
   private TaskAttemptID computeTaskId() {
@@ -272,8 +273,7 @@ public class TaskInProgress {
       int attemptId = job.getNumRestarts() * NUM_ATTEMPTS_PER_RESTART
           + nextTaskId;
       taskid = new TaskAttemptID(id, attemptId);
-      // Let the recovery task come up with the exact same id
-      //++nextTaskId;
+      ++nextTaskId;
     } else {
       LOG.warn("Exceeded limit of " + (MAX_TASK_EXECS + maxTaskAttempts)
           + " attempts for the tip '" + getTIPId() + "'");

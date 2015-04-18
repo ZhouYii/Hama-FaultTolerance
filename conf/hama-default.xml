@@ -24,7 +24,7 @@
 <configuration>
   <property>
     <name>bsp.master.address</name>
-    <value>local</value>
+    <value>master</value>
     <description>The address of the bsp master server. Either the
     literal string "local" or a host[:port] (where host is a name or
     IP address) for distributed mode.
@@ -149,7 +149,7 @@
   </property>
   <property>
     <name>bsp.tasks.maximum</name>
-    <value>3</value>
+    <value>2</value>
     <description>The maximum number of BSP tasks that will be run simultaneously 
     by a groom server.</description>
   </property>
@@ -161,6 +161,16 @@
     </description>
   </property>
   <property>
+    <name>bsp.monitor.fd.udp_host</name>
+    <value>master</value>
+    <description>Host for failure detector monitoring. This runs the UDP supervisor</description>
+  </property>
+  <property>
+    <name>bsp.monitor.fd.enabled</name>
+    <value>true</value>
+    <description>Starts the UDP sensors. What is the property below this for??</description>
+  </property>
+  <property>
     <name>bsp.ft.enabled</name>
     <value>true</value>
     <description>Enable Fault Tolerance in BSP Task execution.</description>
@@ -169,16 +179,6 @@
     <name>bsp.checkpoint.enabled</name>
     <value>false</value>
     <description>Enable Hama to checkpoint the messages transferred among BSP tasks during the BSP synchronization period.</description>
-</property>
-  <property>
-     <name>bsp.monitor.fd.udp_host</name>
-     <value>master</value>
-     <description>Host for failure detector monitoring. This runs the UDP supervisor</description>
-   </property>
-   <property>
-     <name>bsp.monitor.fd.enabled</name>
-     <value>true</value>
-     <description>Starts the UDP sensors. What is the property below this for??</description>
   </property>
   <property>
     <name>bsp.checkpoint.interval</name>
