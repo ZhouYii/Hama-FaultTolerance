@@ -1,1 +1,0 @@
-/usr/bin/c++    -g -Wall -O2 -D_REENTRANT -D_GNU_SOURCE -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/piestimator.dir/main/native/examples/impl/piestimator.cc.o  -o examples/piestimator  libhadooputils.a 

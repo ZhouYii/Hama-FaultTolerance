@@ -1,2 +1,0 @@
-/usr/bin/ar cq libDenseDoubleVector.a  CMakeFiles/DenseDoubleVector.dir/main/native/examples/impl/DenseDoubleVector.cc.o
-/usr/bin/ranlib libDenseDoubleVector.a

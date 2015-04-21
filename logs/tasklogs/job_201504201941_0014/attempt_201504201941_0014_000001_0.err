@@ -1,0 +1,17 @@
+slave:61001 enter the enterbarrier: -1
+znode size 1
+slave:61001 enter the leavebarrier: -1
+znode size:2
+znode size:0
+slave:61001 enter the enterbarrier: 0
+znode size 2
+Size:2 numBSP=2 ,Writing ready!
+slave:61001 enter the leavebarrier: 0
+znode size:2
+znode size:0
+slave:61001 enter the enterbarrier: 1
+znode size 2
+Size:2 numBSP=2 ,Writing ready!
+slave:61001 enter the leavebarrier: 1
+znode size:2
+znode size:0

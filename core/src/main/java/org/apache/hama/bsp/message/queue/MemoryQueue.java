@@ -51,6 +51,11 @@ public final class MemoryQueue<M extends Writable> implements
     }
 
     @Override
+    public List<M> getRelevantMessages(String peerName) {
+        return null;
+    }
+
+    @Override
     public void addBundleRecovery(BSPMessageBundle<M> bundle) {
 
     }

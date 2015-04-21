@@ -1,0 +1,882 @@
+2015-04-20 17:30:16,590 INFO org.apache.hama.GroomServerRunner: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting GroomServer
+STARTUP_MSG:   host = vagrant-master/172.28.128.6
+STARTUP_MSG:   args = [master]
+STARTUP_MSG:   version = 2.6.0
+STARTUP_MSG:   classpath = /vagrant/hama/bin/../conf:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/tools.jar:/vagrant/hama/bin/../core/target/classes:/vagrant/hama/bin/../commons/target/classes:/vagrant/hama/bin/../graph/target/classes:/vagrant/hama/bin/../ml/target/classes:/vagrant/hama/bin/../mesos/target/classes:/vagrant/hama/bin/../hama-**.jar:/vagrant/hama/bin/../lib/activation-1.1.jar:/vagrant/hama/bin/../lib/ant-1.6.5.jar:/vagrant/hama/bin/../lib/ant-1.7.1.jar:/vagrant/hama/bin/../lib/ant-launcher-1.7.1.jar:/vagrant/hama/bin/../lib/aopalliance-1.0.jar:/vagrant/hama/bin/../lib/apacheds-i18n-2.0.0-M15.jar:/vagrant/hama/bin/../lib/apacheds-kerberos-codec-2.0.0-M15.jar:/vagrant/hama/bin/../lib/api-asn1-api-1.0.0-M20.jar:/vagrant/hama/bin/../lib/api-util-1.0.0-M20.jar:/vagrant/hama/bin/../lib/asm-3.1.jar:/vagrant/hama/bin/../lib/asm-4.0.jar:/vagrant/hama/bin/../lib/avro-1.5.3.jar:/vagrant/hama/bin/../lib/commons-beanutils-1.8.3.jar:/vagrant/hama/bin/../lib/commons-cli-1.2.jar:/vagrant/hama/bin/../lib/commons-codec-1.4.jar:/vagrant/hama/bin/../lib/commons-collections-3.2.1.jar:/vagrant/hama/bin/../lib/commons-compress-1.9.jar:/vagrant/hama/bin/../lib/commons-configuration-1.7.jar:/vagrant/hama/bin/../lib/commons-daemon-1.0.13.jar:/vagrant/hama/bin/../lib/commons-digester-1.8.1.jar:/vagrant/hama/bin/../lib/commons-el-1.0.jar:/vagrant/hama/bin/../lib/commons-httpclient-3.0.1.jar:/vagrant/hama/bin/../lib/commons-io-2.4.jar:/vagrant/hama/bin/../lib/commons-lang-2.6.jar:/vagrant/hama/bin/../lib/commons-logging-1.1.1.jar:/vagrant/hama/bin/../lib/commons-math3-3.0.jar:/vagrant/hama/bin/../lib/commons-net-3.1.jar:/vagrant/hama/bin/../lib/core-3.1.1.jar:/vagrant/hama/bin/../lib/curator-client-2.6.0.jar:/vagrant/hama/bin/../lib/curator-framework-2.6.0.jar:/vagrant/hama/bin/../lib/curator-recipes-2.6.0.jar:/vagrant/hama/bin/../lib/directmemory-cache-0.2.jar:/vagrant/hama/bin/../lib/directmemory-kryo-0.2.jar:/vagrant/hama/bin/../lib/geronimo-annotation_1.0_spec-1.0.jar:/vagrant/hama/bin/../lib/geronimo-spec-jta-1.0.1B-rc4.jar:/vagrant/hama/bin/../lib/gson-2.2.4.jar:/vagrant/hama/bin/../lib/guava-13.0.1.jar:/vagrant/hama/bin/../lib/guice-3.0.jar:/vagrant/hama/bin/../lib/guice-servlet-3.0.jar:/vagrant/hama/bin/../lib/hadoop-annotations-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-auth-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-common-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0-tests.jar:/vagrant/hama/bin/../lib/hadoop-mapreduce-client-core-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-api-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-common-2.6.0.jar:/vagrant/hama/bin/../lib/hama-commons-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/hama-core-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/htrace-core-3.0.4.jar:/vagrant/hama/bin/../lib/httpclient-4.2.5.jar:/vagrant/hama/bin/../lib/httpcore-4.1.2.jar:/vagrant/hama/bin/../lib/jackson-core-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-jaxrs-1.8.3.jar:/vagrant/hama/bin/../lib/jackson-mapper-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-xc-1.8.3.jar:/vagrant/hama/bin/../lib/jasper-compiler-5.5.23.jar:/vagrant/hama/bin/../lib/jasper-runtime-5.5.23.jar:/vagrant/hama/bin/../lib/javax.inject-1.jar:/vagrant/hama/bin/../lib/java-xmlbuilder-0.4.jar:/vagrant/hama/bin/../lib/jaxb-api-2.2.2.jar:/vagrant/hama/bin/../lib/jaxb-impl-2.2.3-1.jar:/vagrant/hama/bin/../lib/jdk.tools-1.7.jar:/vagrant/hama/bin/../lib/jersey-client-1.9.jar:/vagrant/hama/bin/../lib/jersey-core-1.9.jar:/vagrant/hama/bin/../lib/jersey-guice-1.9.jar:/vagrant/hama/bin/../lib/jersey-json-1.9.jar:/vagrant/hama/bin/../lib/jersey-server-1.9.jar:/vagrant/hama/bin/../lib/jets3t-0.9.0.jar:/vagrant/hama/bin/../lib/jettison-1.1.jar:/vagrant/hama/bin/../lib/jetty-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-annotations-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-plus-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-util-6.1.14.jar:/vagrant/hama/bin/../lib/jline-0.9.94.jar:/vagrant/hama/bin/../lib/jsch-0.1.42.jar:/vagrant/hama/bin/../lib/jsp-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1.jar:/vagrant/hama/bin/../lib/jsr305-1.3.9.jar:/vagrant/hama/bin/../lib/junit-4.8.1.jar:/vagrant/hama/bin/../lib/kryo-2.20.jar:/vagrant/hama/bin/../lib/log4j-1.2.16.jar:/vagrant/hama/bin/../lib/mesos-0.15.0.jar:/vagrant/hama/bin/../lib/minlog-1.2.jar:/vagrant/hama/bin/../lib/netty-3.2.2.Final.jar:/vagrant/hama/bin/../lib/netty-3.6.2.Final.jar:/vagrant/hama/bin/../lib/netty-all-4.0.21.Final.jar:/vagrant/hama/bin/../lib/objenesis-1.2.jar:/vagrant/hama/bin/../lib/paranamer-2.3.jar:/vagrant/hama/bin/../lib/protobuf-java-2.5.0.jar:/vagrant/hama/bin/../lib/reflectasm-1.07-shaded.jar:/vagrant/hama/bin/../lib/servlet-api-2.5-6.1.14.jar:/vagrant/hama/bin/../lib/servlet-api-2.5.jar:/vagrant/hama/bin/../lib/servlet-api-6.0.32.jar:/vagrant/hama/bin/../lib/slf4j-api-1.5.8.jar:/vagrant/hama/bin/../lib/slf4j-log4j12-1.5.8.jar:/vagrant/hama/bin/../lib/snappy-java-1.0.5.jar:/vagrant/hama/bin/../lib/stax-api-1.0-2.jar:/vagrant/hama/bin/../lib/xercesImpl-2.9.1.jar:/vagrant/hama/bin/../lib/xml-apis-1.3.04.jar:/vagrant/hama/bin/../lib/xmlenc-0.52.jar:/vagrant/hama/bin/../lib/zookeeper-3.4.5.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1 (HEAD, tag: release-2.6.0-rc1, origin/branch-2.6.0, branch-2.6.0); compiled by 'acmurthy' on 2014-11-13T22:35Z
+STARTUP_MSG:   java = 1.7.0_75
+************************************************************/
+2015-04-20 17:30:16,616 INFO org.apache.hama.GroomServerRunner: registered UNIX signal handlers for [TERM, HUP, INT]
+2015-04-20 17:30:16,890 INFO org.apache.hama.bsp.GroomServer: groom start
+2015-04-20 17:30:17,339 INFO org.apache.hama.bsp.GroomServer: /tmp/hadoop-vagrant/bsp/local
+2015-04-20 17:30:18,134 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-20 17:30:18,942 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50000
+2015-04-20 17:30:18,948 INFO org.apache.hama.ipc.Server: IPC Server listener on 50000: starting
+2015-04-20 17:30:18,947 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-20 17:30:18,959 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50000: starting
+2015-04-20 17:30:19,169 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-04-20 17:30:19,451 INFO org.apache.hama.bsp.GroomServer: starting webserver: master
+2015-04-20 17:30:19,451 INFO org.apache.hama.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 40015
+2015-04-20 17:30:19,451 INFO org.apache.hama.http.HttpServer: listener.getLocalPort() returned 40015 webServer.getConnectors()[0].getLocalPort() returned 40015
+2015-04-20 17:30:19,451 INFO org.apache.hama.http.HttpServer: Jetty bound to port 40015
+2015-04-20 17:30:19,451 INFO org.mortbay.log: jetty-6.1.14
+2015-04-20 17:30:20,704 INFO org.mortbay.log: Started SelectChannelConnector@master:40015
+2015-04-20 17:30:20,716 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50001
+2015-04-20 17:30:20,716 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-20 17:30:20,717 INFO org.apache.hama.ipc.Server: IPC Server listener on 50001: starting
+2015-04-20 17:30:20,717 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50001: starting
+2015-04-20 17:30:20,717 INFO org.apache.hama.ipc.Server: IPC Server handler 2 on 50001: starting
+2015-04-20 17:30:20,724 INFO org.apache.hama.ipc.Server: IPC Server handler 3 on 50001: starting
+2015-04-20 17:30:20,724 INFO org.apache.hama.ipc.Server: IPC Server handler 1 on 50001: starting
+2015-04-20 17:30:20,724 INFO org.apache.hama.bsp.GroomServer: TaskReportServer up at: localhost/127.0.0.1:50001
+2015-04-20 17:30:20,725 INFO org.apache.hama.ipc.Server: IPC Server handler 4 on 50001: starting
+2015-04-20 17:30:20,725 INFO org.apache.hama.bsp.GroomServer: Starting groom: master:50000
+2015-04-20 17:30:31,479 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 17:30:32,931 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201730_0002_000000_0' has started.
+2015-04-20 17:30:42,617 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201730_0002_000000_0 is done.
+2015-04-20 17:30:46,875 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 17:30:47,246 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201730_0001_000000_0' has started.
+2015-04-20 17:32:04,985 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201730_0001_000000_0 is done.
+2015-04-20 17:44:07,976 ERROR org.apache.hama.GroomServerRunner: RECEIVED SIGNAL 15: SIGTERM
+2015-04-20 17:44:07,998 INFO org.apache.hama.GroomServerRunner: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down GroomServer at vagrant-master/172.28.128.6
+************************************************************/
+2015-04-20 17:44:18,098 INFO org.apache.hama.GroomServerRunner: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting GroomServer
+STARTUP_MSG:   host = vagrant-master/172.28.128.6
+STARTUP_MSG:   args = [master]
+STARTUP_MSG:   version = 2.6.0
+STARTUP_MSG:   classpath = /vagrant/hama/bin/../conf:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/tools.jar:/vagrant/hama/bin/../core/target/classes:/vagrant/hama/bin/../commons/target/classes:/vagrant/hama/bin/../graph/target/classes:/vagrant/hama/bin/../ml/target/classes:/vagrant/hama/bin/../mesos/target/classes:/vagrant/hama/bin/../hama-**.jar:/vagrant/hama/bin/../lib/activation-1.1.jar:/vagrant/hama/bin/../lib/ant-1.6.5.jar:/vagrant/hama/bin/../lib/ant-1.7.1.jar:/vagrant/hama/bin/../lib/ant-launcher-1.7.1.jar:/vagrant/hama/bin/../lib/aopalliance-1.0.jar:/vagrant/hama/bin/../lib/apacheds-i18n-2.0.0-M15.jar:/vagrant/hama/bin/../lib/apacheds-kerberos-codec-2.0.0-M15.jar:/vagrant/hama/bin/../lib/api-asn1-api-1.0.0-M20.jar:/vagrant/hama/bin/../lib/api-util-1.0.0-M20.jar:/vagrant/hama/bin/../lib/asm-3.1.jar:/vagrant/hama/bin/../lib/asm-4.0.jar:/vagrant/hama/bin/../lib/avro-1.5.3.jar:/vagrant/hama/bin/../lib/commons-beanutils-1.8.3.jar:/vagrant/hama/bin/../lib/commons-cli-1.2.jar:/vagrant/hama/bin/../lib/commons-codec-1.4.jar:/vagrant/hama/bin/../lib/commons-collections-3.2.1.jar:/vagrant/hama/bin/../lib/commons-compress-1.9.jar:/vagrant/hama/bin/../lib/commons-configuration-1.7.jar:/vagrant/hama/bin/../lib/commons-daemon-1.0.13.jar:/vagrant/hama/bin/../lib/commons-digester-1.8.1.jar:/vagrant/hama/bin/../lib/commons-el-1.0.jar:/vagrant/hama/bin/../lib/commons-httpclient-3.0.1.jar:/vagrant/hama/bin/../lib/commons-io-2.4.jar:/vagrant/hama/bin/../lib/commons-lang-2.6.jar:/vagrant/hama/bin/../lib/commons-logging-1.1.1.jar:/vagrant/hama/bin/../lib/commons-math3-3.0.jar:/vagrant/hama/bin/../lib/commons-net-3.1.jar:/vagrant/hama/bin/../lib/core-3.1.1.jar:/vagrant/hama/bin/../lib/curator-client-2.6.0.jar:/vagrant/hama/bin/../lib/curator-framework-2.6.0.jar:/vagrant/hama/bin/../lib/curator-recipes-2.6.0.jar:/vagrant/hama/bin/../lib/directmemory-cache-0.2.jar:/vagrant/hama/bin/../lib/directmemory-kryo-0.2.jar:/vagrant/hama/bin/../lib/geronimo-annotation_1.0_spec-1.0.jar:/vagrant/hama/bin/../lib/geronimo-spec-jta-1.0.1B-rc4.jar:/vagrant/hama/bin/../lib/gson-2.2.4.jar:/vagrant/hama/bin/../lib/guava-13.0.1.jar:/vagrant/hama/bin/../lib/guice-3.0.jar:/vagrant/hama/bin/../lib/guice-servlet-3.0.jar:/vagrant/hama/bin/../lib/hadoop-annotations-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-auth-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-common-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0-tests.jar:/vagrant/hama/bin/../lib/hadoop-mapreduce-client-core-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-api-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-common-2.6.0.jar:/vagrant/hama/bin/../lib/hama-commons-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/hama-core-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/htrace-core-3.0.4.jar:/vagrant/hama/bin/../lib/httpclient-4.2.5.jar:/vagrant/hama/bin/../lib/httpcore-4.1.2.jar:/vagrant/hama/bin/../lib/jackson-core-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-jaxrs-1.8.3.jar:/vagrant/hama/bin/../lib/jackson-mapper-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-xc-1.8.3.jar:/vagrant/hama/bin/../lib/jasper-compiler-5.5.23.jar:/vagrant/hama/bin/../lib/jasper-runtime-5.5.23.jar:/vagrant/hama/bin/../lib/javax.inject-1.jar:/vagrant/hama/bin/../lib/java-xmlbuilder-0.4.jar:/vagrant/hama/bin/../lib/jaxb-api-2.2.2.jar:/vagrant/hama/bin/../lib/jaxb-impl-2.2.3-1.jar:/vagrant/hama/bin/../lib/jdk.tools-1.7.jar:/vagrant/hama/bin/../lib/jersey-client-1.9.jar:/vagrant/hama/bin/../lib/jersey-core-1.9.jar:/vagrant/hama/bin/../lib/jersey-guice-1.9.jar:/vagrant/hama/bin/../lib/jersey-json-1.9.jar:/vagrant/hama/bin/../lib/jersey-server-1.9.jar:/vagrant/hama/bin/../lib/jets3t-0.9.0.jar:/vagrant/hama/bin/../lib/jettison-1.1.jar:/vagrant/hama/bin/../lib/jetty-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-annotations-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-plus-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-util-6.1.14.jar:/vagrant/hama/bin/../lib/jline-0.9.94.jar:/vagrant/hama/bin/../lib/jsch-0.1.42.jar:/vagrant/hama/bin/../lib/jsp-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1.jar:/vagrant/hama/bin/../lib/jsr305-1.3.9.jar:/vagrant/hama/bin/../lib/junit-4.8.1.jar:/vagrant/hama/bin/../lib/kryo-2.20.jar:/vagrant/hama/bin/../lib/log4j-1.2.16.jar:/vagrant/hama/bin/../lib/mesos-0.15.0.jar:/vagrant/hama/bin/../lib/minlog-1.2.jar:/vagrant/hama/bin/../lib/netty-3.2.2.Final.jar:/vagrant/hama/bin/../lib/netty-3.6.2.Final.jar:/vagrant/hama/bin/../lib/netty-all-4.0.21.Final.jar:/vagrant/hama/bin/../lib/objenesis-1.2.jar:/vagrant/hama/bin/../lib/paranamer-2.3.jar:/vagrant/hama/bin/../lib/protobuf-java-2.5.0.jar:/vagrant/hama/bin/../lib/reflectasm-1.07-shaded.jar:/vagrant/hama/bin/../lib/servlet-api-2.5-6.1.14.jar:/vagrant/hama/bin/../lib/servlet-api-2.5.jar:/vagrant/hama/bin/../lib/servlet-api-6.0.32.jar:/vagrant/hama/bin/../lib/slf4j-api-1.5.8.jar:/vagrant/hama/bin/../lib/slf4j-log4j12-1.5.8.jar:/vagrant/hama/bin/../lib/snappy-java-1.0.5.jar:/vagrant/hama/bin/../lib/stax-api-1.0-2.jar:/vagrant/hama/bin/../lib/xercesImpl-2.9.1.jar:/vagrant/hama/bin/../lib/xml-apis-1.3.04.jar:/vagrant/hama/bin/../lib/xmlenc-0.52.jar:/vagrant/hama/bin/../lib/zookeeper-3.4.5.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1 (HEAD, tag: release-2.6.0-rc1, origin/branch-2.6.0, branch-2.6.0); compiled by 'acmurthy' on 2014-11-13T22:35Z
+STARTUP_MSG:   java = 1.7.0_75
+************************************************************/
+2015-04-20 17:44:18,125 INFO org.apache.hama.GroomServerRunner: registered UNIX signal handlers for [TERM, HUP, INT]
+2015-04-20 17:44:18,367 INFO org.apache.hama.bsp.GroomServer: groom start
+2015-04-20 17:44:18,869 INFO org.apache.hama.bsp.GroomServer: /tmp/hadoop-vagrant/bsp/local
+2015-04-20 17:44:19,782 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-20 17:44:20,652 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50000
+2015-04-20 17:44:20,659 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-20 17:44:20,661 INFO org.apache.hama.ipc.Server: IPC Server listener on 50000: starting
+2015-04-20 17:44:20,666 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50000: starting
+2015-04-20 17:44:20,910 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-04-20 17:44:21,207 INFO org.apache.hama.bsp.GroomServer: starting webserver: master
+2015-04-20 17:44:21,207 INFO org.apache.hama.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 40015
+2015-04-20 17:44:21,208 INFO org.apache.hama.http.HttpServer: listener.getLocalPort() returned 40015 webServer.getConnectors()[0].getLocalPort() returned 40015
+2015-04-20 17:44:21,208 INFO org.apache.hama.http.HttpServer: Jetty bound to port 40015
+2015-04-20 17:44:21,208 INFO org.mortbay.log: jetty-6.1.14
+2015-04-20 17:44:22,485 INFO org.mortbay.log: Started SelectChannelConnector@master:40015
+2015-04-20 17:44:22,496 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50001
+2015-04-20 17:44:22,496 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-20 17:44:22,501 INFO org.apache.hama.ipc.Server: IPC Server listener on 50001: starting
+2015-04-20 17:44:22,501 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50001: starting
+2015-04-20 17:44:22,501 INFO org.apache.hama.ipc.Server: IPC Server handler 1 on 50001: starting
+2015-04-20 17:44:22,502 INFO org.apache.hama.ipc.Server: IPC Server handler 2 on 50001: starting
+2015-04-20 17:44:22,502 INFO org.apache.hama.ipc.Server: IPC Server handler 3 on 50001: starting
+2015-04-20 17:44:22,502 INFO org.apache.hama.bsp.GroomServer: TaskReportServer up at: localhost/127.0.0.1:50001
+2015-04-20 17:44:22,507 INFO org.apache.hama.ipc.Server: IPC Server handler 4 on 50001: starting
+2015-04-20 17:44:22,507 INFO org.apache.hama.bsp.GroomServer: Starting groom: master:50000
+2015-04-20 17:44:32,404 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 17:44:34,064 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201744_0002_000000_0' has started.
+2015-04-20 17:44:44,239 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201744_0002_000000_0 is done.
+2015-04-20 17:44:47,659 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 17:44:48,049 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201744_0001_000000_0' has started.
+2015-04-20 17:48:49,835 ERROR org.apache.hama.GroomServerRunner: RECEIVED SIGNAL 15: SIGTERM
+2015-04-20 17:48:49,859 INFO org.apache.hama.GroomServerRunner: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down GroomServer at vagrant-master/172.28.128.6
+************************************************************/
+2015-04-20 17:49:01,104 INFO org.apache.hama.GroomServerRunner: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting GroomServer
+STARTUP_MSG:   host = vagrant-master/172.28.128.6
+STARTUP_MSG:   args = [master]
+STARTUP_MSG:   version = 2.6.0
+STARTUP_MSG:   classpath = /vagrant/hama/bin/../conf:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/tools.jar:/vagrant/hama/bin/../core/target/classes:/vagrant/hama/bin/../commons/target/classes:/vagrant/hama/bin/../graph/target/classes:/vagrant/hama/bin/../ml/target/classes:/vagrant/hama/bin/../mesos/target/classes:/vagrant/hama/bin/../hama-**.jar:/vagrant/hama/bin/../lib/activation-1.1.jar:/vagrant/hama/bin/../lib/ant-1.6.5.jar:/vagrant/hama/bin/../lib/ant-1.7.1.jar:/vagrant/hama/bin/../lib/ant-launcher-1.7.1.jar:/vagrant/hama/bin/../lib/aopalliance-1.0.jar:/vagrant/hama/bin/../lib/apacheds-i18n-2.0.0-M15.jar:/vagrant/hama/bin/../lib/apacheds-kerberos-codec-2.0.0-M15.jar:/vagrant/hama/bin/../lib/api-asn1-api-1.0.0-M20.jar:/vagrant/hama/bin/../lib/api-util-1.0.0-M20.jar:/vagrant/hama/bin/../lib/asm-3.1.jar:/vagrant/hama/bin/../lib/asm-4.0.jar:/vagrant/hama/bin/../lib/avro-1.5.3.jar:/vagrant/hama/bin/../lib/commons-beanutils-1.8.3.jar:/vagrant/hama/bin/../lib/commons-cli-1.2.jar:/vagrant/hama/bin/../lib/commons-codec-1.4.jar:/vagrant/hama/bin/../lib/commons-collections-3.2.1.jar:/vagrant/hama/bin/../lib/commons-compress-1.9.jar:/vagrant/hama/bin/../lib/commons-configuration-1.7.jar:/vagrant/hama/bin/../lib/commons-daemon-1.0.13.jar:/vagrant/hama/bin/../lib/commons-digester-1.8.1.jar:/vagrant/hama/bin/../lib/commons-el-1.0.jar:/vagrant/hama/bin/../lib/commons-httpclient-3.0.1.jar:/vagrant/hama/bin/../lib/commons-io-2.4.jar:/vagrant/hama/bin/../lib/commons-lang-2.6.jar:/vagrant/hama/bin/../lib/commons-logging-1.1.1.jar:/vagrant/hama/bin/../lib/commons-math3-3.0.jar:/vagrant/hama/bin/../lib/commons-net-3.1.jar:/vagrant/hama/bin/../lib/core-3.1.1.jar:/vagrant/hama/bin/../lib/curator-client-2.6.0.jar:/vagrant/hama/bin/../lib/curator-framework-2.6.0.jar:/vagrant/hama/bin/../lib/curator-recipes-2.6.0.jar:/vagrant/hama/bin/../lib/directmemory-cache-0.2.jar:/vagrant/hama/bin/../lib/directmemory-kryo-0.2.jar:/vagrant/hama/bin/../lib/geronimo-annotation_1.0_spec-1.0.jar:/vagrant/hama/bin/../lib/geronimo-spec-jta-1.0.1B-rc4.jar:/vagrant/hama/bin/../lib/gson-2.2.4.jar:/vagrant/hama/bin/../lib/guava-13.0.1.jar:/vagrant/hama/bin/../lib/guice-3.0.jar:/vagrant/hama/bin/../lib/guice-servlet-3.0.jar:/vagrant/hama/bin/../lib/hadoop-annotations-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-auth-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-common-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0-tests.jar:/vagrant/hama/bin/../lib/hadoop-mapreduce-client-core-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-api-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-common-2.6.0.jar:/vagrant/hama/bin/../lib/hama-commons-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/hama-core-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/htrace-core-3.0.4.jar:/vagrant/hama/bin/../lib/httpclient-4.2.5.jar:/vagrant/hama/bin/../lib/httpcore-4.1.2.jar:/vagrant/hama/bin/../lib/jackson-core-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-jaxrs-1.8.3.jar:/vagrant/hama/bin/../lib/jackson-mapper-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-xc-1.8.3.jar:/vagrant/hama/bin/../lib/jasper-compiler-5.5.23.jar:/vagrant/hama/bin/../lib/jasper-runtime-5.5.23.jar:/vagrant/hama/bin/../lib/javax.inject-1.jar:/vagrant/hama/bin/../lib/java-xmlbuilder-0.4.jar:/vagrant/hama/bin/../lib/jaxb-api-2.2.2.jar:/vagrant/hama/bin/../lib/jaxb-impl-2.2.3-1.jar:/vagrant/hama/bin/../lib/jdk.tools-1.7.jar:/vagrant/hama/bin/../lib/jersey-client-1.9.jar:/vagrant/hama/bin/../lib/jersey-core-1.9.jar:/vagrant/hama/bin/../lib/jersey-guice-1.9.jar:/vagrant/hama/bin/../lib/jersey-json-1.9.jar:/vagrant/hama/bin/../lib/jersey-server-1.9.jar:/vagrant/hama/bin/../lib/jets3t-0.9.0.jar:/vagrant/hama/bin/../lib/jettison-1.1.jar:/vagrant/hama/bin/../lib/jetty-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-annotations-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-plus-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-util-6.1.14.jar:/vagrant/hama/bin/../lib/jline-0.9.94.jar:/vagrant/hama/bin/../lib/jsch-0.1.42.jar:/vagrant/hama/bin/../lib/jsp-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1.jar:/vagrant/hama/bin/../lib/jsr305-1.3.9.jar:/vagrant/hama/bin/../lib/junit-4.8.1.jar:/vagrant/hama/bin/../lib/kryo-2.20.jar:/vagrant/hama/bin/../lib/log4j-1.2.16.jar:/vagrant/hama/bin/../lib/mesos-0.15.0.jar:/vagrant/hama/bin/../lib/minlog-1.2.jar:/vagrant/hama/bin/../lib/netty-3.2.2.Final.jar:/vagrant/hama/bin/../lib/netty-3.6.2.Final.jar:/vagrant/hama/bin/../lib/netty-all-4.0.21.Final.jar:/vagrant/hama/bin/../lib/objenesis-1.2.jar:/vagrant/hama/bin/../lib/paranamer-2.3.jar:/vagrant/hama/bin/../lib/protobuf-java-2.5.0.jar:/vagrant/hama/bin/../lib/reflectasm-1.07-shaded.jar:/vagrant/hama/bin/../lib/servlet-api-2.5-6.1.14.jar:/vagrant/hama/bin/../lib/servlet-api-2.5.jar:/vagrant/hama/bin/../lib/servlet-api-6.0.32.jar:/vagrant/hama/bin/../lib/slf4j-api-1.5.8.jar:/vagrant/hama/bin/../lib/slf4j-log4j12-1.5.8.jar:/vagrant/hama/bin/../lib/snappy-java-1.0.5.jar:/vagrant/hama/bin/../lib/stax-api-1.0-2.jar:/vagrant/hama/bin/../lib/xercesImpl-2.9.1.jar:/vagrant/hama/bin/../lib/xml-apis-1.3.04.jar:/vagrant/hama/bin/../lib/xmlenc-0.52.jar:/vagrant/hama/bin/../lib/zookeeper-3.4.5.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1 (HEAD, tag: release-2.6.0-rc1, origin/branch-2.6.0, branch-2.6.0); compiled by 'acmurthy' on 2014-11-13T22:35Z
+STARTUP_MSG:   java = 1.7.0_75
+************************************************************/
+2015-04-20 17:49:01,129 INFO org.apache.hama.GroomServerRunner: registered UNIX signal handlers for [TERM, HUP, INT]
+2015-04-20 17:49:01,454 INFO org.apache.hama.bsp.GroomServer: groom start
+2015-04-20 17:49:01,866 INFO org.apache.hama.bsp.GroomServer: /tmp/hadoop-vagrant/bsp/local
+2015-04-20 17:49:02,751 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-20 17:49:03,796 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50000
+2015-04-20 17:49:03,801 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-20 17:49:03,805 INFO org.apache.hama.ipc.Server: IPC Server listener on 50000: starting
+2015-04-20 17:49:03,808 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50000: starting
+2015-04-20 17:49:04,009 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-04-20 17:49:04,315 INFO org.apache.hama.bsp.GroomServer: starting webserver: master
+2015-04-20 17:49:04,315 INFO org.apache.hama.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 40015
+2015-04-20 17:49:04,316 INFO org.apache.hama.http.HttpServer: listener.getLocalPort() returned 40015 webServer.getConnectors()[0].getLocalPort() returned 40015
+2015-04-20 17:49:04,316 INFO org.apache.hama.http.HttpServer: Jetty bound to port 40015
+2015-04-20 17:49:04,316 INFO org.mortbay.log: jetty-6.1.14
+2015-04-20 17:49:05,656 INFO org.mortbay.log: Started SelectChannelConnector@master:40015
+2015-04-20 17:49:05,676 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50001
+2015-04-20 17:49:05,676 INFO org.apache.hama.ipc.Server: IPC Server listener on 50001: starting
+2015-04-20 17:49:05,676 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-20 17:49:05,681 INFO org.apache.hama.ipc.Server: IPC Server handler 4 on 50001: starting
+2015-04-20 17:49:05,681 INFO org.apache.hama.bsp.GroomServer: TaskReportServer up at: localhost/127.0.0.1:50001
+2015-04-20 17:49:05,687 INFO org.apache.hama.bsp.GroomServer: Starting groom: master:50000
+2015-04-20 17:49:05,681 INFO org.apache.hama.ipc.Server: IPC Server handler 3 on 50001: starting
+2015-04-20 17:49:05,681 INFO org.apache.hama.ipc.Server: IPC Server handler 2 on 50001: starting
+2015-04-20 17:49:05,676 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50001: starting
+2015-04-20 17:49:05,682 INFO org.apache.hama.ipc.Server: IPC Server handler 1 on 50001: starting
+2015-04-20 17:49:15,527 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 17:49:17,078 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201748_0002_000000_0' has started.
+2015-04-20 17:49:26,959 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201748_0002_000000_0 is done.
+2015-04-20 17:49:30,780 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 17:49:31,179 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201748_0001_000000_0' has started.
+2015-04-20 17:50:59,466 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201748_0001_000000_0 is done.
+2015-04-20 17:59:55,735 ERROR org.apache.hama.GroomServerRunner: RECEIVED SIGNAL 15: SIGTERM
+2015-04-20 17:59:55,758 INFO org.apache.hama.GroomServerRunner: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down GroomServer at vagrant-master/172.28.128.6
+************************************************************/
+2015-04-20 18:00:10,957 INFO org.apache.hama.GroomServerRunner: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting GroomServer
+STARTUP_MSG:   host = vagrant-master/172.28.128.6
+STARTUP_MSG:   args = [master]
+STARTUP_MSG:   version = 2.6.0
+STARTUP_MSG:   classpath = /vagrant/hama/bin/../conf:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/tools.jar:/vagrant/hama/bin/../core/target/classes:/vagrant/hama/bin/../commons/target/classes:/vagrant/hama/bin/../graph/target/classes:/vagrant/hama/bin/../ml/target/classes:/vagrant/hama/bin/../mesos/target/classes:/vagrant/hama/bin/../hama-**.jar:/vagrant/hama/bin/../lib/activation-1.1.jar:/vagrant/hama/bin/../lib/ant-1.6.5.jar:/vagrant/hama/bin/../lib/ant-1.7.1.jar:/vagrant/hama/bin/../lib/ant-launcher-1.7.1.jar:/vagrant/hama/bin/../lib/aopalliance-1.0.jar:/vagrant/hama/bin/../lib/apacheds-i18n-2.0.0-M15.jar:/vagrant/hama/bin/../lib/apacheds-kerberos-codec-2.0.0-M15.jar:/vagrant/hama/bin/../lib/api-asn1-api-1.0.0-M20.jar:/vagrant/hama/bin/../lib/api-util-1.0.0-M20.jar:/vagrant/hama/bin/../lib/asm-3.1.jar:/vagrant/hama/bin/../lib/asm-4.0.jar:/vagrant/hama/bin/../lib/avro-1.5.3.jar:/vagrant/hama/bin/../lib/commons-beanutils-1.8.3.jar:/vagrant/hama/bin/../lib/commons-cli-1.2.jar:/vagrant/hama/bin/../lib/commons-codec-1.4.jar:/vagrant/hama/bin/../lib/commons-collections-3.2.1.jar:/vagrant/hama/bin/../lib/commons-compress-1.9.jar:/vagrant/hama/bin/../lib/commons-configuration-1.7.jar:/vagrant/hama/bin/../lib/commons-daemon-1.0.13.jar:/vagrant/hama/bin/../lib/commons-digester-1.8.1.jar:/vagrant/hama/bin/../lib/commons-el-1.0.jar:/vagrant/hama/bin/../lib/commons-httpclient-3.0.1.jar:/vagrant/hama/bin/../lib/commons-io-2.4.jar:/vagrant/hama/bin/../lib/commons-lang-2.6.jar:/vagrant/hama/bin/../lib/commons-logging-1.1.1.jar:/vagrant/hama/bin/../lib/commons-math3-3.0.jar:/vagrant/hama/bin/../lib/commons-net-3.1.jar:/vagrant/hama/bin/../lib/core-3.1.1.jar:/vagrant/hama/bin/../lib/curator-client-2.6.0.jar:/vagrant/hama/bin/../lib/curator-framework-2.6.0.jar:/vagrant/hama/bin/../lib/curator-recipes-2.6.0.jar:/vagrant/hama/bin/../lib/directmemory-cache-0.2.jar:/vagrant/hama/bin/../lib/directmemory-kryo-0.2.jar:/vagrant/hama/bin/../lib/geronimo-annotation_1.0_spec-1.0.jar:/vagrant/hama/bin/../lib/geronimo-spec-jta-1.0.1B-rc4.jar:/vagrant/hama/bin/../lib/gson-2.2.4.jar:/vagrant/hama/bin/../lib/guava-13.0.1.jar:/vagrant/hama/bin/../lib/guice-3.0.jar:/vagrant/hama/bin/../lib/guice-servlet-3.0.jar:/vagrant/hama/bin/../lib/hadoop-annotations-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-auth-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-common-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0-tests.jar:/vagrant/hama/bin/../lib/hadoop-mapreduce-client-core-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-api-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-common-2.6.0.jar:/vagrant/hama/bin/../lib/hama-commons-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/hama-core-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/htrace-core-3.0.4.jar:/vagrant/hama/bin/../lib/httpclient-4.2.5.jar:/vagrant/hama/bin/../lib/httpcore-4.1.2.jar:/vagrant/hama/bin/../lib/jackson-core-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-jaxrs-1.8.3.jar:/vagrant/hama/bin/../lib/jackson-mapper-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-xc-1.8.3.jar:/vagrant/hama/bin/../lib/jasper-compiler-5.5.23.jar:/vagrant/hama/bin/../lib/jasper-runtime-5.5.23.jar:/vagrant/hama/bin/../lib/javax.inject-1.jar:/vagrant/hama/bin/../lib/java-xmlbuilder-0.4.jar:/vagrant/hama/bin/../lib/jaxb-api-2.2.2.jar:/vagrant/hama/bin/../lib/jaxb-impl-2.2.3-1.jar:/vagrant/hama/bin/../lib/jdk.tools-1.7.jar:/vagrant/hama/bin/../lib/jersey-client-1.9.jar:/vagrant/hama/bin/../lib/jersey-core-1.9.jar:/vagrant/hama/bin/../lib/jersey-guice-1.9.jar:/vagrant/hama/bin/../lib/jersey-json-1.9.jar:/vagrant/hama/bin/../lib/jersey-server-1.9.jar:/vagrant/hama/bin/../lib/jets3t-0.9.0.jar:/vagrant/hama/bin/../lib/jettison-1.1.jar:/vagrant/hama/bin/../lib/jetty-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-annotations-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-plus-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-util-6.1.14.jar:/vagrant/hama/bin/../lib/jline-0.9.94.jar:/vagrant/hama/bin/../lib/jsch-0.1.42.jar:/vagrant/hama/bin/../lib/jsp-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1.jar:/vagrant/hama/bin/../lib/jsr305-1.3.9.jar:/vagrant/hama/bin/../lib/junit-4.8.1.jar:/vagrant/hama/bin/../lib/kryo-2.20.jar:/vagrant/hama/bin/../lib/log4j-1.2.16.jar:/vagrant/hama/bin/../lib/mesos-0.15.0.jar:/vagrant/hama/bin/../lib/minlog-1.2.jar:/vagrant/hama/bin/../lib/netty-3.2.2.Final.jar:/vagrant/hama/bin/../lib/netty-3.6.2.Final.jar:/vagrant/hama/bin/../lib/netty-all-4.0.21.Final.jar:/vagrant/hama/bin/../lib/objenesis-1.2.jar:/vagrant/hama/bin/../lib/paranamer-2.3.jar:/vagrant/hama/bin/../lib/protobuf-java-2.5.0.jar:/vagrant/hama/bin/../lib/reflectasm-1.07-shaded.jar:/vagrant/hama/bin/../lib/servlet-api-2.5-6.1.14.jar:/vagrant/hama/bin/../lib/servlet-api-2.5.jar:/vagrant/hama/bin/../lib/servlet-api-6.0.32.jar:/vagrant/hama/bin/../lib/slf4j-api-1.5.8.jar:/vagrant/hama/bin/../lib/slf4j-log4j12-1.5.8.jar:/vagrant/hama/bin/../lib/snappy-java-1.0.5.jar:/vagrant/hama/bin/../lib/stax-api-1.0-2.jar:/vagrant/hama/bin/../lib/xercesImpl-2.9.1.jar:/vagrant/hama/bin/../lib/xml-apis-1.3.04.jar:/vagrant/hama/bin/../lib/xmlenc-0.52.jar:/vagrant/hama/bin/../lib/zookeeper-3.4.5.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1 (HEAD, tag: release-2.6.0-rc1, origin/branch-2.6.0, branch-2.6.0); compiled by 'acmurthy' on 2014-11-13T22:35Z
+STARTUP_MSG:   java = 1.7.0_75
+************************************************************/
+2015-04-20 18:00:10,987 INFO org.apache.hama.GroomServerRunner: registered UNIX signal handlers for [TERM, HUP, INT]
+2015-04-20 18:00:11,298 INFO org.apache.hama.bsp.GroomServer: groom start
+2015-04-20 18:00:11,700 INFO org.apache.hama.bsp.GroomServer: /tmp/hadoop-vagrant/bsp/local
+2015-04-20 18:00:12,504 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-20 18:00:13,382 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50000
+2015-04-20 18:00:13,385 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-20 18:00:13,386 INFO org.apache.hama.ipc.Server: IPC Server listener on 50000: starting
+2015-04-20 18:00:13,401 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50000: starting
+2015-04-20 18:00:13,573 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-04-20 18:00:13,867 INFO org.apache.hama.bsp.GroomServer: starting webserver: master
+2015-04-20 18:00:13,867 INFO org.apache.hama.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 40015
+2015-04-20 18:00:13,868 INFO org.apache.hama.http.HttpServer: listener.getLocalPort() returned 40015 webServer.getConnectors()[0].getLocalPort() returned 40015
+2015-04-20 18:00:13,868 INFO org.apache.hama.http.HttpServer: Jetty bound to port 40015
+2015-04-20 18:00:13,868 INFO org.mortbay.log: jetty-6.1.14
+2015-04-20 18:00:15,042 INFO org.mortbay.log: Started SelectChannelConnector@master:40015
+2015-04-20 18:00:15,066 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50001
+2015-04-20 18:00:15,066 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-20 18:00:15,067 INFO org.apache.hama.ipc.Server: IPC Server listener on 50001: starting
+2015-04-20 18:00:15,076 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50001: starting
+2015-04-20 18:00:15,077 INFO org.apache.hama.ipc.Server: IPC Server handler 1 on 50001: starting
+2015-04-20 18:00:15,080 INFO org.apache.hama.ipc.Server: IPC Server handler 3 on 50001: starting
+2015-04-20 18:00:15,080 INFO org.apache.hama.bsp.GroomServer: TaskReportServer up at: localhost/127.0.0.1:50001
+2015-04-20 18:00:15,085 INFO org.apache.hama.bsp.GroomServer: Starting groom: master:50000
+2015-04-20 18:00:15,085 INFO org.apache.hama.ipc.Server: IPC Server handler 4 on 50001: starting
+2015-04-20 18:00:15,085 INFO org.apache.hama.ipc.Server: IPC Server handler 2 on 50001: starting
+2015-04-20 18:00:24,772 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 18:00:26,158 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201800_0002_000000_0' has started.
+2015-04-20 18:00:36,478 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201800_0002_000000_0 is done.
+2015-04-20 18:00:40,020 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 18:00:40,440 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201800_0001_000000_0' has started.
+2015-04-20 18:01:59,711 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201800_0001_000000_0 is done.
+2015-04-20 18:05:02,127 ERROR org.apache.hama.GroomServerRunner: RECEIVED SIGNAL 15: SIGTERM
+2015-04-20 18:05:02,157 INFO org.apache.hama.GroomServerRunner: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down GroomServer at vagrant-master/172.28.128.6
+************************************************************/
+2015-04-20 18:05:12,766 INFO org.apache.hama.GroomServerRunner: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting GroomServer
+STARTUP_MSG:   host = vagrant-master/172.28.128.6
+STARTUP_MSG:   args = [master]
+STARTUP_MSG:   version = 2.6.0
+STARTUP_MSG:   classpath = /vagrant/hama/bin/../conf:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/tools.jar:/vagrant/hama/bin/../core/target/classes:/vagrant/hama/bin/../commons/target/classes:/vagrant/hama/bin/../graph/target/classes:/vagrant/hama/bin/../ml/target/classes:/vagrant/hama/bin/../mesos/target/classes:/vagrant/hama/bin/../hama-**.jar:/vagrant/hama/bin/../lib/activation-1.1.jar:/vagrant/hama/bin/../lib/ant-1.6.5.jar:/vagrant/hama/bin/../lib/ant-1.7.1.jar:/vagrant/hama/bin/../lib/ant-launcher-1.7.1.jar:/vagrant/hama/bin/../lib/aopalliance-1.0.jar:/vagrant/hama/bin/../lib/apacheds-i18n-2.0.0-M15.jar:/vagrant/hama/bin/../lib/apacheds-kerberos-codec-2.0.0-M15.jar:/vagrant/hama/bin/../lib/api-asn1-api-1.0.0-M20.jar:/vagrant/hama/bin/../lib/api-util-1.0.0-M20.jar:/vagrant/hama/bin/../lib/asm-3.1.jar:/vagrant/hama/bin/../lib/asm-4.0.jar:/vagrant/hama/bin/../lib/avro-1.5.3.jar:/vagrant/hama/bin/../lib/commons-beanutils-1.8.3.jar:/vagrant/hama/bin/../lib/commons-cli-1.2.jar:/vagrant/hama/bin/../lib/commons-codec-1.4.jar:/vagrant/hama/bin/../lib/commons-collections-3.2.1.jar:/vagrant/hama/bin/../lib/commons-compress-1.9.jar:/vagrant/hama/bin/../lib/commons-configuration-1.7.jar:/vagrant/hama/bin/../lib/commons-daemon-1.0.13.jar:/vagrant/hama/bin/../lib/commons-digester-1.8.1.jar:/vagrant/hama/bin/../lib/commons-el-1.0.jar:/vagrant/hama/bin/../lib/commons-httpclient-3.0.1.jar:/vagrant/hama/bin/../lib/commons-io-2.4.jar:/vagrant/hama/bin/../lib/commons-lang-2.6.jar:/vagrant/hama/bin/../lib/commons-logging-1.1.1.jar:/vagrant/hama/bin/../lib/commons-math3-3.0.jar:/vagrant/hama/bin/../lib/commons-net-3.1.jar:/vagrant/hama/bin/../lib/core-3.1.1.jar:/vagrant/hama/bin/../lib/curator-client-2.6.0.jar:/vagrant/hama/bin/../lib/curator-framework-2.6.0.jar:/vagrant/hama/bin/../lib/curator-recipes-2.6.0.jar:/vagrant/hama/bin/../lib/directmemory-cache-0.2.jar:/vagrant/hama/bin/../lib/directmemory-kryo-0.2.jar:/vagrant/hama/bin/../lib/geronimo-annotation_1.0_spec-1.0.jar:/vagrant/hama/bin/../lib/geronimo-spec-jta-1.0.1B-rc4.jar:/vagrant/hama/bin/../lib/gson-2.2.4.jar:/vagrant/hama/bin/../lib/guava-13.0.1.jar:/vagrant/hama/bin/../lib/guice-3.0.jar:/vagrant/hama/bin/../lib/guice-servlet-3.0.jar:/vagrant/hama/bin/../lib/hadoop-annotations-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-auth-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-common-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0-tests.jar:/vagrant/hama/bin/../lib/hadoop-mapreduce-client-core-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-api-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-common-2.6.0.jar:/vagrant/hama/bin/../lib/hama-commons-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/hama-core-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/htrace-core-3.0.4.jar:/vagrant/hama/bin/../lib/httpclient-4.2.5.jar:/vagrant/hama/bin/../lib/httpcore-4.1.2.jar:/vagrant/hama/bin/../lib/jackson-core-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-jaxrs-1.8.3.jar:/vagrant/hama/bin/../lib/jackson-mapper-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-xc-1.8.3.jar:/vagrant/hama/bin/../lib/jasper-compiler-5.5.23.jar:/vagrant/hama/bin/../lib/jasper-runtime-5.5.23.jar:/vagrant/hama/bin/../lib/javax.inject-1.jar:/vagrant/hama/bin/../lib/java-xmlbuilder-0.4.jar:/vagrant/hama/bin/../lib/jaxb-api-2.2.2.jar:/vagrant/hama/bin/../lib/jaxb-impl-2.2.3-1.jar:/vagrant/hama/bin/../lib/jdk.tools-1.7.jar:/vagrant/hama/bin/../lib/jersey-client-1.9.jar:/vagrant/hama/bin/../lib/jersey-core-1.9.jar:/vagrant/hama/bin/../lib/jersey-guice-1.9.jar:/vagrant/hama/bin/../lib/jersey-json-1.9.jar:/vagrant/hama/bin/../lib/jersey-server-1.9.jar:/vagrant/hama/bin/../lib/jets3t-0.9.0.jar:/vagrant/hama/bin/../lib/jettison-1.1.jar:/vagrant/hama/bin/../lib/jetty-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-annotations-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-plus-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-util-6.1.14.jar:/vagrant/hama/bin/../lib/jline-0.9.94.jar:/vagrant/hama/bin/../lib/jsch-0.1.42.jar:/vagrant/hama/bin/../lib/jsp-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1.jar:/vagrant/hama/bin/../lib/jsr305-1.3.9.jar:/vagrant/hama/bin/../lib/junit-4.8.1.jar:/vagrant/hama/bin/../lib/kryo-2.20.jar:/vagrant/hama/bin/../lib/log4j-1.2.16.jar:/vagrant/hama/bin/../lib/mesos-0.15.0.jar:/vagrant/hama/bin/../lib/minlog-1.2.jar:/vagrant/hama/bin/../lib/netty-3.2.2.Final.jar:/vagrant/hama/bin/../lib/netty-3.6.2.Final.jar:/vagrant/hama/bin/../lib/netty-all-4.0.21.Final.jar:/vagrant/hama/bin/../lib/objenesis-1.2.jar:/vagrant/hama/bin/../lib/paranamer-2.3.jar:/vagrant/hama/bin/../lib/protobuf-java-2.5.0.jar:/vagrant/hama/bin/../lib/reflectasm-1.07-shaded.jar:/vagrant/hama/bin/../lib/servlet-api-2.5-6.1.14.jar:/vagrant/hama/bin/../lib/servlet-api-2.5.jar:/vagrant/hama/bin/../lib/servlet-api-6.0.32.jar:/vagrant/hama/bin/../lib/slf4j-api-1.5.8.jar:/vagrant/hama/bin/../lib/slf4j-log4j12-1.5.8.jar:/vagrant/hama/bin/../lib/snappy-java-1.0.5.jar:/vagrant/hama/bin/../lib/stax-api-1.0-2.jar:/vagrant/hama/bin/../lib/xercesImpl-2.9.1.jar:/vagrant/hama/bin/../lib/xml-apis-1.3.04.jar:/vagrant/hama/bin/../lib/xmlenc-0.52.jar:/vagrant/hama/bin/../lib/zookeeper-3.4.5.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1 (HEAD, tag: release-2.6.0-rc1, origin/branch-2.6.0, branch-2.6.0); compiled by 'acmurthy' on 2014-11-13T22:35Z
+STARTUP_MSG:   java = 1.7.0_75
+************************************************************/
+2015-04-20 18:05:12,790 INFO org.apache.hama.GroomServerRunner: registered UNIX signal handlers for [TERM, HUP, INT]
+2015-04-20 18:05:13,120 INFO org.apache.hama.bsp.GroomServer: groom start
+2015-04-20 18:05:13,581 INFO org.apache.hama.bsp.GroomServer: /tmp/hadoop-vagrant/bsp/local
+2015-04-20 18:05:14,465 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-20 18:05:15,413 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50000
+2015-04-20 18:05:15,417 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-20 18:05:15,422 INFO org.apache.hama.ipc.Server: IPC Server listener on 50000: starting
+2015-04-20 18:05:15,429 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50000: starting
+2015-04-20 18:05:15,639 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-04-20 18:05:15,940 INFO org.apache.hama.bsp.GroomServer: starting webserver: master
+2015-04-20 18:05:15,940 INFO org.apache.hama.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 40015
+2015-04-20 18:05:15,941 INFO org.apache.hama.http.HttpServer: listener.getLocalPort() returned 40015 webServer.getConnectors()[0].getLocalPort() returned 40015
+2015-04-20 18:05:15,941 INFO org.apache.hama.http.HttpServer: Jetty bound to port 40015
+2015-04-20 18:05:15,941 INFO org.mortbay.log: jetty-6.1.14
+2015-04-20 18:05:17,242 INFO org.mortbay.log: Started SelectChannelConnector@master:40015
+2015-04-20 18:05:17,259 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50001
+2015-04-20 18:05:17,259 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-20 18:05:17,259 INFO org.apache.hama.ipc.Server: IPC Server listener on 50001: starting
+2015-04-20 18:05:17,259 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50001: starting
+2015-04-20 18:05:17,260 INFO org.apache.hama.ipc.Server: IPC Server handler 1 on 50001: starting
+2015-04-20 18:05:17,260 INFO org.apache.hama.ipc.Server: IPC Server handler 2 on 50001: starting
+2015-04-20 18:05:17,260 INFO org.apache.hama.ipc.Server: IPC Server handler 3 on 50001: starting
+2015-04-20 18:05:17,260 INFO org.apache.hama.bsp.GroomServer: TaskReportServer up at: localhost/127.0.0.1:50001
+2015-04-20 18:05:17,266 INFO org.apache.hama.bsp.GroomServer: Starting groom: master:50000
+2015-04-20 18:05:17,267 INFO org.apache.hama.ipc.Server: IPC Server handler 4 on 50001: starting
+2015-04-20 18:05:27,698 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 18:05:29,285 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201805_0002_000000_0' has started.
+2015-04-20 18:05:39,132 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201805_0002_000000_0 is done.
+2015-04-20 18:05:42,949 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 18:05:43,297 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201805_0001_000000_0' has started.
+2015-04-20 18:07:11,821 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201805_0001_000000_0 is done.
+2015-04-20 18:14:51,245 ERROR org.apache.hama.GroomServerRunner: RECEIVED SIGNAL 15: SIGTERM
+2015-04-20 18:14:51,270 INFO org.apache.hama.GroomServerRunner: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down GroomServer at vagrant-master/172.28.128.6
+************************************************************/
+2015-04-20 18:15:01,390 INFO org.apache.hama.GroomServerRunner: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting GroomServer
+STARTUP_MSG:   host = vagrant-master/172.28.128.6
+STARTUP_MSG:   args = [master]
+STARTUP_MSG:   version = 2.6.0
+STARTUP_MSG:   classpath = /vagrant/hama/bin/../conf:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/tools.jar:/vagrant/hama/bin/../core/target/classes:/vagrant/hama/bin/../commons/target/classes:/vagrant/hama/bin/../graph/target/classes:/vagrant/hama/bin/../ml/target/classes:/vagrant/hama/bin/../mesos/target/classes:/vagrant/hama/bin/../hama-**.jar:/vagrant/hama/bin/../lib/activation-1.1.jar:/vagrant/hama/bin/../lib/ant-1.6.5.jar:/vagrant/hama/bin/../lib/ant-1.7.1.jar:/vagrant/hama/bin/../lib/ant-launcher-1.7.1.jar:/vagrant/hama/bin/../lib/aopalliance-1.0.jar:/vagrant/hama/bin/../lib/apacheds-i18n-2.0.0-M15.jar:/vagrant/hama/bin/../lib/apacheds-kerberos-codec-2.0.0-M15.jar:/vagrant/hama/bin/../lib/api-asn1-api-1.0.0-M20.jar:/vagrant/hama/bin/../lib/api-util-1.0.0-M20.jar:/vagrant/hama/bin/../lib/asm-3.1.jar:/vagrant/hama/bin/../lib/asm-4.0.jar:/vagrant/hama/bin/../lib/avro-1.5.3.jar:/vagrant/hama/bin/../lib/commons-beanutils-1.8.3.jar:/vagrant/hama/bin/../lib/commons-cli-1.2.jar:/vagrant/hama/bin/../lib/commons-codec-1.4.jar:/vagrant/hama/bin/../lib/commons-collections-3.2.1.jar:/vagrant/hama/bin/../lib/commons-compress-1.9.jar:/vagrant/hama/bin/../lib/commons-configuration-1.7.jar:/vagrant/hama/bin/../lib/commons-daemon-1.0.13.jar:/vagrant/hama/bin/../lib/commons-digester-1.8.1.jar:/vagrant/hama/bin/../lib/commons-el-1.0.jar:/vagrant/hama/bin/../lib/commons-httpclient-3.0.1.jar:/vagrant/hama/bin/../lib/commons-io-2.4.jar:/vagrant/hama/bin/../lib/commons-lang-2.6.jar:/vagrant/hama/bin/../lib/commons-logging-1.1.1.jar:/vagrant/hama/bin/../lib/commons-math3-3.0.jar:/vagrant/hama/bin/../lib/commons-net-3.1.jar:/vagrant/hama/bin/../lib/core-3.1.1.jar:/vagrant/hama/bin/../lib/curator-client-2.6.0.jar:/vagrant/hama/bin/../lib/curator-framework-2.6.0.jar:/vagrant/hama/bin/../lib/curator-recipes-2.6.0.jar:/vagrant/hama/bin/../lib/directmemory-cache-0.2.jar:/vagrant/hama/bin/../lib/directmemory-kryo-0.2.jar:/vagrant/hama/bin/../lib/geronimo-annotation_1.0_spec-1.0.jar:/vagrant/hama/bin/../lib/geronimo-spec-jta-1.0.1B-rc4.jar:/vagrant/hama/bin/../lib/gson-2.2.4.jar:/vagrant/hama/bin/../lib/guava-13.0.1.jar:/vagrant/hama/bin/../lib/guice-3.0.jar:/vagrant/hama/bin/../lib/guice-servlet-3.0.jar:/vagrant/hama/bin/../lib/hadoop-annotations-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-auth-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-common-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0-tests.jar:/vagrant/hama/bin/../lib/hadoop-mapreduce-client-core-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-api-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-common-2.6.0.jar:/vagrant/hama/bin/../lib/hama-commons-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/hama-core-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/htrace-core-3.0.4.jar:/vagrant/hama/bin/../lib/httpclient-4.2.5.jar:/vagrant/hama/bin/../lib/httpcore-4.1.2.jar:/vagrant/hama/bin/../lib/jackson-core-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-jaxrs-1.8.3.jar:/vagrant/hama/bin/../lib/jackson-mapper-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-xc-1.8.3.jar:/vagrant/hama/bin/../lib/jasper-compiler-5.5.23.jar:/vagrant/hama/bin/../lib/jasper-runtime-5.5.23.jar:/vagrant/hama/bin/../lib/javax.inject-1.jar:/vagrant/hama/bin/../lib/java-xmlbuilder-0.4.jar:/vagrant/hama/bin/../lib/jaxb-api-2.2.2.jar:/vagrant/hama/bin/../lib/jaxb-impl-2.2.3-1.jar:/vagrant/hama/bin/../lib/jdk.tools-1.7.jar:/vagrant/hama/bin/../lib/jersey-client-1.9.jar:/vagrant/hama/bin/../lib/jersey-core-1.9.jar:/vagrant/hama/bin/../lib/jersey-guice-1.9.jar:/vagrant/hama/bin/../lib/jersey-json-1.9.jar:/vagrant/hama/bin/../lib/jersey-server-1.9.jar:/vagrant/hama/bin/../lib/jets3t-0.9.0.jar:/vagrant/hama/bin/../lib/jettison-1.1.jar:/vagrant/hama/bin/../lib/jetty-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-annotations-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-plus-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-util-6.1.14.jar:/vagrant/hama/bin/../lib/jline-0.9.94.jar:/vagrant/hama/bin/../lib/jsch-0.1.42.jar:/vagrant/hama/bin/../lib/jsp-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1.jar:/vagrant/hama/bin/../lib/jsr305-1.3.9.jar:/vagrant/hama/bin/../lib/junit-4.8.1.jar:/vagrant/hama/bin/../lib/kryo-2.20.jar:/vagrant/hama/bin/../lib/log4j-1.2.16.jar:/vagrant/hama/bin/../lib/mesos-0.15.0.jar:/vagrant/hama/bin/../lib/minlog-1.2.jar:/vagrant/hama/bin/../lib/netty-3.2.2.Final.jar:/vagrant/hama/bin/../lib/netty-3.6.2.Final.jar:/vagrant/hama/bin/../lib/netty-all-4.0.21.Final.jar:/vagrant/hama/bin/../lib/objenesis-1.2.jar:/vagrant/hama/bin/../lib/paranamer-2.3.jar:/vagrant/hama/bin/../lib/protobuf-java-2.5.0.jar:/vagrant/hama/bin/../lib/reflectasm-1.07-shaded.jar:/vagrant/hama/bin/../lib/servlet-api-2.5-6.1.14.jar:/vagrant/hama/bin/../lib/servlet-api-2.5.jar:/vagrant/hama/bin/../lib/servlet-api-6.0.32.jar:/vagrant/hama/bin/../lib/slf4j-api-1.5.8.jar:/vagrant/hama/bin/../lib/slf4j-log4j12-1.5.8.jar:/vagrant/hama/bin/../lib/snappy-java-1.0.5.jar:/vagrant/hama/bin/../lib/stax-api-1.0-2.jar:/vagrant/hama/bin/../lib/xercesImpl-2.9.1.jar:/vagrant/hama/bin/../lib/xml-apis-1.3.04.jar:/vagrant/hama/bin/../lib/xmlenc-0.52.jar:/vagrant/hama/bin/../lib/zookeeper-3.4.5.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1 (HEAD, tag: release-2.6.0-rc1, origin/branch-2.6.0, branch-2.6.0); compiled by 'acmurthy' on 2014-11-13T22:35Z
+STARTUP_MSG:   java = 1.7.0_75
+************************************************************/
+2015-04-20 18:15:01,436 INFO org.apache.hama.GroomServerRunner: registered UNIX signal handlers for [TERM, HUP, INT]
+2015-04-20 18:15:01,718 INFO org.apache.hama.bsp.GroomServer: groom start
+2015-04-20 18:15:02,238 INFO org.apache.hama.bsp.GroomServer: /tmp/hadoop-vagrant/bsp/local
+2015-04-20 18:15:03,197 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-20 18:15:04,195 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50000
+2015-04-20 18:15:04,199 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-20 18:15:04,204 INFO org.apache.hama.ipc.Server: IPC Server listener on 50000: starting
+2015-04-20 18:15:04,212 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50000: starting
+2015-04-20 18:15:04,418 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-04-20 18:15:04,680 INFO org.apache.hama.bsp.GroomServer: starting webserver: master
+2015-04-20 18:15:04,680 INFO org.apache.hama.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 40015
+2015-04-20 18:15:04,681 INFO org.apache.hama.http.HttpServer: listener.getLocalPort() returned 40015 webServer.getConnectors()[0].getLocalPort() returned 40015
+2015-04-20 18:15:04,681 INFO org.apache.hama.http.HttpServer: Jetty bound to port 40015
+2015-04-20 18:15:04,681 INFO org.mortbay.log: jetty-6.1.14
+2015-04-20 18:15:05,874 INFO org.mortbay.log: Started SelectChannelConnector@master:40015
+2015-04-20 18:15:05,885 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50001
+2015-04-20 18:15:05,894 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50001: starting
+2015-04-20 18:15:05,894 INFO org.apache.hama.ipc.Server: IPC Server handler 1 on 50001: starting
+2015-04-20 18:15:05,894 INFO org.apache.hama.ipc.Server: IPC Server handler 2 on 50001: starting
+2015-04-20 18:15:05,894 INFO org.apache.hama.ipc.Server: IPC Server handler 3 on 50001: starting
+2015-04-20 18:15:05,895 INFO org.apache.hama.bsp.GroomServer: TaskReportServer up at: localhost/127.0.0.1:50001
+2015-04-20 18:15:05,895 INFO org.apache.hama.bsp.GroomServer: Starting groom: master:50000
+2015-04-20 18:15:05,895 INFO org.apache.hama.ipc.Server: IPC Server listener on 50001: starting
+2015-04-20 18:15:05,886 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-20 18:15:05,900 INFO org.apache.hama.ipc.Server: IPC Server handler 4 on 50001: starting
+2015-04-20 18:15:16,477 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 18:15:18,057 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201815_0002_000000_0' has started.
+2015-04-20 18:15:28,548 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201815_0002_000000_0 is done.
+2015-04-20 18:15:31,684 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 18:15:32,078 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201815_0001_000000_0' has started.
+2015-04-20 18:17:00,607 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201815_0001_000000_0 is done.
+2015-04-20 18:18:25,511 ERROR org.apache.hama.GroomServerRunner: RECEIVED SIGNAL 15: SIGTERM
+2015-04-20 18:18:25,540 INFO org.apache.hama.GroomServerRunner: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down GroomServer at vagrant-master/172.28.128.6
+************************************************************/
+2015-04-20 18:18:37,784 INFO org.apache.hama.GroomServerRunner: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting GroomServer
+STARTUP_MSG:   host = vagrant-master/172.28.128.6
+STARTUP_MSG:   args = [master]
+STARTUP_MSG:   version = 2.6.0
+STARTUP_MSG:   classpath = /vagrant/hama/bin/../conf:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/tools.jar:/vagrant/hama/bin/../core/target/classes:/vagrant/hama/bin/../commons/target/classes:/vagrant/hama/bin/../graph/target/classes:/vagrant/hama/bin/../ml/target/classes:/vagrant/hama/bin/../mesos/target/classes:/vagrant/hama/bin/../hama-**.jar:/vagrant/hama/bin/../lib/activation-1.1.jar:/vagrant/hama/bin/../lib/ant-1.6.5.jar:/vagrant/hama/bin/../lib/ant-1.7.1.jar:/vagrant/hama/bin/../lib/ant-launcher-1.7.1.jar:/vagrant/hama/bin/../lib/aopalliance-1.0.jar:/vagrant/hama/bin/../lib/apacheds-i18n-2.0.0-M15.jar:/vagrant/hama/bin/../lib/apacheds-kerberos-codec-2.0.0-M15.jar:/vagrant/hama/bin/../lib/api-asn1-api-1.0.0-M20.jar:/vagrant/hama/bin/../lib/api-util-1.0.0-M20.jar:/vagrant/hama/bin/../lib/asm-3.1.jar:/vagrant/hama/bin/../lib/asm-4.0.jar:/vagrant/hama/bin/../lib/avro-1.5.3.jar:/vagrant/hama/bin/../lib/commons-beanutils-1.8.3.jar:/vagrant/hama/bin/../lib/commons-cli-1.2.jar:/vagrant/hama/bin/../lib/commons-codec-1.4.jar:/vagrant/hama/bin/../lib/commons-collections-3.2.1.jar:/vagrant/hama/bin/../lib/commons-compress-1.9.jar:/vagrant/hama/bin/../lib/commons-configuration-1.7.jar:/vagrant/hama/bin/../lib/commons-daemon-1.0.13.jar:/vagrant/hama/bin/../lib/commons-digester-1.8.1.jar:/vagrant/hama/bin/../lib/commons-el-1.0.jar:/vagrant/hama/bin/../lib/commons-httpclient-3.0.1.jar:/vagrant/hama/bin/../lib/commons-io-2.4.jar:/vagrant/hama/bin/../lib/commons-lang-2.6.jar:/vagrant/hama/bin/../lib/commons-logging-1.1.1.jar:/vagrant/hama/bin/../lib/commons-math3-3.0.jar:/vagrant/hama/bin/../lib/commons-net-3.1.jar:/vagrant/hama/bin/../lib/core-3.1.1.jar:/vagrant/hama/bin/../lib/curator-client-2.6.0.jar:/vagrant/hama/bin/../lib/curator-framework-2.6.0.jar:/vagrant/hama/bin/../lib/curator-recipes-2.6.0.jar:/vagrant/hama/bin/../lib/directmemory-cache-0.2.jar:/vagrant/hama/bin/../lib/directmemory-kryo-0.2.jar:/vagrant/hama/bin/../lib/geronimo-annotation_1.0_spec-1.0.jar:/vagrant/hama/bin/../lib/geronimo-spec-jta-1.0.1B-rc4.jar:/vagrant/hama/bin/../lib/gson-2.2.4.jar:/vagrant/hama/bin/../lib/guava-13.0.1.jar:/vagrant/hama/bin/../lib/guice-3.0.jar:/vagrant/hama/bin/../lib/guice-servlet-3.0.jar:/vagrant/hama/bin/../lib/hadoop-annotations-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-auth-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-common-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0-tests.jar:/vagrant/hama/bin/../lib/hadoop-mapreduce-client-core-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-api-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-common-2.6.0.jar:/vagrant/hama/bin/../lib/hama-commons-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/hama-core-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/htrace-core-3.0.4.jar:/vagrant/hama/bin/../lib/httpclient-4.2.5.jar:/vagrant/hama/bin/../lib/httpcore-4.1.2.jar:/vagrant/hama/bin/../lib/jackson-core-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-jaxrs-1.8.3.jar:/vagrant/hama/bin/../lib/jackson-mapper-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-xc-1.8.3.jar:/vagrant/hama/bin/../lib/jasper-compiler-5.5.23.jar:/vagrant/hama/bin/../lib/jasper-runtime-5.5.23.jar:/vagrant/hama/bin/../lib/javax.inject-1.jar:/vagrant/hama/bin/../lib/java-xmlbuilder-0.4.jar:/vagrant/hama/bin/../lib/jaxb-api-2.2.2.jar:/vagrant/hama/bin/../lib/jaxb-impl-2.2.3-1.jar:/vagrant/hama/bin/../lib/jdk.tools-1.7.jar:/vagrant/hama/bin/../lib/jersey-client-1.9.jar:/vagrant/hama/bin/../lib/jersey-core-1.9.jar:/vagrant/hama/bin/../lib/jersey-guice-1.9.jar:/vagrant/hama/bin/../lib/jersey-json-1.9.jar:/vagrant/hama/bin/../lib/jersey-server-1.9.jar:/vagrant/hama/bin/../lib/jets3t-0.9.0.jar:/vagrant/hama/bin/../lib/jettison-1.1.jar:/vagrant/hama/bin/../lib/jetty-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-annotations-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-plus-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-util-6.1.14.jar:/vagrant/hama/bin/../lib/jline-0.9.94.jar:/vagrant/hama/bin/../lib/jsch-0.1.42.jar:/vagrant/hama/bin/../lib/jsp-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1.jar:/vagrant/hama/bin/../lib/jsr305-1.3.9.jar:/vagrant/hama/bin/../lib/junit-4.8.1.jar:/vagrant/hama/bin/../lib/kryo-2.20.jar:/vagrant/hama/bin/../lib/log4j-1.2.16.jar:/vagrant/hama/bin/../lib/mesos-0.15.0.jar:/vagrant/hama/bin/../lib/minlog-1.2.jar:/vagrant/hama/bin/../lib/netty-3.2.2.Final.jar:/vagrant/hama/bin/../lib/netty-3.6.2.Final.jar:/vagrant/hama/bin/../lib/netty-all-4.0.21.Final.jar:/vagrant/hama/bin/../lib/objenesis-1.2.jar:/vagrant/hama/bin/../lib/paranamer-2.3.jar:/vagrant/hama/bin/../lib/protobuf-java-2.5.0.jar:/vagrant/hama/bin/../lib/reflectasm-1.07-shaded.jar:/vagrant/hama/bin/../lib/servlet-api-2.5-6.1.14.jar:/vagrant/hama/bin/../lib/servlet-api-2.5.jar:/vagrant/hama/bin/../lib/servlet-api-6.0.32.jar:/vagrant/hama/bin/../lib/slf4j-api-1.5.8.jar:/vagrant/hama/bin/../lib/slf4j-log4j12-1.5.8.jar:/vagrant/hama/bin/../lib/snappy-java-1.0.5.jar:/vagrant/hama/bin/../lib/stax-api-1.0-2.jar:/vagrant/hama/bin/../lib/xercesImpl-2.9.1.jar:/vagrant/hama/bin/../lib/xml-apis-1.3.04.jar:/vagrant/hama/bin/../lib/xmlenc-0.52.jar:/vagrant/hama/bin/../lib/zookeeper-3.4.5.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1 (HEAD, tag: release-2.6.0-rc1, origin/branch-2.6.0, branch-2.6.0); compiled by 'acmurthy' on 2014-11-13T22:35Z
+STARTUP_MSG:   java = 1.7.0_75
+************************************************************/
+2015-04-20 18:18:37,808 INFO org.apache.hama.GroomServerRunner: registered UNIX signal handlers for [TERM, HUP, INT]
+2015-04-20 18:18:38,057 INFO org.apache.hama.bsp.GroomServer: groom start
+2015-04-20 18:18:38,490 INFO org.apache.hama.bsp.GroomServer: /tmp/hadoop-vagrant/bsp/local
+2015-04-20 18:18:39,319 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-20 18:18:40,185 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50000
+2015-04-20 18:18:40,191 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-20 18:18:40,191 INFO org.apache.hama.ipc.Server: IPC Server listener on 50000: starting
+2015-04-20 18:18:40,196 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50000: starting
+2015-04-20 18:18:40,435 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-04-20 18:18:40,656 INFO org.apache.hama.bsp.GroomServer: starting webserver: master
+2015-04-20 18:18:40,656 INFO org.apache.hama.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 40015
+2015-04-20 18:18:40,657 INFO org.apache.hama.http.HttpServer: listener.getLocalPort() returned 40015 webServer.getConnectors()[0].getLocalPort() returned 40015
+2015-04-20 18:18:40,657 INFO org.apache.hama.http.HttpServer: Jetty bound to port 40015
+2015-04-20 18:18:40,657 INFO org.mortbay.log: jetty-6.1.14
+2015-04-20 18:18:41,902 INFO org.mortbay.log: Started SelectChannelConnector@master:40015
+2015-04-20 18:18:41,914 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50001
+2015-04-20 18:18:41,914 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-20 18:18:41,914 INFO org.apache.hama.ipc.Server: IPC Server listener on 50001: starting
+2015-04-20 18:18:41,915 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50001: starting
+2015-04-20 18:18:41,915 INFO org.apache.hama.ipc.Server: IPC Server handler 1 on 50001: starting
+2015-04-20 18:18:41,915 INFO org.apache.hama.ipc.Server: IPC Server handler 2 on 50001: starting
+2015-04-20 18:18:41,915 INFO org.apache.hama.ipc.Server: IPC Server handler 3 on 50001: starting
+2015-04-20 18:18:41,916 INFO org.apache.hama.bsp.GroomServer: TaskReportServer up at: localhost/127.0.0.1:50001
+2015-04-20 18:18:41,921 INFO org.apache.hama.bsp.GroomServer: Starting groom: master:50000
+2015-04-20 18:18:41,922 INFO org.apache.hama.ipc.Server: IPC Server handler 4 on 50001: starting
+2015-04-20 18:20:49,031 ERROR org.apache.hama.GroomServerRunner: RECEIVED SIGNAL 15: SIGTERM
+2015-04-20 18:20:49,054 INFO org.apache.hama.GroomServerRunner: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down GroomServer at vagrant-master/172.28.128.6
+************************************************************/
+2015-04-20 18:20:59,424 INFO org.apache.hama.GroomServerRunner: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting GroomServer
+STARTUP_MSG:   host = vagrant-master/172.28.128.6
+STARTUP_MSG:   args = [master]
+STARTUP_MSG:   version = 2.6.0
+STARTUP_MSG:   classpath = /vagrant/hama/bin/../conf:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/tools.jar:/vagrant/hama/bin/../core/target/classes:/vagrant/hama/bin/../commons/target/classes:/vagrant/hama/bin/../graph/target/classes:/vagrant/hama/bin/../ml/target/classes:/vagrant/hama/bin/../mesos/target/classes:/vagrant/hama/bin/../hama-**.jar:/vagrant/hama/bin/../lib/activation-1.1.jar:/vagrant/hama/bin/../lib/ant-1.6.5.jar:/vagrant/hama/bin/../lib/ant-1.7.1.jar:/vagrant/hama/bin/../lib/ant-launcher-1.7.1.jar:/vagrant/hama/bin/../lib/aopalliance-1.0.jar:/vagrant/hama/bin/../lib/apacheds-i18n-2.0.0-M15.jar:/vagrant/hama/bin/../lib/apacheds-kerberos-codec-2.0.0-M15.jar:/vagrant/hama/bin/../lib/api-asn1-api-1.0.0-M20.jar:/vagrant/hama/bin/../lib/api-util-1.0.0-M20.jar:/vagrant/hama/bin/../lib/asm-3.1.jar:/vagrant/hama/bin/../lib/asm-4.0.jar:/vagrant/hama/bin/../lib/avro-1.5.3.jar:/vagrant/hama/bin/../lib/commons-beanutils-1.8.3.jar:/vagrant/hama/bin/../lib/commons-cli-1.2.jar:/vagrant/hama/bin/../lib/commons-codec-1.4.jar:/vagrant/hama/bin/../lib/commons-collections-3.2.1.jar:/vagrant/hama/bin/../lib/commons-compress-1.9.jar:/vagrant/hama/bin/../lib/commons-configuration-1.7.jar:/vagrant/hama/bin/../lib/commons-daemon-1.0.13.jar:/vagrant/hama/bin/../lib/commons-digester-1.8.1.jar:/vagrant/hama/bin/../lib/commons-el-1.0.jar:/vagrant/hama/bin/../lib/commons-httpclient-3.0.1.jar:/vagrant/hama/bin/../lib/commons-io-2.4.jar:/vagrant/hama/bin/../lib/commons-lang-2.6.jar:/vagrant/hama/bin/../lib/commons-logging-1.1.1.jar:/vagrant/hama/bin/../lib/commons-math3-3.0.jar:/vagrant/hama/bin/../lib/commons-net-3.1.jar:/vagrant/hama/bin/../lib/core-3.1.1.jar:/vagrant/hama/bin/../lib/curator-client-2.6.0.jar:/vagrant/hama/bin/../lib/curator-framework-2.6.0.jar:/vagrant/hama/bin/../lib/curator-recipes-2.6.0.jar:/vagrant/hama/bin/../lib/directmemory-cache-0.2.jar:/vagrant/hama/bin/../lib/directmemory-kryo-0.2.jar:/vagrant/hama/bin/../lib/geronimo-annotation_1.0_spec-1.0.jar:/vagrant/hama/bin/../lib/geronimo-spec-jta-1.0.1B-rc4.jar:/vagrant/hama/bin/../lib/gson-2.2.4.jar:/vagrant/hama/bin/../lib/guava-13.0.1.jar:/vagrant/hama/bin/../lib/guice-3.0.jar:/vagrant/hama/bin/../lib/guice-servlet-3.0.jar:/vagrant/hama/bin/../lib/hadoop-annotations-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-auth-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-common-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0-tests.jar:/vagrant/hama/bin/../lib/hadoop-mapreduce-client-core-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-api-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-common-2.6.0.jar:/vagrant/hama/bin/../lib/hama-commons-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/hama-core-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/htrace-core-3.0.4.jar:/vagrant/hama/bin/../lib/httpclient-4.2.5.jar:/vagrant/hama/bin/../lib/httpcore-4.1.2.jar:/vagrant/hama/bin/../lib/jackson-core-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-jaxrs-1.8.3.jar:/vagrant/hama/bin/../lib/jackson-mapper-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-xc-1.8.3.jar:/vagrant/hama/bin/../lib/jasper-compiler-5.5.23.jar:/vagrant/hama/bin/../lib/jasper-runtime-5.5.23.jar:/vagrant/hama/bin/../lib/javax.inject-1.jar:/vagrant/hama/bin/../lib/java-xmlbuilder-0.4.jar:/vagrant/hama/bin/../lib/jaxb-api-2.2.2.jar:/vagrant/hama/bin/../lib/jaxb-impl-2.2.3-1.jar:/vagrant/hama/bin/../lib/jdk.tools-1.7.jar:/vagrant/hama/bin/../lib/jersey-client-1.9.jar:/vagrant/hama/bin/../lib/jersey-core-1.9.jar:/vagrant/hama/bin/../lib/jersey-guice-1.9.jar:/vagrant/hama/bin/../lib/jersey-json-1.9.jar:/vagrant/hama/bin/../lib/jersey-server-1.9.jar:/vagrant/hama/bin/../lib/jets3t-0.9.0.jar:/vagrant/hama/bin/../lib/jettison-1.1.jar:/vagrant/hama/bin/../lib/jetty-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-annotations-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-plus-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-util-6.1.14.jar:/vagrant/hama/bin/../lib/jline-0.9.94.jar:/vagrant/hama/bin/../lib/jsch-0.1.42.jar:/vagrant/hama/bin/../lib/jsp-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1.jar:/vagrant/hama/bin/../lib/jsr305-1.3.9.jar:/vagrant/hama/bin/../lib/junit-4.8.1.jar:/vagrant/hama/bin/../lib/kryo-2.20.jar:/vagrant/hama/bin/../lib/log4j-1.2.16.jar:/vagrant/hama/bin/../lib/mesos-0.15.0.jar:/vagrant/hama/bin/../lib/minlog-1.2.jar:/vagrant/hama/bin/../lib/netty-3.2.2.Final.jar:/vagrant/hama/bin/../lib/netty-3.6.2.Final.jar:/vagrant/hama/bin/../lib/netty-all-4.0.21.Final.jar:/vagrant/hama/bin/../lib/objenesis-1.2.jar:/vagrant/hama/bin/../lib/paranamer-2.3.jar:/vagrant/hama/bin/../lib/protobuf-java-2.5.0.jar:/vagrant/hama/bin/../lib/reflectasm-1.07-shaded.jar:/vagrant/hama/bin/../lib/servlet-api-2.5-6.1.14.jar:/vagrant/hama/bin/../lib/servlet-api-2.5.jar:/vagrant/hama/bin/../lib/servlet-api-6.0.32.jar:/vagrant/hama/bin/../lib/slf4j-api-1.5.8.jar:/vagrant/hama/bin/../lib/slf4j-log4j12-1.5.8.jar:/vagrant/hama/bin/../lib/snappy-java-1.0.5.jar:/vagrant/hama/bin/../lib/stax-api-1.0-2.jar:/vagrant/hama/bin/../lib/xercesImpl-2.9.1.jar:/vagrant/hama/bin/../lib/xml-apis-1.3.04.jar:/vagrant/hama/bin/../lib/xmlenc-0.52.jar:/vagrant/hama/bin/../lib/zookeeper-3.4.5.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1 (HEAD, tag: release-2.6.0-rc1, origin/branch-2.6.0, branch-2.6.0); compiled by 'acmurthy' on 2014-11-13T22:35Z
+STARTUP_MSG:   java = 1.7.0_75
+************************************************************/
+2015-04-20 18:20:59,452 INFO org.apache.hama.GroomServerRunner: registered UNIX signal handlers for [TERM, HUP, INT]
+2015-04-20 18:20:59,792 INFO org.apache.hama.bsp.GroomServer: groom start
+2015-04-20 18:21:00,223 INFO org.apache.hama.bsp.GroomServer: /tmp/hadoop-vagrant/bsp/local
+2015-04-20 18:21:01,159 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-20 18:21:02,101 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50000
+2015-04-20 18:21:02,116 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-20 18:21:02,127 INFO org.apache.hama.ipc.Server: IPC Server listener on 50000: starting
+2015-04-20 18:21:02,132 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50000: starting
+2015-04-20 18:21:02,338 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-04-20 18:21:02,622 INFO org.apache.hama.bsp.GroomServer: starting webserver: master
+2015-04-20 18:21:02,622 INFO org.apache.hama.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 40015
+2015-04-20 18:21:02,623 INFO org.apache.hama.http.HttpServer: listener.getLocalPort() returned 40015 webServer.getConnectors()[0].getLocalPort() returned 40015
+2015-04-20 18:21:02,623 INFO org.apache.hama.http.HttpServer: Jetty bound to port 40015
+2015-04-20 18:21:02,623 INFO org.mortbay.log: jetty-6.1.14
+2015-04-20 18:21:03,803 INFO org.mortbay.log: Started SelectChannelConnector@master:40015
+2015-04-20 18:21:03,825 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50001
+2015-04-20 18:21:03,833 INFO org.apache.hama.ipc.Server: IPC Server listener on 50001: starting
+2015-04-20 18:21:03,833 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50001: starting
+2015-04-20 18:21:03,833 INFO org.apache.hama.ipc.Server: IPC Server handler 1 on 50001: starting
+2015-04-20 18:21:03,833 INFO org.apache.hama.ipc.Server: IPC Server handler 2 on 50001: starting
+2015-04-20 18:21:03,833 INFO org.apache.hama.ipc.Server: IPC Server handler 3 on 50001: starting
+2015-04-20 18:21:03,838 INFO org.apache.hama.ipc.Server: IPC Server handler 4 on 50001: starting
+2015-04-20 18:21:03,834 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-20 18:21:03,834 INFO org.apache.hama.bsp.GroomServer: TaskReportServer up at: localhost/127.0.0.1:50001
+2015-04-20 18:21:03,839 INFO org.apache.hama.bsp.GroomServer: Starting groom: master:50000
+2015-04-20 18:21:14,026 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 18:21:15,676 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201820_0002_000000_0' has started.
+2015-04-20 18:21:26,568 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201820_0002_000000_0 is done.
+2015-04-20 18:21:29,253 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 18:21:29,657 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201820_0001_000000_0' has started.
+2015-04-20 18:22:58,046 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201820_0001_000000_0 is done.
+2015-04-20 18:26:07,651 ERROR org.apache.hama.bsp.GroomServer: Fail to communicate with BSPMaster for reporting.
+java.io.IOException: Call to master/172.28.128.6:40000 failed on local exception: java.io.IOException: Connection reset by peer
+	at org.apache.hama.ipc.Client.wrapException(Client.java:945)
+	at org.apache.hama.ipc.Client.call(Client.java:913)
+	at org.apache.hama.ipc.RPC$Invoker.invoke(RPC.java:239)
+	at com.sun.proxy.$Proxy4.report(Unknown Source)
+	at org.apache.hama.bsp.GroomServer.doReport(GroomServer.java:640)
+	at org.apache.hama.bsp.GroomServer.offerService(GroomServer.java:511)
+	at org.apache.hama.bsp.GroomServer.run(GroomServer.java:869)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Connection reset by peer
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.hama.util.SocketInputStream$Reader.performIO(SocketInputStream.java:53)
+	at org.apache.hama.util.SocketIOWithTimeout.doIO(SocketIOWithTimeout.java:140)
+	at org.apache.hama.util.SocketInputStream.read(SocketInputStream.java:156)
+	at org.apache.hama.util.SocketInputStream.read(SocketInputStream.java:128)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at org.apache.hama.ipc.Client$Connection$PingInputStream.read(Client.java:326)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.hama.ipc.Client$Connection.receiveResponse(Client.java:634)
+	at org.apache.hama.ipc.Client$Connection.run(Client.java:578)
+2015-04-20 18:26:07,652 ERROR org.apache.hama.GroomServerRunner: RECEIVED SIGNAL 15: SIGTERM
+2015-04-20 18:26:07,687 INFO org.apache.hama.GroomServerRunner: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down GroomServer at vagrant-master/172.28.128.6
+************************************************************/
+2015-04-20 18:26:29,643 INFO org.apache.hama.GroomServerRunner: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting GroomServer
+STARTUP_MSG:   host = vagrant-master/172.28.128.6
+STARTUP_MSG:   args = [master]
+STARTUP_MSG:   version = 2.6.0
+STARTUP_MSG:   classpath = /vagrant/hama/bin/../conf:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/tools.jar:/vagrant/hama/bin/../core/target/classes:/vagrant/hama/bin/../commons/target/classes:/vagrant/hama/bin/../graph/target/classes:/vagrant/hama/bin/../ml/target/classes:/vagrant/hama/bin/../mesos/target/classes:/vagrant/hama/bin/../hama-**.jar:/vagrant/hama/bin/../lib/activation-1.1.jar:/vagrant/hama/bin/../lib/ant-1.6.5.jar:/vagrant/hama/bin/../lib/ant-1.7.1.jar:/vagrant/hama/bin/../lib/ant-launcher-1.7.1.jar:/vagrant/hama/bin/../lib/aopalliance-1.0.jar:/vagrant/hama/bin/../lib/apacheds-i18n-2.0.0-M15.jar:/vagrant/hama/bin/../lib/apacheds-kerberos-codec-2.0.0-M15.jar:/vagrant/hama/bin/../lib/api-asn1-api-1.0.0-M20.jar:/vagrant/hama/bin/../lib/api-util-1.0.0-M20.jar:/vagrant/hama/bin/../lib/asm-3.1.jar:/vagrant/hama/bin/../lib/asm-4.0.jar:/vagrant/hama/bin/../lib/avro-1.5.3.jar:/vagrant/hama/bin/../lib/commons-beanutils-1.8.3.jar:/vagrant/hama/bin/../lib/commons-cli-1.2.jar:/vagrant/hama/bin/../lib/commons-codec-1.4.jar:/vagrant/hama/bin/../lib/commons-collections-3.2.1.jar:/vagrant/hama/bin/../lib/commons-compress-1.9.jar:/vagrant/hama/bin/../lib/commons-configuration-1.7.jar:/vagrant/hama/bin/../lib/commons-daemon-1.0.13.jar:/vagrant/hama/bin/../lib/commons-digester-1.8.1.jar:/vagrant/hama/bin/../lib/commons-el-1.0.jar:/vagrant/hama/bin/../lib/commons-httpclient-3.0.1.jar:/vagrant/hama/bin/../lib/commons-io-2.4.jar:/vagrant/hama/bin/../lib/commons-lang-2.6.jar:/vagrant/hama/bin/../lib/commons-logging-1.1.1.jar:/vagrant/hama/bin/../lib/commons-math3-3.0.jar:/vagrant/hama/bin/../lib/commons-net-3.1.jar:/vagrant/hama/bin/../lib/core-3.1.1.jar:/vagrant/hama/bin/../lib/curator-client-2.6.0.jar:/vagrant/hama/bin/../lib/curator-framework-2.6.0.jar:/vagrant/hama/bin/../lib/curator-recipes-2.6.0.jar:/vagrant/hama/bin/../lib/directmemory-cache-0.2.jar:/vagrant/hama/bin/../lib/directmemory-kryo-0.2.jar:/vagrant/hama/bin/../lib/geronimo-annotation_1.0_spec-1.0.jar:/vagrant/hama/bin/../lib/geronimo-spec-jta-1.0.1B-rc4.jar:/vagrant/hama/bin/../lib/gson-2.2.4.jar:/vagrant/hama/bin/../lib/guava-13.0.1.jar:/vagrant/hama/bin/../lib/guice-3.0.jar:/vagrant/hama/bin/../lib/guice-servlet-3.0.jar:/vagrant/hama/bin/../lib/hadoop-annotations-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-auth-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-common-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0-tests.jar:/vagrant/hama/bin/../lib/hadoop-mapreduce-client-core-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-api-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-common-2.6.0.jar:/vagrant/hama/bin/../lib/hama-commons-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/hama-core-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/htrace-core-3.0.4.jar:/vagrant/hama/bin/../lib/httpclient-4.2.5.jar:/vagrant/hama/bin/../lib/httpcore-4.1.2.jar:/vagrant/hama/bin/../lib/jackson-core-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-jaxrs-1.8.3.jar:/vagrant/hama/bin/../lib/jackson-mapper-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-xc-1.8.3.jar:/vagrant/hama/bin/../lib/jasper-compiler-5.5.23.jar:/vagrant/hama/bin/../lib/jasper-runtime-5.5.23.jar:/vagrant/hama/bin/../lib/javax.inject-1.jar:/vagrant/hama/bin/../lib/java-xmlbuilder-0.4.jar:/vagrant/hama/bin/../lib/jaxb-api-2.2.2.jar:/vagrant/hama/bin/../lib/jaxb-impl-2.2.3-1.jar:/vagrant/hama/bin/../lib/jdk.tools-1.7.jar:/vagrant/hama/bin/../lib/jersey-client-1.9.jar:/vagrant/hama/bin/../lib/jersey-core-1.9.jar:/vagrant/hama/bin/../lib/jersey-guice-1.9.jar:/vagrant/hama/bin/../lib/jersey-json-1.9.jar:/vagrant/hama/bin/../lib/jersey-server-1.9.jar:/vagrant/hama/bin/../lib/jets3t-0.9.0.jar:/vagrant/hama/bin/../lib/jettison-1.1.jar:/vagrant/hama/bin/../lib/jetty-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-annotations-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-plus-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-util-6.1.14.jar:/vagrant/hama/bin/../lib/jline-0.9.94.jar:/vagrant/hama/bin/../lib/jsch-0.1.42.jar:/vagrant/hama/bin/../lib/jsp-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1.jar:/vagrant/hama/bin/../lib/jsr305-1.3.9.jar:/vagrant/hama/bin/../lib/junit-4.8.1.jar:/vagrant/hama/bin/../lib/kryo-2.20.jar:/vagrant/hama/bin/../lib/log4j-1.2.16.jar:/vagrant/hama/bin/../lib/mesos-0.15.0.jar:/vagrant/hama/bin/../lib/minlog-1.2.jar:/vagrant/hama/bin/../lib/netty-3.2.2.Final.jar:/vagrant/hama/bin/../lib/netty-3.6.2.Final.jar:/vagrant/hama/bin/../lib/netty-all-4.0.21.Final.jar:/vagrant/hama/bin/../lib/objenesis-1.2.jar:/vagrant/hama/bin/../lib/paranamer-2.3.jar:/vagrant/hama/bin/../lib/protobuf-java-2.5.0.jar:/vagrant/hama/bin/../lib/reflectasm-1.07-shaded.jar:/vagrant/hama/bin/../lib/servlet-api-2.5-6.1.14.jar:/vagrant/hama/bin/../lib/servlet-api-2.5.jar:/vagrant/hama/bin/../lib/servlet-api-6.0.32.jar:/vagrant/hama/bin/../lib/slf4j-api-1.5.8.jar:/vagrant/hama/bin/../lib/slf4j-log4j12-1.5.8.jar:/vagrant/hama/bin/../lib/snappy-java-1.0.5.jar:/vagrant/hama/bin/../lib/stax-api-1.0-2.jar:/vagrant/hama/bin/../lib/xercesImpl-2.9.1.jar:/vagrant/hama/bin/../lib/xml-apis-1.3.04.jar:/vagrant/hama/bin/../lib/xmlenc-0.52.jar:/vagrant/hama/bin/../lib/zookeeper-3.4.5.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1 (HEAD, tag: release-2.6.0-rc1, origin/branch-2.6.0, branch-2.6.0); compiled by 'acmurthy' on 2014-11-13T22:35Z
+STARTUP_MSG:   java = 1.7.0_75
+************************************************************/
+2015-04-20 18:26:29,664 INFO org.apache.hama.GroomServerRunner: registered UNIX signal handlers for [TERM, HUP, INT]
+2015-04-20 18:26:29,913 INFO org.apache.hama.bsp.GroomServer: groom start
+2015-04-20 18:26:30,415 INFO org.apache.hama.bsp.GroomServer: /tmp/hadoop-vagrant/bsp/local
+2015-04-20 18:26:31,215 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-20 18:26:32,168 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50000
+2015-04-20 18:26:32,177 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-20 18:26:32,181 INFO org.apache.hama.ipc.Server: IPC Server listener on 50000: starting
+2015-04-20 18:26:32,186 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50000: starting
+2015-04-20 18:26:32,381 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-04-20 18:26:32,655 INFO org.apache.hama.bsp.GroomServer: starting webserver: master
+2015-04-20 18:26:32,655 INFO org.apache.hama.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 40015
+2015-04-20 18:26:32,655 INFO org.apache.hama.http.HttpServer: listener.getLocalPort() returned 40015 webServer.getConnectors()[0].getLocalPort() returned 40015
+2015-04-20 18:26:32,655 INFO org.apache.hama.http.HttpServer: Jetty bound to port 40015
+2015-04-20 18:26:32,656 INFO org.mortbay.log: jetty-6.1.14
+2015-04-20 18:26:33,924 INFO org.mortbay.log: Started SelectChannelConnector@master:40015
+2015-04-20 18:26:33,938 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50001
+2015-04-20 18:26:33,939 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-20 18:26:33,944 INFO org.apache.hama.ipc.Server: IPC Server listener on 50001: starting
+2015-04-20 18:26:33,944 INFO org.apache.hama.bsp.GroomServer: TaskReportServer up at: localhost/127.0.0.1:50001
+2015-04-20 18:26:33,948 INFO org.apache.hama.bsp.GroomServer: Starting groom: master:50000
+2015-04-20 18:26:33,944 INFO org.apache.hama.ipc.Server: IPC Server handler 3 on 50001: starting
+2015-04-20 18:26:33,943 INFO org.apache.hama.ipc.Server: IPC Server handler 2 on 50001: starting
+2015-04-20 18:26:33,943 INFO org.apache.hama.ipc.Server: IPC Server handler 1 on 50001: starting
+2015-04-20 18:26:33,943 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50001: starting
+2015-04-20 18:26:33,948 INFO org.apache.hama.ipc.Server: IPC Server handler 4 on 50001: starting
+2015-04-20 18:26:44,837 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 18:26:46,383 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201826_0002_000000_0' has started.
+2015-04-20 18:26:56,028 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201826_0002_000000_0 is done.
+2015-04-20 18:26:57,060 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 18:26:57,502 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201826_0001_000000_0' has started.
+2015-04-20 18:28:19,265 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201826_0001_000000_0 is done.
+2015-04-20 18:32:15,857 ERROR org.apache.hama.GroomServerRunner: RECEIVED SIGNAL 15: SIGTERM
+2015-04-20 18:32:15,881 INFO org.apache.hama.GroomServerRunner: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down GroomServer at vagrant-master/172.28.128.6
+************************************************************/
+2015-04-20 18:32:30,293 INFO org.apache.hama.GroomServerRunner: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting GroomServer
+STARTUP_MSG:   host = vagrant-master/172.28.128.6
+STARTUP_MSG:   args = [master]
+STARTUP_MSG:   version = 2.6.0
+STARTUP_MSG:   classpath = /vagrant/hama/bin/../conf:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/tools.jar:/vagrant/hama/bin/../core/target/classes:/vagrant/hama/bin/../commons/target/classes:/vagrant/hama/bin/../graph/target/classes:/vagrant/hama/bin/../ml/target/classes:/vagrant/hama/bin/../mesos/target/classes:/vagrant/hama/bin/../hama-**.jar:/vagrant/hama/bin/../lib/activation-1.1.jar:/vagrant/hama/bin/../lib/ant-1.6.5.jar:/vagrant/hama/bin/../lib/ant-1.7.1.jar:/vagrant/hama/bin/../lib/ant-launcher-1.7.1.jar:/vagrant/hama/bin/../lib/aopalliance-1.0.jar:/vagrant/hama/bin/../lib/apacheds-i18n-2.0.0-M15.jar:/vagrant/hama/bin/../lib/apacheds-kerberos-codec-2.0.0-M15.jar:/vagrant/hama/bin/../lib/api-asn1-api-1.0.0-M20.jar:/vagrant/hama/bin/../lib/api-util-1.0.0-M20.jar:/vagrant/hama/bin/../lib/asm-3.1.jar:/vagrant/hama/bin/../lib/asm-4.0.jar:/vagrant/hama/bin/../lib/avro-1.5.3.jar:/vagrant/hama/bin/../lib/commons-beanutils-1.8.3.jar:/vagrant/hama/bin/../lib/commons-cli-1.2.jar:/vagrant/hama/bin/../lib/commons-codec-1.4.jar:/vagrant/hama/bin/../lib/commons-collections-3.2.1.jar:/vagrant/hama/bin/../lib/commons-compress-1.9.jar:/vagrant/hama/bin/../lib/commons-configuration-1.7.jar:/vagrant/hama/bin/../lib/commons-daemon-1.0.13.jar:/vagrant/hama/bin/../lib/commons-digester-1.8.1.jar:/vagrant/hama/bin/../lib/commons-el-1.0.jar:/vagrant/hama/bin/../lib/commons-httpclient-3.0.1.jar:/vagrant/hama/bin/../lib/commons-io-2.4.jar:/vagrant/hama/bin/../lib/commons-lang-2.6.jar:/vagrant/hama/bin/../lib/commons-logging-1.1.1.jar:/vagrant/hama/bin/../lib/commons-math3-3.0.jar:/vagrant/hama/bin/../lib/commons-net-3.1.jar:/vagrant/hama/bin/../lib/core-3.1.1.jar:/vagrant/hama/bin/../lib/curator-client-2.6.0.jar:/vagrant/hama/bin/../lib/curator-framework-2.6.0.jar:/vagrant/hama/bin/../lib/curator-recipes-2.6.0.jar:/vagrant/hama/bin/../lib/directmemory-cache-0.2.jar:/vagrant/hama/bin/../lib/directmemory-kryo-0.2.jar:/vagrant/hama/bin/../lib/geronimo-annotation_1.0_spec-1.0.jar:/vagrant/hama/bin/../lib/geronimo-spec-jta-1.0.1B-rc4.jar:/vagrant/hama/bin/../lib/gson-2.2.4.jar:/vagrant/hama/bin/../lib/guava-13.0.1.jar:/vagrant/hama/bin/../lib/guice-3.0.jar:/vagrant/hama/bin/../lib/guice-servlet-3.0.jar:/vagrant/hama/bin/../lib/hadoop-annotations-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-auth-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-common-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0-tests.jar:/vagrant/hama/bin/../lib/hadoop-mapreduce-client-core-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-api-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-common-2.6.0.jar:/vagrant/hama/bin/../lib/hama-commons-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/hama-core-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/htrace-core-3.0.4.jar:/vagrant/hama/bin/../lib/httpclient-4.2.5.jar:/vagrant/hama/bin/../lib/httpcore-4.1.2.jar:/vagrant/hama/bin/../lib/jackson-core-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-jaxrs-1.8.3.jar:/vagrant/hama/bin/../lib/jackson-mapper-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-xc-1.8.3.jar:/vagrant/hama/bin/../lib/jasper-compiler-5.5.23.jar:/vagrant/hama/bin/../lib/jasper-runtime-5.5.23.jar:/vagrant/hama/bin/../lib/javax.inject-1.jar:/vagrant/hama/bin/../lib/java-xmlbuilder-0.4.jar:/vagrant/hama/bin/../lib/jaxb-api-2.2.2.jar:/vagrant/hama/bin/../lib/jaxb-impl-2.2.3-1.jar:/vagrant/hama/bin/../lib/jdk.tools-1.7.jar:/vagrant/hama/bin/../lib/jersey-client-1.9.jar:/vagrant/hama/bin/../lib/jersey-core-1.9.jar:/vagrant/hama/bin/../lib/jersey-guice-1.9.jar:/vagrant/hama/bin/../lib/jersey-json-1.9.jar:/vagrant/hama/bin/../lib/jersey-server-1.9.jar:/vagrant/hama/bin/../lib/jets3t-0.9.0.jar:/vagrant/hama/bin/../lib/jettison-1.1.jar:/vagrant/hama/bin/../lib/jetty-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-annotations-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-plus-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-util-6.1.14.jar:/vagrant/hama/bin/../lib/jline-0.9.94.jar:/vagrant/hama/bin/../lib/jsch-0.1.42.jar:/vagrant/hama/bin/../lib/jsp-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1.jar:/vagrant/hama/bin/../lib/jsr305-1.3.9.jar:/vagrant/hama/bin/../lib/junit-4.8.1.jar:/vagrant/hama/bin/../lib/kryo-2.20.jar:/vagrant/hama/bin/../lib/log4j-1.2.16.jar:/vagrant/hama/bin/../lib/mesos-0.15.0.jar:/vagrant/hama/bin/../lib/minlog-1.2.jar:/vagrant/hama/bin/../lib/netty-3.2.2.Final.jar:/vagrant/hama/bin/../lib/netty-3.6.2.Final.jar:/vagrant/hama/bin/../lib/netty-all-4.0.21.Final.jar:/vagrant/hama/bin/../lib/objenesis-1.2.jar:/vagrant/hama/bin/../lib/paranamer-2.3.jar:/vagrant/hama/bin/../lib/protobuf-java-2.5.0.jar:/vagrant/hama/bin/../lib/reflectasm-1.07-shaded.jar:/vagrant/hama/bin/../lib/servlet-api-2.5-6.1.14.jar:/vagrant/hama/bin/../lib/servlet-api-2.5.jar:/vagrant/hama/bin/../lib/servlet-api-6.0.32.jar:/vagrant/hama/bin/../lib/slf4j-api-1.5.8.jar:/vagrant/hama/bin/../lib/slf4j-log4j12-1.5.8.jar:/vagrant/hama/bin/../lib/snappy-java-1.0.5.jar:/vagrant/hama/bin/../lib/stax-api-1.0-2.jar:/vagrant/hama/bin/../lib/xercesImpl-2.9.1.jar:/vagrant/hama/bin/../lib/xml-apis-1.3.04.jar:/vagrant/hama/bin/../lib/xmlenc-0.52.jar:/vagrant/hama/bin/../lib/zookeeper-3.4.5.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1 (HEAD, tag: release-2.6.0-rc1, origin/branch-2.6.0, branch-2.6.0); compiled by 'acmurthy' on 2014-11-13T22:35Z
+STARTUP_MSG:   java = 1.7.0_75
+************************************************************/
+2015-04-20 18:32:30,316 INFO org.apache.hama.GroomServerRunner: registered UNIX signal handlers for [TERM, HUP, INT]
+2015-04-20 18:32:30,609 INFO org.apache.hama.bsp.GroomServer: groom start
+2015-04-20 18:32:31,017 INFO org.apache.hama.bsp.GroomServer: /tmp/hadoop-vagrant/bsp/local
+2015-04-20 18:32:31,907 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-20 18:32:32,800 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50000
+2015-04-20 18:32:32,804 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-20 18:32:32,805 INFO org.apache.hama.ipc.Server: IPC Server listener on 50000: starting
+2015-04-20 18:32:32,810 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50000: starting
+2015-04-20 18:32:32,997 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-04-20 18:32:33,303 INFO org.apache.hama.bsp.GroomServer: starting webserver: master
+2015-04-20 18:32:33,303 INFO org.apache.hama.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 40015
+2015-04-20 18:32:33,304 INFO org.apache.hama.http.HttpServer: listener.getLocalPort() returned 40015 webServer.getConnectors()[0].getLocalPort() returned 40015
+2015-04-20 18:32:33,304 INFO org.apache.hama.http.HttpServer: Jetty bound to port 40015
+2015-04-20 18:32:33,304 INFO org.mortbay.log: jetty-6.1.14
+2015-04-20 18:32:34,520 INFO org.mortbay.log: Started SelectChannelConnector@master:40015
+2015-04-20 18:32:34,530 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50001
+2015-04-20 18:32:34,531 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-20 18:32:34,531 INFO org.apache.hama.ipc.Server: IPC Server listener on 50001: starting
+2015-04-20 18:32:34,531 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50001: starting
+2015-04-20 18:32:34,531 INFO org.apache.hama.ipc.Server: IPC Server handler 1 on 50001: starting
+2015-04-20 18:32:34,531 INFO org.apache.hama.ipc.Server: IPC Server handler 2 on 50001: starting
+2015-04-20 18:32:34,532 INFO org.apache.hama.ipc.Server: IPC Server handler 3 on 50001: starting
+2015-04-20 18:32:34,532 INFO org.apache.hama.bsp.GroomServer: TaskReportServer up at: localhost/127.0.0.1:50001
+2015-04-20 18:32:34,536 INFO org.apache.hama.bsp.GroomServer: Starting groom: master:50000
+2015-04-20 18:32:34,537 INFO org.apache.hama.ipc.Server: IPC Server handler 4 on 50001: starting
+2015-04-20 18:32:44,615 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 18:32:46,009 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201832_0002_000000_0' has started.
+2015-04-20 18:32:55,969 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201832_0002_000000_0 is done.
+2015-04-20 18:32:59,871 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 18:33:00,270 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201832_0001_000000_0' has started.
+2015-04-20 18:34:18,917 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201832_0001_000000_0 is done.
+2015-04-20 19:21:51,859 ERROR org.apache.hama.GroomServerRunner: RECEIVED SIGNAL 15: SIGTERM
+2015-04-20 19:21:51,882 INFO org.apache.hama.GroomServerRunner: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down GroomServer at vagrant-master/172.28.128.6
+************************************************************/
+2015-04-20 19:22:02,291 INFO org.apache.hama.GroomServerRunner: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting GroomServer
+STARTUP_MSG:   host = vagrant-master/172.28.128.6
+STARTUP_MSG:   args = [master]
+STARTUP_MSG:   version = 2.6.0
+STARTUP_MSG:   classpath = /vagrant/hama/bin/../conf:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/tools.jar:/vagrant/hama/bin/../core/target/classes:/vagrant/hama/bin/../commons/target/classes:/vagrant/hama/bin/../graph/target/classes:/vagrant/hama/bin/../ml/target/classes:/vagrant/hama/bin/../mesos/target/classes:/vagrant/hama/bin/../hama-**.jar:/vagrant/hama/bin/../lib/activation-1.1.jar:/vagrant/hama/bin/../lib/ant-1.6.5.jar:/vagrant/hama/bin/../lib/ant-1.7.1.jar:/vagrant/hama/bin/../lib/ant-launcher-1.7.1.jar:/vagrant/hama/bin/../lib/aopalliance-1.0.jar:/vagrant/hama/bin/../lib/apacheds-i18n-2.0.0-M15.jar:/vagrant/hama/bin/../lib/apacheds-kerberos-codec-2.0.0-M15.jar:/vagrant/hama/bin/../lib/api-asn1-api-1.0.0-M20.jar:/vagrant/hama/bin/../lib/api-util-1.0.0-M20.jar:/vagrant/hama/bin/../lib/asm-3.1.jar:/vagrant/hama/bin/../lib/asm-4.0.jar:/vagrant/hama/bin/../lib/avro-1.5.3.jar:/vagrant/hama/bin/../lib/commons-beanutils-1.8.3.jar:/vagrant/hama/bin/../lib/commons-cli-1.2.jar:/vagrant/hama/bin/../lib/commons-codec-1.4.jar:/vagrant/hama/bin/../lib/commons-collections-3.2.1.jar:/vagrant/hama/bin/../lib/commons-compress-1.9.jar:/vagrant/hama/bin/../lib/commons-configuration-1.7.jar:/vagrant/hama/bin/../lib/commons-daemon-1.0.13.jar:/vagrant/hama/bin/../lib/commons-digester-1.8.1.jar:/vagrant/hama/bin/../lib/commons-el-1.0.jar:/vagrant/hama/bin/../lib/commons-httpclient-3.0.1.jar:/vagrant/hama/bin/../lib/commons-io-2.4.jar:/vagrant/hama/bin/../lib/commons-lang-2.6.jar:/vagrant/hama/bin/../lib/commons-logging-1.1.1.jar:/vagrant/hama/bin/../lib/commons-math3-3.0.jar:/vagrant/hama/bin/../lib/commons-net-3.1.jar:/vagrant/hama/bin/../lib/core-3.1.1.jar:/vagrant/hama/bin/../lib/curator-client-2.6.0.jar:/vagrant/hama/bin/../lib/curator-framework-2.6.0.jar:/vagrant/hama/bin/../lib/curator-recipes-2.6.0.jar:/vagrant/hama/bin/../lib/directmemory-cache-0.2.jar:/vagrant/hama/bin/../lib/directmemory-kryo-0.2.jar:/vagrant/hama/bin/../lib/geronimo-annotation_1.0_spec-1.0.jar:/vagrant/hama/bin/../lib/geronimo-spec-jta-1.0.1B-rc4.jar:/vagrant/hama/bin/../lib/gson-2.2.4.jar:/vagrant/hama/bin/../lib/guava-13.0.1.jar:/vagrant/hama/bin/../lib/guice-3.0.jar:/vagrant/hama/bin/../lib/guice-servlet-3.0.jar:/vagrant/hama/bin/../lib/hadoop-annotations-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-auth-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-common-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0-tests.jar:/vagrant/hama/bin/../lib/hadoop-mapreduce-client-core-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-api-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-common-2.6.0.jar:/vagrant/hama/bin/../lib/hama-commons-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/hama-core-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/htrace-core-3.0.4.jar:/vagrant/hama/bin/../lib/httpclient-4.2.5.jar:/vagrant/hama/bin/../lib/httpcore-4.1.2.jar:/vagrant/hama/bin/../lib/jackson-core-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-jaxrs-1.8.3.jar:/vagrant/hama/bin/../lib/jackson-mapper-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-xc-1.8.3.jar:/vagrant/hama/bin/../lib/jasper-compiler-5.5.23.jar:/vagrant/hama/bin/../lib/jasper-runtime-5.5.23.jar:/vagrant/hama/bin/../lib/javax.inject-1.jar:/vagrant/hama/bin/../lib/java-xmlbuilder-0.4.jar:/vagrant/hama/bin/../lib/jaxb-api-2.2.2.jar:/vagrant/hama/bin/../lib/jaxb-impl-2.2.3-1.jar:/vagrant/hama/bin/../lib/jdk.tools-1.7.jar:/vagrant/hama/bin/../lib/jersey-client-1.9.jar:/vagrant/hama/bin/../lib/jersey-core-1.9.jar:/vagrant/hama/bin/../lib/jersey-guice-1.9.jar:/vagrant/hama/bin/../lib/jersey-json-1.9.jar:/vagrant/hama/bin/../lib/jersey-server-1.9.jar:/vagrant/hama/bin/../lib/jets3t-0.9.0.jar:/vagrant/hama/bin/../lib/jettison-1.1.jar:/vagrant/hama/bin/../lib/jetty-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-annotations-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-plus-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-util-6.1.14.jar:/vagrant/hama/bin/../lib/jline-0.9.94.jar:/vagrant/hama/bin/../lib/jsch-0.1.42.jar:/vagrant/hama/bin/../lib/jsp-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1.jar:/vagrant/hama/bin/../lib/jsr305-1.3.9.jar:/vagrant/hama/bin/../lib/junit-4.8.1.jar:/vagrant/hama/bin/../lib/kryo-2.20.jar:/vagrant/hama/bin/../lib/log4j-1.2.16.jar:/vagrant/hama/bin/../lib/mesos-0.15.0.jar:/vagrant/hama/bin/../lib/minlog-1.2.jar:/vagrant/hama/bin/../lib/netty-3.2.2.Final.jar:/vagrant/hama/bin/../lib/netty-3.6.2.Final.jar:/vagrant/hama/bin/../lib/netty-all-4.0.21.Final.jar:/vagrant/hama/bin/../lib/objenesis-1.2.jar:/vagrant/hama/bin/../lib/paranamer-2.3.jar:/vagrant/hama/bin/../lib/protobuf-java-2.5.0.jar:/vagrant/hama/bin/../lib/reflectasm-1.07-shaded.jar:/vagrant/hama/bin/../lib/servlet-api-2.5-6.1.14.jar:/vagrant/hama/bin/../lib/servlet-api-2.5.jar:/vagrant/hama/bin/../lib/servlet-api-6.0.32.jar:/vagrant/hama/bin/../lib/slf4j-api-1.5.8.jar:/vagrant/hama/bin/../lib/slf4j-log4j12-1.5.8.jar:/vagrant/hama/bin/../lib/snappy-java-1.0.5.jar:/vagrant/hama/bin/../lib/stax-api-1.0-2.jar:/vagrant/hama/bin/../lib/xercesImpl-2.9.1.jar:/vagrant/hama/bin/../lib/xml-apis-1.3.04.jar:/vagrant/hama/bin/../lib/xmlenc-0.52.jar:/vagrant/hama/bin/../lib/zookeeper-3.4.5.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1 (HEAD, tag: release-2.6.0-rc1, origin/branch-2.6.0, branch-2.6.0); compiled by 'acmurthy' on 2014-11-13T22:35Z
+STARTUP_MSG:   java = 1.7.0_75
+************************************************************/
+2015-04-20 19:22:02,316 INFO org.apache.hama.GroomServerRunner: registered UNIX signal handlers for [TERM, HUP, INT]
+2015-04-20 19:22:02,621 INFO org.apache.hama.bsp.GroomServer: groom start
+2015-04-20 19:22:03,052 INFO org.apache.hama.bsp.GroomServer: /tmp/hadoop-vagrant/bsp/local
+2015-04-20 19:22:03,832 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-20 19:22:04,749 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50000
+2015-04-20 19:22:04,752 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-20 19:22:04,754 INFO org.apache.hama.ipc.Server: IPC Server listener on 50000: starting
+2015-04-20 19:22:04,758 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50000: starting
+2015-04-20 19:22:04,937 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-04-20 19:22:05,241 INFO org.apache.hama.bsp.GroomServer: starting webserver: master
+2015-04-20 19:22:05,241 INFO org.apache.hama.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 40015
+2015-04-20 19:22:05,242 INFO org.apache.hama.http.HttpServer: listener.getLocalPort() returned 40015 webServer.getConnectors()[0].getLocalPort() returned 40015
+2015-04-20 19:22:05,242 INFO org.apache.hama.http.HttpServer: Jetty bound to port 40015
+2015-04-20 19:22:05,242 INFO org.mortbay.log: jetty-6.1.14
+2015-04-20 19:22:06,567 INFO org.mortbay.log: Started SelectChannelConnector@master:40015
+2015-04-20 19:22:06,583 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50001
+2015-04-20 19:22:06,585 INFO org.apache.hama.ipc.Server: IPC Server listener on 50001: starting
+2015-04-20 19:22:06,585 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-20 19:22:06,591 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50001: starting
+2015-04-20 19:22:06,591 INFO org.apache.hama.ipc.Server: IPC Server handler 1 on 50001: starting
+2015-04-20 19:22:06,591 INFO org.apache.hama.ipc.Server: IPC Server handler 2 on 50001: starting
+2015-04-20 19:22:06,591 INFO org.apache.hama.ipc.Server: IPC Server handler 3 on 50001: starting
+2015-04-20 19:22:06,593 INFO org.apache.hama.bsp.GroomServer: TaskReportServer up at: localhost/127.0.0.1:50001
+2015-04-20 19:22:06,593 INFO org.apache.hama.bsp.GroomServer: Starting groom: master:50000
+2015-04-20 19:22:06,593 INFO org.apache.hama.ipc.Server: IPC Server handler 4 on 50001: starting
+2015-04-20 19:23:04,396 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 19:23:05,879 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201922_0002_000000_0' has started.
+2015-04-20 19:23:15,758 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201922_0002_000000_0 is done.
+2015-04-20 19:23:16,623 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 19:23:17,017 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201922_0001_000000_0' has started.
+2015-04-20 19:24:40,090 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201922_0001_000000_0 is done.
+2015-04-20 19:27:42,770 ERROR org.apache.hama.GroomServerRunner: RECEIVED SIGNAL 15: SIGTERM
+2015-04-20 19:27:42,791 INFO org.apache.hama.GroomServerRunner: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down GroomServer at vagrant-master/172.28.128.6
+************************************************************/
+2015-04-20 19:27:53,095 INFO org.apache.hama.GroomServerRunner: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting GroomServer
+STARTUP_MSG:   host = vagrant-master/172.28.128.6
+STARTUP_MSG:   args = [master]
+STARTUP_MSG:   version = 2.6.0
+STARTUP_MSG:   classpath = /vagrant/hama/bin/../conf:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/tools.jar:/vagrant/hama/bin/../core/target/classes:/vagrant/hama/bin/../commons/target/classes:/vagrant/hama/bin/../graph/target/classes:/vagrant/hama/bin/../ml/target/classes:/vagrant/hama/bin/../mesos/target/classes:/vagrant/hama/bin/../hama-**.jar:/vagrant/hama/bin/../lib/activation-1.1.jar:/vagrant/hama/bin/../lib/ant-1.6.5.jar:/vagrant/hama/bin/../lib/ant-1.7.1.jar:/vagrant/hama/bin/../lib/ant-launcher-1.7.1.jar:/vagrant/hama/bin/../lib/aopalliance-1.0.jar:/vagrant/hama/bin/../lib/apacheds-i18n-2.0.0-M15.jar:/vagrant/hama/bin/../lib/apacheds-kerberos-codec-2.0.0-M15.jar:/vagrant/hama/bin/../lib/api-asn1-api-1.0.0-M20.jar:/vagrant/hama/bin/../lib/api-util-1.0.0-M20.jar:/vagrant/hama/bin/../lib/asm-3.1.jar:/vagrant/hama/bin/../lib/asm-4.0.jar:/vagrant/hama/bin/../lib/avro-1.5.3.jar:/vagrant/hama/bin/../lib/commons-beanutils-1.8.3.jar:/vagrant/hama/bin/../lib/commons-cli-1.2.jar:/vagrant/hama/bin/../lib/commons-codec-1.4.jar:/vagrant/hama/bin/../lib/commons-collections-3.2.1.jar:/vagrant/hama/bin/../lib/commons-compress-1.9.jar:/vagrant/hama/bin/../lib/commons-configuration-1.7.jar:/vagrant/hama/bin/../lib/commons-daemon-1.0.13.jar:/vagrant/hama/bin/../lib/commons-digester-1.8.1.jar:/vagrant/hama/bin/../lib/commons-el-1.0.jar:/vagrant/hama/bin/../lib/commons-httpclient-3.0.1.jar:/vagrant/hama/bin/../lib/commons-io-2.4.jar:/vagrant/hama/bin/../lib/commons-lang-2.6.jar:/vagrant/hama/bin/../lib/commons-logging-1.1.1.jar:/vagrant/hama/bin/../lib/commons-math3-3.0.jar:/vagrant/hama/bin/../lib/commons-net-3.1.jar:/vagrant/hama/bin/../lib/core-3.1.1.jar:/vagrant/hama/bin/../lib/curator-client-2.6.0.jar:/vagrant/hama/bin/../lib/curator-framework-2.6.0.jar:/vagrant/hama/bin/../lib/curator-recipes-2.6.0.jar:/vagrant/hama/bin/../lib/directmemory-cache-0.2.jar:/vagrant/hama/bin/../lib/directmemory-kryo-0.2.jar:/vagrant/hama/bin/../lib/geronimo-annotation_1.0_spec-1.0.jar:/vagrant/hama/bin/../lib/geronimo-spec-jta-1.0.1B-rc4.jar:/vagrant/hama/bin/../lib/gson-2.2.4.jar:/vagrant/hama/bin/../lib/guava-13.0.1.jar:/vagrant/hama/bin/../lib/guice-3.0.jar:/vagrant/hama/bin/../lib/guice-servlet-3.0.jar:/vagrant/hama/bin/../lib/hadoop-annotations-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-auth-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-common-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0-tests.jar:/vagrant/hama/bin/../lib/hadoop-mapreduce-client-core-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-api-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-common-2.6.0.jar:/vagrant/hama/bin/../lib/hama-commons-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/hama-core-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/htrace-core-3.0.4.jar:/vagrant/hama/bin/../lib/httpclient-4.2.5.jar:/vagrant/hama/bin/../lib/httpcore-4.1.2.jar:/vagrant/hama/bin/../lib/jackson-core-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-jaxrs-1.8.3.jar:/vagrant/hama/bin/../lib/jackson-mapper-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-xc-1.8.3.jar:/vagrant/hama/bin/../lib/jasper-compiler-5.5.23.jar:/vagrant/hama/bin/../lib/jasper-runtime-5.5.23.jar:/vagrant/hama/bin/../lib/javax.inject-1.jar:/vagrant/hama/bin/../lib/java-xmlbuilder-0.4.jar:/vagrant/hama/bin/../lib/jaxb-api-2.2.2.jar:/vagrant/hama/bin/../lib/jaxb-impl-2.2.3-1.jar:/vagrant/hama/bin/../lib/jdk.tools-1.7.jar:/vagrant/hama/bin/../lib/jersey-client-1.9.jar:/vagrant/hama/bin/../lib/jersey-core-1.9.jar:/vagrant/hama/bin/../lib/jersey-guice-1.9.jar:/vagrant/hama/bin/../lib/jersey-json-1.9.jar:/vagrant/hama/bin/../lib/jersey-server-1.9.jar:/vagrant/hama/bin/../lib/jets3t-0.9.0.jar:/vagrant/hama/bin/../lib/jettison-1.1.jar:/vagrant/hama/bin/../lib/jetty-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-annotations-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-plus-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-util-6.1.14.jar:/vagrant/hama/bin/../lib/jline-0.9.94.jar:/vagrant/hama/bin/../lib/jsch-0.1.42.jar:/vagrant/hama/bin/../lib/jsp-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1.jar:/vagrant/hama/bin/../lib/jsr305-1.3.9.jar:/vagrant/hama/bin/../lib/junit-4.8.1.jar:/vagrant/hama/bin/../lib/kryo-2.20.jar:/vagrant/hama/bin/../lib/log4j-1.2.16.jar:/vagrant/hama/bin/../lib/mesos-0.15.0.jar:/vagrant/hama/bin/../lib/minlog-1.2.jar:/vagrant/hama/bin/../lib/netty-3.2.2.Final.jar:/vagrant/hama/bin/../lib/netty-3.6.2.Final.jar:/vagrant/hama/bin/../lib/netty-all-4.0.21.Final.jar:/vagrant/hama/bin/../lib/objenesis-1.2.jar:/vagrant/hama/bin/../lib/paranamer-2.3.jar:/vagrant/hama/bin/../lib/protobuf-java-2.5.0.jar:/vagrant/hama/bin/../lib/reflectasm-1.07-shaded.jar:/vagrant/hama/bin/../lib/servlet-api-2.5-6.1.14.jar:/vagrant/hama/bin/../lib/servlet-api-2.5.jar:/vagrant/hama/bin/../lib/servlet-api-6.0.32.jar:/vagrant/hama/bin/../lib/slf4j-api-1.5.8.jar:/vagrant/hama/bin/../lib/slf4j-log4j12-1.5.8.jar:/vagrant/hama/bin/../lib/snappy-java-1.0.5.jar:/vagrant/hama/bin/../lib/stax-api-1.0-2.jar:/vagrant/hama/bin/../lib/xercesImpl-2.9.1.jar:/vagrant/hama/bin/../lib/xml-apis-1.3.04.jar:/vagrant/hama/bin/../lib/xmlenc-0.52.jar:/vagrant/hama/bin/../lib/zookeeper-3.4.5.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1 (HEAD, tag: release-2.6.0-rc1, origin/branch-2.6.0, branch-2.6.0); compiled by 'acmurthy' on 2014-11-13T22:35Z
+STARTUP_MSG:   java = 1.7.0_75
+************************************************************/
+2015-04-20 19:27:53,124 INFO org.apache.hama.GroomServerRunner: registered UNIX signal handlers for [TERM, HUP, INT]
+2015-04-20 19:27:53,465 INFO org.apache.hama.bsp.GroomServer: groom start
+2015-04-20 19:27:53,921 INFO org.apache.hama.bsp.GroomServer: /tmp/hadoop-vagrant/bsp/local
+2015-04-20 19:27:54,778 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-20 19:27:55,684 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50000
+2015-04-20 19:27:55,690 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-20 19:27:55,694 INFO org.apache.hama.ipc.Server: IPC Server listener on 50000: starting
+2015-04-20 19:27:55,702 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50000: starting
+2015-04-20 19:27:55,885 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-04-20 19:27:56,138 INFO org.apache.hama.bsp.GroomServer: starting webserver: master
+2015-04-20 19:27:56,138 INFO org.apache.hama.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 40015
+2015-04-20 19:27:56,139 INFO org.apache.hama.http.HttpServer: listener.getLocalPort() returned 40015 webServer.getConnectors()[0].getLocalPort() returned 40015
+2015-04-20 19:27:56,139 INFO org.apache.hama.http.HttpServer: Jetty bound to port 40015
+2015-04-20 19:27:56,139 INFO org.mortbay.log: jetty-6.1.14
+2015-04-20 19:27:57,395 INFO org.mortbay.log: Started SelectChannelConnector@master:40015
+2015-04-20 19:27:57,407 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50001
+2015-04-20 19:27:57,407 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-20 19:27:57,412 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50001: starting
+2015-04-20 19:27:57,413 INFO org.apache.hama.ipc.Server: IPC Server handler 1 on 50001: starting
+2015-04-20 19:27:57,413 INFO org.apache.hama.ipc.Server: IPC Server handler 2 on 50001: starting
+2015-04-20 19:27:57,413 INFO org.apache.hama.ipc.Server: IPC Server handler 3 on 50001: starting
+2015-04-20 19:27:57,413 INFO org.apache.hama.bsp.GroomServer: TaskReportServer up at: localhost/127.0.0.1:50001
+2015-04-20 19:27:57,413 INFO org.apache.hama.bsp.GroomServer: Starting groom: master:50000
+2015-04-20 19:27:57,414 INFO org.apache.hama.ipc.Server: IPC Server listener on 50001: starting
+2015-04-20 19:27:57,418 INFO org.apache.hama.ipc.Server: IPC Server handler 4 on 50001: starting
+2015-04-20 19:28:06,982 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 19:28:08,468 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201927_0002_000000_0' has started.
+2015-04-20 19:28:18,570 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201927_0002_000000_0 is done.
+2015-04-20 19:28:22,209 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 19:28:22,610 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201927_0001_000000_0' has started.
+2015-04-20 19:28:34,446 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201927_0001_000000_0 is done.
+2015-04-20 19:34:10,911 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 19:34:11,418 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201927_0004_000000_0' has started.
+2015-04-20 19:34:20,984 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201927_0004_000000_0 is done.
+2015-04-20 19:34:23,268 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 19:34:23,723 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201927_0003_000000_0' has started.
+2015-04-20 19:34:50,446 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201927_0003_000000_0 is done.
+2015-04-20 19:36:29,038 ERROR org.apache.hama.GroomServerRunner: RECEIVED SIGNAL 15: SIGTERM
+2015-04-20 19:36:29,061 INFO org.apache.hama.GroomServerRunner: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down GroomServer at vagrant-master/172.28.128.6
+************************************************************/
+2015-04-20 19:36:39,032 INFO org.apache.hama.GroomServerRunner: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting GroomServer
+STARTUP_MSG:   host = vagrant-master/172.28.128.6
+STARTUP_MSG:   args = [master]
+STARTUP_MSG:   version = 2.6.0
+STARTUP_MSG:   classpath = /vagrant/hama/bin/../conf:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/tools.jar:/vagrant/hama/bin/../core/target/classes:/vagrant/hama/bin/../commons/target/classes:/vagrant/hama/bin/../graph/target/classes:/vagrant/hama/bin/../ml/target/classes:/vagrant/hama/bin/../mesos/target/classes:/vagrant/hama/bin/../hama-**.jar:/vagrant/hama/bin/../lib/activation-1.1.jar:/vagrant/hama/bin/../lib/ant-1.6.5.jar:/vagrant/hama/bin/../lib/ant-1.7.1.jar:/vagrant/hama/bin/../lib/ant-launcher-1.7.1.jar:/vagrant/hama/bin/../lib/aopalliance-1.0.jar:/vagrant/hama/bin/../lib/apacheds-i18n-2.0.0-M15.jar:/vagrant/hama/bin/../lib/apacheds-kerberos-codec-2.0.0-M15.jar:/vagrant/hama/bin/../lib/api-asn1-api-1.0.0-M20.jar:/vagrant/hama/bin/../lib/api-util-1.0.0-M20.jar:/vagrant/hama/bin/../lib/asm-3.1.jar:/vagrant/hama/bin/../lib/asm-4.0.jar:/vagrant/hama/bin/../lib/avro-1.5.3.jar:/vagrant/hama/bin/../lib/commons-beanutils-1.8.3.jar:/vagrant/hama/bin/../lib/commons-cli-1.2.jar:/vagrant/hama/bin/../lib/commons-codec-1.4.jar:/vagrant/hama/bin/../lib/commons-collections-3.2.1.jar:/vagrant/hama/bin/../lib/commons-compress-1.9.jar:/vagrant/hama/bin/../lib/commons-configuration-1.7.jar:/vagrant/hama/bin/../lib/commons-daemon-1.0.13.jar:/vagrant/hama/bin/../lib/commons-digester-1.8.1.jar:/vagrant/hama/bin/../lib/commons-el-1.0.jar:/vagrant/hama/bin/../lib/commons-httpclient-3.0.1.jar:/vagrant/hama/bin/../lib/commons-io-2.4.jar:/vagrant/hama/bin/../lib/commons-lang-2.6.jar:/vagrant/hama/bin/../lib/commons-logging-1.1.1.jar:/vagrant/hama/bin/../lib/commons-math3-3.0.jar:/vagrant/hama/bin/../lib/commons-net-3.1.jar:/vagrant/hama/bin/../lib/core-3.1.1.jar:/vagrant/hama/bin/../lib/curator-client-2.6.0.jar:/vagrant/hama/bin/../lib/curator-framework-2.6.0.jar:/vagrant/hama/bin/../lib/curator-recipes-2.6.0.jar:/vagrant/hama/bin/../lib/directmemory-cache-0.2.jar:/vagrant/hama/bin/../lib/directmemory-kryo-0.2.jar:/vagrant/hama/bin/../lib/geronimo-annotation_1.0_spec-1.0.jar:/vagrant/hama/bin/../lib/geronimo-spec-jta-1.0.1B-rc4.jar:/vagrant/hama/bin/../lib/gson-2.2.4.jar:/vagrant/hama/bin/../lib/guava-13.0.1.jar:/vagrant/hama/bin/../lib/guice-3.0.jar:/vagrant/hama/bin/../lib/guice-servlet-3.0.jar:/vagrant/hama/bin/../lib/hadoop-annotations-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-auth-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-common-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0-tests.jar:/vagrant/hama/bin/../lib/hadoop-mapreduce-client-core-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-api-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-common-2.6.0.jar:/vagrant/hama/bin/../lib/hama-commons-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/hama-core-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/htrace-core-3.0.4.jar:/vagrant/hama/bin/../lib/httpclient-4.2.5.jar:/vagrant/hama/bin/../lib/httpcore-4.1.2.jar:/vagrant/hama/bin/../lib/jackson-core-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-jaxrs-1.8.3.jar:/vagrant/hama/bin/../lib/jackson-mapper-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-xc-1.8.3.jar:/vagrant/hama/bin/../lib/jasper-compiler-5.5.23.jar:/vagrant/hama/bin/../lib/jasper-runtime-5.5.23.jar:/vagrant/hama/bin/../lib/javax.inject-1.jar:/vagrant/hama/bin/../lib/java-xmlbuilder-0.4.jar:/vagrant/hama/bin/../lib/jaxb-api-2.2.2.jar:/vagrant/hama/bin/../lib/jaxb-impl-2.2.3-1.jar:/vagrant/hama/bin/../lib/jdk.tools-1.7.jar:/vagrant/hama/bin/../lib/jersey-client-1.9.jar:/vagrant/hama/bin/../lib/jersey-core-1.9.jar:/vagrant/hama/bin/../lib/jersey-guice-1.9.jar:/vagrant/hama/bin/../lib/jersey-json-1.9.jar:/vagrant/hama/bin/../lib/jersey-server-1.9.jar:/vagrant/hama/bin/../lib/jets3t-0.9.0.jar:/vagrant/hama/bin/../lib/jettison-1.1.jar:/vagrant/hama/bin/../lib/jetty-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-annotations-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-plus-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-util-6.1.14.jar:/vagrant/hama/bin/../lib/jline-0.9.94.jar:/vagrant/hama/bin/../lib/jsch-0.1.42.jar:/vagrant/hama/bin/../lib/jsp-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1.jar:/vagrant/hama/bin/../lib/jsr305-1.3.9.jar:/vagrant/hama/bin/../lib/junit-4.8.1.jar:/vagrant/hama/bin/../lib/kryo-2.20.jar:/vagrant/hama/bin/../lib/log4j-1.2.16.jar:/vagrant/hama/bin/../lib/mesos-0.15.0.jar:/vagrant/hama/bin/../lib/minlog-1.2.jar:/vagrant/hama/bin/../lib/netty-3.2.2.Final.jar:/vagrant/hama/bin/../lib/netty-3.6.2.Final.jar:/vagrant/hama/bin/../lib/netty-all-4.0.21.Final.jar:/vagrant/hama/bin/../lib/objenesis-1.2.jar:/vagrant/hama/bin/../lib/paranamer-2.3.jar:/vagrant/hama/bin/../lib/protobuf-java-2.5.0.jar:/vagrant/hama/bin/../lib/reflectasm-1.07-shaded.jar:/vagrant/hama/bin/../lib/servlet-api-2.5-6.1.14.jar:/vagrant/hama/bin/../lib/servlet-api-2.5.jar:/vagrant/hama/bin/../lib/servlet-api-6.0.32.jar:/vagrant/hama/bin/../lib/slf4j-api-1.5.8.jar:/vagrant/hama/bin/../lib/slf4j-log4j12-1.5.8.jar:/vagrant/hama/bin/../lib/snappy-java-1.0.5.jar:/vagrant/hama/bin/../lib/stax-api-1.0-2.jar:/vagrant/hama/bin/../lib/xercesImpl-2.9.1.jar:/vagrant/hama/bin/../lib/xml-apis-1.3.04.jar:/vagrant/hama/bin/../lib/xmlenc-0.52.jar:/vagrant/hama/bin/../lib/zookeeper-3.4.5.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1 (HEAD, tag: release-2.6.0-rc1, origin/branch-2.6.0, branch-2.6.0); compiled by 'acmurthy' on 2014-11-13T22:35Z
+STARTUP_MSG:   java = 1.7.0_75
+************************************************************/
+2015-04-20 19:36:39,073 INFO org.apache.hama.GroomServerRunner: registered UNIX signal handlers for [TERM, HUP, INT]
+2015-04-20 19:36:39,366 INFO org.apache.hama.bsp.GroomServer: groom start
+2015-04-20 19:36:39,792 INFO org.apache.hama.bsp.GroomServer: /tmp/hadoop-vagrant/bsp/local
+2015-04-20 19:36:40,622 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-20 19:36:41,470 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50000
+2015-04-20 19:36:41,474 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-20 19:36:41,480 INFO org.apache.hama.ipc.Server: IPC Server listener on 50000: starting
+2015-04-20 19:36:41,482 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50000: starting
+2015-04-20 19:36:41,679 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-04-20 19:36:41,979 INFO org.apache.hama.bsp.GroomServer: starting webserver: master
+2015-04-20 19:36:41,979 INFO org.apache.hama.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 40015
+2015-04-20 19:36:41,980 INFO org.apache.hama.http.HttpServer: listener.getLocalPort() returned 40015 webServer.getConnectors()[0].getLocalPort() returned 40015
+2015-04-20 19:36:41,980 INFO org.apache.hama.http.HttpServer: Jetty bound to port 40015
+2015-04-20 19:36:41,980 INFO org.mortbay.log: jetty-6.1.14
+2015-04-20 19:36:43,313 INFO org.mortbay.log: Started SelectChannelConnector@master:40015
+2015-04-20 19:36:43,324 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50001
+2015-04-20 19:36:43,324 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-20 19:36:43,324 INFO org.apache.hama.ipc.Server: IPC Server listener on 50001: starting
+2015-04-20 19:36:43,324 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50001: starting
+2015-04-20 19:36:43,325 INFO org.apache.hama.ipc.Server: IPC Server handler 1 on 50001: starting
+2015-04-20 19:36:43,325 INFO org.apache.hama.ipc.Server: IPC Server handler 2 on 50001: starting
+2015-04-20 19:36:43,325 INFO org.apache.hama.ipc.Server: IPC Server handler 3 on 50001: starting
+2015-04-20 19:36:43,325 INFO org.apache.hama.bsp.GroomServer: TaskReportServer up at: localhost/127.0.0.1:50001
+2015-04-20 19:36:43,325 INFO org.apache.hama.bsp.GroomServer: Starting groom: master:50000
+2015-04-20 19:36:43,325 INFO org.apache.hama.ipc.Server: IPC Server handler 4 on 50001: starting
+2015-04-20 19:36:53,260 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 19:36:54,947 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201936_0002_000000_0' has started.
+2015-04-20 19:37:04,936 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201936_0002_000000_0 is done.
+2015-04-20 19:37:08,485 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 19:37:08,924 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201936_0001_000000_0' has started.
+2015-04-20 19:37:37,625 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201936_0001_000000_0 is done.
+2015-04-20 19:41:07,715 ERROR org.apache.hama.GroomServerRunner: RECEIVED SIGNAL 15: SIGTERM
+2015-04-20 19:41:07,737 INFO org.apache.hama.GroomServerRunner: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down GroomServer at vagrant-master/172.28.128.6
+************************************************************/
+2015-04-20 19:41:17,736 INFO org.apache.hama.GroomServerRunner: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting GroomServer
+STARTUP_MSG:   host = vagrant-master/172.28.128.6
+STARTUP_MSG:   args = [master]
+STARTUP_MSG:   version = 2.6.0
+STARTUP_MSG:   classpath = /vagrant/hama/bin/../conf:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/tools.jar:/vagrant/hama/bin/../core/target/classes:/vagrant/hama/bin/../commons/target/classes:/vagrant/hama/bin/../graph/target/classes:/vagrant/hama/bin/../ml/target/classes:/vagrant/hama/bin/../mesos/target/classes:/vagrant/hama/bin/../hama-**.jar:/vagrant/hama/bin/../lib/activation-1.1.jar:/vagrant/hama/bin/../lib/ant-1.6.5.jar:/vagrant/hama/bin/../lib/ant-1.7.1.jar:/vagrant/hama/bin/../lib/ant-launcher-1.7.1.jar:/vagrant/hama/bin/../lib/aopalliance-1.0.jar:/vagrant/hama/bin/../lib/apacheds-i18n-2.0.0-M15.jar:/vagrant/hama/bin/../lib/apacheds-kerberos-codec-2.0.0-M15.jar:/vagrant/hama/bin/../lib/api-asn1-api-1.0.0-M20.jar:/vagrant/hama/bin/../lib/api-util-1.0.0-M20.jar:/vagrant/hama/bin/../lib/asm-3.1.jar:/vagrant/hama/bin/../lib/asm-4.0.jar:/vagrant/hama/bin/../lib/avro-1.5.3.jar:/vagrant/hama/bin/../lib/commons-beanutils-1.8.3.jar:/vagrant/hama/bin/../lib/commons-cli-1.2.jar:/vagrant/hama/bin/../lib/commons-codec-1.4.jar:/vagrant/hama/bin/../lib/commons-collections-3.2.1.jar:/vagrant/hama/bin/../lib/commons-compress-1.9.jar:/vagrant/hama/bin/../lib/commons-configuration-1.7.jar:/vagrant/hama/bin/../lib/commons-daemon-1.0.13.jar:/vagrant/hama/bin/../lib/commons-digester-1.8.1.jar:/vagrant/hama/bin/../lib/commons-el-1.0.jar:/vagrant/hama/bin/../lib/commons-httpclient-3.0.1.jar:/vagrant/hama/bin/../lib/commons-io-2.4.jar:/vagrant/hama/bin/../lib/commons-lang-2.6.jar:/vagrant/hama/bin/../lib/commons-logging-1.1.1.jar:/vagrant/hama/bin/../lib/commons-math3-3.0.jar:/vagrant/hama/bin/../lib/commons-net-3.1.jar:/vagrant/hama/bin/../lib/core-3.1.1.jar:/vagrant/hama/bin/../lib/curator-client-2.6.0.jar:/vagrant/hama/bin/../lib/curator-framework-2.6.0.jar:/vagrant/hama/bin/../lib/curator-recipes-2.6.0.jar:/vagrant/hama/bin/../lib/directmemory-cache-0.2.jar:/vagrant/hama/bin/../lib/directmemory-kryo-0.2.jar:/vagrant/hama/bin/../lib/geronimo-annotation_1.0_spec-1.0.jar:/vagrant/hama/bin/../lib/geronimo-spec-jta-1.0.1B-rc4.jar:/vagrant/hama/bin/../lib/gson-2.2.4.jar:/vagrant/hama/bin/../lib/guava-13.0.1.jar:/vagrant/hama/bin/../lib/guice-3.0.jar:/vagrant/hama/bin/../lib/guice-servlet-3.0.jar:/vagrant/hama/bin/../lib/hadoop-annotations-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-auth-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-common-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0-tests.jar:/vagrant/hama/bin/../lib/hadoop-mapreduce-client-core-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-api-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-common-2.6.0.jar:/vagrant/hama/bin/../lib/hama-commons-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/hama-core-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/htrace-core-3.0.4.jar:/vagrant/hama/bin/../lib/httpclient-4.2.5.jar:/vagrant/hama/bin/../lib/httpcore-4.1.2.jar:/vagrant/hama/bin/../lib/jackson-core-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-jaxrs-1.8.3.jar:/vagrant/hama/bin/../lib/jackson-mapper-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-xc-1.8.3.jar:/vagrant/hama/bin/../lib/jasper-compiler-5.5.23.jar:/vagrant/hama/bin/../lib/jasper-runtime-5.5.23.jar:/vagrant/hama/bin/../lib/javax.inject-1.jar:/vagrant/hama/bin/../lib/java-xmlbuilder-0.4.jar:/vagrant/hama/bin/../lib/jaxb-api-2.2.2.jar:/vagrant/hama/bin/../lib/jaxb-impl-2.2.3-1.jar:/vagrant/hama/bin/../lib/jdk.tools-1.7.jar:/vagrant/hama/bin/../lib/jersey-client-1.9.jar:/vagrant/hama/bin/../lib/jersey-core-1.9.jar:/vagrant/hama/bin/../lib/jersey-guice-1.9.jar:/vagrant/hama/bin/../lib/jersey-json-1.9.jar:/vagrant/hama/bin/../lib/jersey-server-1.9.jar:/vagrant/hama/bin/../lib/jets3t-0.9.0.jar:/vagrant/hama/bin/../lib/jettison-1.1.jar:/vagrant/hama/bin/../lib/jetty-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-annotations-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-plus-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-util-6.1.14.jar:/vagrant/hama/bin/../lib/jline-0.9.94.jar:/vagrant/hama/bin/../lib/jsch-0.1.42.jar:/vagrant/hama/bin/../lib/jsp-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1.jar:/vagrant/hama/bin/../lib/jsr305-1.3.9.jar:/vagrant/hama/bin/../lib/junit-4.8.1.jar:/vagrant/hama/bin/../lib/kryo-2.20.jar:/vagrant/hama/bin/../lib/log4j-1.2.16.jar:/vagrant/hama/bin/../lib/mesos-0.15.0.jar:/vagrant/hama/bin/../lib/minlog-1.2.jar:/vagrant/hama/bin/../lib/netty-3.2.2.Final.jar:/vagrant/hama/bin/../lib/netty-3.6.2.Final.jar:/vagrant/hama/bin/../lib/netty-all-4.0.21.Final.jar:/vagrant/hama/bin/../lib/objenesis-1.2.jar:/vagrant/hama/bin/../lib/paranamer-2.3.jar:/vagrant/hama/bin/../lib/protobuf-java-2.5.0.jar:/vagrant/hama/bin/../lib/reflectasm-1.07-shaded.jar:/vagrant/hama/bin/../lib/servlet-api-2.5-6.1.14.jar:/vagrant/hama/bin/../lib/servlet-api-2.5.jar:/vagrant/hama/bin/../lib/servlet-api-6.0.32.jar:/vagrant/hama/bin/../lib/slf4j-api-1.5.8.jar:/vagrant/hama/bin/../lib/slf4j-log4j12-1.5.8.jar:/vagrant/hama/bin/../lib/snappy-java-1.0.5.jar:/vagrant/hama/bin/../lib/stax-api-1.0-2.jar:/vagrant/hama/bin/../lib/xercesImpl-2.9.1.jar:/vagrant/hama/bin/../lib/xml-apis-1.3.04.jar:/vagrant/hama/bin/../lib/xmlenc-0.52.jar:/vagrant/hama/bin/../lib/zookeeper-3.4.5.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1 (HEAD, tag: release-2.6.0-rc1, origin/branch-2.6.0, branch-2.6.0); compiled by 'acmurthy' on 2014-11-13T22:35Z
+STARTUP_MSG:   java = 1.7.0_75
+************************************************************/
+2015-04-20 19:41:17,757 INFO org.apache.hama.GroomServerRunner: registered UNIX signal handlers for [TERM, HUP, INT]
+2015-04-20 19:41:18,013 INFO org.apache.hama.bsp.GroomServer: groom start
+2015-04-20 19:41:18,407 INFO org.apache.hama.bsp.GroomServer: /tmp/hadoop-vagrant/bsp/local
+2015-04-20 19:41:19,260 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-20 19:41:20,239 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50000
+2015-04-20 19:41:20,261 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-20 19:41:20,269 INFO org.apache.hama.ipc.Server: IPC Server listener on 50000: starting
+2015-04-20 19:41:20,280 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50000: starting
+2015-04-20 19:41:20,479 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-04-20 19:41:20,754 INFO org.apache.hama.bsp.GroomServer: starting webserver: master
+2015-04-20 19:41:20,755 INFO org.apache.hama.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 40015
+2015-04-20 19:41:20,755 INFO org.apache.hama.http.HttpServer: listener.getLocalPort() returned 40015 webServer.getConnectors()[0].getLocalPort() returned 40015
+2015-04-20 19:41:20,755 INFO org.apache.hama.http.HttpServer: Jetty bound to port 40015
+2015-04-20 19:41:20,755 INFO org.mortbay.log: jetty-6.1.14
+2015-04-20 19:41:22,364 INFO org.mortbay.log: Started SelectChannelConnector@master:40015
+2015-04-20 19:41:22,375 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50001
+2015-04-20 19:41:22,375 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-20 19:41:22,376 INFO org.apache.hama.ipc.Server: IPC Server listener on 50001: starting
+2015-04-20 19:41:22,376 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50001: starting
+2015-04-20 19:41:22,377 INFO org.apache.hama.ipc.Server: IPC Server handler 1 on 50001: starting
+2015-04-20 19:41:22,382 INFO org.apache.hama.bsp.GroomServer: TaskReportServer up at: localhost/127.0.0.1:50001
+2015-04-20 19:41:22,383 INFO org.apache.hama.bsp.GroomServer: Starting groom: master:50000
+2015-04-20 19:41:22,382 INFO org.apache.hama.ipc.Server: IPC Server handler 3 on 50001: starting
+2015-04-20 19:41:22,383 INFO org.apache.hama.ipc.Server: IPC Server handler 2 on 50001: starting
+2015-04-20 19:41:22,383 INFO org.apache.hama.ipc.Server: IPC Server handler 4 on 50001: starting
+2015-04-20 19:41:31,943 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 19:41:33,459 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201941_0002_000000_0' has started.
+2015-04-20 19:41:43,093 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201941_0002_000000_0 is done.
+2015-04-20 19:41:47,163 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 19:41:47,543 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201941_0001_000000_0' has started.
+2015-04-20 19:42:16,390 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201941_0001_000000_0 is done.
+2015-04-20 19:42:57,727 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 19:42:58,173 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201941_0004_000000_0' has started.
+2015-04-20 19:43:07,766 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201941_0004_000000_0 is done.
+2015-04-20 19:43:10,085 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 19:43:10,507 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201941_0003_000000_0' has started.
+2015-04-20 19:43:38,005 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201941_0003_000000_0 is done.
+2015-04-20 19:44:16,615 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 19:44:17,012 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201941_0006_000000_0' has started.
+2015-04-20 19:44:26,877 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201941_0006_000000_0 is done.
+2015-04-20 19:44:29,090 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 19:44:29,560 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201941_0005_000000_0' has started.
+2015-04-20 19:44:56,040 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201941_0005_000000_0 is done.
+2015-04-20 19:45:28,052 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 19:45:28,551 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201941_0008_000000_0' has started.
+2015-04-20 19:45:37,796 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201941_0008_000000_0 is done.
+2015-04-20 19:45:40,369 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 19:45:40,807 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201941_0007_000000_0' has started.
+2015-04-20 19:46:08,293 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201941_0007_000000_0 is done.
+2015-04-20 19:47:23,882 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 19:47:24,492 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201941_0010_000000_0' has started.
+2015-04-20 19:47:34,099 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201941_0010_000000_0 is done.
+2015-04-20 19:47:36,209 INFO org.apache.hama.bsp.GroomServer: Launch 2 tasks.
+2015-04-20 19:47:36,774 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201941_0009_000000_0' has started.
+2015-04-20 19:47:36,775 INFO org.apache.hama.bsp.GroomServer: Launch 2 tasks.
+2015-04-20 19:47:37,433 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201941_0009_000002_0' has started.
+2015-04-20 19:47:47,720 INFO org.apache.hama.bsp.GroomServer: adding purge task: attempt_201504201941_0009_000000_0
+2015-04-20 19:47:47,721 INFO org.apache.hama.bsp.GroomServer: adding purge task: attempt_201504201941_0009_000002_0
+2015-04-20 19:47:47,721 INFO org.apache.hama.bsp.GroomServer: About to purge task: attempt_201504201941_0009_000000_0
+2015-04-20 19:47:47,722 INFO org.apache.hama.bsp.GroomServer: About to purge task: attempt_201504201941_0009_000002_0
+2015-04-20 19:47:49,406 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-20 19:47:49,406 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504201941_0009_000000_1
+2015-04-20 19:47:49,406 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-20 19:47:49,837 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_c8mqce/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-20 19:47:49,837 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-20 19:47:49,838 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504201941_0009_000002_1
+2015-04-20 19:47:49,838 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-20 19:47:50,223 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_c8mqce/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-20 19:47:51,404 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-20 19:47:51,405 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504201941_0009_000000_2
+2015-04-20 19:47:51,405 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-20 19:47:51,872 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_c8mqce/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-20 19:47:51,872 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-20 19:47:51,873 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504201941_0009_000002_2
+2015-04-20 19:47:51,873 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-20 19:47:52,255 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_c8mqce/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-20 19:47:53,406 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-20 19:47:53,406 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504201941_0009_000000_3
+2015-04-20 19:47:53,407 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-20 19:47:53,957 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_c8mqce/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-20 19:47:53,957 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-20 19:47:53,957 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504201941_0009_000002_3
+2015-04-20 19:47:53,958 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-20 19:47:54,351 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_c8mqce/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-20 19:47:55,408 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-20 19:47:55,408 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504201941_0009_000000_4
+2015-04-20 19:47:55,408 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-20 19:47:55,985 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_c8mqce/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-20 19:47:55,986 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-20 19:47:55,986 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504201941_0009_000002_4
+2015-04-20 19:47:55,986 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-20 19:47:56,434 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_c8mqce/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-20 19:48:04,279 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 19:48:05,076 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201941_0012_000000_0' has started.
+2015-04-20 19:48:15,936 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201941_0012_000000_0 is done.
+2015-04-20 19:48:19,624 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 19:48:20,360 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201941_0011_000000_0' has started.
+2015-04-20 19:48:49,102 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201941_0011_000000_0 is done.
+2015-04-20 19:49:56,764 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 19:49:57,588 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201941_0014_000000_0' has started.
+2015-04-20 19:50:07,745 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201941_0014_000000_0 is done.
+2015-04-20 19:50:12,083 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-20 19:50:12,923 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504201941_0013_000000_0' has started.
+2015-04-20 19:50:41,323 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504201941_0013_000000_0 is done.

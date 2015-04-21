@@ -263,9 +263,11 @@ public final class HamaMessageManagerImpl<M extends Writable> extends
       }
       else {
         bundle = outgoingMessageManager.getBundleFromPrevSuperstep(requestingPeerAddress);
+        //transfer(requestingPeerAddress, bundle);
       }
 
       // TODO: We also need to transfer some portion of the localQueue
+
        List<M> stateMsgs = localQueue.getRelevantMessages(requestingPeerName);
        if (bundle == null)
            bundle = new BSPMessageBundle<M>();
@@ -278,6 +280,7 @@ public final class HamaMessageManagerImpl<M extends Writable> extends
             LOG.info("Found no bundle for requesting peer: " + requestingPeerName + " at peer: " + peer.getPeerName());
        else
             transfer_(requestingPeerAddress, bundle);
+
 
     }
 

@@ -1,0 +1,14 @@
+master:61001 enter the enterbarrier: 0
+znode size 2
+master:61001 enter the leavebarrier: 0
+znode size:4
+znode size:2
+znode size:1
+size=1, all other znodes have been deleted!
+master:61001 enter the enterbarrier: 1
+znode size 3
+master:61001 enter the leavebarrier: 1
+znode size:4
+znode size:2
+znode size:1
+size=1, all other znodes have been deleted!

@@ -1,0 +1,13 @@
+15/04/20 19:47:38 INFO bsp.GroomServer: BSPPeerChild starting
+15/04/20 19:47:41 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/04/20 19:47:41 INFO bsp.GroomServer: Starting peer for step -1 state = RUNNING
+15/04/20 19:47:46 INFO bsp.GroomServer: instantiating BSPPeerImpl
+15/04/20 19:47:46 INFO ipc.Server: Starting Socket Reader #1 for port 61001
+15/04/20 19:47:46 INFO ipc.Server: IPC Server Responder: starting
+15/04/20 19:47:46 INFO ipc.Server: IPC Server listener on 61001: starting
+15/04/20 19:47:46 INFO ipc.Server: IPC Server handler 0 on 61001: starting
+15/04/20 19:47:46 INFO ipc.Server: IPC Server handler 1 on 61001: starting
+15/04/20 19:47:46 INFO ipc.Server: IPC Server handler 2 on 61001: starting
+15/04/20 19:47:46 INFO ipc.Server: IPC Server handler 3 on 61001: starting
+15/04/20 19:47:46 INFO message.HamaMessageManagerImpl: BSPPeer address:master port:61001
+15/04/20 19:47:46 INFO ipc.Server: IPC Server handler 4 on 61001: starting

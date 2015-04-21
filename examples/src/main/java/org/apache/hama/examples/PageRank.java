@@ -68,6 +68,9 @@ public class PageRank {
         double sum = 0;
         for (DoubleWritable msg : messages) {
           sum += msg.get();
+          if (msg.get() > 1000) {
+              System.out.println("Pagerank got " + msg.get());
+          }
         }
         double alpha = (1.0d - DAMPING_FACTOR) / this.getNumVertices();
         setValue(new DoubleWritable(alpha + (sum * DAMPING_FACTOR)));

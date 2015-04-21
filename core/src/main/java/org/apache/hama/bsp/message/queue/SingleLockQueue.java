@@ -61,12 +61,17 @@ public final class SingleLockQueue<T extends Writable> implements
       return null;
   }
 
-  /*
-   * (non-Javadoc)
-   * @see
-   * org.apache.hama.bsp.message.SynchronizedQueue#setConf(org.apache.hadoop
-   * .conf.Configuration)
-   */
+    @Override
+    public List<T> getRelevantMessages(String peerName) {
+        return null;
+    }
+
+    /*
+     * (non-Javadoc)
+     * @see
+     * org.apache.hama.bsp.message.SynchronizedQueue#setConf(org.apache.hadoop
+     * .conf.Configuration)
+     */
   @Override
   public void setConf(Configuration conf) {
     synchronized (mutex) {

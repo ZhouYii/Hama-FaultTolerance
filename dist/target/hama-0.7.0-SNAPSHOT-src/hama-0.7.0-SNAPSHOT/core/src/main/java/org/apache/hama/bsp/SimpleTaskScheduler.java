@@ -277,6 +277,7 @@ class SimpleTaskScheduler extends TaskScheduler {
         && getConf().getBoolean("bsp.federator.enabled", false)) {
       this.federator.get().start();
     }
+    // Calls jobprocessor run
     this.jobProcessor.start();
     if (null != getConf()
         && getConf().getBoolean("bsp.federator.enabled", false)) {

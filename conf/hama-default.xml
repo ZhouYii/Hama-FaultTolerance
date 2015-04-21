@@ -67,7 +67,7 @@
   </property>
   <property>
     <name>bsp.groomserver.pingperiod</name>
-    <value>5000</value>
+    <value>500</value>
     <description>Periodicity in milliseconds that every BSP task should send its hearbeat ping latest. If a task fails to do so, the groom server would deem the task as failed.</description>
   </property>
   <property>

@@ -1,0 +1,55 @@
+15/04/21 00:23:37 INFO bsp.GroomServer: BSPPeerChild starting
+15/04/21 00:23:39 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/04/21 00:23:39 INFO bsp.GroomServer: Starting peer for step -9223372036854775808 state = RECOVERING
+15/04/21 00:23:43 INFO bsp.GroomServer: instantiating BSPPeerImpl
+15/04/21 00:23:43 INFO ipc.Server: Starting Socket Reader #1 for port 61001
+15/04/21 00:23:43 INFO ipc.Server: IPC Server listener on 61001: starting
+15/04/21 00:23:43 INFO ipc.Server: IPC Server Responder: starting
+15/04/21 00:23:43 INFO ipc.Server: IPC Server handler 0 on 61001: starting
+15/04/21 00:23:43 INFO ipc.Server: IPC Server handler 1 on 61001: starting
+15/04/21 00:23:43 INFO ipc.Server: IPC Server handler 2 on 61001: starting
+15/04/21 00:23:43 INFO ipc.Server: IPC Server handler 3 on 61001: starting
+15/04/21 00:23:43 INFO message.HamaMessageManagerImpl: BSPPeer address:master port:61001
+15/04/21 00:23:43 INFO ipc.Server: IPC Server handler 4 on 61001: starting
+15/04/21 00:23:44 INFO sync.ZKSyncClient: Initializing ZK Sync Client
+15/04/21 00:23:44 INFO sync.ZooKeeperSyncClientImpl: Start connecting to Zookeeper! At master/172.28.128.6:61001
+15/04/21 00:23:44 INFO bsp.BSPPeerImpl: Recovery task received 0 messages for previous superstep from alive peers
+15/04/21 00:23:44 INFO bsp.BSPPeerImpl: [BSPPeerImpl.java] Changing taskState from RECOVERING to RUNNING
+15/04/21 00:23:44 INFO bsp.GroomServer: instantiating BSPPeerImpl done, starting BSPTask now!
+15/04/21 00:23:44 INFO bsp.BSPTask: Starting runBSP from BSPTask
+15/04/21 00:23:44 INFO bsp.BSPTask: [BSPTask.java] Starting with bsp.setup
+15/04/21 00:23:44 INFO graph.GraphJobRunner: [GraphJobRunner] Entering setup.
+15/04/21 00:23:44 INFO ft.AsyncRcvdMsgCheckpointImpl: Can't retrieve persistent log. Nothing registered by master.
+15/04/21 00:23:44 ERROR bsp.BSPTask: Error running bsp setup and bsp function.
+java.lang.NullPointerException
+	at org.apache.hama.graph.GraphJobRunner.setup(GraphJobRunner.java:155)
+	at org.apache.hama.bsp.BSPTask.runBSP(BSPTask.java:172)
+	at org.apache.hama.bsp.BSPTask.run(BSPTask.java:145)
+	at org.apache.hama.bsp.GroomServer$BSPPeerChild.main(GroomServer.java:1263)
+15/04/21 00:23:44 ERROR bsp.BSPTask: Error cleaning up after bsp executed.
+java.lang.NullPointerException
+	at org.apache.hama.graph.GraphJobRunner.cleanup(GraphJobRunner.java:242)
+	at org.apache.hama.bsp.BSPTask.runBSP(BSPTask.java:183)
+	at org.apache.hama.bsp.BSPTask.run(BSPTask.java:145)
+	at org.apache.hama.bsp.GroomServer$BSPPeerChild.main(GroomServer.java:1263)
+15/04/21 00:23:44 INFO ipc.Server: Stopping server on 61001
+15/04/21 00:23:44 INFO ipc.Server: IPC Server handler 0 on 61001: exiting
+15/04/21 00:23:44 INFO ipc.Server: IPC Server handler 1 on 61001: exiting
+15/04/21 00:23:44 INFO ipc.Server: IPC Server handler 2 on 61001: exiting
+15/04/21 00:23:44 INFO ipc.Server: IPC Server handler 3 on 61001: exiting
+15/04/21 00:23:44 INFO ipc.Server: IPC Server handler 4 on 61001: exiting
+15/04/21 00:23:44 INFO ipc.Server: Stopping IPC Server listener on 61001
+15/04/21 00:23:44 INFO ipc.Server: Stopping IPC Server Responder
+15/04/21 00:23:44 INFO Configuration.deprecation: mapred.cache.localFiles is deprecated. Instead, use mapreduce.job.cache.local.files
+15/04/21 00:23:44 ERROR bsp.BSPTask: Shutting down ping service.
+15/04/21 00:23:44 FATAL bsp.GroomServer: Error running child
+java.lang.NullPointerException
+	at org.apache.hama.graph.GraphJobRunner.setup(GraphJobRunner.java:155)
+	at org.apache.hama.bsp.BSPTask.runBSP(BSPTask.java:172)
+	at org.apache.hama.bsp.BSPTask.run(BSPTask.java:145)
+	at org.apache.hama.bsp.GroomServer$BSPPeerChild.main(GroomServer.java:1263)
+java.lang.NullPointerException
+	at org.apache.hama.graph.GraphJobRunner.setup(GraphJobRunner.java:155)
+	at org.apache.hama.bsp.BSPTask.runBSP(BSPTask.java:172)
+	at org.apache.hama.bsp.BSPTask.run(BSPTask.java:145)
+	at org.apache.hama.bsp.GroomServer$BSPPeerChild.main(GroomServer.java:1263)

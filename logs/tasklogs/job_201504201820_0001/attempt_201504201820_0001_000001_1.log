@@ -1,0 +1,1095 @@
+15/04/20 18:22:49 INFO bsp.GroomServer: BSPPeerChild starting
+15/04/20 18:22:51 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/04/20 18:22:51 INFO bsp.GroomServer: Starting peer for step 20 state = RECOVERING
+15/04/20 18:22:54 INFO bsp.GroomServer: instantiating BSPPeerImpl
+15/04/20 18:22:55 INFO ipc.Server: Starting Socket Reader #1 for port 61001
+15/04/20 18:22:55 INFO ipc.Server: IPC Server Responder: starting
+15/04/20 18:22:55 INFO ipc.Server: IPC Server listener on 61001: starting
+15/04/20 18:22:55 INFO ipc.Server: IPC Server handler 0 on 61001: starting
+15/04/20 18:22:55 INFO ipc.Server: IPC Server handler 1 on 61001: starting
+15/04/20 18:22:55 INFO ipc.Server: IPC Server handler 2 on 61001: starting
+15/04/20 18:22:55 INFO ipc.Server: IPC Server handler 3 on 61001: starting
+15/04/20 18:22:55 INFO message.HamaMessageManagerImpl: BSPPeer address:slave port:61001
+15/04/20 18:22:55 INFO ipc.Server: IPC Server handler 4 on 61001: starting
+15/04/20 18:22:56 INFO sync.ZKSyncClient: Initializing ZK Sync Client
+15/04/20 18:22:56 INFO sync.ZooKeeperSyncClientImpl: Start connecting to Zookeeper! At slave/172.28.128.5:61001
+15/04/20 18:22:56 INFO ft.AsyncRcvdMsgCheckpointImpl: bspPeer slave:61001 started pinging alive peers for data
+15/04/20 18:22:56 INFO bsp.BSPPeerImpl: Skipping request to slave:61001-slave-slave
+15/04/20 18:22:56 INFO ft.AsyncRcvdMsgCheckpointImpl: Prev. superstep data recovery complete for slave:61001
+15/04/20 18:22:56 INFO bsp.BSPPeerImpl: Recovery task received 49 messages for previous superstep from alive peers
+15/04/20 18:22:56 INFO bsp.BSPPeerImpl: [BSPPeerImpl.java] Changing taskState from RECOVERING to RUNNING
+15/04/20 18:22:56 INFO bsp.GroomServer: instantiating BSPPeerImpl done, starting BSPTask now!
+15/04/20 18:22:56 INFO bsp.BSPTask: Starting runBSP from BSPTask
+15/04/20 18:22:56 INFO bsp.BSPTask: [BSPTask.java] Starting with bsp.setup
+15/04/20 18:22:56 INFO graph.GraphJobRunner: [GraphJobRunner] Entering setup.
+15/04/20 18:22:56 INFO graph.GraphJobRunner: 50 vertices are loaded into slave:61001
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 86 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 84 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 82 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 80 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 42 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 40 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 39 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 37 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 35 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 33 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 79 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 77 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 73 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 75 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 71 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 31 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 26 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 28 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 22 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 24 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 66 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 68 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 60 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 0 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 64 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 62 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 6 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 57 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 8 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 55 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 2 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 4 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 59 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 99 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 91 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 93 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 19 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 95 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 97 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 15 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 17 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 51 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 11 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 13 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 53 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 44 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 46 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 20 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 48 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Vertex Get Valnull
+15/04/20 18:22:56 INFO graph.Vertex: Setting 88 value Infinity
+15/04/20 18:22:56 INFO graph.GraphJobRunner: After Compute
+15/04/20 18:22:56 INFO graph.GraphJobRunner: Recovering peer reading from log: 100 vertices
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.978342183005124E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0013461264890415724 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0011262803841278267 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010181617611267702 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0012508932038330194 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.585379583846883E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.960718626094411E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.235945044276882E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0012160278241109077 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010503029716072835 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.47177148109168E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0011886283953849931 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010812934457720828 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.650927382822803E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.119642071659723E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.442784121952097E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.119642071659723E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010279282104718361 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0011378596103487364 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010503029716072835 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.274068823066239E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.937076484491524E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 5.315806522198631E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.302649870545643E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.717327607954419E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.757399018954091E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010370359359605794 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.978342183005124E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.6247325685226E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.344695882966232E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.302649870545643E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.246760050993011E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.001047835707182424 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.657963423502397E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.960718626094411E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010279282104718361 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.671173218910068E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.246760050993011E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 5.824008730736575E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.937076484491524E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.266462089711235E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.993914289294045E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.657963423502397E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.585379583846883E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.978342183005124E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.130891646149289E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0011262803841278267 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.140003065310673E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010876169965761116 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.629972292786779E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010693311062325015 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0012508932038330194 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0011262803841278267 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.274068823066239E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.119642071659723E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010812934457720828 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010279282104718361 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.266462089711235E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0013461264890415724 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.849108019654834E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.442784121952097E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.274068823066239E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.585379583846883E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.94295085378057E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.001047835707182424 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0012686209451689848 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.119642071659723E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.937076484491524E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.6247325685226E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0011878555154304863 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.014471463192733E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0012160278241109077 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010503029716072835 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.344695882966232E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.571054132686304E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0012686209451689848 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.266462089711235E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0011878555154304863 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.235945044276882E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.94295085378057E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.049777473931354E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.320538589073393E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0011878555154304863 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.119642071659723E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0011378596103487364 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 5.315806522198631E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.049777473931354E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.130891646149289E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.442784121952097E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.302649870545643E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.571054132686304E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.799293717346822E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.140003065310673E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 5.315806522198631E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0012160278241109077 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010693311062325015 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010181617611267702 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.302649870545643E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.571054132686304E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0011378596103487364 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010370359359605794 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.130891646149289E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.47177148109168E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.849108019654834E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010181617611267702 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.717327607954419E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 5.824008730736575E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.94295085378057E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.993914289294045E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0011886283953849931 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.014471463192733E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.671173218910068E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.246760050993011E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0012160278241109077 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0012686209451689848 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.94295085378057E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0013461264890415724 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.274068823066239E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.585379583846883E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0011870415234547498 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.571054132686304E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0011878555154304863 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.060794384331137E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.130891646149289E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.442784121952097E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010181617611267702 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.320538589073393E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.571054132686304E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0012686209451689848 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.629972292786779E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.060794384331137E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.937076484491524E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010370359359605794 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.47177148109168E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0012508932038330194 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.014471463192733E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.650927382822803E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.629972292786779E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0011378596103487364 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 5.824008730736575E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0012686209451689848 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0012160278241109077 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.049777473931354E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010693311062325015 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.47177148109168E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.274068823066239E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.585379583846883E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.140003065310673E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.060794384331137E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.937076484491524E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.6247325685226E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010181617611267702 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.235945044276882E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.344695882966232E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0011870415234547498 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0011878555154304863 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.119642071659723E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.246760050993011E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.94295085378057E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.650927382822803E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.001047835707182424 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.6247325685226E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.571054132686304E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.799293717346822E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 5.824008730736575E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0012160278241109077 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0013461264890415724 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0011870415234547498 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0012686209451689848 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.717327607954419E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.629972292786779E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.246760050993011E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 5.824008730736575E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.94295085378057E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.6247325685226E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.235945044276882E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0011378596103487364 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0012160278241109077 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010876169965761116 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.757399018954091E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.049777473931354E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.001047835707182424 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.6247325685226E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.960718626094411E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.978342183005124E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.629972292786779E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 5.315806522198631E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.130891646149289E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.001047835707182424 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010693311062325015 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.657963423502397E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010812934457720828 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010279282104718361 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 5.315806522198631E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010370359359605794 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.130891646149289E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010181617611267702 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.585379583846883E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010812934457720828 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.960718626094411E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010876169965761116 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.757399018954091E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010693311062325015 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.6247325685226E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.585379583846883E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.571054132686304E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.235945044276882E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.060794384331137E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.993914289294045E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.757399018954091E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 5.824008730736575E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.266462089711235E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.849108019654834E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0011886283953849931 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.717327607954419E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010876169965761116 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.629972292786779E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.585379583846883E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 5.824008730736575E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010812934457720828 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.571054132686304E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.001047835707182424 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0013461264890415724 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.344695882966232E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010181617611267702 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.320538589073393E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.014471463192733E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 8.266462089711235E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.442784121952097E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010279282104718361 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.671173218910068E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 5.315806522198631E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.6247325685226E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.47177148109168E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.849108019654834E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0010181617611267702 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 0.0012508932038330194 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.650927382822803E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 7.629972292786779E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 6.235945044276882E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: SRC: 27 DST ID: 0 Val: 8 Recovering Message 9.757399018954091E-4 on superstep 20
+15/04/20 18:22:56 INFO graph.GraphJobRunner: slave:61001
+15/04/20 18:22:56 INFO graph.Vertex: Setting 0 value 0.008314875324573789
+15/04/20 18:22:56 INFO graph.Vertex: Setting 86 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 84 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 82 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 80 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 42 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 40 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 39 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 37 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 35 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 33 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 79 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 77 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 73 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 75 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 71 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 31 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 26 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 28 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 22 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 24 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 66 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 68 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 60 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 64 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 62 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 6 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 57 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 8 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 55 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 2 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 4 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 59 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 99 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 91 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 93 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 19 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 95 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 97 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 15 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 17 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 51 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 11 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 13 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 53 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 44 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 46 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 20 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 48 value 0.0015000000000000002
+15/04/20 18:22:56 INFO graph.Vertex: Setting 88 value 0.0015000000000000002
+15/04/20 18:22:57 INFO bsp.BSPPeerImpl: Skipping request to slave:61001-slave-slave
+15/04/20 18:22:57 INFO bsp.BSPPeerImpl: Is check true? false
+15/04/20 18:22:57 INFO bsp.BSPPeerImpl: Recovery task received 50 messages for current superstep from alive peers
+15/04/20 18:22:57 INFO bsp.BSPPeerImpl: Completed doFirstSyncAfterRecovery
+15/04/20 18:22:57 INFO bsp.BSPTask: [BSPTask.java] Starting with bsp.bsp
+15/04/20 18:22:57 INFO graph.GraphJobRunner: Entered GraphRunner.bsp. Is recovery task? true
+15/04/20 18:22:57 INFO graph.GraphJobRunner: slave:61001
+15/04/20 18:22:57 INFO graph.Vertex: Setting 0 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 11 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 13 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 15 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 17 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 19 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 2 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 20 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 22 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 24 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 26 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 28 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 31 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 33 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 35 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 37 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 39 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 4 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 40 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 42 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 44 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 46 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 48 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 51 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 53 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 55 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 57 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 59 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 6 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 60 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 62 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 64 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 66 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 68 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 71 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 73 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 75 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 77 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 79 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 8 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 80 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 82 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 84 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 86 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 88 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 91 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 93 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 95 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 97 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 99 value Infinity
+15/04/20 18:22:57 INFO graph.GraphJobRunner: slave:61001
+15/04/20 18:22:57 INFO graph.Vertex: Setting 0 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 11 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 13 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 15 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 17 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 19 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 2 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 20 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 22 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 24 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 26 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 28 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 31 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 33 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 35 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 37 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 39 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 4 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 40 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 42 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 44 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 46 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 48 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 51 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 53 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 55 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 57 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 59 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 6 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 60 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 62 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 64 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 66 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 68 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 71 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 73 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 75 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 77 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 79 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 8 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 80 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 82 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 84 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 86 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 88 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 91 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 93 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 95 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 97 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 99 value Infinity
+15/04/20 18:22:57 INFO graph.GraphJobRunner: slave:61001
+15/04/20 18:22:57 INFO graph.Vertex: Setting 0 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 11 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 13 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 15 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 17 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 19 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 2 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 20 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 22 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 24 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 26 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 28 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 31 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 33 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 35 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 37 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 39 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 4 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 40 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 42 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 44 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 46 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 48 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 51 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 53 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 55 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 57 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 59 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 6 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 60 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 62 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 64 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 66 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 68 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 71 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 73 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 75 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 77 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 79 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 8 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 80 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 82 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 84 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 86 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 88 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 91 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 93 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 95 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 97 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 99 value Infinity
+15/04/20 18:22:57 INFO graph.GraphJobRunner: slave:61001
+15/04/20 18:22:57 INFO graph.Vertex: Setting 0 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 11 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 13 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 15 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 17 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 19 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 2 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 20 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 22 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 24 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 26 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 28 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 31 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 33 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 35 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 37 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 39 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 4 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 40 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 42 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 44 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 46 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 48 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 51 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 53 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 55 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 57 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 59 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 6 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 60 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 62 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 64 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 66 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 68 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 71 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 73 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 75 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 77 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 79 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 8 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 80 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 82 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 84 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 86 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 88 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 91 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 93 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 95 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 97 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 99 value Infinity
+15/04/20 18:22:57 INFO graph.GraphJobRunner: slave:61001
+15/04/20 18:22:57 INFO graph.Vertex: Setting 0 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 11 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 13 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 15 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 17 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 19 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 2 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 20 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 22 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 24 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 26 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 28 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 31 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 33 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 35 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 37 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 39 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 4 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 40 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 42 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 44 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 46 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 48 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 51 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 53 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 55 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 57 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 59 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 6 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 60 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 62 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 64 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 66 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 68 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 71 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 73 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 75 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 77 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 79 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 8 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 80 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 82 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 84 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 86 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 88 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 91 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 93 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 95 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 97 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 99 value Infinity
+15/04/20 18:22:57 INFO graph.GraphJobRunner: slave:61001
+15/04/20 18:22:57 INFO graph.Vertex: Setting 0 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 11 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 13 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 15 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 17 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 19 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 2 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 20 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 22 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 24 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 26 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 28 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 31 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 33 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 35 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 37 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 39 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 4 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 40 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 42 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 44 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 46 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 48 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 51 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 53 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 55 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 57 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 59 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 6 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 60 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 62 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 64 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 66 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 68 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 71 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 73 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 75 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 77 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 79 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 8 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 80 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 82 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 84 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 86 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 88 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 91 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 93 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 95 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 97 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 99 value Infinity
+15/04/20 18:22:57 INFO graph.GraphJobRunner: slave:61001
+15/04/20 18:22:57 INFO graph.Vertex: Setting 0 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 11 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 13 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 15 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 17 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 19 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 2 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 20 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 22 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 24 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 26 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 28 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 31 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 33 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 35 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 37 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 39 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 4 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 40 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 42 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 44 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 46 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 48 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 51 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 53 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 55 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 57 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 59 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 6 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 60 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 62 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 64 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 66 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 68 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 71 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 73 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 75 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 77 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 79 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 8 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 80 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 82 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 84 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 86 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 88 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 91 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 93 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 95 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 97 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 99 value Infinity
+15/04/20 18:22:57 INFO graph.GraphJobRunner: slave:61001
+15/04/20 18:22:57 INFO graph.Vertex: Setting 0 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 11 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 13 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 15 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 17 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 19 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 2 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 20 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 22 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 24 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 26 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 28 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 31 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 33 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 35 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 37 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 39 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 4 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 40 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 42 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 44 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 46 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 48 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 51 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 53 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 55 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 57 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 59 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 6 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 60 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 62 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 64 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 66 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 68 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 71 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 73 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 75 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 77 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 79 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 8 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 80 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 82 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 84 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 86 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 88 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 91 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 93 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 95 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 97 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 99 value Infinity
+15/04/20 18:22:57 INFO graph.GraphJobRunner: slave:61001
+15/04/20 18:22:57 INFO graph.Vertex: Setting 0 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 11 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 13 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 15 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 17 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 19 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 2 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 20 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 22 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 24 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 26 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 28 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 31 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 33 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 35 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 37 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 39 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 4 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 40 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 42 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 44 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 46 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 48 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 51 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 53 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 55 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 57 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 59 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 6 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 60 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 62 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 64 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 66 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 68 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 71 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 73 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 75 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 77 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 79 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 8 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 80 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 82 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 84 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 86 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 88 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 91 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 93 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 95 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 97 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 99 value Infinity
+15/04/20 18:22:57 INFO graph.GraphJobRunner: slave:61001
+15/04/20 18:22:57 INFO graph.Vertex: Setting 0 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 11 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 13 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 15 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 17 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 19 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 2 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 20 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 22 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 24 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 26 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 28 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 31 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 33 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 35 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 37 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 39 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 4 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 40 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 42 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 44 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 46 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 48 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 51 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 53 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 55 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 57 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 59 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 6 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 60 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 62 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 64 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 66 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 68 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 71 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 73 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 75 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 77 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 79 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 8 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 80 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 82 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 84 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 86 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 88 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 91 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 93 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 95 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 97 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 99 value Infinity
+15/04/20 18:22:57 INFO graph.GraphJobRunner: slave:61001
+15/04/20 18:22:57 INFO graph.Vertex: Setting 0 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 11 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 13 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 15 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 17 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 19 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 2 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 20 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 22 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 24 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 26 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 28 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 31 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 33 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 35 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 37 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 39 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 4 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 40 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 42 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 44 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 46 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 48 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 51 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 53 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 55 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 57 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 59 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 6 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 60 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 62 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 64 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 66 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 68 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 71 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 73 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 75 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 77 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 79 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 8 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 80 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 82 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 84 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 86 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 88 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 91 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 93 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 95 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 97 value Infinity
+15/04/20 18:22:57 INFO graph.Vertex: Setting 99 value Infinity
+15/04/20 18:22:57 INFO bsp.BSPTask: [BSPTask.java] Done with bsp.bsp
+15/04/20 18:22:58 INFO ipc.Server: Stopping server on 61001
+15/04/20 18:22:58 INFO ipc.Server: IPC Server handler 0 on 61001: exiting
+15/04/20 18:22:58 INFO ipc.Server: IPC Server handler 2 on 61001: exiting
+15/04/20 18:22:58 INFO ipc.Server: IPC Server handler 1 on 61001: exiting
+15/04/20 18:22:58 INFO ipc.Server: IPC Server handler 3 on 61001: exiting
+15/04/20 18:22:58 INFO ipc.Server: IPC Server handler 4 on 61001: exiting
+15/04/20 18:22:58 INFO ipc.Server: Stopping IPC Server listener on 61001
+15/04/20 18:22:58 INFO ipc.Server: Stopping IPC Server Responder
+15/04/20 18:22:58 INFO Configuration.deprecation: mapred.cache.localFiles is deprecated. Instead, use mapreduce.job.cache.local.files

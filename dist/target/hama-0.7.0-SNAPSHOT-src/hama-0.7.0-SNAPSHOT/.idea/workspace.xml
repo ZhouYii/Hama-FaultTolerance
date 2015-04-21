@@ -55,25 +55,6 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <method_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/BSPPeer.java" line="39" class="org.apache.hama.bsp.BSPPeer" package="org.apache.hama.bsp">
-        <option name="WATCH_ENTRY" value="true" />
-        <option name="WATCH_EXIT" value="true" />
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </method_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -83,105 +64,100 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ZooKeeperSyncClientImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/sync/ZooKeeperSyncClientImpl.java">
+      <file leaf-file-name="IncomingVertexMessageManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/IncomingVertexMessageManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="168" column="20" selection-start="6084" selection-end="6084" vertical-scroll-proportion="17.5" vertical-offset="2420" max-vertical-offset="5445">
-              <folding>
-                <element signature="e#7430#7868#0" expanded="true" />
-                <element signature="e#7849#7850#0" expanded="true" />
-                <element signature="e#12929#12930#0" expanded="true" />
-                <element signature="e#12963#12964#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BSPMaster.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/BSPMaster.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="55" selection-start="3310" selection-end="3310" vertical-scroll-proportion="-0.5769231" vertical-offset="1155" max-vertical-offset="14910">
+            <state line="129" column="0" selection-start="4846" selection-end="4846" vertical-scroll-proportion="0.0" vertical-offset="1605" max-vertical-offset="2940">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
+                <element signature="e#1802#1819#0" expanded="true" />
+                <element signature="e#2093#2110#0" expanded="true" />
+                <element signature="e#2503#2520#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GraphJob.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/GraphJob.java">
+      <file leaf-file-name="MemoryQueue.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/queue/MemoryQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="33" selection-start="1563" selection-end="1563" vertical-scroll-proportion="-2.8846154" vertical-offset="0" max-vertical-offset="2730">
+            <state line="54" column="8" selection-start="1902" selection-end="1914" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1860">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SingleLockQueue.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/queue/SingleLockQueue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="65" column="8" selection-start="1917" selection-end="1929" vertical-scroll-proportion="0.0" vertical-offset="142" max-vertical-offset="3135">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SortedMemoryQueue.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/queue/SortedMemoryQueue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="8" selection-start="1780" selection-end="1792" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1680">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HamaAsyncMessageManagerImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/HamaAsyncMessageManagerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="175" column="0" selection-start="6118" selection-end="6118" vertical-scroll-proportion="0.0" vertical-offset="1717" max-vertical-offset="2790">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Log.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/lib/tools.jar!/com/sun/tools/javac/util/Log.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1635">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GraphJobRunner.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/GraphJobRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="131" column="44" selection-start="5370" selection-end="5370" vertical-scroll-proportion="0.0" vertical-offset="1965" max-vertical-offset="11190">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SynchronizedQueue.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/queue/SynchronizedQueue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="72" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageQueue.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/queue/MessageQueue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="0" selection-start="1101" selection-end="1101" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1410">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HamaMessageManagerImpl.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/HamaMessageManagerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="280" column="47" selection-start="10579" selection-end="10579" vertical-scroll-proportion="1.4054054" vertical-offset="3232" max-vertical-offset="4335">
               <folding>
-                <element signature="e#4174#4220#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BSPJob.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/BSPJob.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="225" column="43" selection-start="6870" selection-end="6870" vertical-scroll-proportion="0.39848197" vertical-offset="2715" max-vertical-offset="6060">
-              <folding>
-                <element signature="e#3249#3278#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RunningJob.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/RunningJob.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="14" selection-start="2440" selection-end="2440" vertical-scroll-proportion="0.0" vertical-offset="851" max-vertical-offset="1695">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BSPJobClient.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/BSPJobClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="229" column="60" selection-start="7063" selection-end="7063" vertical-scroll-proportion="0.0" vertical-offset="2276" max-vertical-offset="16065">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RPC.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/ipc/RPC.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="364" column="34" selection-start="11651" selection-end="11651" vertical-scroll-proportion="0.0" vertical-offset="4391" max-vertical-offset="8985">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JobSubmissionProtocol.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/ipc/JobSubmissionProtocol.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="17" selection-start="1303" selection-end="1303" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1650">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BSPJobContext.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/BSPJobContext.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="13" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1455">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Object.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/src.zip!/java/lang/Object.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="13" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0" vertical-offset="11" max-vertical-offset="8055">
-              <folding>
-                <element signature="e#0#25910#0" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#7613#7643#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -197,26 +173,40 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/SimpleTaskScheduler.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/ft/AsyncRcvdMsgCheckpointImpl.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/BSPPeer.java" />
         <option value="$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/AggregationRunner.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/BSPPeerImpl.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/HamaMessageManagerImpl.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/HamaMessageManager.java" />
-        <option value="$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/Vertex.java" />
-        <option value="$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/GraphJobMessage.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/GroomServer.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/BSPJobClient.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/RunningJob.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/SimpleTaskWorkerManager.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/RecoverTaskAction.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/GroomServerAction.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/BSPMaster.java" />
-        <option value="$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/GraphJobRunner.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/ipc/RPC.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/BSPJob.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/BSPJobClient.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/JobInProgress.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/SimpleTaskScheduler.java" />
+        <option value="$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/GraphJob.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/HamaMessageManager.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/BSPPeer.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/MessageManager.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/BSPPeerImpl.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/PartitioningRunner.java" />
+        <option value="$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/MapVerticesInfo.java" />
+        <option value="$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/Vertex.java" />
+        <option value="$PROJECT_DIR$/examples/src/main/java/org/apache/hama/examples/PageRank.java" />
+        <option value="$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/GraphJobMessage.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/queue/MessageQueue.java" />
+        <option value="$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/MessagePerVertex.java" />
+        <option value="$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/GraphJobRunner.java" />
+        <option value="$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/IncomingVertexMessageManager.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/queue/MemoryQueue.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/queue/SingleLockQueue.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/queue/SortedMemoryQueue.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/HamaAsyncMessageManagerImpl.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/HamaMessageManagerImpl.java" />
       </list>
     </option>
   </component>
@@ -224,6 +214,119 @@
     <option name="y" value="22" />
     <option name="width" value="1440" />
     <option name="height" value="823" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id>Android Lint</id>
+          </State>
+          <State>
+            <id>Bitwise operation issues</id>
+          </State>
+          <State>
+            <id>Bitwise operation issuesJavaScript</id>
+          </State>
+          <State>
+            <id>CDI(Contexts and Dependency Injection) issues</id>
+          </State>
+          <State>
+            <id>Class structure</id>
+          </State>
+          <State>
+            <id>Code style issues</id>
+          </State>
+          <State>
+            <id>Finalization issues</id>
+          </State>
+          <State>
+            <id>Google Web Toolkit issues</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>Hibernate Issues</id>
+          </State>
+          <State>
+            <id>Initialization issues</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>J2ME issues</id>
+          </State>
+          <State>
+            <id>JUnit issues</id>
+          </State>
+          <State>
+            <id>Java language level migration aids</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Logging issues</id>
+          </State>
+          <State>
+            <id>Memory issues</id>
+          </State>
+          <State>
+            <id>Modularization issues</id>
+          </State>
+          <State>
+            <id>Numeric issues</id>
+          </State>
+          <State>
+            <id>OtherGroovy</id>
+          </State>
+          <State>
+            <id>Performance issues</id>
+          </State>
+          <State>
+            <id>Plugin DevKit</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsGroovy</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugs</id>
+          </State>
+          <State>
+            <id>Probable bugsGroovy</id>
+          </State>
+          <State>
+            <id>Probable bugsJavaScript</id>
+          </State>
+          <State>
+            <id>Scala: General</id>
+          </State>
+          <State>
+            <id>Security issues</id>
+          </State>
+          <State>
+            <id>Serialization issues</id>
+          </State>
+          <State>
+            <id>Threading issues</id>
+          </State>
+          <State>
+            <id>Threading issuesGroovy</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -254,6 +357,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -340,7 +444,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -350,13 +453,13 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.lastSelected" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="options.lastSelected" value="Errors" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/graph" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/examples" />
     <property name="SearchEverywhereHistory" value="`" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
@@ -612,12 +715,17 @@
       <workItem from="1429111996830" duration="3457000" />
       <workItem from="1429120976941" duration="4241000" />
       <workItem from="1429203603645" duration="286000" />
-      <workItem from="1429203958248" duration="5964000" />
+      <workItem from="1429203958248" duration="24546000" />
+      <workItem from="1429283673021" duration="15307000" />
+      <workItem from="1429420792788" duration="68000" />
+      <workItem from="1429420886714" duration="158000" />
+      <workItem from="1429421056849" duration="11000" />
+      <workItem from="1429550162471" duration="660000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56922000" />
+    <option name="totallyTimeSpent" value="91708000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="823" extended-state="6" />
@@ -625,60 +733,32 @@
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.198939" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2453581" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19444445" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14583333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32928476" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USERS">
@@ -701,49 +781,33 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/dist/target/hama-0.7.0-SNAPSHOT/hama-0.7.0-SNAPSHOT/lib/log4j-1.2.16.jar!/org/apache/log4j/FileAppender.class">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/src.zip!/java/util/concurrent/ScheduledExecutorService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="19" selection-start="165" selection-end="165" vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="750" />
+        <state line="95" column="17" selection-start="2775" selection-end="2775" vertical-scroll-proportion="0.0" vertical-offset="791" max-vertical-offset="2385" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/TaskLogAppender.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/TaskRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="20" selection-start="1058" selection-end="1073" vertical-scroll-proportion="-4.0384617" vertical-offset="15" max-vertical-offset="1155" />
+        <state line="107" column="25" selection-start="3488" selection-end="3491" vertical-scroll-proportion="-8.461538" vertical-offset="800" max-vertical-offset="4830">
+          <folding>
+            <element signature="e#3625#3626#0" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/BSPInterface.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/sync/PeerSyncClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="17" selection-start="1273" selection-end="1273" vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="765" />
+        <state line="88" column="18" selection-start="3011" selection-end="3011" vertical-scroll-proportion="0.0" vertical-offset="866" max-vertical-offset="1455" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/AverageAggregator.java">
+    <entry file="file://$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/AggregationRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="13" selection-start="962" selection-end="962" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330" />
+        <state line="123" column="54" selection-start="5078" selection-end="5078" vertical-scroll-proportion="0.0" vertical-offset="971" max-vertical-offset="3270" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/queue/SynchronizedQueue.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/src.zip!/java/util/concurrent/ConcurrentLinkedQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="25" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/queue/SingleLockQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="25" selection-start="1127" selection-end="1127" vertical-scroll-proportion="-4.6153846" vertical-offset="0" max-vertical-offset="2760" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/queue/SortedMemoryQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="4" selection-start="1786" selection-end="1786" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1320" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/queue/MessageQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="23" selection-start="1779" selection-end="1788" vertical-scroll-proportion="-17.884615" vertical-offset="105" max-vertical-offset="1035" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/MessageManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="91" selection-start="1527" selection-end="1561" vertical-scroll-proportion="0.0" vertical-offset="11" max-vertical-offset="1665" />
+        <state line="266" column="42" selection-start="10406" selection-end="10406" vertical-scroll-proportion="-95.76923" vertical-offset="930" max-vertical-offset="12045" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/util/ReflectionUtils.java">
@@ -751,293 +815,268 @@
         <state line="44" column="22" selection-start="1604" selection-end="1604" vertical-scroll-proportion="0.0" vertical-offset="131" max-vertical-offset="1710" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/JobInProgress.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="38" selection-start="3607" selection-end="3607" vertical-scroll-proportion="0.0" vertical-offset="1350" max-vertical-offset="4170" />
+        <state line="703" column="32" selection-start="21497" selection-end="21497" vertical-scroll-proportion="0.0" vertical-offset="9401" max-vertical-offset="9990">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/queue/MemoryQueue.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/BSPTaskRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="14" selection-start="1669" selection-end="1669" vertical-scroll-proportion="0.0" vertical-offset="645" max-vertical-offset="1890" />
+        <state line="25" column="13" selection-start="998" selection-end="998" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/dist/target/hama-0.7.0-SNAPSHOT/hama-0.7.0-SNAPSHOT/hama-graph-0.7.0-SNAPSHOT.jar!/org/apache/hama/graph/GraphJobMessage.class">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/GroomServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="72" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1275" />
+        <state line="955" column="13" selection-start="31898" selection-end="31898" vertical-scroll-proportion="0.0" vertical-offset="12810" max-vertical-offset="19455">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/HamaMessageManagerImpl.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/BSP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="45" selection-start="1891" selection-end="1891" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="3555" />
+        <state line="27" column="22" selection-start="1061" selection-end="1061" vertical-scroll-proportion="0.0" vertical-offset="77" max-vertical-offset="630">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/dist/target/hama-0.7.0-SNAPSHOT/hama-0.7.0-SNAPSHOT/lib/hama-core-0.7.0-SNAPSHOT.jar!/org/apache/hama/bsp/message/HamaMessageManager.class">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/BSPPeer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="300" />
+        <state line="47" column="35" selection-start="1802" selection-end="1820" vertical-scroll-proportion="-6.730769" vertical-offset="290" max-vertical-offset="3420">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/HamaMessageManager.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/MessageManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="18" selection-start="863" selection-end="863" vertical-scroll-proportion="0.0" vertical-offset="77" max-vertical-offset="870" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/sync/ZKSyncEventFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="21" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="1575" />
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/src.zip!/java/util/concurrent/ConcurrentLinkedQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="358" column="17" selection-start="13534" selection-end="13534" vertical-scroll-proportion="0.0" vertical-offset="4661" max-vertical-offset="12045" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/IncomingVertexMessageManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="33" selection-start="1322" selection-end="1322" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1410" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/Vertex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="9" selection-start="3852" selection-end="3852" vertical-scroll-proportion="0.0" vertical-offset="767" max-vertical-offset="5820" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/GraphJobMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="22" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="5310" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="445" column="24" selection-start="13528" selection-end="13528" vertical-scroll-proportion="0.0" vertical-offset="5657" max-vertical-offset="7455" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/OutgoingVertexMessageManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="35" selection-start="1503" selection-end="1503" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1785" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/dist/target/hama-0.7.0-SNAPSHOT/hama-0.7.0-SNAPSHOT/lib/hadoop-common-2.6.0.jar!/org/apache/hadoop/conf/Configuration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="226" column="16" selection-start="12522" selection-end="12522" vertical-scroll-proportion="0.0" vertical-offset="3390" max-vertical-offset="5730" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/dist/target/hama-0.7.0-SNAPSHOT/hama-0.7.0-SNAPSHOT/lib/hadoop-common-2.6.0.jar!/org/apache/hadoop/fs/FileSystem.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="268" column="19" selection-start="17792" selection-end="17792" vertical-scroll-proportion="-8.84" vertical-offset="3799" max-vertical-offset="8205" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/dist/target/hama-0.7.0-SNAPSHOT/hama-0.7.0-SNAPSHOT/hama-graph-0.7.0-SNAPSHOT.jar!/org/apache/hama/graph/GraphJob.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="164" selection-end="164" vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="690" />
+        <state line="35" column="3" selection-start="1326" selection-end="1326" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1725" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/BSPPeerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="13" selection-start="5049" selection-end="5049" vertical-scroll-proportion="0.0" vertical-offset="2265" max-vertical-offset="11760">
+        <state line="448" column="37" selection-start="14998" selection-end="15016" vertical-scroll-proportion="-8.884615" vertical-offset="5619" max-vertical-offset="10905">
+          <folding>
+            <element signature="e#5005#5035#0" expanded="false" />
+            <element signature="e#8977#9007#0" expanded="false" />
+            <element signature="e#13445#13475#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/src.zip!/java/io/ByteArrayOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="11" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="3825" />
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/src.zip!/java/lang/Double.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="19" selection-start="888" selection-end="888" vertical-scroll-proportion="0.0" vertical-offset="10676" max-vertical-offset="14535" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/Partitioner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="17" selection-start="988" selection-end="988" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/RecoverTaskAction.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/PartitioningRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="3" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
+        <state line="165" column="65" selection-start="5944" selection-end="5944" vertical-scroll-proportion="0.0" vertical-offset="1463" max-vertical-offset="4965">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/GroomServerAction.java">
+    <entry file="file://$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/VerticesInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="39" selection-start="1977" selection-end="1977" vertical-scroll-proportion="0.0" vertical-offset="551" max-vertical-offset="1665">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#3029#3030#0" expanded="false" />
-            <element signature="e#3056#3057#0" expanded="false" />
-          </folding>
+        <state line="49" column="28" selection-start="1750" selection-end="1753" vertical-scroll-proportion="-8.615385" vertical-offset="166" max-vertical-offset="1305" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/GraphJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="21" selection-start="2783" selection-end="2783" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2730" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/HashPartitioner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="21" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/DispatchTasksDirective.java">
+    <entry file="file://$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/MapVerticesInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="39" selection-start="2447" selection-end="2447" vertical-scroll-proportion="0.0" vertical-offset="377" max-vertical-offset="930">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#1603#1604#0" expanded="false" />
-            <element signature="e#1632#1633#0" expanded="false" />
-          </folding>
+        <state line="113" column="0" selection-start="3184" selection-end="3184" vertical-scroll-proportion="0.0" vertical-offset="989" max-vertical-offset="1710" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/Vertex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="0" selection-start="2502" selection-end="2502" vertical-scroll-proportion="-23.076923" vertical-offset="0" max-vertical-offset="5580" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/VertexInputReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="90" selection-start="1625" selection-end="1625" vertical-scroll-proportion="0.0" vertical-offset="8" max-vertical-offset="1501" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/Edge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="19" selection-start="1478" selection-end="1478" vertical-scroll-proportion="0.0" vertical-offset="122" max-vertical-offset="675" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/src/main/java/org/apache/hama/examples/PageRank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="45" selection-start="3375" selection-end="3375" vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="2940" />
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/src.zip!/java/io/OutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="16" selection-start="2120" selection-end="2120" vertical-scroll-proportion="0.0" vertical-offset="566" max-vertical-offset="2055" />
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/src.zip!/java/io/ByteArrayInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="11" selection-start="2836" selection-end="2836" vertical-scroll-proportion="0.0" vertical-offset="953" max-vertical-offset="3990" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/VertexInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="14" selection-start="2072" selection-end="2072" vertical-scroll-proportion="0.0" vertical-offset="353" max-vertical-offset="1785" />
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/src.zip!/java/io/DataInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="141" column="76" selection-start="5667" selection-end="5667" vertical-scroll-proportion="8.692307" vertical-offset="1996" max-vertical-offset="9690" />
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="8" selection-start="5530" selection-end="5530" vertical-scroll-proportion="0.0" vertical-offset="1313" max-vertical-offset="6915" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/HamaMessageManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="14" selection-start="1832" selection-end="1832" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/OutgoingMessageManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="28" selection-start="1341" selection-end="1360" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/ipc/GroomProtocol.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="7" selection-start="1200" selection-end="1200" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state line="244" column="38" selection-start="8235" selection-end="8235" vertical-scroll-proportion="0.0" vertical-offset="3007" max-vertical-offset="3705">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/SimpleTaskWorkerManager.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/MessageEventListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="18" selection-start="5568" selection-end="5568" vertical-scroll-proportion="0.0" vertical-offset="1706" max-vertical-offset="2475">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#2964#3008#0" expanded="false" />
-            <element signature="e#3089#3095#0" expanded="false" />
-            <element signature="e#4426#4470#0" expanded="false" />
-          </folding>
+        <state line="19" column="17" selection-start="862" selection-end="862" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/dist/target/hama-0.7.0-SNAPSHOT/hama-0.7.0-SNAPSHOT/hama-graph-0.7.0-SNAPSHOT.jar!/org/apache/hama/graph/GraphJobRunner.class">
+    <entry file="file://$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/MessagePerVertex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="1" selection-start="9707" selection-end="9707" vertical-scroll-proportion="-17.0" vertical-offset="1345" max-vertical-offset="1860">
+        <state line="62" column="45" selection-start="2399" selection-end="2399" vertical-scroll-proportion="0.0" vertical-offset="930" max-vertical-offset="1425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/GraphJobMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="325" column="27" selection-start="8992" selection-end="8992" vertical-scroll-proportion="0.0" vertical-offset="4013" max-vertical-offset="4845">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/GraphJobRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="286" column="36" selection-start="10531" selection-end="10531" vertical-scroll-proportion="-5.576923" vertical-offset="3500" max-vertical-offset="10125">
+        <state line="131" column="44" selection-start="5370" selection-end="5370" vertical-scroll-proportion="0.0" vertical-offset="1965" max-vertical-offset="11190">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/JobInProgress.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/lib/tools.jar!/com/sun/tools/javac/util/Log.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="248" column="30" selection-start="6992" selection-end="6992" vertical-scroll-proportion="-7.3076925" vertical-offset="2720" max-vertical-offset="9975">
+        <state line="6" column="13" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1635">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/QueueManager.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/queue/SynchronizedQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="20" selection-start="1333" selection-end="1333" vertical-scroll-proportion="0.0" vertical-offset="11" max-vertical-offset="1380">
+        <state line="25" column="72" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/SimpleTaskScheduler.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/queue/MessageQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="25" selection-start="4419" selection-end="4419" vertical-scroll-proportion="0.0" vertical-offset="746" max-vertical-offset="4170">
+        <state line="25" column="0" selection-start="1101" selection-end="1101" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1410">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/dist/target/hama-0.7.0-SNAPSHOT/hama-0.7.0-SNAPSHOT/lib/zookeeper-3.4.5.jar!/org/apache/zookeeper/Watcher.class">
+    <entry file="file://$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/IncomingVertexMessageManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="167" selection-end="167" vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="825">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/GroomServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1213" column="37" selection-start="39746" selection-end="39746" vertical-scroll-proportion="-49.846153" vertical-offset="15549" max-vertical-offset="19455">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/TaskRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="250" column="32" selection-start="8153" selection-end="8165" vertical-scroll-proportion="-6.730769" vertical-offset="2870" max-vertical-offset="4785">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/sync/ZKSyncClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="50" selection-start="2313" selection-end="2313" vertical-scroll-proportion="-2.1153846" vertical-offset="395" max-vertical-offset="7095">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/sync/ZooKeeperSyncClientImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="168" column="20" selection-start="6084" selection-end="6084" vertical-scroll-proportion="17.5" vertical-offset="2420" max-vertical-offset="5445">
-          <folding>
-            <element signature="e#7430#7868#0" expanded="true" />
-            <element signature="e#7849#7850#0" expanded="true" />
-            <element signature="e#12929#12930#0" expanded="true" />
-            <element signature="e#12963#12964#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="13" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0" vertical-offset="11" max-vertical-offset="8055">
-          <folding>
-            <element signature="e#0#25910#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/BSPJobContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="13" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1455">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/ipc/JobSubmissionProtocol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="17" selection-start="1303" selection-end="1303" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1650">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/RunningJob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="14" selection-start="2440" selection-end="2440" vertical-scroll-proportion="0.0" vertical-offset="851" max-vertical-offset="1695">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/BSPMaster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="55" selection-start="3310" selection-end="3310" vertical-scroll-proportion="-0.5769231" vertical-offset="1155" max-vertical-offset="14910">
+        <state line="129" column="0" selection-start="4846" selection-end="4846" vertical-scroll-proportion="0.0" vertical-offset="1605" max-vertical-offset="2940">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="e#1802#1819#0" expanded="true" />
+            <element signature="e#2093#2110#0" expanded="true" />
+            <element signature="e#2503#2520#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/BSPJobClient.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/queue/MemoryQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="229" column="60" selection-start="7063" selection-end="7063" vertical-scroll-proportion="0.0" vertical-offset="2276" max-vertical-offset="16065">
+        <state line="54" column="8" selection-start="1902" selection-end="1914" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1860">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/ipc/RPC.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/queue/SingleLockQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="364" column="34" selection-start="11651" selection-end="11651" vertical-scroll-proportion="0.0" vertical-offset="4391" max-vertical-offset="8985">
+        <state line="65" column="8" selection-start="1917" selection-end="1929" vertical-scroll-proportion="0.0" vertical-offset="142" max-vertical-offset="3135">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graph/src/main/java/org/apache/hama/graph/GraphJob.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/queue/SortedMemoryQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="33" selection-start="1563" selection-end="1563" vertical-scroll-proportion="-2.8846154" vertical-offset="0" max-vertical-offset="2730">
-          <folding>
-            <element signature="e#4174#4220#0" expanded="true" />
-          </folding>
+        <state line="51" column="8" selection-start="1780" selection-end="1792" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1680">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/BSPJob.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/HamaAsyncMessageManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="225" column="43" selection-start="6870" selection-end="6870" vertical-scroll-proportion="0.39848197" vertical-offset="2715" max-vertical-offset="6060">
+        <state line="175" column="0" selection-start="6118" selection-end="6118" vertical-scroll-proportion="0.0" vertical-offset="1717" max-vertical-offset="2790">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/org/apache/hama/bsp/message/HamaMessageManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="280" column="47" selection-start="10579" selection-end="10579" vertical-scroll-proportion="1.4054054" vertical-offset="3232" max-vertical-offset="4335">
           <folding>
-            <element signature="e#3249#3278#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#7613#7643#0" expanded="true" />
           </folding>
         </state>
       </provider>

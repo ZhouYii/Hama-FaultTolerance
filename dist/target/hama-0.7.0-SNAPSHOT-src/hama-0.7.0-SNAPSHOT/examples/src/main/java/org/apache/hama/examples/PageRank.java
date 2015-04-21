@@ -23,6 +23,7 @@ import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.DoubleWritable;
 import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.Text;
+import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Writable;
 import org.apache.hama.HamaConfiguration;
 import org.apache.hama.bsp.HashPartitioner;
@@ -130,7 +131,7 @@ public class PageRank {
     // Vertex reader
     pageJob.setVertexInputReaderClass(PagerankSeqReader.class);
 
-    pageJob.setVertexIDClass(Text.class);
+    pageJob.setVertexIDClass(IntWritable.class);
     pageJob.setVertexValueClass(DoubleWritable.class);
     pageJob.setEdgeValueClass(NullWritable.class);
 

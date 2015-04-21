@@ -1,0 +1,12 @@
+master:61002 enter the enterbarrier: 0
+znode size 4
+Size:4 numBSP=4 ,Writing ready!
+master:61002 enter the leavebarrier: 0
+znode size:3
+znode size:0
+master:61002 enter the enterbarrier: 1
+znode size 4
+Size:4 numBSP=4 ,Writing ready!
+master:61002 enter the leavebarrier: 1
+znode size:2
+znode size:0

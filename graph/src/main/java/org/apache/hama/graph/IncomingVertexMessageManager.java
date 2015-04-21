@@ -22,7 +22,9 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.ConcurrentNavigableMap;
 
 
-import com.sun.tools.javac.util.Log;
+//import com.sun.tools.javac.util.Log;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.WritableComparable;
@@ -42,6 +44,9 @@ public class IncomingVertexMessageManager<M extends WritableComparable<M>>
   private Configuration conf;
   protected BSPPeer<?, ?, ?, ?, M> peer;
   private List<GraphJobMessage> stateHints = new ArrayList<GraphJobMessage>();
+
+  private static final Log LOG = LogFactory
+            .getLog(IncomingVertexMessageManager.class);
 
   private final MessagePerVertex msgPerVertex = new MessagePerVertex();
 
@@ -122,8 +127,8 @@ public class IncomingVertexMessageManager<M extends WritableComparable<M>>
            String srcPeer = peer.getAllPeerNames()[partition];
            if (peer.getPeerName() == srcPeer) {
                if (m.isVertexMessage())
-                   
-                   System.out.println("Num Values:" + m.getNumOfValues() + " first val:" + m.getIterableMessages().iterator().next());
+
+                   LOG.info("Num Values:" + m.getNumOfValues() + " first val:" + m.getIterableMessages().iterator().next());
                    stateHints.add(m);
            } else {
                add(m);

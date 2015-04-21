@@ -1,0 +1,21 @@
+15/04/21 00:37:35 INFO bsp.GroomServer: BSPPeerChild starting
+15/04/21 00:37:37 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/04/21 00:37:38 INFO bsp.GroomServer: Starting peer for step -9223372036854775808 state = RECOVERING
+15/04/21 00:37:43 INFO bsp.GroomServer: instantiating BSPPeerImpl
+15/04/21 00:37:43 INFO ipc.Server: Starting Socket Reader #1 for port 61001
+15/04/21 00:37:43 INFO ipc.Server: IPC Server Responder: starting
+15/04/21 00:37:43 INFO ipc.Server: IPC Server handler 0 on 61001: starting
+15/04/21 00:37:43 INFO ipc.Server: IPC Server handler 1 on 61001: starting
+15/04/21 00:37:43 INFO ipc.Server: IPC Server handler 2 on 61001: starting
+15/04/21 00:37:43 INFO ipc.Server: IPC Server handler 3 on 61001: starting
+15/04/21 00:37:43 INFO ipc.Server: IPC Server listener on 61001: starting
+15/04/21 00:37:43 INFO message.HamaMessageManagerImpl: BSPPeer address:slave port:61001
+15/04/21 00:37:43 INFO ipc.Server: IPC Server handler 4 on 61001: starting
+15/04/21 00:37:45 INFO sync.ZKSyncClient: Initializing ZK Sync Client
+15/04/21 00:37:45 INFO sync.ZooKeeperSyncClientImpl: Start connecting to Zookeeper! At slave/172.28.128.5:61001
+15/04/21 00:37:45 INFO bsp.BSPPeerImpl: Recovery task received 0 messages for previous superstep from alive peers
+15/04/21 00:37:45 INFO bsp.BSPPeerImpl: [BSPPeerImpl.java] Changing taskState from RECOVERING to RUNNING
+15/04/21 00:37:45 INFO bsp.GroomServer: instantiating BSPPeerImpl done, starting BSPTask now!
+15/04/21 00:37:45 INFO bsp.BSPTask: Starting runBSP from BSPTask
+15/04/21 00:37:45 INFO bsp.BSPTask: [BSPTask.java] Starting with bsp.setup
+15/04/21 00:37:45 INFO bsp.BSPTask: [BSPTask.java] Starting with bsp.bsp

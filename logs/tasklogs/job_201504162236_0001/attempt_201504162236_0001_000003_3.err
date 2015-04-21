@@ -1,6 +1,0 @@
-slave:61002 enter the enterbarrier: 30
-znode size 4
-Size:4 numBSP=4 ,Writing ready!
-slave:61002 enter the leavebarrier: 30
-znode size:2
-znode size:0

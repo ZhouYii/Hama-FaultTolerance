@@ -1,0 +1,62 @@
+15/04/20 17:50:51 INFO bsp.GroomServer: BSPPeerChild starting
+15/04/20 17:50:52 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/04/20 17:50:53 INFO bsp.GroomServer: Starting peer for step 20 state = RECOVERING
+15/04/20 17:50:56 INFO bsp.GroomServer: instantiating BSPPeerImpl
+15/04/20 17:50:56 INFO ipc.Server: Starting Socket Reader #1 for port 61001
+15/04/20 17:50:56 INFO ipc.Server: IPC Server Responder: starting
+15/04/20 17:50:56 INFO ipc.Server: IPC Server listener on 61001: starting
+15/04/20 17:50:56 INFO ipc.Server: IPC Server handler 0 on 61001: starting
+15/04/20 17:50:56 INFO ipc.Server: IPC Server handler 1 on 61001: starting
+15/04/20 17:50:56 INFO ipc.Server: IPC Server handler 2 on 61001: starting
+15/04/20 17:50:56 INFO ipc.Server: IPC Server handler 3 on 61001: starting
+15/04/20 17:50:56 INFO message.HamaMessageManagerImpl: BSPPeer address:slave port:61001
+15/04/20 17:50:56 INFO ipc.Server: IPC Server handler 4 on 61001: starting
+15/04/20 17:50:57 INFO sync.ZKSyncClient: Initializing ZK Sync Client
+15/04/20 17:50:57 INFO sync.ZooKeeperSyncClientImpl: Start connecting to Zookeeper! At slave/172.28.128.5:61001
+15/04/20 17:50:57 INFO ft.AsyncRcvdMsgCheckpointImpl: bspPeer slave:61001 started pinging alive peers for data
+15/04/20 17:50:58 INFO bsp.BSPPeerImpl: Skipping request to slave:61001-slave-slave
+15/04/20 17:50:58 INFO ft.AsyncRcvdMsgCheckpointImpl: Prev. superstep data recovery complete for slave:61001
+15/04/20 17:50:58 INFO bsp.BSPPeerImpl: Recovery task received 49 messages for previous superstep from alive peers
+15/04/20 17:50:58 INFO bsp.BSPPeerImpl: [BSPPeerImpl.java] Changing taskState from RECOVERING to RUNNING
+15/04/20 17:50:58 INFO bsp.GroomServer: instantiating BSPPeerImpl done, starting BSPTask now!
+15/04/20 17:50:58 INFO bsp.BSPTask: Starting runBSP from BSPTask
+15/04/20 17:50:58 INFO bsp.BSPTask: [BSPTask.java] Starting with bsp.setup
+15/04/20 17:50:58 INFO graph.GraphJobRunner: [GraphJobRunner] Entering setup.
+15/04/20 17:50:58 INFO graph.GraphJobRunner: 50 vertices are loaded into slave:61001
+15/04/20 17:50:58 INFO graph.GraphJobRunner: Recovering peer reading from log: 100 vertices
+15/04/20 17:50:58 INFO graph.GraphJobRunner: Recovering Message 9.978342183005126E-4 on superstep 20
+15/04/20 17:50:58 INFO graph.GraphJobRunner: Recovering Message 0.0013461264890415727 on superstep 20
+15/04/20 17:50:58 INFO graph.GraphJobRunner: Recovering Message 0.0011262803841278267 on superstep 20
+15/04/20 17:50:58 INFO graph.GraphJobRunner: Recovering Message 0.0010181617611267702 on superstep 20
+15/04/20 17:50:58 INFO graph.GraphJobRunner: Recovering Message 0.0012508932038330194 on superstep 20
+15/04/20 17:50:58 INFO graph.GraphJobRunner: Recovering Message 9.585379583846883E-4 on superstep 20
+15/04/20 17:50:58 INFO graph.GraphJobRunner: Recovering Message 6.960718626094411E-4 on superstep 20
+15/04/20 17:50:58 INFO graph.GraphJobRunner: Recovering Message 6.23594504427688E-4 on superstep 20
+15/04/20 17:50:58 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:50:58 INFO bsp.BSPPeerImpl: Skipping request to slave:61001-slave-slave
+15/04/20 17:50:58 INFO bsp.BSPPeerImpl: Is check true? false
+15/04/20 17:50:58 INFO bsp.BSPPeerImpl: Recovery task received 50 messages for current superstep from alive peers
+15/04/20 17:50:58 INFO bsp.BSPPeerImpl: Completed doFirstSyncAfterRecovery
+15/04/20 17:50:58 INFO bsp.BSPTask: [BSPTask.java] Starting with bsp.bsp
+15/04/20 17:50:58 INFO graph.GraphJobRunner: Entered GraphRunner.bsp. Is recovery task? true
+15/04/20 17:50:58 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:50:58 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:50:58 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:50:58 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:50:58 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:50:58 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:50:58 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:50:58 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:50:58 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:50:58 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:50:59 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:50:59 INFO bsp.BSPTask: [BSPTask.java] Done with bsp.bsp
+15/04/20 17:50:59 INFO ipc.Server: Stopping server on 61001
+15/04/20 17:50:59 INFO ipc.Server: IPC Server handler 0 on 61001: exiting
+15/04/20 17:50:59 INFO ipc.Server: IPC Server handler 1 on 61001: exiting
+15/04/20 17:50:59 INFO ipc.Server: IPC Server handler 2 on 61001: exiting
+15/04/20 17:50:59 INFO ipc.Server: IPC Server handler 3 on 61001: exiting
+15/04/20 17:50:59 INFO ipc.Server: IPC Server handler 4 on 61001: exiting
+15/04/20 17:50:59 INFO ipc.Server: Stopping IPC Server listener on 61001
+15/04/20 17:50:59 INFO ipc.Server: Stopping IPC Server Responder
+15/04/20 17:50:59 INFO Configuration.deprecation: mapred.cache.localFiles is deprecated. Instead, use mapreduce.job.cache.local.files

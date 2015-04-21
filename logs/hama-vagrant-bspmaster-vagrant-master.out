@@ -9,6 +9,44 @@ Groom:org.apache.hama.bsp.GroomServerStatus@5ce998cd
 Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
 Task allocated to groom server slave. Existing tasks on this groom server = 0
 Groom server picked for task is groomd_slave_50000
+Task allocated to groom server slave. Existing tasks on this groom server = 0
+Task allocated to groom server master. Existing tasks on this groom server = 0
+Size of selectedGrooms set is 2
+Groom:org.apache.hama.bsp.GroomServerStatus@5ce998cd
+Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
+Task allocated to groom server master. Existing tasks on this groom server = 0
+Groom server picked for task is groomd_master_50000
+Size of selectedGrooms set is 2
+Groom:org.apache.hama.bsp.GroomServerStatus@5ce998cd
+Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
+Task allocated to groom server slave. Existing tasks on this groom server = 0
+Groom server picked for task is groomd_slave_50000
+Size of selectedGrooms set is 2
+Groom:org.apache.hama.bsp.GroomServerStatus@5ce998cd
+Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Groom server picked for task is groomd_master_50000
+Size of selectedGrooms set is 2
+Groom:org.apache.hama.bsp.GroomServerStatus@5ce998cd
+Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Groom server picked for task is groomd_slave_50000
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
 Size of selectedGrooms set is 2
 Groom:org.apache.hama.bsp.GroomServerStatus@5ce998cd
 Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
@@ -20,3 +58,168 @@ Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
 Task allocated to groom server slave. Existing tasks on this groom server = 0
 Groom server picked for task is groomd_slave_50000
 Task allocated to groom server slave. Existing tasks on this groom server = 0
+Task allocated to groom server master. Existing tasks on this groom server = 0
+Size of selectedGrooms set is 2
+Groom:org.apache.hama.bsp.GroomServerStatus@5ce998cd
+Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
+Task allocated to groom server master. Existing tasks on this groom server = 0
+Groom server picked for task is groomd_master_50000
+Size of selectedGrooms set is 2
+Groom:org.apache.hama.bsp.GroomServerStatus@5ce998cd
+Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
+Task allocated to groom server slave. Existing tasks on this groom server = 0
+Groom server picked for task is groomd_slave_50000
+Size of selectedGrooms set is 2
+Groom:org.apache.hama.bsp.GroomServerStatus@5ce998cd
+Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Groom server picked for task is groomd_master_50000
+Size of selectedGrooms set is 2
+Groom:org.apache.hama.bsp.GroomServerStatus@5ce998cd
+Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Groom server picked for task is groomd_slave_50000
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Groom:org.apache.hama.bsp.GroomServerStatus@5ce998cd
+Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
+Groom server picked for task is groomd_master_50000
+Groom:org.apache.hama.bsp.GroomServerStatus@5ce998cd
+Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
+Groom server picked for task is groomd_master_50000
+Groom:org.apache.hama.bsp.GroomServerStatus@5ce998cd
+Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
+Groom server picked for task is groomd_master_50000
+Groom:org.apache.hama.bsp.GroomServerStatus@5ce998cd
+Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
+Groom server picked for task is groomd_master_50000
+Groom:org.apache.hama.bsp.GroomServerStatus@5ce998cd
+Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
+Groom server picked for task is groomd_slave_50000
+Groom:org.apache.hama.bsp.GroomServerStatus@5ce998cd
+Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
+Groom server picked for task is groomd_slave_50000
+Size of selectedGrooms set is 2
+Groom:org.apache.hama.bsp.GroomServerStatus@5ce998cd
+Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
+Task allocated to groom server master. Existing tasks on this groom server = 0
+Groom server picked for task is groomd_master_50000
+Size of selectedGrooms set is 2
+Groom:org.apache.hama.bsp.GroomServerStatus@5ce998cd
+Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
+Task allocated to groom server slave. Existing tasks on this groom server = 0
+Groom server picked for task is groomd_slave_50000
+Size of selectedGrooms set is 2
+Groom:org.apache.hama.bsp.GroomServerStatus@5ce998cd
+Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Groom server picked for task is groomd_master_50000
+Size of selectedGrooms set is 2
+Groom:org.apache.hama.bsp.GroomServerStatus@5ce998cd
+Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Groom server picked for task is groomd_slave_50000
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Size of selectedGrooms set is 2
+Groom:org.apache.hama.bsp.GroomServerStatus@5ce998cd
+Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
+Task allocated to groom server master. Existing tasks on this groom server = 0
+Groom server picked for task is groomd_master_50000
+Size of selectedGrooms set is 2
+Groom:org.apache.hama.bsp.GroomServerStatus@5ce998cd
+Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
+Task allocated to groom server slave. Existing tasks on this groom server = 0
+Groom server picked for task is groomd_slave_50000
+Size of selectedGrooms set is 2
+Groom:org.apache.hama.bsp.GroomServerStatus@5ce998cd
+Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Groom server picked for task is groomd_master_50000
+Size of selectedGrooms set is 2
+Groom:org.apache.hama.bsp.GroomServerStatus@5ce998cd
+Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Groom server picked for task is groomd_slave_50000
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Size of selectedGrooms set is 2
+Groom:org.apache.hama.bsp.GroomServerStatus@5ce998cd
+Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
+Task allocated to groom server master. Existing tasks on this groom server = 0
+Groom server picked for task is groomd_master_50000
+Size of selectedGrooms set is 2
+Groom:org.apache.hama.bsp.GroomServerStatus@5ce998cd
+Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
+Task allocated to groom server slave. Existing tasks on this groom server = 0
+Groom server picked for task is groomd_slave_50000
+Size of selectedGrooms set is 2
+Groom:org.apache.hama.bsp.GroomServerStatus@5ce998cd
+Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Groom server picked for task is groomd_master_50000
+Size of selectedGrooms set is 2
+Groom:org.apache.hama.bsp.GroomServerStatus@5ce998cd
+Groom:org.apache.hama.bsp.GroomServerStatus@1ef7094e
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Groom server picked for task is groomd_slave_50000
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server slave. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1
+Task allocated to groom server master. Existing tasks on this groom server = 1

@@ -1,0 +1,1143 @@
+15/04/20 19:37:09 INFO bsp.GroomServer: BSPPeerChild starting
+15/04/20 19:37:12 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/04/20 19:37:12 INFO bsp.GroomServer: Starting peer for step -1 state = RUNNING
+15/04/20 19:37:15 INFO bsp.GroomServer: instantiating BSPPeerImpl
+15/04/20 19:37:16 INFO ipc.Server: Starting Socket Reader #1 for port 61001
+15/04/20 19:37:16 INFO ipc.Server: IPC Server Responder: starting
+15/04/20 19:37:16 INFO ipc.Server: IPC Server listener on 61001: starting
+15/04/20 19:37:16 INFO ipc.Server: IPC Server handler 0 on 61001: starting
+15/04/20 19:37:16 INFO ipc.Server: IPC Server handler 1 on 61001: starting
+15/04/20 19:37:16 INFO ipc.Server: IPC Server handler 2 on 61001: starting
+15/04/20 19:37:16 INFO ipc.Server: IPC Server handler 3 on 61001: starting
+15/04/20 19:37:16 INFO message.HamaMessageManagerImpl: BSPPeer address:slave port:61001
+15/04/20 19:37:16 INFO ipc.Server: IPC Server handler 4 on 61001: starting
+15/04/20 19:37:17 INFO sync.ZKSyncClient: Initializing ZK Sync Client
+15/04/20 19:37:17 INFO sync.ZooKeeperSyncClientImpl: Start connecting to Zookeeper! At slave/172.28.128.5:61001
+15/04/20 19:37:17 INFO bsp.GroomServer: instantiating BSPPeerImpl done, starting BSPTask now!
+15/04/20 19:37:17 INFO bsp.BSPTask: Starting runBSP from BSPTask
+15/04/20 19:37:17 INFO bsp.BSPTask: [BSPTask.java] Starting with bsp.setup
+15/04/20 19:37:17 INFO graph.GraphJobRunner: [GraphJobRunner] Entering setup.
+15/04/20 19:37:17 INFO graph.GraphJobRunner: 50 vertices are loaded into slave:61001
+15/04/20 19:37:17 INFO graph.GraphJobRunner: graph loading seconds 0.030911817
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 86 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 84 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 82 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 80 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 42 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 40 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 39 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 37 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 35 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 33 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 79 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 77 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 73 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 75 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 71 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 31 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 26 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 28 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 22 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 24 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 66 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 68 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 60 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 0 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 64 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 62 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 6 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 57 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 8 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 55 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 2 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 4 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 59 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 99 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 91 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 93 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 19 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 95 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 97 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 15 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 17 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 51 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 11 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 13 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 53 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 44 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 46 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 20 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 48 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Prior to compute
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Vertex Get Valnull NumVertices 100
+15/04/20 19:37:18 INFO graph.Vertex: Setting 88 value 0.01
+15/04/20 19:37:18 INFO graph.GraphJobRunner: After Compute
+15/04/20 19:37:18 INFO bsp.BSPTask: [BSPTask.java] Starting with bsp.bsp
+15/04/20 19:37:18 INFO graph.GraphJobRunner: Entered GraphRunner.bsp. Is recovery task? false
+15/04/20 19:37:18 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:37:18 INFO graph.Vertex: Setting 0 value 0.010575252525252524
+15/04/20 19:37:18 INFO graph.Vertex: Setting 11 value 0.011794444444444444
+15/04/20 19:37:18 INFO graph.Vertex: Setting 13 value 0.008875252525252526
+15/04/20 19:37:18 INFO graph.Vertex: Setting 15 value 0.006462626262626263
+15/04/20 19:37:18 INFO graph.Vertex: Setting 17 value 0.009476262626262626
+15/04/20 19:37:18 INFO graph.Vertex: Setting 19 value 0.009613636363636364
+15/04/20 19:37:18 INFO graph.Vertex: Setting 2 value 0.012721717171717174
+15/04/20 19:37:18 INFO graph.Vertex: Setting 20 value 0.010231818181818182
+15/04/20 19:37:18 INFO graph.Vertex: Setting 22 value 0.013494444444444446
+15/04/20 19:37:18 INFO graph.Vertex: Setting 24 value 0.013400000000000002
+15/04/20 19:37:18 INFO graph.Vertex: Setting 26 value 0.007080808080808081
+15/04/20 19:37:18 INFO graph.Vertex: Setting 28 value 0.007836363636363636
+15/04/20 19:37:18 INFO graph.Vertex: Setting 31 value 0.007235353535353535
+15/04/20 19:37:18 INFO graph.Vertex: Setting 33 value 0.011931818181818182
+15/04/20 19:37:18 INFO graph.Vertex: Setting 35 value 0.007681818181818181
+15/04/20 19:37:18 INFO graph.Vertex: Setting 37 value 0.007235353535353535
+15/04/20 19:37:18 INFO graph.Vertex: Setting 39 value 0.010154545454545454
+15/04/20 19:37:18 INFO graph.Vertex: Setting 4 value 0.011004545454545456
+15/04/20 19:37:18 INFO graph.Vertex: Setting 40 value 0.008609090909090908
+15/04/20 19:37:18 INFO graph.Vertex: Setting 42 value 0.012704545454545454
+15/04/20 19:37:18 INFO graph.Vertex: Setting 44 value 0.01030909090909091
+15/04/20 19:37:18 INFO graph.Vertex: Setting 46 value 0.006290909090909091
+15/04/20 19:37:18 INFO graph.Vertex: Setting 48 value 0.010309090909090908
+15/04/20 19:37:18 INFO graph.Vertex: Setting 51 value 0.012627272727272728
+15/04/20 19:37:18 INFO graph.Vertex: Setting 53 value 0.008763636363636364
+15/04/20 19:37:18 INFO graph.Vertex: Setting 55 value 0.012704545454545454
+15/04/20 19:37:18 INFO graph.Vertex: Setting 57 value 0.01085
+15/04/20 19:37:18 INFO graph.Vertex: Setting 59 value 0.012567171717171718
+15/04/20 19:37:18 INFO graph.Vertex: Setting 6 value 0.00853181818181818
+15/04/20 19:37:18 INFO graph.Vertex: Setting 60 value 0.013339898989898994
+15/04/20 19:37:18 INFO graph.Vertex: Setting 62 value 0.010386363636363636
+15/04/20 19:37:18 INFO graph.Vertex: Setting 64 value 0.014250000000000002
+15/04/20 19:37:18 INFO graph.Vertex: Setting 66 value 0.008763636363636364
+15/04/20 19:37:18 INFO graph.Vertex: Setting 68 value 0.010558080808080808
+15/04/20 19:37:18 INFO graph.Vertex: Setting 71 value 0.011313636363636364
+15/04/20 19:37:18 INFO graph.Vertex: Setting 73 value 0.010231818181818182
+15/04/20 19:37:18 INFO graph.Vertex: Setting 75 value 0.011004545454545454
+15/04/20 19:37:18 INFO graph.Vertex: Setting 77 value 0.007218181818181818
+15/04/20 19:37:18 INFO graph.Vertex: Setting 79 value 0.011004545454545454
+15/04/20 19:37:18 INFO graph.Vertex: Setting 8 value 0.010077272727272726
+15/04/20 19:37:18 INFO graph.Vertex: Setting 80 value 0.012026262626262624
+15/04/20 19:37:18 INFO graph.Vertex: Setting 82 value 0.008763636363636364
+15/04/20 19:37:18 INFO graph.Vertex: Setting 84 value 0.008609090909090908
+15/04/20 19:37:18 INFO graph.Vertex: Setting 86 value 0.008935353535353536
+15/04/20 19:37:18 INFO graph.Vertex: Setting 88 value 0.01455909090909091
+15/04/20 19:37:18 INFO graph.Vertex: Setting 91 value 0.004668181818181819
+15/04/20 19:37:18 INFO graph.Vertex: Setting 93 value 0.006368181818181818
+15/04/20 19:37:18 INFO graph.Vertex: Setting 95 value 0.01255
+15/04/20 19:37:18 INFO graph.Vertex: Setting 97 value 0.010927272727272728
+15/04/20 19:37:18 INFO graph.Vertex: Setting 99 value 0.014344444444444448
+15/04/20 19:37:18 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:37:18 INFO graph.Vertex: Setting 0 value 0.010640558386899295
+15/04/20 19:37:18 INFO graph.Vertex: Setting 11 value 0.012883929624528109
+15/04/20 19:37:18 INFO graph.Vertex: Setting 13 value 0.008911101086623813
+15/04/20 19:37:18 INFO graph.Vertex: Setting 15 value 0.006670544969901032
+15/04/20 19:37:18 INFO graph.Vertex: Setting 17 value 0.009618934445464748
+15/04/20 19:37:18 INFO graph.Vertex: Setting 19 value 0.00934818893480257
+15/04/20 19:37:18 INFO graph.Vertex: Setting 2 value 0.013360850652994593
+15/04/20 19:37:18 INFO graph.Vertex: Setting 20 value 0.0095220564738292
+15/04/20 19:37:18 INFO graph.Vertex: Setting 22 value 0.013830247347209466
+15/04/20 19:37:18 INFO graph.Vertex: Setting 24 value 0.013597443526170799
+15/04/20 19:37:18 INFO graph.Vertex: Setting 26 value 0.0071706690643811855
+15/04/20 19:37:18 INFO graph.Vertex: Setting 28 value 0.007756152203856751
+15/04/20 19:37:18 INFO graph.Vertex: Setting 31 value 0.007339707274767882
+15/04/20 19:37:18 INFO graph.Vertex: Setting 33 value 0.012073531680440772
+15/04/20 19:37:18 INFO graph.Vertex: Setting 35 value 0.00819931129476584
+15/04/20 19:37:18 INFO graph.Vertex: Setting 37 value 0.006636417916539129
+15/04/20 19:37:18 INFO graph.Vertex: Setting 39 value 0.010598129935720846
+15/04/20 19:37:18 INFO graph.Vertex: Setting 4 value 0.011255861340679522
+15/04/20 19:37:18 INFO graph.Vertex: Setting 40 value 0.00836049517906336
+15/04/20 19:37:18 INFO graph.Vertex: Setting 42 value 0.01264722314049587
+15/04/20 19:37:18 INFO graph.Vertex: Setting 44 value 0.0102497782369146
+15/04/20 19:37:18 INFO graph.Vertex: Setting 46 value 0.005890515381083563
+15/04/20 19:37:18 INFO graph.Vertex: Setting 48 value 0.010490545224977044
+15/04/20 19:37:18 INFO graph.Vertex: Setting 51 value 0.012379473140495869
+15/04/20 19:37:18 INFO graph.Vertex: Setting 53 value 0.009451769513314967
+15/04/20 19:37:18 INFO graph.Vertex: Setting 55 value 0.013464331496786042
+15/04/20 19:37:18 INFO graph.Vertex: Setting 57 value 0.010954692837465566
+15/04/20 19:37:18 INFO graph.Vertex: Setting 59 value 0.012704734950515254
+15/04/20 19:37:18 INFO graph.Vertex: Setting 6 value 0.008406823691460055
+15/04/20 19:37:18 INFO graph.Vertex: Setting 60 value 0.013884556805428019
+15/04/20 19:37:18 INFO graph.Vertex: Setting 62 value 0.009338042011019284
+15/04/20 19:37:18 INFO graph.Vertex: Setting 64 value 0.014660013774104683
+15/04/20 19:37:18 INFO graph.Vertex: Setting 66 value 0.009152353305785125
+15/04/20 19:37:18 INFO graph.Vertex: Setting 68 value 0.0107903850882563
+15/04/20 19:37:18 INFO graph.Vertex: Setting 71 value 0.011924808999081727
+15/04/20 19:37:18 INFO graph.Vertex: Setting 73 value 0.00958959595959596
+15/04/20 19:37:18 INFO graph.Vertex: Setting 75 value 0.011926147612488523
+15/04/20 19:37:18 INFO graph.Vertex: Setting 77 value 0.006017465105601469
+15/04/20 19:37:18 INFO graph.Vertex: Setting 79 value 0.011675030762167127
+15/04/20 19:37:18 INFO graph.Vertex: Setting 8 value 0.009975565426997244
+15/04/20 19:37:18 INFO graph.Vertex: Setting 80 value 0.011612032241607997
+15/04/20 19:37:18 INFO graph.Vertex: Setting 82 value 0.007690435261707989
+15/04/20 19:37:18 INFO graph.Vertex: Setting 84 value 0.008580098025711662
+15/04/20 19:37:18 INFO graph.Vertex: Setting 86 value 0.008471496888072645
+15/04/20 19:37:18 INFO graph.Vertex: Setting 88 value 0.014137134986225895
+15/04/20 19:37:18 INFO graph.Vertex: Setting 91 value 0.004538742194674013
+15/04/20 19:37:18 INFO graph.Vertex: Setting 93 value 0.005507816345270892
+15/04/20 19:37:18 INFO graph.Vertex: Setting 95 value 0.01305754132231405
+15/04/20 19:37:18 INFO graph.Vertex: Setting 97 value 0.010263421946740127
+15/04/20 19:37:18 INFO graph.Vertex: Setting 99 value 0.01395237338026732
+15/04/20 19:37:18 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:37:18 INFO graph.Vertex: Setting 0 value 0.010944896031149932
+15/04/20 19:37:18 INFO graph.Vertex: Setting 11 value 0.012878378050327785
+15/04/20 19:37:18 INFO graph.Vertex: Setting 13 value 0.008952599143645412
+15/04/20 19:37:18 INFO graph.Vertex: Setting 15 value 0.006595281072899951
+15/04/20 19:37:18 INFO graph.Vertex: Setting 17 value 0.009869232799912706
+15/04/20 19:37:18 INFO graph.Vertex: Setting 19 value 0.009133693940193949
+15/04/20 19:37:18 INFO graph.Vertex: Setting 2 value 0.01326546716986336
+15/04/20 19:37:18 INFO graph.Vertex: Setting 20 value 0.009629077172505588
+15/04/20 19:37:18 INFO graph.Vertex: Setting 22 value 0.01386247171476138
+15/04/20 19:37:18 INFO graph.Vertex: Setting 24 value 0.013592746860675164
+15/04/20 19:37:18 INFO graph.Vertex: Setting 26 value 0.007195100479555787
+15/04/20 19:37:18 INFO graph.Vertex: Setting 28 value 0.007740736675768243
+15/04/20 19:37:18 INFO graph.Vertex: Setting 31 value 0.007278793239967784
+15/04/20 19:37:18 INFO graph.Vertex: Setting 33 value 0.012103363888459898
+15/04/20 19:37:18 INFO graph.Vertex: Setting 35 value 0.008362151171610504
+15/04/20 19:37:18 INFO graph.Vertex: Setting 37 value 0.006591283245878333
+15/04/20 19:37:18 INFO graph.Vertex: Setting 39 value 0.01054834691061209
+15/04/20 19:37:18 INFO graph.Vertex: Setting 4 value 0.011258549372942
+15/04/20 19:37:18 INFO graph.Vertex: Setting 40 value 0.00836412988127371
+15/04/20 19:37:18 INFO graph.Vertex: Setting 42 value 0.012329060865577258
+15/04/20 19:37:18 INFO graph.Vertex: Setting 44 value 0.010103652647097698
+15/04/20 19:37:18 INFO graph.Vertex: Setting 46 value 0.005971275857565555
+15/04/20 19:37:18 INFO graph.Vertex: Setting 48 value 0.010642608592560127
+15/04/20 19:37:18 INFO graph.Vertex: Setting 51 value 0.012333355065009599
+15/04/20 19:37:18 INFO graph.Vertex: Setting 53 value 0.009538412627271335
+15/04/20 19:37:18 INFO graph.Vertex: Setting 55 value 0.013595381343473763
+15/04/20 19:37:18 INFO graph.Vertex: Setting 57 value 0.011010510648519165
+15/04/20 19:37:18 INFO graph.Vertex: Setting 59 value 0.012729910360887468
+15/04/20 19:37:18 INFO graph.Vertex: Setting 6 value 0.00856791924390832
+15/04/20 19:37:18 INFO graph.Vertex: Setting 60 value 0.01394425926649543
+15/04/20 19:37:18 INFO graph.Vertex: Setting 62 value 0.0091857326767213
+15/04/20 19:37:18 INFO graph.Vertex: Setting 64 value 0.014736125889809484
+15/04/20 19:37:18 INFO graph.Vertex: Setting 66 value 0.009210496521934218
+15/04/20 19:37:18 INFO graph.Vertex: Setting 68 value 0.010568155806945846
+15/04/20 19:37:18 INFO graph.Vertex: Setting 71 value 0.012096871887214661
+15/04/20 19:37:18 INFO graph.Vertex: Setting 73 value 0.009543276063806104
+15/04/20 19:37:18 INFO graph.Vertex: Setting 75 value 0.011879557825476993
+15/04/20 19:37:18 INFO graph.Vertex: Setting 77 value 0.005890641067330791
+15/04/20 19:37:18 INFO graph.Vertex: Setting 79 value 0.011566938416476519
+15/04/20 19:37:18 INFO graph.Vertex: Setting 8 value 0.0099194778956113
+15/04/20 19:37:18 INFO graph.Vertex: Setting 80 value 0.011659661371220365
+15/04/20 19:37:18 INFO graph.Vertex: Setting 82 value 0.007567410492076412
+15/04/20 19:37:18 INFO graph.Vertex: Setting 84 value 0.008392715478406655
+15/04/20 19:37:18 INFO graph.Vertex: Setting 86 value 0.008237833686232284
+15/04/20 19:37:18 INFO graph.Vertex: Setting 88 value 0.01424441868358748
+15/04/20 19:37:18 INFO graph.Vertex: Setting 91 value 0.004471123051022159
+15/04/20 19:37:18 INFO graph.Vertex: Setting 93 value 0.005388306826205119
+15/04/20 19:37:18 INFO graph.Vertex: Setting 95 value 0.01325384856509308
+15/04/20 19:37:18 INFO graph.Vertex: Setting 97 value 0.01006851092678391
+15/04/20 19:37:18 INFO graph.Vertex: Setting 99 value 0.013762412790138661
+15/04/20 19:37:18 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:37:18 INFO graph.Vertex: Setting 0 value 0.011061708218213524
+15/04/20 19:37:18 INFO graph.Vertex: Setting 11 value 0.012883581587729122
+15/04/20 19:37:18 INFO graph.Vertex: Setting 13 value 0.008937398472553556
+15/04/20 19:37:18 INFO graph.Vertex: Setting 15 value 0.0065725556457748606
+15/04/20 19:37:18 INFO graph.Vertex: Setting 17 value 0.009923713690946263
+15/04/20 19:37:18 INFO graph.Vertex: Setting 19 value 0.009068441343929482
+15/04/20 19:37:18 INFO graph.Vertex: Setting 2 value 0.01326227274712969
+15/04/20 19:37:18 INFO graph.Vertex: Setting 20 value 0.009623018399357142
+15/04/20 19:37:18 INFO graph.Vertex: Setting 22 value 0.013935798807508747
+15/04/20 19:37:18 INFO graph.Vertex: Setting 24 value 0.013582046446040464
+15/04/20 19:37:18 INFO graph.Vertex: Setting 26 value 0.007189503177994048
+15/04/20 19:37:18 INFO graph.Vertex: Setting 28 value 0.0077386927321783155
+15/04/20 19:37:18 INFO graph.Vertex: Setting 31 value 0.007260956236677922
+15/04/20 19:37:18 INFO graph.Vertex: Setting 33 value 0.012137583809642886
+15/04/20 19:37:18 INFO graph.Vertex: Setting 35 value 0.008423849308414314
+15/04/20 19:37:18 INFO graph.Vertex: Setting 37 value 0.006594483927409253
+15/04/20 19:37:18 INFO graph.Vertex: Setting 39 value 0.0105509522176696
+15/04/20 19:37:18 INFO graph.Vertex: Setting 4 value 0.011232388667573064
+15/04/20 19:37:18 INFO graph.Vertex: Setting 40 value 0.008328238876647692
+15/04/20 19:37:18 INFO graph.Vertex: Setting 42 value 0.012266385725574633
+15/04/20 19:37:18 INFO graph.Vertex: Setting 44 value 0.010035103491669431
+15/04/20 19:37:18 INFO graph.Vertex: Setting 46 value 0.006006527829300109
+15/04/20 19:37:18 INFO graph.Vertex: Setting 48 value 0.010668951199685453
+15/04/20 19:37:18 INFO graph.Vertex: Setting 51 value 0.01236330807503561
+15/04/20 19:37:18 INFO graph.Vertex: Setting 53 value 0.009543226186002552
+15/04/20 19:37:18 INFO graph.Vertex: Setting 55 value 0.013693710645025212
+15/04/20 19:37:18 INFO graph.Vertex: Setting 57 value 0.01105378293799588
+15/04/20 19:37:18 INFO graph.Vertex: Setting 59 value 0.012740654129321191
+15/04/20 19:37:18 INFO graph.Vertex: Setting 6 value 0.008619158487422769
+15/04/20 19:37:18 INFO graph.Vertex: Setting 60 value 0.013909273897686895
+15/04/20 19:37:18 INFO graph.Vertex: Setting 62 value 0.00918686296571952
+15/04/20 19:37:18 INFO graph.Vertex: Setting 64 value 0.01475240957671721
+15/04/20 19:37:18 INFO graph.Vertex: Setting 66 value 0.00921809428938186
+15/04/20 19:37:18 INFO graph.Vertex: Setting 68 value 0.010522923493699073
+15/04/20 19:37:18 INFO graph.Vertex: Setting 71 value 0.01213124268813277
+15/04/20 19:37:18 INFO graph.Vertex: Setting 73 value 0.009570584381679615
+15/04/20 19:37:18 INFO graph.Vertex: Setting 75 value 0.011832947672993746
+15/04/20 19:37:18 INFO graph.Vertex: Setting 77 value 0.00586105049233059
+15/04/20 19:37:18 INFO graph.Vertex: Setting 79 value 0.011503006052618829
+15/04/20 19:37:18 INFO graph.Vertex: Setting 8 value 0.009846372401246627
+15/04/20 19:37:18 INFO graph.Vertex: Setting 80 value 0.011709563419065093
+15/04/20 19:37:18 INFO graph.Vertex: Setting 82 value 0.007533234842163272
+15/04/20 19:37:18 INFO graph.Vertex: Setting 84 value 0.008345779072194451
+15/04/20 19:37:18 INFO graph.Vertex: Setting 86 value 0.008218166917596916
+15/04/20 19:37:18 INFO graph.Vertex: Setting 88 value 0.014246200876375613
+15/04/20 19:37:18 INFO graph.Vertex: Setting 91 value 0.004461421605217959
+15/04/20 19:37:18 INFO graph.Vertex: Setting 93 value 0.005363199315125165
+15/04/20 19:37:18 INFO graph.Vertex: Setting 95 value 0.013306247668241457
+15/04/20 19:37:18 INFO graph.Vertex: Setting 97 value 0.00998287625525926
+15/04/20 19:37:18 INFO graph.Vertex: Setting 99 value 0.013740217245444613
+15/04/20 19:37:18 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:37:18 INFO graph.Vertex: Setting 0 value 0.011089067256013475
+15/04/20 19:37:18 INFO graph.Vertex: Setting 11 value 0.012889969011983542
+15/04/20 19:37:18 INFO graph.Vertex: Setting 13 value 0.008930558300434472
+15/04/20 19:37:18 INFO graph.Vertex: Setting 15 value 0.006571713066715621
+15/04/20 19:37:18 INFO graph.Vertex: Setting 17 value 0.009915797659996436
+15/04/20 19:37:18 INFO graph.Vertex: Setting 19 value 0.009052290386415108
+15/04/20 19:37:18 INFO graph.Vertex: Setting 2 value 0.01325437459850032
+15/04/20 19:37:18 INFO graph.Vertex: Setting 20 value 0.009618457012323632
+15/04/20 19:37:18 INFO graph.Vertex: Setting 22 value 0.013958592152285293
+15/04/20 19:37:18 INFO graph.Vertex: Setting 24 value 0.013567772938640173
+15/04/20 19:37:18 INFO graph.Vertex: Setting 26 value 0.007188073784548642
+15/04/20 19:37:18 INFO graph.Vertex: Setting 28 value 0.007734995869094462
+15/04/20 19:37:18 INFO graph.Vertex: Setting 31 value 0.0072504344488643745
+15/04/20 19:37:18 INFO graph.Vertex: Setting 33 value 0.01214731804652619
+15/04/20 19:37:18 INFO graph.Vertex: Setting 35 value 0.008438621191647643
+15/04/20 19:37:18 INFO graph.Vertex: Setting 37 value 0.006596808545678202
+15/04/20 19:37:18 INFO graph.Vertex: Setting 39 value 0.010549587173238955
+15/04/20 19:37:18 INFO graph.Vertex: Setting 4 value 0.011228686618143295
+15/04/20 19:37:18 INFO graph.Vertex: Setting 40 value 0.008317253110251221
+15/04/20 19:37:18 INFO graph.Vertex: Setting 42 value 0.012261735545017197
+15/04/20 19:37:18 INFO graph.Vertex: Setting 44 value 0.010029276679076186
+15/04/20 19:37:18 INFO graph.Vertex: Setting 46 value 0.006010312976834192
+15/04/20 19:37:18 INFO graph.Vertex: Setting 48 value 0.010674965666801461
+15/04/20 19:37:18 INFO graph.Vertex: Setting 51 value 0.012385859753885889
+15/04/20 19:37:18 INFO graph.Vertex: Setting 53 value 0.009553126620148355
+15/04/20 19:37:18 INFO graph.Vertex: Setting 55 value 0.013725052901882178
+15/04/20 19:37:18 INFO graph.Vertex: Setting 57 value 0.01107345627063171
+15/04/20 19:37:18 INFO graph.Vertex: Setting 59 value 0.012743285471594784
+15/04/20 19:37:18 INFO graph.Vertex: Setting 6 value 0.00862160061494257
+15/04/20 19:37:18 INFO graph.Vertex: Setting 60 value 0.013901673502318837
+15/04/20 19:37:18 INFO graph.Vertex: Setting 62 value 0.009191990928483797
+15/04/20 19:37:18 INFO graph.Vertex: Setting 64 value 0.01475881951833408
+15/04/20 19:37:18 INFO graph.Vertex: Setting 66 value 0.00921876438084262
+15/04/20 19:37:18 INFO graph.Vertex: Setting 68 value 0.010523762253928568
+15/04/20 19:37:18 INFO graph.Vertex: Setting 71 value 0.012136437821025999
+15/04/20 19:37:18 INFO graph.Vertex: Setting 73 value 0.009578637870384562
+15/04/20 19:37:18 INFO graph.Vertex: Setting 75 value 0.011815488073218595
+15/04/20 19:37:18 INFO graph.Vertex: Setting 77 value 0.005852478677772486
+15/04/20 19:37:18 INFO graph.Vertex: Setting 79 value 0.01148940803492551
+15/04/20 19:37:18 INFO graph.Vertex: Setting 8 value 0.009822744110312545
+15/04/20 19:37:18 INFO graph.Vertex: Setting 80 value 0.011722552268779841
+15/04/20 19:37:18 INFO graph.Vertex: Setting 82 value 0.007520300633323434
+15/04/20 19:37:18 INFO graph.Vertex: Setting 84 value 0.00833752824825841
+15/04/20 19:37:18 INFO graph.Vertex: Setting 86 value 0.008219537932075366
+15/04/20 19:37:18 INFO graph.Vertex: Setting 88 value 0.014245321380485777
+15/04/20 19:37:18 INFO graph.Vertex: Setting 91 value 0.004463619622059077
+15/04/20 19:37:18 INFO graph.Vertex: Setting 93 value 0.005357174277258352
+15/04/20 19:37:18 INFO graph.Vertex: Setting 95 value 0.013328265957897108
+15/04/20 19:37:18 INFO graph.Vertex: Setting 97 value 0.009973326834497543
+15/04/20 19:37:18 INFO graph.Vertex: Setting 99 value 0.013742041107503076
+15/04/20 19:37:18 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:37:18 INFO graph.Vertex: Setting 0 value 0.011094390434311378
+15/04/20 19:37:18 INFO graph.Vertex: Setting 11 value 0.012890679271198502
+15/04/20 19:37:18 INFO graph.Vertex: Setting 13 value 0.008926487368962059
+15/04/20 19:37:18 INFO graph.Vertex: Setting 15 value 0.0065723992406438725
+15/04/20 19:37:18 INFO graph.Vertex: Setting 17 value 0.00991170945038344
+15/04/20 19:37:18 INFO graph.Vertex: Setting 19 value 0.009048880299666757
+15/04/20 19:37:18 INFO graph.Vertex: Setting 2 value 0.013249529501868744
+15/04/20 19:37:18 INFO graph.Vertex: Setting 20 value 0.009619742642523174
+15/04/20 19:37:18 INFO graph.Vertex: Setting 22 value 0.013965916296786264
+15/04/20 19:37:18 INFO graph.Vertex: Setting 24 value 0.01356263520277494
+15/04/20 19:37:18 INFO graph.Vertex: Setting 26 value 0.007186704686125442
+15/04/20 19:37:18 INFO graph.Vertex: Setting 28 value 0.007731254516592565
+15/04/20 19:37:18 INFO graph.Vertex: Setting 31 value 0.0072472715914041344
+15/04/20 19:37:18 INFO graph.Vertex: Setting 33 value 0.012151111297443966
+15/04/20 19:37:18 INFO graph.Vertex: Setting 35 value 0.00844541522041151
+15/04/20 19:37:18 INFO graph.Vertex: Setting 37 value 0.006595766274657554
+15/04/20 19:37:18 INFO graph.Vertex: Setting 39 value 0.010549704856548736
+15/04/20 19:37:18 INFO graph.Vertex: Setting 4 value 0.011229239851826788
+15/04/20 19:37:18 INFO graph.Vertex: Setting 40 value 0.008314713605253968
+15/04/20 19:37:18 INFO graph.Vertex: Setting 42 value 0.012263058392606802
+15/04/20 19:37:18 INFO graph.Vertex: Setting 44 value 0.01002824858121627
+15/04/20 19:37:18 INFO graph.Vertex: Setting 46 value 0.006010426026662129
+15/04/20 19:37:18 INFO graph.Vertex: Setting 48 value 0.010675813223875058
+15/04/20 19:37:18 INFO graph.Vertex: Setting 51 value 0.012397212708788042
+15/04/20 19:37:18 INFO graph.Vertex: Setting 53 value 0.009557649174718543
+15/04/20 19:37:18 INFO graph.Vertex: Setting 55 value 0.013730095340214347
+15/04/20 19:37:18 INFO graph.Vertex: Setting 57 value 0.011077911978356902
+15/04/20 19:37:18 INFO graph.Vertex: Setting 59 value 0.012741205674425734
+15/04/20 19:37:18 INFO graph.Vertex: Setting 6 value 0.0086227114320145
+15/04/20 19:37:18 INFO graph.Vertex: Setting 60 value 0.013897481866267892
+15/04/20 19:37:18 INFO graph.Vertex: Setting 62 value 0.00919150194829812
+15/04/20 19:37:18 INFO graph.Vertex: Setting 64 value 0.014757019470611978
+15/04/20 19:37:18 INFO graph.Vertex: Setting 66 value 0.00922140846038716
+15/04/20 19:37:18 INFO graph.Vertex: Setting 68 value 0.010526566347962915
+15/04/20 19:37:18 INFO graph.Vertex: Setting 71 value 0.012135166375272096
+15/04/20 19:37:18 INFO graph.Vertex: Setting 73 value 0.009581390550365354
+15/04/20 19:37:18 INFO graph.Vertex: Setting 75 value 0.011809967680455119
+15/04/20 19:37:18 INFO graph.Vertex: Setting 77 value 0.005850929241009168
+15/04/20 19:37:18 INFO graph.Vertex: Setting 79 value 0.011490267124789276
+15/04/20 19:37:18 INFO graph.Vertex: Setting 8 value 0.009817120429793156
+15/04/20 19:37:18 INFO graph.Vertex: Setting 80 value 0.011724710256132644
+15/04/20 19:37:18 INFO graph.Vertex: Setting 82 value 0.007516396959053002
+15/04/20 19:37:18 INFO graph.Vertex: Setting 84 value 0.008336281220875198
+15/04/20 19:37:18 INFO graph.Vertex: Setting 86 value 0.00821993150628178
+15/04/20 19:37:18 INFO graph.Vertex: Setting 88 value 0.014247875650404319
+15/04/20 19:37:18 INFO graph.Vertex: Setting 91 value 0.004465937565842437
+15/04/20 19:37:18 INFO graph.Vertex: Setting 93 value 0.005355528792444958
+15/04/20 19:37:18 INFO graph.Vertex: Setting 95 value 0.013334212112828276
+15/04/20 19:37:18 INFO graph.Vertex: Setting 97 value 0.00997626192319591
+15/04/20 19:37:18 INFO graph.Vertex: Setting 99 value 0.013740851508426383
+15/04/20 19:37:19 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:37:19 INFO graph.Vertex: Setting 0 value 0.011094743327674975
+15/04/20 19:37:19 INFO graph.Vertex: Setting 11 value 0.012889355954320805
+15/04/20 19:37:19 INFO graph.Vertex: Setting 13 value 0.00892458532867493
+15/04/20 19:37:19 INFO graph.Vertex: Setting 15 value 0.006572233334484671
+15/04/20 19:37:19 INFO graph.Vertex: Setting 17 value 0.009910726336679785
+15/04/20 19:37:19 INFO graph.Vertex: Setting 19 value 0.009049408786042854
+15/04/20 19:37:19 INFO graph.Vertex: Setting 2 value 0.01324775404739949
+15/04/20 19:37:19 INFO graph.Vertex: Setting 20 value 0.009620196714121588
+15/04/20 19:37:19 INFO graph.Vertex: Setting 22 value 0.013968250178656693
+15/04/20 19:37:19 INFO graph.Vertex: Setting 24 value 0.013561513178332601
+15/04/20 19:37:19 INFO graph.Vertex: Setting 26 value 0.00718618804959264
+15/04/20 19:37:19 INFO graph.Vertex: Setting 28 value 0.007729918735725669
+15/04/20 19:37:19 INFO graph.Vertex: Setting 31 value 0.007246371998388748
+15/04/20 19:37:19 INFO graph.Vertex: Setting 33 value 0.012153019022315581
+15/04/20 19:37:19 INFO graph.Vertex: Setting 35 value 0.008448103049029383
+15/04/20 19:37:19 INFO graph.Vertex: Setting 37 value 0.006595358196260696
+15/04/20 19:37:19 INFO graph.Vertex: Setting 39 value 0.01055017287361075
+15/04/20 19:37:19 INFO graph.Vertex: Setting 4 value 0.011229351646489968
+15/04/20 19:37:19 INFO graph.Vertex: Setting 40 value 0.008314216508388586
+15/04/20 19:37:19 INFO graph.Vertex: Setting 42 value 0.012263417577685046
+15/04/20 19:37:19 INFO graph.Vertex: Setting 44 value 0.01002821869060024
+15/04/20 19:37:19 INFO graph.Vertex: Setting 46 value 0.00601071000188263
+15/04/20 19:37:19 INFO graph.Vertex: Setting 48 value 0.01067637053048286
+15/04/20 19:37:19 INFO graph.Vertex: Setting 51 value 0.012400384710087501
+15/04/20 19:37:19 INFO graph.Vertex: Setting 53 value 0.009558712747730104
+15/04/20 19:37:19 INFO graph.Vertex: Setting 55 value 0.013731031394108847
+15/04/20 19:37:19 INFO graph.Vertex: Setting 57 value 0.011078840683965826
+15/04/20 19:37:19 INFO graph.Vertex: Setting 59 value 0.012740758913027563
+15/04/20 19:37:19 INFO graph.Vertex: Setting 6 value 0.008623175075996971
+15/04/20 19:37:19 INFO graph.Vertex: Setting 60 value 0.013896219658621837
+15/04/20 19:37:19 INFO graph.Vertex: Setting 62 value 0.009191720676489462
+15/04/20 19:37:19 INFO graph.Vertex: Setting 64 value 0.014756004801168997
+15/04/20 19:37:19 INFO graph.Vertex: Setting 66 value 0.009222859114143962
+15/04/20 19:37:19 INFO graph.Vertex: Setting 68 value 0.010528045095883374
+15/04/20 19:37:19 INFO graph.Vertex: Setting 71 value 0.012134353602573172
+15/04/20 19:37:19 INFO graph.Vertex: Setting 73 value 0.009582936755124885
+15/04/20 19:37:19 INFO graph.Vertex: Setting 75 value 0.011808631366143156
+15/04/20 19:37:19 INFO graph.Vertex: Setting 77 value 0.005850797893358186
+15/04/20 19:37:19 INFO graph.Vertex: Setting 79 value 0.011491102794344007
+15/04/20 19:37:19 INFO graph.Vertex: Setting 8 value 0.009815604304010229
+15/04/20 19:37:19 INFO graph.Vertex: Setting 80 value 0.011724805152395877
+15/04/20 19:37:19 INFO graph.Vertex: Setting 82 value 0.00751558951086946
+15/04/20 19:37:19 INFO graph.Vertex: Setting 84 value 0.008336273922151706
+15/04/20 19:37:19 INFO graph.Vertex: Setting 86 value 0.008219595108865344
+15/04/20 19:37:19 INFO graph.Vertex: Setting 88 value 0.014249260648695517
+15/04/20 19:37:19 INFO graph.Vertex: Setting 91 value 0.004466312520479322
+15/04/20 19:37:19 INFO graph.Vertex: Setting 93 value 0.005355010681965165
+15/04/20 19:37:19 INFO graph.Vertex: Setting 95 value 0.013335711891632698
+15/04/20 19:37:19 INFO graph.Vertex: Setting 97 value 0.009978211556205745
+15/04/20 19:37:19 INFO graph.Vertex: Setting 99 value 0.01374031721315871
+15/04/20 19:37:19 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:37:19 INFO graph.Vertex: Setting 0 value 0.011094560246315055
+15/04/20 19:37:19 INFO graph.Vertex: Setting 11 value 0.012888692270837367
+15/04/20 19:37:19 INFO graph.Vertex: Setting 13 value 0.008923901812283093
+15/04/20 19:37:19 INFO graph.Vertex: Setting 15 value 0.006572130797020629
+15/04/20 19:37:19 INFO graph.Vertex: Setting 17 value 0.009910636834086614
+15/04/20 19:37:19 INFO graph.Vertex: Setting 19 value 0.009049828615515097
+15/04/20 19:37:19 INFO graph.Vertex: Setting 2 value 0.013247280667693019
+15/04/20 19:37:19 INFO graph.Vertex: Setting 20 value 0.009620072535844104
+15/04/20 19:37:19 INFO graph.Vertex: Setting 22 value 0.01396874857923211
+15/04/20 19:37:19 INFO graph.Vertex: Setting 24 value 0.013561471139267466
+15/04/20 19:37:19 INFO graph.Vertex: Setting 26 value 0.00718603813760641
+15/04/20 19:37:19 INFO graph.Vertex: Setting 28 value 0.007729646394399426
+15/04/20 19:37:19 INFO graph.Vertex: Setting 31 value 0.007246059122013704
+15/04/20 19:37:19 INFO graph.Vertex: Setting 33 value 0.012153682481801393
+15/04/20 19:37:19 INFO graph.Vertex: Setting 35 value 0.008448811630550706
+15/04/20 19:37:19 INFO graph.Vertex: Setting 37 value 0.006595285526845518
+15/04/20 19:37:19 INFO graph.Vertex: Setting 39 value 0.010550448498780899
+15/04/20 19:37:19 INFO graph.Vertex: Setting 4 value 0.011229464020180333
+15/04/20 19:37:19 INFO graph.Vertex: Setting 40 value 0.008314333479191166
+15/04/20 19:37:19 INFO graph.Vertex: Setting 42 value 0.01226357628069055
+15/04/20 19:37:19 INFO graph.Vertex: Setting 44 value 0.010028217970065161
+15/04/20 19:37:19 INFO graph.Vertex: Setting 46 value 0.006010942023367061
+15/04/20 19:37:19 INFO graph.Vertex: Setting 48 value 0.01067654398909186
+15/04/20 19:37:19 INFO graph.Vertex: Setting 51 value 0.012401320986999921
+15/04/20 19:37:19 INFO graph.Vertex: Setting 53 value 0.009558880136539575
+15/04/20 19:37:19 INFO graph.Vertex: Setting 55 value 0.013731272232646832
+15/04/20 19:37:19 INFO graph.Vertex: Setting 57 value 0.011079032976311319
+15/04/20 19:37:19 INFO graph.Vertex: Setting 59 value 0.012740842367129135
+15/04/20 19:37:19 INFO graph.Vertex: Setting 6 value 0.008623254275230677
+15/04/20 19:37:19 INFO graph.Vertex: Setting 60 value 0.013896031386160149
+15/04/20 19:37:19 INFO graph.Vertex: Setting 62 value 0.009191933910456989
+15/04/20 19:37:19 INFO graph.Vertex: Setting 64 value 0.014755752702373415
+15/04/20 19:37:19 INFO graph.Vertex: Setting 66 value 0.00922331409012615
+15/04/20 19:37:19 INFO graph.Vertex: Setting 68 value 0.010528562400158148
+15/04/20 19:37:19 INFO graph.Vertex: Setting 71 value 0.012134176256693122
+15/04/20 19:37:19 INFO graph.Vertex: Setting 73 value 0.009583506659976775
+15/04/20 19:37:19 INFO graph.Vertex: Setting 75 value 0.011808532018666254
+15/04/20 19:37:19 INFO graph.Vertex: Setting 77 value 0.00585077297316461
+15/04/20 19:37:19 INFO graph.Vertex: Setting 79 value 0.011491513376865428
+15/04/20 19:37:19 INFO graph.Vertex: Setting 8 value 0.00981496914005325
+15/04/20 19:37:19 INFO graph.Vertex: Setting 80 value 0.011724583251895062
+15/04/20 19:37:19 INFO graph.Vertex: Setting 82 value 0.007515356473547543
+15/04/20 19:37:19 INFO graph.Vertex: Setting 84 value 0.008336499062093657
+15/04/20 19:37:19 INFO graph.Vertex: Setting 86 value 0.008219306262923163
+15/04/20 19:37:19 INFO graph.Vertex: Setting 88 value 0.01424962135482438
+15/04/20 19:37:19 INFO graph.Vertex: Setting 91 value 0.004466374616637163
+15/04/20 19:37:19 INFO graph.Vertex: Setting 93 value 0.005354821473096368
+15/04/20 19:37:19 INFO graph.Vertex: Setting 95 value 0.013336125895193965
+15/04/20 19:37:19 INFO graph.Vertex: Setting 97 value 0.009978818592071568
+15/04/20 19:37:19 INFO graph.Vertex: Setting 99 value 0.013740251414662083
+15/04/20 19:37:19 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:37:19 INFO graph.Vertex: Setting 0 value 0.011094438655194439
+15/04/20 19:37:19 INFO graph.Vertex: Setting 11 value 0.012888508826849528
+15/04/20 19:37:19 INFO graph.Vertex: Setting 13 value 0.008923716649643879
+15/04/20 19:37:19 INFO graph.Vertex: Setting 15 value 0.006572096723069871
+15/04/20 19:37:19 INFO graph.Vertex: Setting 17 value 0.009910647370037965
+15/04/20 19:37:19 INFO graph.Vertex: Setting 19 value 0.009049959778001835
+15/04/20 19:37:19 INFO graph.Vertex: Setting 2 value 0.013247176745644362
+15/04/20 19:37:19 INFO graph.Vertex: Setting 20 value 0.009619955212257149
+15/04/20 19:37:19 INFO graph.Vertex: Setting 22 value 0.013968793513561215
+15/04/20 19:37:19 INFO graph.Vertex: Setting 24 value 0.013561555696813242
+15/04/20 19:37:19 INFO graph.Vertex: Setting 26 value 0.00718601175646176
+15/04/20 19:37:19 INFO graph.Vertex: Setting 28 value 0.0077296216030616335
+15/04/20 19:37:19 INFO graph.Vertex: Setting 31 value 0.007245934879185415
+15/04/20 19:37:19 INFO graph.Vertex: Setting 33 value 0.012153878809661414
+15/04/20 19:37:19 INFO graph.Vertex: Setting 35 value 0.008448975516678723
+15/04/20 19:37:19 INFO graph.Vertex: Setting 37 value 0.006595265642503917
+15/04/20 19:37:19 INFO graph.Vertex: Setting 39 value 0.010550558408967528
+15/04/20 19:37:19 INFO graph.Vertex: Setting 4 value 0.01122953678012623
+15/04/20 19:37:19 INFO graph.Vertex: Setting 40 value 0.008314418658499549
+15/04/20 19:37:19 INFO graph.Vertex: Setting 42 value 0.0122636370353112
+15/04/20 19:37:19 INFO graph.Vertex: Setting 44 value 0.010028220309554473
+15/04/20 19:37:19 INFO graph.Vertex: Setting 46 value 0.006011034095441135
+15/04/20 19:37:19 INFO graph.Vertex: Setting 48 value 0.010676576218245065
+15/04/20 19:37:19 INFO graph.Vertex: Setting 51 value 0.012401589779647516
+15/04/20 19:37:19 INFO graph.Vertex: Setting 53 value 0.009558906858100466
+15/04/20 19:37:19 INFO graph.Vertex: Setting 55 value 0.01373133974384174
+15/04/20 19:37:19 INFO graph.Vertex: Setting 57 value 0.011079058459422019
+15/04/20 19:37:19 INFO graph.Vertex: Setting 59 value 0.012740916561004869
+15/04/20 19:37:19 INFO graph.Vertex: Setting 6 value 0.008623248686766123
+15/04/20 19:37:19 INFO graph.Vertex: Setting 60 value 0.013896085535503583
+15/04/20 19:37:19 INFO graph.Vertex: Setting 62 value 0.009191974705379672
+15/04/20 19:37:19 INFO graph.Vertex: Setting 64 value 0.014755749752766554
+15/04/20 19:37:19 INFO graph.Vertex: Setting 66 value 0.009223458490469105
+15/04/20 19:37:19 INFO graph.Vertex: Setting 68 value 0.010528695293168662
+15/04/20 19:37:19 INFO graph.Vertex: Setting 71 value 0.012134151133142423
+15/04/20 19:37:19 INFO graph.Vertex: Setting 73 value 0.009583657325537029
+15/04/20 19:37:19 INFO graph.Vertex: Setting 75 value 0.011808596180548669
+15/04/20 19:37:19 INFO graph.Vertex: Setting 77 value 0.005850744718345861
+15/04/20 19:37:19 INFO graph.Vertex: Setting 79 value 0.011491682827929466
+15/04/20 19:37:19 INFO graph.Vertex: Setting 8 value 0.009814733459844951
+15/04/20 19:37:19 INFO graph.Vertex: Setting 80 value 0.011724491060788727
+15/04/20 19:37:19 INFO graph.Vertex: Setting 82 value 0.007515341363883725
+15/04/20 19:37:19 INFO graph.Vertex: Setting 84 value 0.008336631346647303
+15/04/20 19:37:19 INFO graph.Vertex: Setting 86 value 0.008219186636728893
+15/04/20 19:37:19 INFO graph.Vertex: Setting 88 value 0.014249675279437842
+15/04/20 19:37:19 INFO graph.Vertex: Setting 91 value 0.004466417191700012
+15/04/20 19:37:19 INFO graph.Vertex: Setting 93 value 0.005354768370672178
+15/04/20 19:37:19 INFO graph.Vertex: Setting 95 value 0.01333624412484592
+15/04/20 19:37:19 INFO graph.Vertex: Setting 97 value 0.009978980873698888
+15/04/20 19:37:19 INFO graph.Vertex: Setting 99 value 0.013740265898985136
+15/04/20 19:37:19 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:37:19 INFO graph.Vertex: Setting 0 value 0.011094387637301159
+15/04/20 19:37:19 INFO graph.Vertex: Setting 11 value 0.01288846562821838
+15/04/20 19:37:19 INFO graph.Vertex: Setting 13 value 0.008923677451869295
+15/04/20 19:37:19 INFO graph.Vertex: Setting 15 value 0.00657208509876132
+15/04/20 19:37:19 INFO graph.Vertex: Setting 17 value 0.009910669218515014
+15/04/20 19:37:19 INFO graph.Vertex: Setting 19 value 0.009049988344066544
+15/04/20 19:37:19 INFO graph.Vertex: Setting 2 value 0.012842645960211707
+15/04/20 19:37:19 INFO graph.Vertex: Setting 20 value 0.009619905046804631
+15/04/20 19:37:19 INFO graph.Vertex: Setting 22 value 0.013968781020531337
+15/04/20 19:37:19 INFO graph.Vertex: Setting 24 value 0.013561603832199048
+15/04/20 19:37:19 INFO graph.Vertex: Setting 26 value 0.007186003564849138
+15/04/20 19:37:19 INFO graph.Vertex: Setting 28 value 0.00772962899020739
+15/04/20 19:37:19 INFO graph.Vertex: Setting 31 value 0.007245894628082671
+15/04/20 19:37:19 INFO graph.Vertex: Setting 33 value 0.012153925041219038
+15/04/20 19:37:19 INFO graph.Vertex: Setting 35 value 0.00844901668825596
+15/04/20 19:37:19 INFO graph.Vertex: Setting 37 value 0.006595257250677714
+15/04/20 19:37:19 INFO graph.Vertex: Setting 39 value 0.010550602702980597
+15/04/20 19:37:19 INFO graph.Vertex: Setting 4 value 0.01122956462896608
+15/04/20 19:37:19 INFO graph.Vertex: Setting 40 value 0.008314439468677753
+15/04/20 19:37:19 INFO graph.Vertex: Setting 42 value 0.012263654490595723
+15/04/20 19:37:19 INFO graph.Vertex: Setting 44 value 0.010028221452157395
+15/04/20 19:37:19 INFO graph.Vertex: Setting 46 value 0.006011063185221524
+15/04/20 19:37:19 INFO graph.Vertex: Setting 48 value 0.010272061924753075
+15/04/20 19:37:19 INFO graph.Vertex: Setting 51 value 0.012401664889348447
+15/04/20 19:37:19 INFO graph.Vertex: Setting 53 value 0.009558918341577646
+15/04/20 19:37:19 INFO graph.Vertex: Setting 55 value 0.013731353889742372
+15/04/20 19:37:19 INFO graph.Vertex: Setting 57 value 0.01107906295677533
+15/04/20 19:37:19 INFO graph.Vertex: Setting 59 value 0.012336434602881557
+15/04/20 19:37:19 INFO graph.Vertex: Setting 6 value 0.008623244994176042
+15/04/20 19:37:19 INFO graph.Vertex: Setting 60 value 0.013896129854697103
+15/04/20 19:37:19 INFO graph.Vertex: Setting 62 value 0.009191966807813853
+15/04/20 19:37:19 INFO graph.Vertex: Setting 64 value 0.014755766536354091
+15/04/20 19:37:19 INFO graph.Vertex: Setting 66 value 0.009223511296185071
+15/04/20 19:37:19 INFO graph.Vertex: Setting 68 value 0.010528727285997921
+15/04/20 19:37:19 INFO graph.Vertex: Setting 71 value 0.01213415313307184
+15/04/20 19:37:19 INFO graph.Vertex: Setting 73 value 0.009583695724805113
+15/04/20 19:37:19 INFO graph.Vertex: Setting 75 value 0.011808635510353086
+15/04/20 19:37:19 INFO graph.Vertex: Setting 77 value 0.0058507240687245225
+15/04/20 19:37:19 INFO graph.Vertex: Setting 79 value 0.01149174327584515
+15/04/20 19:37:19 INFO graph.Vertex: Setting 8 value 0.009814656438904843
+15/04/20 19:37:19 INFO graph.Vertex: Setting 80 value 0.011319949458168247
+15/04/20 19:37:19 INFO graph.Vertex: Setting 82 value 0.007515358514779221
+15/04/20 19:37:19 INFO graph.Vertex: Setting 84 value 0.008336677571296728
+15/04/20 19:37:19 INFO graph.Vertex: Setting 86 value 0.008219148805359382
+15/04/20 19:37:19 INFO graph.Vertex: Setting 88 value 0.01424967652122218
+15/04/20 19:37:19 INFO graph.Vertex: Setting 91 value 0.004466436106451095
+15/04/20 19:37:19 INFO graph.Vertex: Setting 93 value 0.0053547569365603185
+15/04/20 19:37:19 INFO graph.Vertex: Setting 95 value 0.013336272583067178
+15/04/20 19:37:19 INFO graph.Vertex: Setting 97 value 0.009979016345382436
+15/04/20 19:37:19 INFO graph.Vertex: Setting 99 value 0.013740266166195473
+15/04/20 19:37:19 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:37:19 INFO graph.Vertex: Setting 0 value 0.011031853290590499
+15/04/20 19:37:19 INFO graph.Vertex: Setting 11 value 0.012857196717861202
+15/04/20 19:37:19 INFO graph.Vertex: Setting 13 value 0.008885467516608752
+15/04/20 19:37:19 INFO graph.Vertex: Setting 15 value 0.006537696832126538
+15/04/20 19:37:19 INFO graph.Vertex: Setting 17 value 0.009910682053557893
+15/04/20 19:37:19 INFO graph.Vertex: Setting 19 value 0.00904999367347107
+15/04/20 19:37:19 INFO graph.Vertex: Setting 2 value 0.013153394846616455
+15/04/20 19:37:19 INFO graph.Vertex: Setting 20 value 0.00961988639631742
+15/04/20 19:37:19 INFO graph.Vertex: Setting 22 value 0.013934388130596618
+15/04/20 19:37:19 INFO graph.Vertex: Setting 24 value 0.013499104496607626
+15/04/20 19:37:19 INFO graph.Vertex: Setting 26 value 0.007154740959723365
+15/04/20 19:37:19 INFO graph.Vertex: Setting 28 value 0.007729634636559618
+15/04/20 19:37:19 INFO graph.Vertex: Setting 31 value 0.0072458850079092285
+15/04/20 19:37:19 INFO graph.Vertex: Setting 33 value 0.012119549619940929
+15/04/20 19:37:19 INFO graph.Vertex: Setting 35 value 0.008417769369650536
+15/04/20 19:37:19 INFO graph.Vertex: Setting 37 value 0.006525790927156265
+15/04/20 19:37:19 INFO graph.Vertex: Setting 39 value 0.010519360208324113
+15/04/20 19:37:19 INFO graph.Vertex: Setting 4 value 0.011163931621937547
+15/04/20 19:37:19 INFO graph.Vertex: Setting 40 value 0.008314440585358572
+15/04/20 19:37:19 INFO graph.Vertex: Setting 42 value 0.012198017581056118
+15/04/20 19:37:19 INFO graph.Vertex: Setting 44 value 0.00996570641755131
+15/04/20 19:37:19 INFO graph.Vertex: Setting 46 value 0.006011072321396224
+15/04/20 19:37:19 INFO graph.Vertex: Setting 48 value 0.010582808999094554
+15/04/20 19:37:19 INFO graph.Vertex: Setting 51 value 0.012370426160821409
+15/04/20 19:37:19 INFO graph.Vertex: Setting 53 value 0.00949640812936592
+15/04/20 19:37:19 INFO graph.Vertex: Setting 55 value 0.013731353817624612
+15/04/20 19:37:19 INFO graph.Vertex: Setting 57 value 0.011016550463284033
+15/04/20 19:37:19 INFO graph.Vertex: Setting 59 value 0.01264407114043298
+15/04/20 19:37:19 INFO graph.Vertex: Setting 6 value 0.00859198678930056
+15/04/20 19:37:19 INFO graph.Vertex: Setting 60 value 0.01383363361414925
+15/04/20 19:37:19 INFO graph.Vertex: Setting 62 value 0.009160701914783059
+15/04/20 19:37:19 INFO graph.Vertex: Setting 64 value 0.014724515488198673
+15/04/20 19:37:19 INFO graph.Vertex: Setting 66 value 0.009223529874760225
+15/04/20 19:37:19 INFO graph.Vertex: Setting 68 value 0.010490529128755624
+15/04/20 19:37:19 INFO graph.Vertex: Setting 71 value 0.012102898393458735
+15/04/20 19:37:19 INFO graph.Vertex: Setting 73 value 0.009583705826225102
+15/04/20 19:37:19 INFO graph.Vertex: Setting 75 value 0.011808649987567456
+15/04/20 19:37:19 INFO graph.Vertex: Setting 77 value 0.005850713886138633
+15/04/20 19:37:19 INFO graph.Vertex: Setting 79 value 0.011460503071456933
+15/04/20 19:37:19 INFO graph.Vertex: Setting 8 value 0.009814632306357835
+15/04/20 19:37:19 INFO graph.Vertex: Setting 80 value 0.011589361455128564
+15/04/20 19:37:19 INFO graph.Vertex: Setting 82 value 0.007515365921493255
+15/04/20 19:37:19 INFO graph.Vertex: Setting 84 value 0.008336689795896432
+15/04/20 19:37:19 INFO graph.Vertex: Setting 86 value 0.008180933039207845
+15/04/20 19:37:19 INFO graph.Vertex: Setting 88 value 0.014184030009398052
+15/04/20 19:37:19 INFO graph.Vertex: Setting 91 value 0.004466440138357434
+15/04/20 19:37:19 INFO graph.Vertex: Setting 93 value 0.005354755292934343
+15/04/20 19:37:19 INFO graph.Vertex: Setting 95 value 0.013208121216438337
+15/04/20 19:37:19 INFO graph.Vertex: Setting 97 value 0.009944638299708423
+15/04/20 19:37:19 INFO graph.Vertex: Setting 99 value 0.013709002534531561
+15/04/20 19:37:19 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:37:19 INFO graph.Vertex: Setting 0 value 0.011054098663417585
+15/04/20 19:37:19 INFO graph.Vertex: Setting 11 value 0.012842882061704934
+15/04/20 19:37:19 INFO graph.Vertex: Setting 13 value 0.008894237096236041
+15/04/20 19:37:19 INFO graph.Vertex: Setting 15 value 0.00655250562255445
+15/04/20 19:37:19 INFO graph.Vertex: Setting 17 value 0.00988739189096564
+15/04/20 19:37:19 INFO graph.Vertex: Setting 19 value 0.009024343019943051
+15/04/20 19:37:19 INFO graph.Vertex: Setting 2 value 0.01321126287668867
+15/04/20 19:37:19 INFO graph.Vertex: Setting 20 value 0.009599083085645395
+15/04/20 19:37:19 INFO graph.Vertex: Setting 22 value 0.013921754320808395
+15/04/20 19:37:19 INFO graph.Vertex: Setting 24 value 0.013521747737150978
+15/04/20 19:37:19 INFO graph.Vertex: Setting 26 value 0.007157629911078027
+15/04/20 19:37:19 INFO graph.Vertex: Setting 28 value 0.007710936167062875
+15/04/20 19:37:19 INFO graph.Vertex: Setting 31 value 0.0072318885881916635
+15/04/20 19:37:19 INFO graph.Vertex: Setting 33 value 0.012119480371849255
+15/04/20 19:37:19 INFO graph.Vertex: Setting 35 value 0.008419804293847463
+15/04/20 19:37:19 INFO graph.Vertex: Setting 37 value 0.00656746366192528
+15/04/20 19:37:19 INFO graph.Vertex: Setting 39 value 0.010520913643568202
+15/04/20 19:37:19 INFO graph.Vertex: Setting 4 value 0.01119112425369828
+15/04/20 19:37:19 INFO graph.Vertex: Setting 40 value 0.00830128860979165
+15/04/20 19:37:19 INFO graph.Vertex: Setting 42 value 0.012201081728877248
+15/04/20 19:37:19 INFO graph.Vertex: Setting 44 value 0.009988128472156459
+15/04/20 19:37:19 INFO graph.Vertex: Setting 46 value 0.005995834218564991
+15/04/20 19:37:19 INFO graph.Vertex: Setting 48 value 0.010626000355636074
+15/04/20 19:37:19 INFO graph.Vertex: Setting 51 value 0.012363767782701507
+15/04/20 19:37:19 INFO graph.Vertex: Setting 53 value 0.00952363872443625
+15/04/20 19:37:19 INFO graph.Vertex: Setting 55 value 0.013705640877376775
+15/04/20 19:37:19 INFO graph.Vertex: Setting 57 value 0.011031915311274332
+15/04/20 19:37:19 INFO graph.Vertex: Setting 59 value 0.012689828016256762
+15/04/20 19:37:19 INFO graph.Vertex: Setting 6 value 0.00858841030850267
+15/04/20 19:37:19 INFO graph.Vertex: Setting 60 value 0.01385246610962739
+15/04/20 19:37:19 INFO graph.Vertex: Setting 62 value 0.00916893343117278
+15/04/20 19:37:19 INFO graph.Vertex: Setting 64 value 0.014730601533455626
+15/04/20 19:37:19 INFO graph.Vertex: Setting 66 value 0.00920249754858712
+15/04/20 19:37:19 INFO graph.Vertex: Setting 68 value 0.010490885972339797
+15/04/20 19:37:19 INFO graph.Vertex: Setting 71 value 0.012097554222052965
+15/04/20 19:37:19 INFO graph.Vertex: Setting 73 value 0.009558080994645533
+15/04/20 19:37:19 INFO graph.Vertex: Setting 75 value 0.011775750751975655
+15/04/20 19:37:19 INFO graph.Vertex: Setting 77 value 0.005842443638731574
+15/04/20 19:37:19 INFO graph.Vertex: Setting 79 value 0.01146127820472004
+15/04/20 19:37:19 INFO graph.Vertex: Setting 8 value 0.00980206436623172
+15/04/20 19:37:19 INFO graph.Vertex: Setting 80 value 0.011666219501227787
+15/04/20 19:37:19 INFO graph.Vertex: Setting 82 value 0.007497492958713313
+15/04/20 19:37:19 INFO graph.Vertex: Setting 84 value 0.008324374006617574
+15/04/20 19:37:19 INFO graph.Vertex: Setting 86 value 0.008182596093434243
+15/04/20 19:37:19 INFO graph.Vertex: Setting 88 value 0.014197666466677396
+15/04/20 19:37:19 INFO graph.Vertex: Setting 91 value 0.004461609228498608
+15/04/20 19:37:19 INFO graph.Vertex: Setting 93 value 0.005344368981442703
+15/04/20 19:37:19 INFO graph.Vertex: Setting 95 value 0.013280838608795252
+15/04/20 19:37:19 INFO graph.Vertex: Setting 97 value 0.009945371420681132
+15/04/20 19:37:19 INFO graph.Vertex: Setting 99 value 0.013694740209878174
+15/04/20 19:37:19 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:37:19 INFO graph.Vertex: Setting 0 value 0.011063806568747668
+15/04/20 19:37:19 INFO graph.Vertex: Setting 11 value 0.012848944834679372
+15/04/20 19:37:19 INFO graph.Vertex: Setting 13 value 0.008901218835053204
+15/04/20 19:37:19 INFO graph.Vertex: Setting 15 value 0.00655558620200836
+15/04/20 19:37:19 INFO graph.Vertex: Setting 17 value 0.009884430699630553
+15/04/20 19:37:19 INFO graph.Vertex: Setting 19 value 0.00902558998826765
+15/04/20 19:37:19 INFO graph.Vertex: Setting 2 value 0.013212891323374328
+15/04/20 19:37:19 INFO graph.Vertex: Setting 20 value 0.009596469098182512
+15/04/20 19:37:19 INFO graph.Vertex: Setting 22 value 0.013927478395428272
+15/04/20 19:37:19 INFO graph.Vertex: Setting 24 value 0.013525317944773033
+15/04/20 19:37:19 INFO graph.Vertex: Setting 26 value 0.007164354972786892
+15/04/20 19:37:19 INFO graph.Vertex: Setting 28 value 0.007710997149743872
+15/04/20 19:37:19 INFO graph.Vertex: Setting 31 value 0.007229936515583659
+15/04/20 19:37:19 INFO graph.Vertex: Setting 33 value 0.012123406682860736
+15/04/20 19:37:19 INFO graph.Vertex: Setting 35 value 0.008427385832470718
+15/04/20 19:37:19 INFO graph.Vertex: Setting 37 value 0.006576362023536242
+15/04/20 19:37:19 INFO graph.Vertex: Setting 39 value 0.010522545390970124
+15/04/20 19:37:19 INFO graph.Vertex: Setting 4 value 0.011200128263259697
+15/04/20 19:37:19 INFO graph.Vertex: Setting 40 value 0.008294351020972847
+15/04/20 19:37:19 INFO graph.Vertex: Setting 42 value 0.01222178695664126
+15/04/20 19:37:19 INFO graph.Vertex: Setting 44 value 0.009996589207292912
+15/04/20 19:37:19 INFO graph.Vertex: Setting 46 value 0.005996708258948096
+15/04/20 19:37:19 INFO graph.Vertex: Setting 48 value 0.010643461730025885
+15/04/20 19:37:19 INFO graph.Vertex: Setting 51 value 0.012366582600042066
+15/04/20 19:37:19 INFO graph.Vertex: Setting 53 value 0.00953247193870276
+15/04/20 19:37:19 INFO graph.Vertex: Setting 55 value 0.013697107204841205
+15/04/20 19:37:19 INFO graph.Vertex: Setting 57 value 0.011045702890477653
+15/04/20 19:37:19 INFO graph.Vertex: Setting 59 value 0.012702222188515157
+15/04/20 19:37:19 INFO graph.Vertex: Setting 6 value 0.008599111408900451
+15/04/20 19:37:19 INFO graph.Vertex: Setting 60 value 0.013857952662699083
+15/04/20 19:37:19 INFO graph.Vertex: Setting 62 value 0.009171006212342556
+15/04/20 19:37:19 INFO graph.Vertex: Setting 64 value 0.014720203710247435
+15/04/20 19:37:19 INFO graph.Vertex: Setting 66 value 0.00920074232858921
+15/04/20 19:37:19 INFO graph.Vertex: Setting 68 value 0.01049780539131658
+15/04/20 19:37:19 INFO graph.Vertex: Setting 71 value 0.012101704637389745
+15/04/20 19:37:19 INFO graph.Vertex: Setting 73 value 0.009556971905859326
+15/04/20 19:37:19 INFO graph.Vertex: Setting 75 value 0.011776953191873557
+15/04/20 19:37:19 INFO graph.Vertex: Setting 77 value 0.005839889615838171
+15/04/20 19:37:19 INFO graph.Vertex: Setting 79 value 0.011460753377128553
+15/04/20 19:37:19 INFO graph.Vertex: Setting 8 value 0.009795300685603015
+15/04/20 19:37:19 INFO graph.Vertex: Setting 80 value 0.011688706708285347
+15/04/20 19:37:19 INFO graph.Vertex: Setting 82 value 0.007497962906836412
+15/04/20 19:37:19 INFO graph.Vertex: Setting 84 value 0.008315640666849073
+15/04/20 19:37:19 INFO graph.Vertex: Setting 86 value 0.008194905278600378
+15/04/20 19:37:19 INFO graph.Vertex: Setting 88 value 0.014207519339256725
+15/04/20 19:37:19 INFO graph.Vertex: Setting 91 value 0.004459594036104456
+15/04/20 19:37:19 INFO graph.Vertex: Setting 93 value 0.005343915654283405
+15/04/20 19:37:19 INFO graph.Vertex: Setting 95 value 0.013297234062895376
+15/04/20 19:37:19 INFO graph.Vertex: Setting 97 value 0.009950711774983743
+15/04/20 19:37:19 INFO graph.Vertex: Setting 99 value 0.013700507288287289
+15/04/20 19:37:19 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:37:19 INFO graph.Vertex: Setting 0 value 0.011067919221964867
+15/04/20 19:37:19 INFO graph.Vertex: Setting 11 value 0.012856072585580334
+15/04/20 19:37:19 INFO graph.Vertex: Setting 13 value 0.00890381245038762
+15/04/20 19:37:19 INFO graph.Vertex: Setting 15 value 0.00655820799865827
+15/04/20 19:37:19 INFO graph.Vertex: Setting 17 value 0.009887467278696173
+15/04/20 19:37:19 INFO graph.Vertex: Setting 19 value 0.009029704309046392
+15/04/20 19:37:19 INFO graph.Vertex: Setting 2 value 0.013215893651806839
+15/04/20 19:37:19 INFO graph.Vertex: Setting 20 value 0.009598231141911473
+15/04/20 19:37:19 INFO graph.Vertex: Setting 22 value 0.013933947711293082
+15/04/20 19:37:19 INFO graph.Vertex: Setting 24 value 0.01352890739322536
+15/04/20 19:37:19 INFO graph.Vertex: Setting 26 value 0.007169220806295929
+15/04/20 19:37:19 INFO graph.Vertex: Setting 28 value 0.007713054706116161
+15/04/20 19:37:19 INFO graph.Vertex: Setting 31 value 0.00723120221604273
+15/04/20 19:37:19 INFO graph.Vertex: Setting 33 value 0.012125971216279336
+15/04/20 19:37:19 INFO graph.Vertex: Setting 35 value 0.008430032356747025
+15/04/20 19:37:19 INFO graph.Vertex: Setting 37 value 0.006580832510980981
+15/04/20 19:37:19 INFO graph.Vertex: Setting 39 value 0.01052621245930212
+15/04/20 19:37:19 INFO graph.Vertex: Setting 4 value 0.01120280995336186
+15/04/20 19:37:19 INFO graph.Vertex: Setting 40 value 0.008295742179749018
+15/04/20 19:37:19 INFO graph.Vertex: Setting 42 value 0.012232433994707203
+15/04/20 19:37:19 INFO graph.Vertex: Setting 44 value 0.010004084293111233
+15/04/20 19:37:19 INFO graph.Vertex: Setting 46 value 0.0059993420939894225
+15/04/20 19:37:19 INFO graph.Vertex: Setting 48 value 0.010651395303282334
+15/04/20 19:37:19 INFO graph.Vertex: Setting 51 value 0.012371516432280044
+15/04/20 19:37:19 INFO graph.Vertex: Setting 53 value 0.009536723504326947
+15/04/20 19:37:19 INFO graph.Vertex: Setting 55 value 0.013698981281660224
+15/04/20 19:37:19 INFO graph.Vertex: Setting 57 value 0.011052957410542349
+15/04/20 19:37:19 INFO graph.Vertex: Setting 59 value 0.012709817017310714
+15/04/20 19:37:19 INFO graph.Vertex: Setting 6 value 0.00860385391128046
+15/04/20 19:37:19 INFO graph.Vertex: Setting 60 value 0.013862428499207342
+15/04/20 19:37:19 INFO graph.Vertex: Setting 62 value 0.00917290355114307
+15/04/20 19:37:19 INFO graph.Vertex: Setting 64 value 0.014721127722529391
+15/04/20 19:37:19 INFO graph.Vertex: Setting 66 value 0.009202291877693784
+15/04/20 19:37:19 INFO graph.Vertex: Setting 68 value 0.010503623088085919
+15/04/20 19:37:19 INFO graph.Vertex: Setting 71 value 0.012105849379650544
+15/04/20 19:37:19 INFO graph.Vertex: Setting 73 value 0.009561065747537177
+15/04/20 19:37:19 INFO graph.Vertex: Setting 75 value 0.011780871076462729
+15/04/20 19:37:19 INFO graph.Vertex: Setting 77 value 0.005840019334496243
+15/04/20 19:37:19 INFO graph.Vertex: Setting 79 value 0.01146397389220296
+15/04/20 19:37:19 INFO graph.Vertex: Setting 8 value 0.009794160261761786
+15/04/20 19:37:19 INFO graph.Vertex: Setting 80 value 0.011696457720328662
+15/04/20 19:37:19 INFO graph.Vertex: Setting 82 value 0.007499572948671921
+15/04/20 19:37:19 INFO graph.Vertex: Setting 84 value 0.00831774336167281
+15/04/20 19:37:19 INFO graph.Vertex: Setting 86 value 0.00820074667100291
+15/04/20 19:37:19 INFO graph.Vertex: Setting 88 value 0.014214669492550869
+15/04/20 19:37:19 INFO graph.Vertex: Setting 91 value 0.004459170323185958
+15/04/20 19:37:19 INFO graph.Vertex: Setting 93 value 0.00534507619019463
+15/04/20 19:37:19 INFO graph.Vertex: Setting 95 value 0.013303890422875273
+15/04/20 19:37:19 INFO graph.Vertex: Setting 97 value 0.009955672942312284
+15/04/20 19:37:19 INFO graph.Vertex: Setting 99 value 0.013707157830892436
+15/04/20 19:37:19 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:37:19 INFO graph.Vertex: Setting 0 value 0.011071584235156392
+15/04/20 19:37:19 INFO graph.Vertex: Setting 11 value 0.012861468728002569
+15/04/20 19:37:19 INFO graph.Vertex: Setting 13 value 0.008906489976093843
+15/04/20 19:37:19 INFO graph.Vertex: Setting 15 value 0.00656032593837409
+15/04/20 19:37:19 INFO graph.Vertex: Setting 17 value 0.0098907857057383
+15/04/20 19:37:19 INFO graph.Vertex: Setting 19 value 0.00903279563904452
+15/04/20 19:37:19 INFO graph.Vertex: Setting 2 value 0.013219876575028358
+15/04/20 19:37:19 INFO graph.Vertex: Setting 20 value 0.00960125479378653
+15/04/20 19:37:19 INFO graph.Vertex: Setting 22 value 0.013939420621467
+15/04/20 19:37:19 INFO graph.Vertex: Setting 24 value 0.013533524200081547
+15/04/20 19:37:19 INFO graph.Vertex: Setting 26 value 0.007172455713930407
+15/04/20 19:37:19 INFO graph.Vertex: Setting 28 value 0.0077152575439726825
+15/04/20 19:37:19 INFO graph.Vertex: Setting 31 value 0.007232889253448923
+15/04/20 19:37:19 INFO graph.Vertex: Setting 33 value 0.012129385548180636
+15/04/20 19:37:19 INFO graph.Vertex: Setting 35 value 0.008432548294739054
+15/04/20 19:37:19 INFO graph.Vertex: Setting 37 value 0.006583532047945138
+15/04/20 19:37:19 INFO graph.Vertex: Setting 39 value 0.010529615887218048
+15/04/20 19:37:19 INFO graph.Vertex: Setting 4 value 0.011206792457706472
+15/04/20 19:37:19 INFO graph.Vertex: Setting 40 value 0.008298630312052885
+15/04/20 19:37:19 INFO graph.Vertex: Setting 42 value 0.012238459363744398
+15/04/20 19:37:19 INFO graph.Vertex: Setting 44 value 0.010008429667048482
+15/04/20 19:37:19 INFO graph.Vertex: Setting 46 value 0.006000899488009147
+15/04/20 19:37:19 INFO graph.Vertex: Setting 48 value 0.010655253761529607
+15/04/20 19:37:19 INFO graph.Vertex: Setting 51 value 0.012376278023175969
+15/04/20 19:37:19 INFO graph.Vertex: Setting 53 value 0.00953989855030851
+15/04/20 19:37:19 INFO graph.Vertex: Setting 55 value 0.013702763273295105
+15/04/20 19:37:19 INFO graph.Vertex: Setting 57 value 0.011056871818788313
+15/04/20 19:37:19 INFO graph.Vertex: Setting 59 value 0.012714634657275365
+15/04/20 19:37:19 INFO graph.Vertex: Setting 6 value 0.00860676959496416
+15/04/20 19:37:19 INFO graph.Vertex: Setting 60 value 0.013867148798215673
+15/04/20 19:37:19 INFO graph.Vertex: Setting 62 value 0.00917509542150177
+15/04/20 19:37:19 INFO graph.Vertex: Setting 64 value 0.01472526013598812
+15/04/20 19:37:19 INFO graph.Vertex: Setting 66 value 0.009205243125266752
+15/04/20 19:37:19 INFO graph.Vertex: Setting 68 value 0.010507575520565061
+15/04/20 19:37:19 INFO graph.Vertex: Setting 71 value 0.012109507363557299
+15/04/20 19:37:19 INFO graph.Vertex: Setting 73 value 0.009564807921113106
+15/04/20 19:37:19 INFO graph.Vertex: Setting 75 value 0.011784732409694014
+15/04/20 19:37:19 INFO graph.Vertex: Setting 77 value 0.005841275453527604
+15/04/20 19:37:19 INFO graph.Vertex: Setting 79 value 0.011468223715344002
+15/04/20 19:37:19 INFO graph.Vertex: Setting 8 value 0.009796031255042695
+15/04/20 19:37:19 INFO graph.Vertex: Setting 80 value 0.011700835222390491
+15/04/20 19:37:19 INFO graph.Vertex: Setting 82 value 0.007501797040881889
+15/04/20 19:37:19 INFO graph.Vertex: Setting 84 value 0.008320797891397764
+15/04/20 19:37:19 INFO graph.Vertex: Setting 86 value 0.008203916661347767
+15/04/20 19:37:19 INFO graph.Vertex: Setting 88 value 0.014220210954080818
+15/04/20 19:37:19 INFO graph.Vertex: Setting 91 value 0.004459917139741813
+15/04/20 19:37:19 INFO graph.Vertex: Setting 93 value 0.0053464064738087715
+15/04/20 19:37:19 INFO graph.Vertex: Setting 95 value 0.013308610137437824
+15/04/20 19:37:19 INFO graph.Vertex: Setting 97 value 0.009959783160048601
+15/04/20 19:37:19 INFO graph.Vertex: Setting 99 value 0.013712276210499136
+15/04/20 19:37:19 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:37:19 INFO graph.Vertex: Setting 0 value 0.011074956438762067
+15/04/20 19:37:19 INFO graph.Vertex: Setting 11 value 0.012865575585757336
+15/04/20 19:37:19 INFO graph.Vertex: Setting 13 value 0.008909020291927557
+15/04/20 19:37:19 INFO graph.Vertex: Setting 15 value 0.006562077162141285
+15/04/20 19:37:19 INFO graph.Vertex: Setting 17 value 0.009893761321367532
+15/04/20 19:37:19 INFO graph.Vertex: Setting 19 value 0.009035413088996802
+15/04/20 19:37:19 INFO graph.Vertex: Setting 2 value 0.013223842442535296
+15/04/20 19:37:19 INFO graph.Vertex: Setting 20 value 0.009604061113282077
+15/04/20 19:37:19 INFO graph.Vertex: Setting 22 value 0.013943903060161323
+15/04/20 19:37:19 INFO graph.Vertex: Setting 24 value 0.013537744312129238
+15/04/20 19:37:19 INFO graph.Vertex: Setting 26 value 0.007174687546569969
+15/04/20 19:37:19 INFO graph.Vertex: Setting 28 value 0.007717368246306928
+15/04/20 19:37:19 INFO graph.Vertex: Setting 31 value 0.0072346704921602955
+15/04/20 19:37:19 INFO graph.Vertex: Setting 33 value 0.012132869288923464
+15/04/20 19:37:19 INFO graph.Vertex: Setting 35 value 0.008434924948415154
+15/04/20 19:37:19 INFO graph.Vertex: Setting 37 value 0.006585397084183096
+15/04/20 19:37:19 INFO graph.Vertex: Setting 39 value 0.010532684129209664
+15/04/20 19:37:19 INFO graph.Vertex: Setting 4 value 0.011210270443452195
+15/04/20 19:37:19 INFO graph.Vertex: Setting 40 value 0.008301069644495675
+15/04/20 19:37:19 INFO graph.Vertex: Setting 42 value 0.012242597309109433
+15/04/20 19:37:19 INFO graph.Vertex: Setting 44 value 0.010011545326868536
+15/04/20 19:37:19 INFO graph.Vertex: Setting 46 value 0.0060022799265287245
+15/04/20 19:37:19 INFO graph.Vertex: Setting 48 value 0.010658321706370315
+15/04/20 19:37:19 INFO graph.Vertex: Setting 51 value 0.012380171066931192
+15/04/20 19:37:19 INFO graph.Vertex: Setting 53 value 0.009542674131014882
+15/04/20 19:37:19 INFO graph.Vertex: Setting 55 value 0.01370676919622898
+15/04/20 19:37:19 INFO graph.Vertex: Setting 57 value 0.011060043100553169
+15/04/20 19:37:19 INFO graph.Vertex: Setting 59 value 0.012718589504878412
+15/04/20 19:37:19 INFO graph.Vertex: Setting 6 value 0.008609132119730339
+15/04/20 19:37:19 INFO graph.Vertex: Setting 60 value 0.01387146474926831
+15/04/20 19:37:19 INFO graph.Vertex: Setting 62 value 0.009177369529702465
+15/04/20 19:37:19 INFO graph.Vertex: Setting 64 value 0.014729522515877296
+15/04/20 19:37:19 INFO graph.Vertex: Setting 66 value 0.009208039396263685
+15/04/20 19:37:19 INFO graph.Vertex: Setting 68 value 0.010510897207836581
+15/04/20 19:37:19 INFO graph.Vertex: Setting 71 value 0.012112943195619721
+15/04/20 19:37:19 INFO graph.Vertex: Setting 73 value 0.009567860880495953
+15/04/20 19:37:19 INFO graph.Vertex: Setting 75 value 0.011788189288779451
+15/04/20 19:37:19 INFO graph.Vertex: Setting 77 value 0.005842664583680959
+15/04/20 19:37:19 INFO graph.Vertex: Setting 79 value 0.011471869187468777
+15/04/20 19:37:19 INFO graph.Vertex: Setting 8 value 0.009798538241481513
+15/04/20 19:37:19 INFO graph.Vertex: Setting 80 value 0.011704348055002707
+15/04/20 19:37:19 INFO graph.Vertex: Setting 82 value 0.007503938160285183
+15/04/20 19:37:19 INFO graph.Vertex: Setting 84 value 0.008323333834141456
+15/04/20 19:37:19 INFO graph.Vertex: Setting 86 value 0.008206254597886632
+15/04/20 19:37:19 INFO graph.Vertex: Setting 88 value 0.014224632748024428
+15/04/20 19:37:19 INFO graph.Vertex: Setting 91 value 0.004460779554189467
+15/04/20 19:37:19 INFO graph.Vertex: Setting 93 value 0.005347615887005785
+15/04/20 19:37:19 INFO graph.Vertex: Setting 95 value 0.013312556045634935
+15/04/20 19:37:19 INFO graph.Vertex: Setting 97 value 0.009962815560100502
+15/04/20 19:37:19 INFO graph.Vertex: Setting 99 value 0.0137164514358972
+15/04/20 19:37:19 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:37:19 INFO graph.Vertex: Setting 0 value 0.011077869792280162
+15/04/20 19:37:19 INFO graph.Vertex: Setting 11 value 0.0128690043223446
+15/04/20 19:37:19 INFO graph.Vertex: Setting 13 value 0.008911211047330543
+15/04/20 19:37:19 INFO graph.Vertex: Setting 15 value 0.0065635746976765484
+15/04/20 19:37:19 INFO graph.Vertex: Setting 17 value 0.009896317705553995
+15/04/20 19:37:19 INFO graph.Vertex: Setting 19 value 0.00903762207214686
+15/04/20 19:37:19 INFO graph.Vertex: Setting 2 value 0.01322734766653474
+15/04/20 19:37:19 INFO graph.Vertex: Setting 20 value 0.009606424101581487
+15/04/20 19:37:19 INFO graph.Vertex: Setting 22 value 0.013947620927786817
+15/04/20 19:37:19 INFO graph.Vertex: Setting 24 value 0.013541351103326455
+15/04/20 19:37:19 INFO graph.Vertex: Setting 26 value 0.007176420512720878
+15/04/20 19:37:19 INFO graph.Vertex: Setting 28 value 0.0077192181182796265
+15/04/20 19:37:19 INFO graph.Vertex: Setting 31 value 0.007236307407323696
+15/04/20 19:37:19 INFO graph.Vertex: Setting 33 value 0.01213597297564834
+15/04/20 19:37:19 INFO graph.Vertex: Setting 35 value 0.008437011311747273
+15/04/20 19:37:19 INFO graph.Vertex: Setting 37 value 0.0065868990148217664
+15/04/20 19:37:19 INFO graph.Vertex: Setting 39 value 0.010535350979603012
+15/04/20 19:37:19 INFO graph.Vertex: Setting 4 value 0.01121318889075081
+15/04/20 19:37:19 INFO graph.Vertex: Setting 40 value 0.008303108882248118
+15/04/20 19:37:19 INFO graph.Vertex: Setting 42 value 0.012245846827344772
+15/04/20 19:37:19 INFO graph.Vertex: Setting 44 value 0.010014084561797287
+15/04/20 19:37:19 INFO graph.Vertex: Setting 46 value 0.006003546642912937
+15/04/20 19:37:19 INFO graph.Vertex: Setting 48 value 0.010661015076401699
+15/04/20 19:37:19 INFO graph.Vertex: Setting 51 value 0.012383406749354566
+15/04/20 19:37:19 INFO graph.Vertex: Setting 53 value 0.009545103453096296
+15/04/20 19:37:19 INFO graph.Vertex: Setting 55 value 0.013710390813555524
+15/04/20 19:37:19 INFO graph.Vertex: Setting 57 value 0.011062849840905976
+15/04/20 19:37:19 INFO graph.Vertex: Setting 59 value 0.012721993235076294
+15/04/20 19:37:19 INFO graph.Vertex: Setting 6 value 0.008611187307631909
+15/04/20 19:37:19 INFO graph.Vertex: Setting 60 value 0.013875184773335807
+15/04/20 19:37:19 INFO graph.Vertex: Setting 62 value 0.009179486873814556
+15/04/20 19:37:19 INFO graph.Vertex: Setting 64 value 0.014733374151958373
+15/04/20 19:37:19 INFO graph.Vertex: Setting 66 value 0.009210395618526076
+15/04/20 19:37:19 INFO graph.Vertex: Setting 68 value 0.010513655708474168
+15/04/20 19:37:19 INFO graph.Vertex: Setting 71 value 0.012116033833915782
+15/04/20 19:37:19 INFO graph.Vertex: Setting 73 value 0.009570300909919336
+15/04/20 19:37:19 INFO graph.Vertex: Setting 75 value 0.011791219720916133
+15/04/20 19:37:19 INFO graph.Vertex: Setting 77 value 0.005843883749050596
+15/04/20 19:37:19 INFO graph.Vertex: Setting 79 value 0.011474913355970033
+15/04/20 19:37:19 INFO graph.Vertex: Setting 8 value 0.009800887721262811
+15/04/20 19:37:19 INFO graph.Vertex: Setting 80 value 0.011707337593854821
+15/04/20 19:37:19 INFO graph.Vertex: Setting 82 value 0.007505705919511136
+15/04/20 19:37:19 INFO graph.Vertex: Setting 84 value 0.008325389799857115
+15/04/20 19:37:19 INFO graph.Vertex: Setting 86 value 0.008208176199486893
+15/04/20 19:37:19 INFO graph.Vertex: Setting 88 value 0.014228351622925258
+15/04/20 19:37:19 INFO graph.Vertex: Setting 91 value 0.0044615772394266074
+15/04/20 19:37:19 INFO graph.Vertex: Setting 93 value 0.005348666830294011
+15/04/20 19:37:19 INFO graph.Vertex: Setting 95 value 0.013316044663520812
+15/04/20 19:37:19 INFO graph.Vertex: Setting 97 value 0.009965239935296724
+15/04/20 19:37:19 INFO graph.Vertex: Setting 99 value 0.013720000437394608
+15/04/20 19:37:19 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:37:19 INFO graph.Vertex: Setting 0 value 0.011080346128184477
+15/04/20 19:37:19 INFO graph.Vertex: Setting 11 value 0.012871922984825559
+15/04/20 19:37:19 INFO graph.Vertex: Setting 13 value 0.008913082575111303
+15/04/20 19:37:19 INFO graph.Vertex: Setting 15 value 0.006564851797927595
+15/04/20 19:37:19 INFO graph.Vertex: Setting 17 value 0.009898482853486087
+15/04/20 19:37:19 INFO graph.Vertex: Setting 19 value 0.009039486915660436
+15/04/20 19:37:19 INFO graph.Vertex: Setting 2 value 0.013230330367517648
+15/04/20 19:37:19 INFO graph.Vertex: Setting 20 value 0.00960843054943327
+15/04/20 19:37:19 INFO graph.Vertex: Setting 22 value 0.013950775691229128
+15/04/20 19:37:19 INFO graph.Vertex: Setting 24 value 0.013544405147996066
+15/04/20 19:37:19 INFO graph.Vertex: Setting 26 value 0.007177861742942467
+15/04/20 19:37:19 INFO graph.Vertex: Setting 28 value 0.007720790952862405
+15/04/20 19:37:19 INFO graph.Vertex: Setting 31 value 0.0072377334200419575
+15/04/20 19:37:19 INFO graph.Vertex: Setting 33 value 0.012138646274132822
+15/04/20 19:37:19 INFO graph.Vertex: Setting 35 value 0.008438806352916934
+15/04/20 19:37:19 INFO graph.Vertex: Setting 37 value 0.006588156858804098
+15/04/20 19:37:19 INFO graph.Vertex: Setting 39 value 0.010537631794737715
+15/04/20 19:37:19 INFO graph.Vertex: Setting 4 value 0.011215656733087966
+15/04/20 19:37:19 INFO graph.Vertex: Setting 40 value 0.008304823645267337
+15/04/20 19:37:19 INFO graph.Vertex: Setting 42 value 0.012248544429083337
+15/04/20 19:37:19 INFO graph.Vertex: Setting 44 value 0.010016217366197197
+15/04/20 19:37:19 INFO graph.Vertex: Setting 46 value 0.006004662903988624
+15/04/20 19:37:19 INFO graph.Vertex: Setting 48 value 0.010663338180473178
+15/04/20 19:37:19 INFO graph.Vertex: Setting 51 value 0.012386146496723786
+15/04/20 19:37:19 INFO graph.Vertex: Setting 53 value 0.00954718075264493
+15/04/20 19:37:19 INFO graph.Vertex: Setting 55 value 0.013713513851710869
+15/04/20 19:37:19 INFO graph.Vertex: Setting 57 value 0.011065274130200586
+15/04/20 19:37:19 INFO graph.Vertex: Setting 59 value 0.01272487005004558
+15/04/20 19:37:19 INFO graph.Vertex: Setting 6 value 0.0086129794466172
+15/04/20 19:37:19 INFO graph.Vertex: Setting 60 value 0.013878348054251194
+15/04/20 19:37:19 INFO graph.Vertex: Setting 62 value 0.00918133758561121
+15/04/20 19:37:19 INFO graph.Vertex: Setting 64 value 0.014736713899849383
+15/04/20 19:37:19 INFO graph.Vertex: Setting 66 value 0.009212373720168655
+15/04/20 19:37:19 INFO graph.Vertex: Setting 68 value 0.010515941217000831
+15/04/20 19:37:19 INFO graph.Vertex: Setting 71 value 0.01211872251473279
+15/04/20 19:37:19 INFO graph.Vertex: Setting 73 value 0.009572320943410085
+15/04/20 19:37:19 INFO graph.Vertex: Setting 75 value 0.011793825066540378
+15/04/20 19:37:19 INFO graph.Vertex: Setting 77 value 0.005844913397311503
+15/04/20 19:37:19 INFO graph.Vertex: Setting 79 value 0.011477464041591258
+15/04/20 19:37:19 INFO graph.Vertex: Setting 8 value 0.00980293405762489
+15/04/20 19:37:19 INFO graph.Vertex: Setting 80 value 0.011709897943220986
+15/04/20 19:37:19 INFO graph.Vertex: Setting 82 value 0.00750717229994426
+15/04/20 19:37:19 INFO graph.Vertex: Setting 84 value 0.008327099007957257
+15/04/20 19:37:19 INFO graph.Vertex: Setting 86 value 0.008209812480160047
+15/04/20 19:37:19 INFO graph.Vertex: Setting 88 value 0.014231530890996828
+15/04/20 19:37:19 INFO graph.Vertex: Setting 91 value 0.0044622888256334765
+15/04/20 19:37:19 INFO graph.Vertex: Setting 93 value 0.005349574084920004
+15/04/20 19:37:19 INFO graph.Vertex: Setting 95 value 0.01331907046528589
+15/04/20 19:37:19 INFO graph.Vertex: Setting 97 value 0.009967290589445753
+15/04/20 19:37:19 INFO graph.Vertex: Setting 99 value 0.013723028652285715
+15/04/20 19:37:19 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:37:19 INFO graph.GraphJobRunner: simulated failure

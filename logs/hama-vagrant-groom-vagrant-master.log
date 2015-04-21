@@ -1,50 +1,9 @@
-2015-04-18 02:30:49,194 INFO org.apache.hama.GroomServerRunner: STARTUP_MSG: 
-/************************************************************
-STARTUP_MSG: Starting GroomServer
-STARTUP_MSG:   host = vagrant-master/172.28.128.6
-STARTUP_MSG:   args = [master]
-STARTUP_MSG:   version = 2.6.0
-STARTUP_MSG:   classpath = /vagrant/hama/bin/../conf:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/tools.jar:/vagrant/hama/bin/../core/target/classes:/vagrant/hama/bin/../commons/target/classes:/vagrant/hama/bin/../graph/target/classes:/vagrant/hama/bin/../ml/target/classes:/vagrant/hama/bin/../mesos/target/classes:/vagrant/hama/bin/../hama-**.jar:/vagrant/hama/bin/../lib/activation-1.1.jar:/vagrant/hama/bin/../lib/ant-1.6.5.jar:/vagrant/hama/bin/../lib/ant-1.7.1.jar:/vagrant/hama/bin/../lib/ant-launcher-1.7.1.jar:/vagrant/hama/bin/../lib/aopalliance-1.0.jar:/vagrant/hama/bin/../lib/apacheds-i18n-2.0.0-M15.jar:/vagrant/hama/bin/../lib/apacheds-kerberos-codec-2.0.0-M15.jar:/vagrant/hama/bin/../lib/api-asn1-api-1.0.0-M20.jar:/vagrant/hama/bin/../lib/api-util-1.0.0-M20.jar:/vagrant/hama/bin/../lib/asm-3.1.jar:/vagrant/hama/bin/../lib/asm-4.0.jar:/vagrant/hama/bin/../lib/avro-1.5.3.jar:/vagrant/hama/bin/../lib/commons-beanutils-1.8.3.jar:/vagrant/hama/bin/../lib/commons-cli-1.2.jar:/vagrant/hama/bin/../lib/commons-codec-1.4.jar:/vagrant/hama/bin/../lib/commons-collections-3.2.1.jar:/vagrant/hama/bin/../lib/commons-compress-1.9.jar:/vagrant/hama/bin/../lib/commons-configuration-1.7.jar:/vagrant/hama/bin/../lib/commons-daemon-1.0.13.jar:/vagrant/hama/bin/../lib/commons-digester-1.8.1.jar:/vagrant/hama/bin/../lib/commons-el-1.0.jar:/vagrant/hama/bin/../lib/commons-httpclient-3.0.1.jar:/vagrant/hama/bin/../lib/commons-io-2.4.jar:/vagrant/hama/bin/../lib/commons-lang-2.6.jar:/vagrant/hama/bin/../lib/commons-logging-1.1.1.jar:/vagrant/hama/bin/../lib/commons-math3-3.0.jar:/vagrant/hama/bin/../lib/commons-net-3.1.jar:/vagrant/hama/bin/../lib/core-3.1.1.jar:/vagrant/hama/bin/../lib/curator-client-2.6.0.jar:/vagrant/hama/bin/../lib/curator-framework-2.6.0.jar:/vagrant/hama/bin/../lib/curator-recipes-2.6.0.jar:/vagrant/hama/bin/../lib/directmemory-cache-0.2.jar:/vagrant/hama/bin/../lib/directmemory-kryo-0.2.jar:/vagrant/hama/bin/../lib/geronimo-annotation_1.0_spec-1.0.jar:/vagrant/hama/bin/../lib/geronimo-spec-jta-1.0.1B-rc4.jar:/vagrant/hama/bin/../lib/gson-2.2.4.jar:/vagrant/hama/bin/../lib/guava-13.0.1.jar:/vagrant/hama/bin/../lib/guice-3.0.jar:/vagrant/hama/bin/../lib/guice-servlet-3.0.jar:/vagrant/hama/bin/../lib/hadoop-annotations-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-auth-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-common-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0-tests.jar:/vagrant/hama/bin/../lib/hadoop-mapreduce-client-core-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-api-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-common-2.6.0.jar:/vagrant/hama/bin/../lib/hama-commons-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/hama-core-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/htrace-core-3.0.4.jar:/vagrant/hama/bin/../lib/httpclient-4.2.5.jar:/vagrant/hama/bin/../lib/httpcore-4.1.2.jar:/vagrant/hama/bin/../lib/jackson-core-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-jaxrs-1.8.3.jar:/vagrant/hama/bin/../lib/jackson-mapper-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-xc-1.8.3.jar:/vagrant/hama/bin/../lib/jasper-compiler-5.5.23.jar:/vagrant/hama/bin/../lib/jasper-runtime-5.5.23.jar:/vagrant/hama/bin/../lib/javax.inject-1.jar:/vagrant/hama/bin/../lib/java-xmlbuilder-0.4.jar:/vagrant/hama/bin/../lib/jaxb-api-2.2.2.jar:/vagrant/hama/bin/../lib/jaxb-impl-2.2.3-1.jar:/vagrant/hama/bin/../lib/jdk.tools-1.7.jar:/vagrant/hama/bin/../lib/jersey-client-1.9.jar:/vagrant/hama/bin/../lib/jersey-core-1.9.jar:/vagrant/hama/bin/../lib/jersey-guice-1.9.jar:/vagrant/hama/bin/../lib/jersey-json-1.9.jar:/vagrant/hama/bin/../lib/jersey-server-1.9.jar:/vagrant/hama/bin/../lib/jets3t-0.9.0.jar:/vagrant/hama/bin/../lib/jettison-1.1.jar:/vagrant/hama/bin/../lib/jetty-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-annotations-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-plus-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-util-6.1.14.jar:/vagrant/hama/bin/../lib/jline-0.9.94.jar:/vagrant/hama/bin/../lib/jsch-0.1.42.jar:/vagrant/hama/bin/../lib/jsp-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1.jar:/vagrant/hama/bin/../lib/jsr305-1.3.9.jar:/vagrant/hama/bin/../lib/junit-4.8.1.jar:/vagrant/hama/bin/../lib/kryo-2.20.jar:/vagrant/hama/bin/../lib/log4j-1.2.16.jar:/vagrant/hama/bin/../lib/mesos-0.15.0.jar:/vagrant/hama/bin/../lib/minlog-1.2.jar:/vagrant/hama/bin/../lib/netty-3.2.2.Final.jar:/vagrant/hama/bin/../lib/netty-3.6.2.Final.jar:/vagrant/hama/bin/../lib/netty-all-4.0.21.Final.jar:/vagrant/hama/bin/../lib/objenesis-1.2.jar:/vagrant/hama/bin/../lib/paranamer-2.3.jar:/vagrant/hama/bin/../lib/protobuf-java-2.5.0.jar:/vagrant/hama/bin/../lib/reflectasm-1.07-shaded.jar:/vagrant/hama/bin/../lib/servlet-api-2.5-6.1.14.jar:/vagrant/hama/bin/../lib/servlet-api-2.5.jar:/vagrant/hama/bin/../lib/servlet-api-6.0.32.jar:/vagrant/hama/bin/../lib/slf4j-api-1.5.8.jar:/vagrant/hama/bin/../lib/slf4j-log4j12-1.5.8.jar:/vagrant/hama/bin/../lib/snappy-java-1.0.5.jar:/vagrant/hama/bin/../lib/stax-api-1.0-2.jar:/vagrant/hama/bin/../lib/xercesImpl-2.9.1.jar:/vagrant/hama/bin/../lib/xml-apis-1.3.04.jar:/vagrant/hama/bin/../lib/xmlenc-0.52.jar:/vagrant/hama/bin/../lib/zookeeper-3.4.5.jar
-STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1 (HEAD, tag: release-2.6.0-rc1, origin/branch-2.6.0, branch-2.6.0); compiled by 'acmurthy' on 2014-11-13T22:35Z
-STARTUP_MSG:   java = 1.7.0_75
-************************************************************/
-2015-04-18 02:30:49,213 INFO org.apache.hama.GroomServerRunner: registered UNIX signal handlers for [TERM, HUP, INT]
-2015-04-18 02:30:49,579 INFO org.apache.hama.bsp.GroomServer: groom start
-2015-04-18 02:30:49,996 INFO org.apache.hama.bsp.GroomServer: /tmp/hadoop-vagrant/bsp/local
-2015-04-18 02:30:50,796 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-2015-04-18 02:30:51,675 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50000
-2015-04-18 02:30:51,680 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
-2015-04-18 02:30:51,680 INFO org.apache.hama.ipc.Server: IPC Server listener on 50000: starting
-2015-04-18 02:30:51,683 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50000: starting
-2015-04-18 02:30:51,957 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
-2015-04-18 02:30:52,275 INFO org.apache.hama.bsp.GroomServer: starting webserver: master
-2015-04-18 02:30:52,276 INFO org.apache.hama.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 40015
-2015-04-18 02:30:52,276 INFO org.apache.hama.http.HttpServer: listener.getLocalPort() returned 40015 webServer.getConnectors()[0].getLocalPort() returned 40015
-2015-04-18 02:30:52,276 INFO org.apache.hama.http.HttpServer: Jetty bound to port 40015
-2015-04-18 02:30:52,276 INFO org.mortbay.log: jetty-6.1.14
-2015-04-18 02:30:53,417 INFO org.mortbay.log: Started SelectChannelConnector@master:40015
-2015-04-18 02:30:53,431 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50001
-2015-04-18 02:30:53,431 INFO org.apache.hama.ipc.Server: IPC Server handler 1 on 50001: starting
-2015-04-18 02:30:53,431 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
-2015-04-18 02:30:53,431 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50001: starting
-2015-04-18 02:30:53,431 INFO org.apache.hama.ipc.Server: IPC Server listener on 50001: starting
-2015-04-18 02:30:53,440 INFO org.apache.hama.ipc.Server: IPC Server handler 4 on 50001: starting
-2015-04-18 02:30:53,436 INFO org.apache.hama.bsp.GroomServer: TaskReportServer up at: localhost/127.0.0.1:50001
-2015-04-18 02:30:53,441 INFO org.apache.hama.bsp.GroomServer: Starting groom: master:50000
-2015-04-18 02:30:53,436 INFO org.apache.hama.ipc.Server: IPC Server handler 3 on 50001: starting
-2015-04-18 02:30:53,436 INFO org.apache.hama.ipc.Server: IPC Server handler 2 on 50001: starting
-2015-04-18 02:31:04,714 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
-2015-04-18 02:31:06,487 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504180230_0002_000000_0' has started.
-2015-04-18 02:31:16,839 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504180230_0002_000000_0 is done.
-2015-04-18 02:31:19,960 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
-2015-04-18 02:31:20,398 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504180230_0001_000000_0' has started.
-2015-04-18 02:31:32,058 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504180230_0001_000000_0 is done.
-2015-04-18 02:33:15,564 ERROR org.apache.hama.GroomServerRunner: RECEIVED SIGNAL 15: SIGTERM
-2015-04-18 02:33:15,591 INFO org.apache.hama.GroomServerRunner: SHUTDOWN_MSG: 
+2015-04-21 00:22:52,021 ERROR org.apache.hama.GroomServerRunner: RECEIVED SIGNAL 15: SIGTERM
+2015-04-21 00:22:52,046 INFO org.apache.hama.GroomServerRunner: SHUTDOWN_MSG: 
 /************************************************************
 SHUTDOWN_MSG: Shutting down GroomServer at vagrant-master/172.28.128.6
 ************************************************************/
-2015-04-18 02:33:27,650 INFO org.apache.hama.GroomServerRunner: STARTUP_MSG: 
+2015-04-21 00:23:04,549 INFO org.apache.hama.GroomServerRunner: STARTUP_MSG: 
 /************************************************************
 STARTUP_MSG: Starting GroomServer
 STARTUP_MSG:   host = vagrant-master/172.28.128.6
@@ -54,267 +13,858 @@ STARTUP_MSG:   classpath = /vagrant/hama/bin/../conf:/usr/lib/jvm/java-7-openjdk
 STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1 (HEAD, tag: release-2.6.0-rc1, origin/branch-2.6.0, branch-2.6.0); compiled by 'acmurthy' on 2014-11-13T22:35Z
 STARTUP_MSG:   java = 1.7.0_75
 ************************************************************/
-2015-04-18 02:33:27,676 INFO org.apache.hama.GroomServerRunner: registered UNIX signal handlers for [TERM, HUP, INT]
-2015-04-18 02:33:27,912 INFO org.apache.hama.bsp.GroomServer: groom start
-2015-04-18 02:33:28,328 INFO org.apache.hama.bsp.GroomServer: /tmp/hadoop-vagrant/bsp/local
-2015-04-18 02:33:29,214 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-2015-04-18 02:33:30,071 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50000
-2015-04-18 02:33:30,087 INFO org.apache.hama.ipc.Server: IPC Server listener on 50000: starting
-2015-04-18 02:33:30,075 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
-2015-04-18 02:33:30,097 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50000: starting
-2015-04-18 02:33:30,297 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
-2015-04-18 02:33:30,573 INFO org.apache.hama.bsp.GroomServer: starting webserver: master
-2015-04-18 02:33:30,573 INFO org.apache.hama.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 40015
-2015-04-18 02:33:30,574 INFO org.apache.hama.http.HttpServer: listener.getLocalPort() returned 40015 webServer.getConnectors()[0].getLocalPort() returned 40015
-2015-04-18 02:33:30,574 INFO org.apache.hama.http.HttpServer: Jetty bound to port 40015
-2015-04-18 02:33:30,574 INFO org.mortbay.log: jetty-6.1.14
-2015-04-18 02:33:31,917 INFO org.mortbay.log: Started SelectChannelConnector@master:40015
-2015-04-18 02:33:31,935 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50001
-2015-04-18 02:33:31,936 INFO org.apache.hama.ipc.Server: IPC Server handler 4 on 50001: starting
-2015-04-18 02:33:31,936 INFO org.apache.hama.bsp.GroomServer: TaskReportServer up at: localhost/127.0.0.1:50001
-2015-04-18 02:33:31,935 INFO org.apache.hama.ipc.Server: IPC Server handler 3 on 50001: starting
-2015-04-18 02:33:31,935 INFO org.apache.hama.ipc.Server: IPC Server handler 2 on 50001: starting
-2015-04-18 02:33:31,935 INFO org.apache.hama.ipc.Server: IPC Server handler 1 on 50001: starting
-2015-04-18 02:33:31,935 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50001: starting
-2015-04-18 02:33:31,935 INFO org.apache.hama.ipc.Server: IPC Server listener on 50001: starting
-2015-04-18 02:33:31,935 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
-2015-04-18 02:33:31,943 INFO org.apache.hama.bsp.GroomServer: Starting groom: master:50000
-2015-04-18 02:33:42,066 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
-2015-04-18 02:33:43,636 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504180233_0002_000000_0' has started.
-2015-04-18 02:33:53,257 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504180233_0002_000000_0 is done.
-2015-04-18 02:33:57,321 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
-2015-04-18 02:33:57,758 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504180233_0001_000000_0' has started.
-2015-04-18 02:37:36,590 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504180233_0001_000000_0 is done.
-2015-04-18 05:26:18,293 ERROR org.apache.hama.GroomServerRunner: RECEIVED SIGNAL 15: SIGTERM
-2015-04-18 05:26:18,315 INFO org.apache.hama.GroomServerRunner: SHUTDOWN_MSG: 
-/************************************************************
-SHUTDOWN_MSG: Shutting down GroomServer at vagrant-master/172.28.128.6
-************************************************************/
-2015-04-18 05:26:29,800 INFO org.apache.hama.GroomServerRunner: STARTUP_MSG: 
-/************************************************************
-STARTUP_MSG: Starting GroomServer
-STARTUP_MSG:   host = vagrant-master/172.28.128.6
-STARTUP_MSG:   args = [master]
-STARTUP_MSG:   version = 2.6.0
-STARTUP_MSG:   classpath = /vagrant/hama/bin/../conf:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/tools.jar:/vagrant/hama/bin/../core/target/classes:/vagrant/hama/bin/../commons/target/classes:/vagrant/hama/bin/../graph/target/classes:/vagrant/hama/bin/../ml/target/classes:/vagrant/hama/bin/../mesos/target/classes:/vagrant/hama/bin/../hama-**.jar:/vagrant/hama/bin/../lib/activation-1.1.jar:/vagrant/hama/bin/../lib/ant-1.6.5.jar:/vagrant/hama/bin/../lib/ant-1.7.1.jar:/vagrant/hama/bin/../lib/ant-launcher-1.7.1.jar:/vagrant/hama/bin/../lib/aopalliance-1.0.jar:/vagrant/hama/bin/../lib/apacheds-i18n-2.0.0-M15.jar:/vagrant/hama/bin/../lib/apacheds-kerberos-codec-2.0.0-M15.jar:/vagrant/hama/bin/../lib/api-asn1-api-1.0.0-M20.jar:/vagrant/hama/bin/../lib/api-util-1.0.0-M20.jar:/vagrant/hama/bin/../lib/asm-3.1.jar:/vagrant/hama/bin/../lib/asm-4.0.jar:/vagrant/hama/bin/../lib/avro-1.5.3.jar:/vagrant/hama/bin/../lib/commons-beanutils-1.8.3.jar:/vagrant/hama/bin/../lib/commons-cli-1.2.jar:/vagrant/hama/bin/../lib/commons-codec-1.4.jar:/vagrant/hama/bin/../lib/commons-collections-3.2.1.jar:/vagrant/hama/bin/../lib/commons-compress-1.9.jar:/vagrant/hama/bin/../lib/commons-configuration-1.7.jar:/vagrant/hama/bin/../lib/commons-daemon-1.0.13.jar:/vagrant/hama/bin/../lib/commons-digester-1.8.1.jar:/vagrant/hama/bin/../lib/commons-el-1.0.jar:/vagrant/hama/bin/../lib/commons-httpclient-3.0.1.jar:/vagrant/hama/bin/../lib/commons-io-2.4.jar:/vagrant/hama/bin/../lib/commons-lang-2.6.jar:/vagrant/hama/bin/../lib/commons-logging-1.1.1.jar:/vagrant/hama/bin/../lib/commons-math3-3.0.jar:/vagrant/hama/bin/../lib/commons-net-3.1.jar:/vagrant/hama/bin/../lib/core-3.1.1.jar:/vagrant/hama/bin/../lib/curator-client-2.6.0.jar:/vagrant/hama/bin/../lib/curator-framework-2.6.0.jar:/vagrant/hama/bin/../lib/curator-recipes-2.6.0.jar:/vagrant/hama/bin/../lib/directmemory-cache-0.2.jar:/vagrant/hama/bin/../lib/directmemory-kryo-0.2.jar:/vagrant/hama/bin/../lib/geronimo-annotation_1.0_spec-1.0.jar:/vagrant/hama/bin/../lib/geronimo-spec-jta-1.0.1B-rc4.jar:/vagrant/hama/bin/../lib/gson-2.2.4.jar:/vagrant/hama/bin/../lib/guava-13.0.1.jar:/vagrant/hama/bin/../lib/guice-3.0.jar:/vagrant/hama/bin/../lib/guice-servlet-3.0.jar:/vagrant/hama/bin/../lib/hadoop-annotations-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-auth-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-common-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0-tests.jar:/vagrant/hama/bin/../lib/hadoop-mapreduce-client-core-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-api-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-common-2.6.0.jar:/vagrant/hama/bin/../lib/hama-commons-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/hama-core-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/htrace-core-3.0.4.jar:/vagrant/hama/bin/../lib/httpclient-4.2.5.jar:/vagrant/hama/bin/../lib/httpcore-4.1.2.jar:/vagrant/hama/bin/../lib/jackson-core-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-jaxrs-1.8.3.jar:/vagrant/hama/bin/../lib/jackson-mapper-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-xc-1.8.3.jar:/vagrant/hama/bin/../lib/jasper-compiler-5.5.23.jar:/vagrant/hama/bin/../lib/jasper-runtime-5.5.23.jar:/vagrant/hama/bin/../lib/javax.inject-1.jar:/vagrant/hama/bin/../lib/java-xmlbuilder-0.4.jar:/vagrant/hama/bin/../lib/jaxb-api-2.2.2.jar:/vagrant/hama/bin/../lib/jaxb-impl-2.2.3-1.jar:/vagrant/hama/bin/../lib/jdk.tools-1.7.jar:/vagrant/hama/bin/../lib/jersey-client-1.9.jar:/vagrant/hama/bin/../lib/jersey-core-1.9.jar:/vagrant/hama/bin/../lib/jersey-guice-1.9.jar:/vagrant/hama/bin/../lib/jersey-json-1.9.jar:/vagrant/hama/bin/../lib/jersey-server-1.9.jar:/vagrant/hama/bin/../lib/jets3t-0.9.0.jar:/vagrant/hama/bin/../lib/jettison-1.1.jar:/vagrant/hama/bin/../lib/jetty-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-annotations-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-plus-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-util-6.1.14.jar:/vagrant/hama/bin/../lib/jline-0.9.94.jar:/vagrant/hama/bin/../lib/jsch-0.1.42.jar:/vagrant/hama/bin/../lib/jsp-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1.jar:/vagrant/hama/bin/../lib/jsr305-1.3.9.jar:/vagrant/hama/bin/../lib/junit-4.8.1.jar:/vagrant/hama/bin/../lib/kryo-2.20.jar:/vagrant/hama/bin/../lib/log4j-1.2.16.jar:/vagrant/hama/bin/../lib/mesos-0.15.0.jar:/vagrant/hama/bin/../lib/minlog-1.2.jar:/vagrant/hama/bin/../lib/netty-3.2.2.Final.jar:/vagrant/hama/bin/../lib/netty-3.6.2.Final.jar:/vagrant/hama/bin/../lib/netty-all-4.0.21.Final.jar:/vagrant/hama/bin/../lib/objenesis-1.2.jar:/vagrant/hama/bin/../lib/paranamer-2.3.jar:/vagrant/hama/bin/../lib/protobuf-java-2.5.0.jar:/vagrant/hama/bin/../lib/reflectasm-1.07-shaded.jar:/vagrant/hama/bin/../lib/servlet-api-2.5-6.1.14.jar:/vagrant/hama/bin/../lib/servlet-api-2.5.jar:/vagrant/hama/bin/../lib/servlet-api-6.0.32.jar:/vagrant/hama/bin/../lib/slf4j-api-1.5.8.jar:/vagrant/hama/bin/../lib/slf4j-log4j12-1.5.8.jar:/vagrant/hama/bin/../lib/snappy-java-1.0.5.jar:/vagrant/hama/bin/../lib/stax-api-1.0-2.jar:/vagrant/hama/bin/../lib/xercesImpl-2.9.1.jar:/vagrant/hama/bin/../lib/xml-apis-1.3.04.jar:/vagrant/hama/bin/../lib/xmlenc-0.52.jar:/vagrant/hama/bin/../lib/zookeeper-3.4.5.jar
-STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1 (HEAD, tag: release-2.6.0-rc1, origin/branch-2.6.0, branch-2.6.0); compiled by 'acmurthy' on 2014-11-13T22:35Z
-STARTUP_MSG:   java = 1.7.0_75
-************************************************************/
-2015-04-18 05:26:29,827 INFO org.apache.hama.GroomServerRunner: registered UNIX signal handlers for [TERM, HUP, INT]
-2015-04-18 05:26:30,053 INFO org.apache.hama.bsp.GroomServer: groom start
-2015-04-18 05:26:30,494 INFO org.apache.hama.bsp.GroomServer: /tmp/hadoop-vagrant/bsp/local
-2015-04-18 05:26:31,262 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-2015-04-18 05:26:32,185 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50000
-2015-04-18 05:26:32,195 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
-2015-04-18 05:26:32,202 INFO org.apache.hama.ipc.Server: IPC Server listener on 50000: starting
-2015-04-18 05:26:32,210 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50000: starting
-2015-04-18 05:26:32,380 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
-2015-04-18 05:26:32,642 INFO org.apache.hama.bsp.GroomServer: starting webserver: master
-2015-04-18 05:26:32,642 INFO org.apache.hama.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 40015
-2015-04-18 05:26:32,643 INFO org.apache.hama.http.HttpServer: listener.getLocalPort() returned 40015 webServer.getConnectors()[0].getLocalPort() returned 40015
-2015-04-18 05:26:32,643 INFO org.apache.hama.http.HttpServer: Jetty bound to port 40015
-2015-04-18 05:26:32,643 INFO org.mortbay.log: jetty-6.1.14
-2015-04-18 05:26:33,841 INFO org.mortbay.log: Started SelectChannelConnector@master:40015
-2015-04-18 05:26:33,861 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50001
-2015-04-18 05:26:33,862 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
-2015-04-18 05:26:33,862 INFO org.apache.hama.ipc.Server: IPC Server listener on 50001: starting
-2015-04-18 05:26:33,862 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50001: starting
-2015-04-18 05:26:33,863 INFO org.apache.hama.ipc.Server: IPC Server handler 1 on 50001: starting
-2015-04-18 05:26:33,863 INFO org.apache.hama.ipc.Server: IPC Server handler 2 on 50001: starting
-2015-04-18 05:26:33,863 INFO org.apache.hama.ipc.Server: IPC Server handler 3 on 50001: starting
-2015-04-18 05:26:33,864 INFO org.apache.hama.ipc.Server: IPC Server handler 4 on 50001: starting
-2015-04-18 05:26:33,864 INFO org.apache.hama.bsp.GroomServer: TaskReportServer up at: localhost/127.0.0.1:50001
-2015-04-18 05:26:33,865 INFO org.apache.hama.bsp.GroomServer: Starting groom: master:50000
-2015-04-18 05:26:44,826 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
-2015-04-18 05:26:46,215 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504180526_0002_000000_0' has started.
-2015-04-18 05:26:56,126 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504180526_0002_000000_0 is done.
-2015-04-18 05:27:00,070 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
-2015-04-18 05:27:00,684 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504180526_0001_000000_0' has started.
-2015-04-18 05:30:49,467 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504180526_0001_000000_0 is done.
-2015-04-18 05:34:37,734 ERROR org.apache.hama.GroomServerRunner: RECEIVED SIGNAL 15: SIGTERM
-2015-04-18 05:34:37,755 INFO org.apache.hama.GroomServerRunner: SHUTDOWN_MSG: 
-/************************************************************
-SHUTDOWN_MSG: Shutting down GroomServer at vagrant-master/172.28.128.6
-************************************************************/
-2015-04-18 05:34:54,763 INFO org.apache.hama.GroomServerRunner: STARTUP_MSG: 
-/************************************************************
-STARTUP_MSG: Starting GroomServer
-STARTUP_MSG:   host = vagrant-master/172.28.128.6
-STARTUP_MSG:   args = [master]
-STARTUP_MSG:   version = 2.6.0
-STARTUP_MSG:   classpath = /vagrant/hama/bin/../conf:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/tools.jar:/vagrant/hama/bin/../core/target/classes:/vagrant/hama/bin/../commons/target/classes:/vagrant/hama/bin/../graph/target/classes:/vagrant/hama/bin/../ml/target/classes:/vagrant/hama/bin/../mesos/target/classes:/vagrant/hama/bin/../hama-**.jar:/vagrant/hama/bin/../lib/activation-1.1.jar:/vagrant/hama/bin/../lib/ant-1.6.5.jar:/vagrant/hama/bin/../lib/ant-1.7.1.jar:/vagrant/hama/bin/../lib/ant-launcher-1.7.1.jar:/vagrant/hama/bin/../lib/aopalliance-1.0.jar:/vagrant/hama/bin/../lib/apacheds-i18n-2.0.0-M15.jar:/vagrant/hama/bin/../lib/apacheds-kerberos-codec-2.0.0-M15.jar:/vagrant/hama/bin/../lib/api-asn1-api-1.0.0-M20.jar:/vagrant/hama/bin/../lib/api-util-1.0.0-M20.jar:/vagrant/hama/bin/../lib/asm-3.1.jar:/vagrant/hama/bin/../lib/asm-4.0.jar:/vagrant/hama/bin/../lib/avro-1.5.3.jar:/vagrant/hama/bin/../lib/commons-beanutils-1.8.3.jar:/vagrant/hama/bin/../lib/commons-cli-1.2.jar:/vagrant/hama/bin/../lib/commons-codec-1.4.jar:/vagrant/hama/bin/../lib/commons-collections-3.2.1.jar:/vagrant/hama/bin/../lib/commons-compress-1.9.jar:/vagrant/hama/bin/../lib/commons-configuration-1.7.jar:/vagrant/hama/bin/../lib/commons-daemon-1.0.13.jar:/vagrant/hama/bin/../lib/commons-digester-1.8.1.jar:/vagrant/hama/bin/../lib/commons-el-1.0.jar:/vagrant/hama/bin/../lib/commons-httpclient-3.0.1.jar:/vagrant/hama/bin/../lib/commons-io-2.4.jar:/vagrant/hama/bin/../lib/commons-lang-2.6.jar:/vagrant/hama/bin/../lib/commons-logging-1.1.1.jar:/vagrant/hama/bin/../lib/commons-math3-3.0.jar:/vagrant/hama/bin/../lib/commons-net-3.1.jar:/vagrant/hama/bin/../lib/core-3.1.1.jar:/vagrant/hama/bin/../lib/curator-client-2.6.0.jar:/vagrant/hama/bin/../lib/curator-framework-2.6.0.jar:/vagrant/hama/bin/../lib/curator-recipes-2.6.0.jar:/vagrant/hama/bin/../lib/directmemory-cache-0.2.jar:/vagrant/hama/bin/../lib/directmemory-kryo-0.2.jar:/vagrant/hama/bin/../lib/geronimo-annotation_1.0_spec-1.0.jar:/vagrant/hama/bin/../lib/geronimo-spec-jta-1.0.1B-rc4.jar:/vagrant/hama/bin/../lib/gson-2.2.4.jar:/vagrant/hama/bin/../lib/guava-13.0.1.jar:/vagrant/hama/bin/../lib/guice-3.0.jar:/vagrant/hama/bin/../lib/guice-servlet-3.0.jar:/vagrant/hama/bin/../lib/hadoop-annotations-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-auth-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-common-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0-tests.jar:/vagrant/hama/bin/../lib/hadoop-mapreduce-client-core-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-api-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-common-2.6.0.jar:/vagrant/hama/bin/../lib/hama-commons-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/hama-core-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/htrace-core-3.0.4.jar:/vagrant/hama/bin/../lib/httpclient-4.2.5.jar:/vagrant/hama/bin/../lib/httpcore-4.1.2.jar:/vagrant/hama/bin/../lib/jackson-core-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-jaxrs-1.8.3.jar:/vagrant/hama/bin/../lib/jackson-mapper-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-xc-1.8.3.jar:/vagrant/hama/bin/../lib/jasper-compiler-5.5.23.jar:/vagrant/hama/bin/../lib/jasper-runtime-5.5.23.jar:/vagrant/hama/bin/../lib/javax.inject-1.jar:/vagrant/hama/bin/../lib/java-xmlbuilder-0.4.jar:/vagrant/hama/bin/../lib/jaxb-api-2.2.2.jar:/vagrant/hama/bin/../lib/jaxb-impl-2.2.3-1.jar:/vagrant/hama/bin/../lib/jdk.tools-1.7.jar:/vagrant/hama/bin/../lib/jersey-client-1.9.jar:/vagrant/hama/bin/../lib/jersey-core-1.9.jar:/vagrant/hama/bin/../lib/jersey-guice-1.9.jar:/vagrant/hama/bin/../lib/jersey-json-1.9.jar:/vagrant/hama/bin/../lib/jersey-server-1.9.jar:/vagrant/hama/bin/../lib/jets3t-0.9.0.jar:/vagrant/hama/bin/../lib/jettison-1.1.jar:/vagrant/hama/bin/../lib/jetty-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-annotations-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-plus-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-util-6.1.14.jar:/vagrant/hama/bin/../lib/jline-0.9.94.jar:/vagrant/hama/bin/../lib/jsch-0.1.42.jar:/vagrant/hama/bin/../lib/jsp-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1.jar:/vagrant/hama/bin/../lib/jsr305-1.3.9.jar:/vagrant/hama/bin/../lib/junit-4.8.1.jar:/vagrant/hama/bin/../lib/kryo-2.20.jar:/vagrant/hama/bin/../lib/log4j-1.2.16.jar:/vagrant/hama/bin/../lib/mesos-0.15.0.jar:/vagrant/hama/bin/../lib/minlog-1.2.jar:/vagrant/hama/bin/../lib/netty-3.2.2.Final.jar:/vagrant/hama/bin/../lib/netty-3.6.2.Final.jar:/vagrant/hama/bin/../lib/netty-all-4.0.21.Final.jar:/vagrant/hama/bin/../lib/objenesis-1.2.jar:/vagrant/hama/bin/../lib/paranamer-2.3.jar:/vagrant/hama/bin/../lib/protobuf-java-2.5.0.jar:/vagrant/hama/bin/../lib/reflectasm-1.07-shaded.jar:/vagrant/hama/bin/../lib/servlet-api-2.5-6.1.14.jar:/vagrant/hama/bin/../lib/servlet-api-2.5.jar:/vagrant/hama/bin/../lib/servlet-api-6.0.32.jar:/vagrant/hama/bin/../lib/slf4j-api-1.5.8.jar:/vagrant/hama/bin/../lib/slf4j-log4j12-1.5.8.jar:/vagrant/hama/bin/../lib/snappy-java-1.0.5.jar:/vagrant/hama/bin/../lib/stax-api-1.0-2.jar:/vagrant/hama/bin/../lib/xercesImpl-2.9.1.jar:/vagrant/hama/bin/../lib/xml-apis-1.3.04.jar:/vagrant/hama/bin/../lib/xmlenc-0.52.jar:/vagrant/hama/bin/../lib/zookeeper-3.4.5.jar
-STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1 (HEAD, tag: release-2.6.0-rc1, origin/branch-2.6.0, branch-2.6.0); compiled by 'acmurthy' on 2014-11-13T22:35Z
-STARTUP_MSG:   java = 1.7.0_75
-************************************************************/
-2015-04-18 05:34:54,787 INFO org.apache.hama.GroomServerRunner: registered UNIX signal handlers for [TERM, HUP, INT]
-2015-04-18 05:34:55,032 INFO org.apache.hama.bsp.GroomServer: groom start
-2015-04-18 05:34:55,424 INFO org.apache.hama.bsp.GroomServer: /tmp/hadoop-vagrant/bsp/local
-2015-04-18 05:34:56,158 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-2015-04-18 05:34:57,037 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50000
-2015-04-18 05:34:57,040 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
-2015-04-18 05:34:57,041 INFO org.apache.hama.ipc.Server: IPC Server listener on 50000: starting
-2015-04-18 05:34:57,043 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50000: starting
-2015-04-18 05:34:57,212 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
-2015-04-18 05:34:57,497 INFO org.apache.hama.bsp.GroomServer: starting webserver: master
-2015-04-18 05:34:57,497 INFO org.apache.hama.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 40015
-2015-04-18 05:34:57,498 INFO org.apache.hama.http.HttpServer: listener.getLocalPort() returned 40015 webServer.getConnectors()[0].getLocalPort() returned 40015
-2015-04-18 05:34:57,498 INFO org.apache.hama.http.HttpServer: Jetty bound to port 40015
-2015-04-18 05:34:57,498 INFO org.mortbay.log: jetty-6.1.14
-2015-04-18 05:34:58,624 INFO org.mortbay.log: Started SelectChannelConnector@master:40015
-2015-04-18 05:34:58,636 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50001
-2015-04-18 05:34:58,637 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
-2015-04-18 05:34:58,641 INFO org.apache.hama.ipc.Server: IPC Server listener on 50001: starting
-2015-04-18 05:34:58,645 INFO org.apache.hama.ipc.Server: IPC Server handler 2 on 50001: starting
-2015-04-18 05:34:58,645 INFO org.apache.hama.ipc.Server: IPC Server handler 1 on 50001: starting
-2015-04-18 05:34:58,645 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50001: starting
-2015-04-18 05:34:58,645 INFO org.apache.hama.ipc.Server: IPC Server handler 3 on 50001: starting
-2015-04-18 05:34:58,647 INFO org.apache.hama.bsp.GroomServer: TaskReportServer up at: localhost/127.0.0.1:50001
-2015-04-18 05:34:58,647 INFO org.apache.hama.bsp.GroomServer: Starting groom: master:50000
-2015-04-18 05:34:58,648 INFO org.apache.hama.ipc.Server: IPC Server handler 4 on 50001: starting
-2015-04-18 05:35:12,899 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
-2015-04-18 05:35:14,417 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504180534_0002_000000_0' has started.
-2015-04-18 05:35:23,663 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504180534_0002_000000_0 is done.
-2015-04-18 05:35:25,112 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
-2015-04-18 05:35:25,470 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504180534_0001_000000_0' has started.
-2015-04-18 05:35:36,235 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504180534_0001_000000_0 is done.
-2015-04-18 05:37:55,066 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
-2015-04-18 05:37:55,448 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504180534_0004_000000_0' has started.
-2015-04-18 05:38:04,640 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504180534_0004_000000_0 is done.
-2015-04-18 05:38:07,423 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
-2015-04-18 05:38:07,844 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504180534_0003_000000_0' has started.
-2015-04-18 05:46:53,820 ERROR org.apache.hama.GroomServerRunner: RECEIVED SIGNAL 15: SIGTERM
-2015-04-18 05:46:53,840 INFO org.apache.hama.GroomServerRunner: SHUTDOWN_MSG: 
-/************************************************************
-SHUTDOWN_MSG: Shutting down GroomServer at vagrant-master/172.28.128.6
-************************************************************/
-2015-04-18 05:47:03,905 INFO org.apache.hama.GroomServerRunner: STARTUP_MSG: 
-/************************************************************
-STARTUP_MSG: Starting GroomServer
-STARTUP_MSG:   host = vagrant-master/172.28.128.6
-STARTUP_MSG:   args = [master]
-STARTUP_MSG:   version = 2.6.0
-STARTUP_MSG:   classpath = /vagrant/hama/bin/../conf:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/tools.jar:/vagrant/hama/bin/../core/target/classes:/vagrant/hama/bin/../commons/target/classes:/vagrant/hama/bin/../graph/target/classes:/vagrant/hama/bin/../ml/target/classes:/vagrant/hama/bin/../mesos/target/classes:/vagrant/hama/bin/../hama-**.jar:/vagrant/hama/bin/../lib/activation-1.1.jar:/vagrant/hama/bin/../lib/ant-1.6.5.jar:/vagrant/hama/bin/../lib/ant-1.7.1.jar:/vagrant/hama/bin/../lib/ant-launcher-1.7.1.jar:/vagrant/hama/bin/../lib/aopalliance-1.0.jar:/vagrant/hama/bin/../lib/apacheds-i18n-2.0.0-M15.jar:/vagrant/hama/bin/../lib/apacheds-kerberos-codec-2.0.0-M15.jar:/vagrant/hama/bin/../lib/api-asn1-api-1.0.0-M20.jar:/vagrant/hama/bin/../lib/api-util-1.0.0-M20.jar:/vagrant/hama/bin/../lib/asm-3.1.jar:/vagrant/hama/bin/../lib/asm-4.0.jar:/vagrant/hama/bin/../lib/avro-1.5.3.jar:/vagrant/hama/bin/../lib/commons-beanutils-1.8.3.jar:/vagrant/hama/bin/../lib/commons-cli-1.2.jar:/vagrant/hama/bin/../lib/commons-codec-1.4.jar:/vagrant/hama/bin/../lib/commons-collections-3.2.1.jar:/vagrant/hama/bin/../lib/commons-compress-1.9.jar:/vagrant/hama/bin/../lib/commons-configuration-1.7.jar:/vagrant/hama/bin/../lib/commons-daemon-1.0.13.jar:/vagrant/hama/bin/../lib/commons-digester-1.8.1.jar:/vagrant/hama/bin/../lib/commons-el-1.0.jar:/vagrant/hama/bin/../lib/commons-httpclient-3.0.1.jar:/vagrant/hama/bin/../lib/commons-io-2.4.jar:/vagrant/hama/bin/../lib/commons-lang-2.6.jar:/vagrant/hama/bin/../lib/commons-logging-1.1.1.jar:/vagrant/hama/bin/../lib/commons-math3-3.0.jar:/vagrant/hama/bin/../lib/commons-net-3.1.jar:/vagrant/hama/bin/../lib/core-3.1.1.jar:/vagrant/hama/bin/../lib/curator-client-2.6.0.jar:/vagrant/hama/bin/../lib/curator-framework-2.6.0.jar:/vagrant/hama/bin/../lib/curator-recipes-2.6.0.jar:/vagrant/hama/bin/../lib/directmemory-cache-0.2.jar:/vagrant/hama/bin/../lib/directmemory-kryo-0.2.jar:/vagrant/hama/bin/../lib/geronimo-annotation_1.0_spec-1.0.jar:/vagrant/hama/bin/../lib/geronimo-spec-jta-1.0.1B-rc4.jar:/vagrant/hama/bin/../lib/gson-2.2.4.jar:/vagrant/hama/bin/../lib/guava-13.0.1.jar:/vagrant/hama/bin/../lib/guice-3.0.jar:/vagrant/hama/bin/../lib/guice-servlet-3.0.jar:/vagrant/hama/bin/../lib/hadoop-annotations-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-auth-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-common-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0-tests.jar:/vagrant/hama/bin/../lib/hadoop-mapreduce-client-core-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-api-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-common-2.6.0.jar:/vagrant/hama/bin/../lib/hama-commons-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/hama-core-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/htrace-core-3.0.4.jar:/vagrant/hama/bin/../lib/httpclient-4.2.5.jar:/vagrant/hama/bin/../lib/httpcore-4.1.2.jar:/vagrant/hama/bin/../lib/jackson-core-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-jaxrs-1.8.3.jar:/vagrant/hama/bin/../lib/jackson-mapper-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-xc-1.8.3.jar:/vagrant/hama/bin/../lib/jasper-compiler-5.5.23.jar:/vagrant/hama/bin/../lib/jasper-runtime-5.5.23.jar:/vagrant/hama/bin/../lib/javax.inject-1.jar:/vagrant/hama/bin/../lib/java-xmlbuilder-0.4.jar:/vagrant/hama/bin/../lib/jaxb-api-2.2.2.jar:/vagrant/hama/bin/../lib/jaxb-impl-2.2.3-1.jar:/vagrant/hama/bin/../lib/jdk.tools-1.7.jar:/vagrant/hama/bin/../lib/jersey-client-1.9.jar:/vagrant/hama/bin/../lib/jersey-core-1.9.jar:/vagrant/hama/bin/../lib/jersey-guice-1.9.jar:/vagrant/hama/bin/../lib/jersey-json-1.9.jar:/vagrant/hama/bin/../lib/jersey-server-1.9.jar:/vagrant/hama/bin/../lib/jets3t-0.9.0.jar:/vagrant/hama/bin/../lib/jettison-1.1.jar:/vagrant/hama/bin/../lib/jetty-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-annotations-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-plus-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-util-6.1.14.jar:/vagrant/hama/bin/../lib/jline-0.9.94.jar:/vagrant/hama/bin/../lib/jsch-0.1.42.jar:/vagrant/hama/bin/../lib/jsp-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1.jar:/vagrant/hama/bin/../lib/jsr305-1.3.9.jar:/vagrant/hama/bin/../lib/junit-4.8.1.jar:/vagrant/hama/bin/../lib/kryo-2.20.jar:/vagrant/hama/bin/../lib/log4j-1.2.16.jar:/vagrant/hama/bin/../lib/mesos-0.15.0.jar:/vagrant/hama/bin/../lib/minlog-1.2.jar:/vagrant/hama/bin/../lib/netty-3.2.2.Final.jar:/vagrant/hama/bin/../lib/netty-3.6.2.Final.jar:/vagrant/hama/bin/../lib/netty-all-4.0.21.Final.jar:/vagrant/hama/bin/../lib/objenesis-1.2.jar:/vagrant/hama/bin/../lib/paranamer-2.3.jar:/vagrant/hama/bin/../lib/protobuf-java-2.5.0.jar:/vagrant/hama/bin/../lib/reflectasm-1.07-shaded.jar:/vagrant/hama/bin/../lib/servlet-api-2.5-6.1.14.jar:/vagrant/hama/bin/../lib/servlet-api-2.5.jar:/vagrant/hama/bin/../lib/servlet-api-6.0.32.jar:/vagrant/hama/bin/../lib/slf4j-api-1.5.8.jar:/vagrant/hama/bin/../lib/slf4j-log4j12-1.5.8.jar:/vagrant/hama/bin/../lib/snappy-java-1.0.5.jar:/vagrant/hama/bin/../lib/stax-api-1.0-2.jar:/vagrant/hama/bin/../lib/xercesImpl-2.9.1.jar:/vagrant/hama/bin/../lib/xml-apis-1.3.04.jar:/vagrant/hama/bin/../lib/xmlenc-0.52.jar:/vagrant/hama/bin/../lib/zookeeper-3.4.5.jar
-STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1 (HEAD, tag: release-2.6.0-rc1, origin/branch-2.6.0, branch-2.6.0); compiled by 'acmurthy' on 2014-11-13T22:35Z
-STARTUP_MSG:   java = 1.7.0_75
-************************************************************/
-2015-04-18 05:47:03,936 INFO org.apache.hama.GroomServerRunner: registered UNIX signal handlers for [TERM, HUP, INT]
-2015-04-18 05:47:04,164 INFO org.apache.hama.bsp.GroomServer: groom start
-2015-04-18 05:47:04,567 INFO org.apache.hama.bsp.GroomServer: /tmp/hadoop-vagrant/bsp/local
-2015-04-18 05:47:05,371 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-2015-04-18 05:47:06,210 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50000
-2015-04-18 05:47:06,215 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
-2015-04-18 05:47:06,220 INFO org.apache.hama.ipc.Server: IPC Server listener on 50000: starting
-2015-04-18 05:47:06,223 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50000: starting
-2015-04-18 05:47:06,505 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
-2015-04-18 05:47:06,826 INFO org.apache.hama.bsp.GroomServer: starting webserver: master
-2015-04-18 05:47:06,826 INFO org.apache.hama.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 40015
-2015-04-18 05:47:06,827 INFO org.apache.hama.http.HttpServer: listener.getLocalPort() returned 40015 webServer.getConnectors()[0].getLocalPort() returned 40015
-2015-04-18 05:47:06,827 INFO org.apache.hama.http.HttpServer: Jetty bound to port 40015
-2015-04-18 05:47:06,827 INFO org.mortbay.log: jetty-6.1.14
-2015-04-18 05:47:08,025 INFO org.mortbay.log: Started SelectChannelConnector@master:40015
-2015-04-18 05:47:08,046 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50001
-2015-04-18 05:47:08,046 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
-2015-04-18 05:47:08,047 INFO org.apache.hama.ipc.Server: IPC Server listener on 50001: starting
-2015-04-18 05:47:08,047 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50001: starting
-2015-04-18 05:47:08,048 INFO org.apache.hama.ipc.Server: IPC Server handler 1 on 50001: starting
-2015-04-18 05:47:08,048 INFO org.apache.hama.ipc.Server: IPC Server handler 2 on 50001: starting
-2015-04-18 05:47:08,048 INFO org.apache.hama.ipc.Server: IPC Server handler 3 on 50001: starting
-2015-04-18 05:47:08,049 INFO org.apache.hama.ipc.Server: IPC Server handler 4 on 50001: starting
-2015-04-18 05:47:08,048 INFO org.apache.hama.bsp.GroomServer: TaskReportServer up at: localhost/127.0.0.1:50001
-2015-04-18 05:47:08,049 INFO org.apache.hama.bsp.GroomServer: Starting groom: master:50000
-2015-04-18 05:47:17,473 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
-2015-04-18 05:47:18,888 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504180547_0002_000000_0' has started.
-2015-04-18 05:47:28,666 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504180547_0002_000000_0 is done.
-2015-04-18 05:47:32,678 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
-2015-04-18 05:47:33,089 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504180547_0001_000000_0' has started.
-2015-04-18 05:53:39,569 ERROR org.apache.hama.GroomServerRunner: RECEIVED SIGNAL 15: SIGTERM
-2015-04-18 05:53:39,592 INFO org.apache.hama.GroomServerRunner: SHUTDOWN_MSG: 
-/************************************************************
-SHUTDOWN_MSG: Shutting down GroomServer at vagrant-master/172.28.128.6
-************************************************************/
-2015-04-18 05:53:49,327 INFO org.apache.hama.GroomServerRunner: STARTUP_MSG: 
-/************************************************************
-STARTUP_MSG: Starting GroomServer
-STARTUP_MSG:   host = vagrant-master/172.28.128.6
-STARTUP_MSG:   args = [master]
-STARTUP_MSG:   version = 2.6.0
-STARTUP_MSG:   classpath = /vagrant/hama/bin/../conf:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/tools.jar:/vagrant/hama/bin/../core/target/classes:/vagrant/hama/bin/../commons/target/classes:/vagrant/hama/bin/../graph/target/classes:/vagrant/hama/bin/../ml/target/classes:/vagrant/hama/bin/../mesos/target/classes:/vagrant/hama/bin/../hama-**.jar:/vagrant/hama/bin/../lib/activation-1.1.jar:/vagrant/hama/bin/../lib/ant-1.6.5.jar:/vagrant/hama/bin/../lib/ant-1.7.1.jar:/vagrant/hama/bin/../lib/ant-launcher-1.7.1.jar:/vagrant/hama/bin/../lib/aopalliance-1.0.jar:/vagrant/hama/bin/../lib/apacheds-i18n-2.0.0-M15.jar:/vagrant/hama/bin/../lib/apacheds-kerberos-codec-2.0.0-M15.jar:/vagrant/hama/bin/../lib/api-asn1-api-1.0.0-M20.jar:/vagrant/hama/bin/../lib/api-util-1.0.0-M20.jar:/vagrant/hama/bin/../lib/asm-3.1.jar:/vagrant/hama/bin/../lib/asm-4.0.jar:/vagrant/hama/bin/../lib/avro-1.5.3.jar:/vagrant/hama/bin/../lib/commons-beanutils-1.8.3.jar:/vagrant/hama/bin/../lib/commons-cli-1.2.jar:/vagrant/hama/bin/../lib/commons-codec-1.4.jar:/vagrant/hama/bin/../lib/commons-collections-3.2.1.jar:/vagrant/hama/bin/../lib/commons-compress-1.9.jar:/vagrant/hama/bin/../lib/commons-configuration-1.7.jar:/vagrant/hama/bin/../lib/commons-daemon-1.0.13.jar:/vagrant/hama/bin/../lib/commons-digester-1.8.1.jar:/vagrant/hama/bin/../lib/commons-el-1.0.jar:/vagrant/hama/bin/../lib/commons-httpclient-3.0.1.jar:/vagrant/hama/bin/../lib/commons-io-2.4.jar:/vagrant/hama/bin/../lib/commons-lang-2.6.jar:/vagrant/hama/bin/../lib/commons-logging-1.1.1.jar:/vagrant/hama/bin/../lib/commons-math3-3.0.jar:/vagrant/hama/bin/../lib/commons-net-3.1.jar:/vagrant/hama/bin/../lib/core-3.1.1.jar:/vagrant/hama/bin/../lib/curator-client-2.6.0.jar:/vagrant/hama/bin/../lib/curator-framework-2.6.0.jar:/vagrant/hama/bin/../lib/curator-recipes-2.6.0.jar:/vagrant/hama/bin/../lib/directmemory-cache-0.2.jar:/vagrant/hama/bin/../lib/directmemory-kryo-0.2.jar:/vagrant/hama/bin/../lib/geronimo-annotation_1.0_spec-1.0.jar:/vagrant/hama/bin/../lib/geronimo-spec-jta-1.0.1B-rc4.jar:/vagrant/hama/bin/../lib/gson-2.2.4.jar:/vagrant/hama/bin/../lib/guava-13.0.1.jar:/vagrant/hama/bin/../lib/guice-3.0.jar:/vagrant/hama/bin/../lib/guice-servlet-3.0.jar:/vagrant/hama/bin/../lib/hadoop-annotations-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-auth-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-common-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0-tests.jar:/vagrant/hama/bin/../lib/hadoop-mapreduce-client-core-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-api-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-common-2.6.0.jar:/vagrant/hama/bin/../lib/hama-commons-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/hama-core-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/htrace-core-3.0.4.jar:/vagrant/hama/bin/../lib/httpclient-4.2.5.jar:/vagrant/hama/bin/../lib/httpcore-4.1.2.jar:/vagrant/hama/bin/../lib/jackson-core-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-jaxrs-1.8.3.jar:/vagrant/hama/bin/../lib/jackson-mapper-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-xc-1.8.3.jar:/vagrant/hama/bin/../lib/jasper-compiler-5.5.23.jar:/vagrant/hama/bin/../lib/jasper-runtime-5.5.23.jar:/vagrant/hama/bin/../lib/javax.inject-1.jar:/vagrant/hama/bin/../lib/java-xmlbuilder-0.4.jar:/vagrant/hama/bin/../lib/jaxb-api-2.2.2.jar:/vagrant/hama/bin/../lib/jaxb-impl-2.2.3-1.jar:/vagrant/hama/bin/../lib/jdk.tools-1.7.jar:/vagrant/hama/bin/../lib/jersey-client-1.9.jar:/vagrant/hama/bin/../lib/jersey-core-1.9.jar:/vagrant/hama/bin/../lib/jersey-guice-1.9.jar:/vagrant/hama/bin/../lib/jersey-json-1.9.jar:/vagrant/hama/bin/../lib/jersey-server-1.9.jar:/vagrant/hama/bin/../lib/jets3t-0.9.0.jar:/vagrant/hama/bin/../lib/jettison-1.1.jar:/vagrant/hama/bin/../lib/jetty-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-annotations-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-plus-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-util-6.1.14.jar:/vagrant/hama/bin/../lib/jline-0.9.94.jar:/vagrant/hama/bin/../lib/jsch-0.1.42.jar:/vagrant/hama/bin/../lib/jsp-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1.jar:/vagrant/hama/bin/../lib/jsr305-1.3.9.jar:/vagrant/hama/bin/../lib/junit-4.8.1.jar:/vagrant/hama/bin/../lib/kryo-2.20.jar:/vagrant/hama/bin/../lib/log4j-1.2.16.jar:/vagrant/hama/bin/../lib/mesos-0.15.0.jar:/vagrant/hama/bin/../lib/minlog-1.2.jar:/vagrant/hama/bin/../lib/netty-3.2.2.Final.jar:/vagrant/hama/bin/../lib/netty-3.6.2.Final.jar:/vagrant/hama/bin/../lib/netty-all-4.0.21.Final.jar:/vagrant/hama/bin/../lib/objenesis-1.2.jar:/vagrant/hama/bin/../lib/paranamer-2.3.jar:/vagrant/hama/bin/../lib/protobuf-java-2.5.0.jar:/vagrant/hama/bin/../lib/reflectasm-1.07-shaded.jar:/vagrant/hama/bin/../lib/servlet-api-2.5-6.1.14.jar:/vagrant/hama/bin/../lib/servlet-api-2.5.jar:/vagrant/hama/bin/../lib/servlet-api-6.0.32.jar:/vagrant/hama/bin/../lib/slf4j-api-1.5.8.jar:/vagrant/hama/bin/../lib/slf4j-log4j12-1.5.8.jar:/vagrant/hama/bin/../lib/snappy-java-1.0.5.jar:/vagrant/hama/bin/../lib/stax-api-1.0-2.jar:/vagrant/hama/bin/../lib/xercesImpl-2.9.1.jar:/vagrant/hama/bin/../lib/xml-apis-1.3.04.jar:/vagrant/hama/bin/../lib/xmlenc-0.52.jar:/vagrant/hama/bin/../lib/zookeeper-3.4.5.jar
-STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1 (HEAD, tag: release-2.6.0-rc1, origin/branch-2.6.0, branch-2.6.0); compiled by 'acmurthy' on 2014-11-13T22:35Z
-STARTUP_MSG:   java = 1.7.0_75
-************************************************************/
-2015-04-18 05:53:49,347 INFO org.apache.hama.GroomServerRunner: registered UNIX signal handlers for [TERM, HUP, INT]
-2015-04-18 05:53:49,635 INFO org.apache.hama.bsp.GroomServer: groom start
-2015-04-18 05:53:50,098 INFO org.apache.hama.bsp.GroomServer: /tmp/hadoop-vagrant/bsp/local
-2015-04-18 05:53:50,839 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-2015-04-18 05:53:51,687 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50000
-2015-04-18 05:53:51,689 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
-2015-04-18 05:53:51,694 INFO org.apache.hama.ipc.Server: IPC Server listener on 50000: starting
-2015-04-18 05:53:51,698 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50000: starting
-2015-04-18 05:53:51,838 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
-2015-04-18 05:53:52,112 INFO org.apache.hama.bsp.GroomServer: starting webserver: master
-2015-04-18 05:53:52,112 INFO org.apache.hama.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 40015
-2015-04-18 05:53:52,113 INFO org.apache.hama.http.HttpServer: listener.getLocalPort() returned 40015 webServer.getConnectors()[0].getLocalPort() returned 40015
-2015-04-18 05:53:52,113 INFO org.apache.hama.http.HttpServer: Jetty bound to port 40015
-2015-04-18 05:53:52,113 INFO org.mortbay.log: jetty-6.1.14
-2015-04-18 05:53:53,387 INFO org.mortbay.log: Started SelectChannelConnector@master:40015
-2015-04-18 05:53:53,401 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50001
-2015-04-18 05:53:53,402 INFO org.apache.hama.ipc.Server: IPC Server listener on 50001: starting
-2015-04-18 05:53:53,401 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
-2015-04-18 05:53:53,403 INFO org.apache.hama.ipc.Server: IPC Server handler 1 on 50001: starting
-2015-04-18 05:53:53,403 INFO org.apache.hama.ipc.Server: IPC Server handler 2 on 50001: starting
-2015-04-18 05:53:53,403 INFO org.apache.hama.ipc.Server: IPC Server handler 3 on 50001: starting
-2015-04-18 05:53:53,407 INFO org.apache.hama.bsp.GroomServer: TaskReportServer up at: localhost/127.0.0.1:50001
-2015-04-18 05:53:53,408 INFO org.apache.hama.bsp.GroomServer: Starting groom: master:50000
-2015-04-18 05:53:53,407 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50001: starting
-2015-04-18 05:53:53,409 INFO org.apache.hama.ipc.Server: IPC Server handler 4 on 50001: starting
-2015-04-18 05:54:06,387 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
-2015-04-18 05:54:07,733 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504180553_0002_000000_0' has started.
-2015-04-18 05:54:17,179 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504180553_0002_000000_0 is done.
-2015-04-18 05:54:21,610 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
-2015-04-18 05:54:21,971 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504180553_0001_000000_0' has started.
-2015-04-18 05:56:23,238 ERROR org.apache.hama.GroomServerRunner: RECEIVED SIGNAL 15: SIGTERM
-2015-04-18 05:56:23,259 INFO org.apache.hama.GroomServerRunner: SHUTDOWN_MSG: 
-/************************************************************
-SHUTDOWN_MSG: Shutting down GroomServer at vagrant-master/172.28.128.6
-************************************************************/
-2015-04-18 05:56:33,284 INFO org.apache.hama.GroomServerRunner: STARTUP_MSG: 
-/************************************************************
-STARTUP_MSG: Starting GroomServer
-STARTUP_MSG:   host = vagrant-master/172.28.128.6
-STARTUP_MSG:   args = [master]
-STARTUP_MSG:   version = 2.6.0
-STARTUP_MSG:   classpath = /vagrant/hama/bin/../conf:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/tools.jar:/vagrant/hama/bin/../core/target/classes:/vagrant/hama/bin/../commons/target/classes:/vagrant/hama/bin/../graph/target/classes:/vagrant/hama/bin/../ml/target/classes:/vagrant/hama/bin/../mesos/target/classes:/vagrant/hama/bin/../hama-**.jar:/vagrant/hama/bin/../lib/activation-1.1.jar:/vagrant/hama/bin/../lib/ant-1.6.5.jar:/vagrant/hama/bin/../lib/ant-1.7.1.jar:/vagrant/hama/bin/../lib/ant-launcher-1.7.1.jar:/vagrant/hama/bin/../lib/aopalliance-1.0.jar:/vagrant/hama/bin/../lib/apacheds-i18n-2.0.0-M15.jar:/vagrant/hama/bin/../lib/apacheds-kerberos-codec-2.0.0-M15.jar:/vagrant/hama/bin/../lib/api-asn1-api-1.0.0-M20.jar:/vagrant/hama/bin/../lib/api-util-1.0.0-M20.jar:/vagrant/hama/bin/../lib/asm-3.1.jar:/vagrant/hama/bin/../lib/asm-4.0.jar:/vagrant/hama/bin/../lib/avro-1.5.3.jar:/vagrant/hama/bin/../lib/commons-beanutils-1.8.3.jar:/vagrant/hama/bin/../lib/commons-cli-1.2.jar:/vagrant/hama/bin/../lib/commons-codec-1.4.jar:/vagrant/hama/bin/../lib/commons-collections-3.2.1.jar:/vagrant/hama/bin/../lib/commons-compress-1.9.jar:/vagrant/hama/bin/../lib/commons-configuration-1.7.jar:/vagrant/hama/bin/../lib/commons-daemon-1.0.13.jar:/vagrant/hama/bin/../lib/commons-digester-1.8.1.jar:/vagrant/hama/bin/../lib/commons-el-1.0.jar:/vagrant/hama/bin/../lib/commons-httpclient-3.0.1.jar:/vagrant/hama/bin/../lib/commons-io-2.4.jar:/vagrant/hama/bin/../lib/commons-lang-2.6.jar:/vagrant/hama/bin/../lib/commons-logging-1.1.1.jar:/vagrant/hama/bin/../lib/commons-math3-3.0.jar:/vagrant/hama/bin/../lib/commons-net-3.1.jar:/vagrant/hama/bin/../lib/core-3.1.1.jar:/vagrant/hama/bin/../lib/curator-client-2.6.0.jar:/vagrant/hama/bin/../lib/curator-framework-2.6.0.jar:/vagrant/hama/bin/../lib/curator-recipes-2.6.0.jar:/vagrant/hama/bin/../lib/directmemory-cache-0.2.jar:/vagrant/hama/bin/../lib/directmemory-kryo-0.2.jar:/vagrant/hama/bin/../lib/geronimo-annotation_1.0_spec-1.0.jar:/vagrant/hama/bin/../lib/geronimo-spec-jta-1.0.1B-rc4.jar:/vagrant/hama/bin/../lib/gson-2.2.4.jar:/vagrant/hama/bin/../lib/guava-13.0.1.jar:/vagrant/hama/bin/../lib/guice-3.0.jar:/vagrant/hama/bin/../lib/guice-servlet-3.0.jar:/vagrant/hama/bin/../lib/hadoop-annotations-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-auth-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-common-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-hdfs-2.6.0-tests.jar:/vagrant/hama/bin/../lib/hadoop-mapreduce-client-core-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-api-2.6.0.jar:/vagrant/hama/bin/../lib/hadoop-yarn-common-2.6.0.jar:/vagrant/hama/bin/../lib/hama-commons-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/hama-core-0.7.0-SNAPSHOT.jar:/vagrant/hama/bin/../lib/htrace-core-3.0.4.jar:/vagrant/hama/bin/../lib/httpclient-4.2.5.jar:/vagrant/hama/bin/../lib/httpcore-4.1.2.jar:/vagrant/hama/bin/../lib/jackson-core-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-jaxrs-1.8.3.jar:/vagrant/hama/bin/../lib/jackson-mapper-asl-1.9.2.jar:/vagrant/hama/bin/../lib/jackson-xc-1.8.3.jar:/vagrant/hama/bin/../lib/jasper-compiler-5.5.23.jar:/vagrant/hama/bin/../lib/jasper-runtime-5.5.23.jar:/vagrant/hama/bin/../lib/javax.inject-1.jar:/vagrant/hama/bin/../lib/java-xmlbuilder-0.4.jar:/vagrant/hama/bin/../lib/jaxb-api-2.2.2.jar:/vagrant/hama/bin/../lib/jaxb-impl-2.2.3-1.jar:/vagrant/hama/bin/../lib/jdk.tools-1.7.jar:/vagrant/hama/bin/../lib/jersey-client-1.9.jar:/vagrant/hama/bin/../lib/jersey-core-1.9.jar:/vagrant/hama/bin/../lib/jersey-guice-1.9.jar:/vagrant/hama/bin/../lib/jersey-json-1.9.jar:/vagrant/hama/bin/../lib/jersey-server-1.9.jar:/vagrant/hama/bin/../lib/jets3t-0.9.0.jar:/vagrant/hama/bin/../lib/jettison-1.1.jar:/vagrant/hama/bin/../lib/jetty-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-annotations-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-plus-6.1.14.jar:/vagrant/hama/bin/../lib/jetty-util-6.1.14.jar:/vagrant/hama/bin/../lib/jline-0.9.94.jar:/vagrant/hama/bin/../lib/jsch-0.1.42.jar:/vagrant/hama/bin/../lib/jsp-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1-6.1.14.jar:/vagrant/hama/bin/../lib/jsp-api-2.1.jar:/vagrant/hama/bin/../lib/jsr305-1.3.9.jar:/vagrant/hama/bin/../lib/junit-4.8.1.jar:/vagrant/hama/bin/../lib/kryo-2.20.jar:/vagrant/hama/bin/../lib/log4j-1.2.16.jar:/vagrant/hama/bin/../lib/mesos-0.15.0.jar:/vagrant/hama/bin/../lib/minlog-1.2.jar:/vagrant/hama/bin/../lib/netty-3.2.2.Final.jar:/vagrant/hama/bin/../lib/netty-3.6.2.Final.jar:/vagrant/hama/bin/../lib/netty-all-4.0.21.Final.jar:/vagrant/hama/bin/../lib/objenesis-1.2.jar:/vagrant/hama/bin/../lib/paranamer-2.3.jar:/vagrant/hama/bin/../lib/protobuf-java-2.5.0.jar:/vagrant/hama/bin/../lib/reflectasm-1.07-shaded.jar:/vagrant/hama/bin/../lib/servlet-api-2.5-6.1.14.jar:/vagrant/hama/bin/../lib/servlet-api-2.5.jar:/vagrant/hama/bin/../lib/servlet-api-6.0.32.jar:/vagrant/hama/bin/../lib/slf4j-api-1.5.8.jar:/vagrant/hama/bin/../lib/slf4j-log4j12-1.5.8.jar:/vagrant/hama/bin/../lib/snappy-java-1.0.5.jar:/vagrant/hama/bin/../lib/stax-api-1.0-2.jar:/vagrant/hama/bin/../lib/xercesImpl-2.9.1.jar:/vagrant/hama/bin/../lib/xml-apis-1.3.04.jar:/vagrant/hama/bin/../lib/xmlenc-0.52.jar:/vagrant/hama/bin/../lib/zookeeper-3.4.5.jar
-STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1 (HEAD, tag: release-2.6.0-rc1, origin/branch-2.6.0, branch-2.6.0); compiled by 'acmurthy' on 2014-11-13T22:35Z
-STARTUP_MSG:   java = 1.7.0_75
-************************************************************/
-2015-04-18 05:56:33,319 INFO org.apache.hama.GroomServerRunner: registered UNIX signal handlers for [TERM, HUP, INT]
-2015-04-18 05:56:33,673 INFO org.apache.hama.bsp.GroomServer: groom start
-2015-04-18 05:56:34,093 INFO org.apache.hama.bsp.GroomServer: /tmp/hadoop-vagrant/bsp/local
-2015-04-18 05:56:35,014 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-2015-04-18 05:56:35,869 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50000
-2015-04-18 05:56:35,874 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
-2015-04-18 05:56:35,879 INFO org.apache.hama.ipc.Server: IPC Server listener on 50000: starting
-2015-04-18 05:56:35,882 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50000: starting
-2015-04-18 05:56:36,120 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
-2015-04-18 05:56:36,413 INFO org.apache.hama.bsp.GroomServer: starting webserver: master
-2015-04-18 05:56:36,413 INFO org.apache.hama.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 40015
-2015-04-18 05:56:36,414 INFO org.apache.hama.http.HttpServer: listener.getLocalPort() returned 40015 webServer.getConnectors()[0].getLocalPort() returned 40015
-2015-04-18 05:56:36,414 INFO org.apache.hama.http.HttpServer: Jetty bound to port 40015
-2015-04-18 05:56:36,414 INFO org.mortbay.log: jetty-6.1.14
-2015-04-18 05:56:37,748 INFO org.mortbay.log: Started SelectChannelConnector@master:40015
-2015-04-18 05:56:37,768 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50001
-2015-04-18 05:56:37,768 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
-2015-04-18 05:56:37,768 INFO org.apache.hama.ipc.Server: IPC Server listener on 50001: starting
-2015-04-18 05:56:37,768 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50001: starting
-2015-04-18 05:56:37,769 INFO org.apache.hama.ipc.Server: IPC Server handler 1 on 50001: starting
-2015-04-18 05:56:37,769 INFO org.apache.hama.ipc.Server: IPC Server handler 2 on 50001: starting
-2015-04-18 05:56:37,769 INFO org.apache.hama.bsp.GroomServer: TaskReportServer up at: localhost/127.0.0.1:50001
-2015-04-18 05:56:37,769 INFO org.apache.hama.bsp.GroomServer: Starting groom: master:50000
-2015-04-18 05:56:37,769 INFO org.apache.hama.ipc.Server: IPC Server handler 4 on 50001: starting
-2015-04-18 05:56:37,775 INFO org.apache.hama.ipc.Server: IPC Server handler 3 on 50001: starting
-2015-04-18 05:56:47,230 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
-2015-04-18 05:56:48,619 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504180556_0002_000000_0' has started.
-2015-04-18 05:56:58,614 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504180556_0002_000000_0 is done.
-2015-04-18 05:57:02,476 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
-2015-04-18 05:57:02,874 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504180556_0001_000000_0' has started.
-2015-04-18 05:58:22,134 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504180556_0001_000000_0 is done.
+2015-04-21 00:23:04,573 INFO org.apache.hama.GroomServerRunner: registered UNIX signal handlers for [TERM, HUP, INT]
+2015-04-21 00:23:04,862 INFO org.apache.hama.bsp.GroomServer: groom start
+2015-04-21 00:23:05,281 INFO org.apache.hama.bsp.GroomServer: /tmp/hadoop-vagrant/bsp/local
+2015-04-21 00:23:06,136 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 00:23:07,114 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50000
+2015-04-21 00:23:07,119 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-21 00:23:07,125 INFO org.apache.hama.ipc.Server: IPC Server listener on 50000: starting
+2015-04-21 00:23:07,125 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50000: starting
+2015-04-21 00:23:07,339 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-04-21 00:23:07,547 INFO org.apache.hama.bsp.GroomServer: starting webserver: master
+2015-04-21 00:23:07,547 INFO org.apache.hama.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 40015
+2015-04-21 00:23:07,548 INFO org.apache.hama.http.HttpServer: listener.getLocalPort() returned 40015 webServer.getConnectors()[0].getLocalPort() returned 40015
+2015-04-21 00:23:07,548 INFO org.apache.hama.http.HttpServer: Jetty bound to port 40015
+2015-04-21 00:23:07,548 INFO org.mortbay.log: jetty-6.1.14
+2015-04-21 00:23:08,619 INFO org.mortbay.log: Started SelectChannelConnector@master:40015
+2015-04-21 00:23:08,631 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50001
+2015-04-21 00:23:08,631 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-04-21 00:23:08,631 INFO org.apache.hama.ipc.Server: IPC Server listener on 50001: starting
+2015-04-21 00:23:08,631 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50001: starting
+2015-04-21 00:23:08,637 INFO org.apache.hama.ipc.Server: IPC Server handler 1 on 50001: starting
+2015-04-21 00:23:08,638 INFO org.apache.hama.ipc.Server: IPC Server handler 2 on 50001: starting
+2015-04-21 00:23:08,638 INFO org.apache.hama.ipc.Server: IPC Server handler 3 on 50001: starting
+2015-04-21 00:23:08,642 INFO org.apache.hama.ipc.Server: IPC Server handler 4 on 50001: starting
+2015-04-21 00:23:08,642 INFO org.apache.hama.bsp.GroomServer: TaskReportServer up at: localhost/127.0.0.1:50001
+2015-04-21 00:23:08,642 INFO org.apache.hama.bsp.GroomServer: Starting groom: master:50000
+2015-04-21 00:23:18,795 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-21 00:23:20,302 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504210023_0002_000000_0' has started.
+2015-04-21 00:23:21,388 INFO org.apache.hama.bsp.GroomServer: adding purge task: attempt_201504210023_0002_000000_0
+2015-04-21 00:23:21,388 INFO org.apache.hama.bsp.GroomServer: About to purge task: attempt_201504210023_0002_000000_0
+2015-04-21 00:23:21,655 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:23:21,656 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0002_000000_1
+2015-04-21 00:23:21,656 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:23:22,047 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504210023_0002_000000_1' has started.
+2015-04-21 00:23:31,414 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504210023_0002_000000_1 is done.
+2015-04-21 00:23:34,019 INFO org.apache.hama.bsp.GroomServer: Launch 2 tasks.
+2015-04-21 00:23:34,563 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504210023_0001_000002_0' has started.
+2015-04-21 00:23:34,564 INFO org.apache.hama.bsp.GroomServer: Launch 2 tasks.
+2015-04-21 00:23:35,067 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504210023_0001_000000_0' has started.
+2015-04-21 00:23:35,653 INFO org.apache.hama.bsp.GroomServer: adding purge task: attempt_201504210023_0001_000002_0
+2015-04-21 00:23:35,653 INFO org.apache.hama.bsp.GroomServer: About to purge task: attempt_201504210023_0001_000002_0
+2015-04-21 00:23:35,684 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:23:35,684 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0001_000002_1
+2015-04-21 00:23:35,684 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:23:36,087 INFO org.apache.hama.bsp.GroomServer: adding purge task: attempt_201504210023_0001_000000_0
+2015-04-21 00:23:36,087 INFO org.apache.hama.bsp.GroomServer: About to purge task: attempt_201504210023_0001_000000_0
+2015-04-21 00:23:36,141 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504210023_0001_000002_1' has started.
+2015-04-21 00:23:37,688 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:23:37,688 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0001_000000_1
+2015-04-21 00:23:37,688 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:23:38,029 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_y7whzz/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:23:39,692 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:23:39,692 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0001_000000_2
+2015-04-21 00:23:39,692 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:23:40,254 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_y7whzz/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:23:41,696 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:23:41,697 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0001_000000_3
+2015-04-21 00:23:41,697 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:23:42,139 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_y7whzz/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:23:43,699 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:23:43,700 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0001_000000_4
+2015-04-21 00:23:43,700 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:23:44,149 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_y7whzz/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:27:37,130 INFO org.apache.hama.bsp.GroomServer: Launch 1 tasks.
+2015-04-21 00:27:37,695 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504210023_0004_000000_0' has started.
+2015-04-21 00:27:38,748 INFO org.apache.hama.bsp.GroomServer: adding purge task: attempt_201504210023_0004_000000_0
+2015-04-21 00:27:38,748 INFO org.apache.hama.bsp.GroomServer: About to purge task: attempt_201504210023_0004_000000_0
+2015-04-21 00:27:40,049 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:27:40,049 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0004_000000_1
+2015-04-21 00:27:40,050 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:27:40,580 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504210023_0004_000000_1' has started.
+2015-04-21 00:27:50,122 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504210023_0004_000000_1 is done.
+2015-04-21 00:27:52,534 INFO org.apache.hama.bsp.GroomServer: Launch 2 tasks.
+2015-04-21 00:27:53,092 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504210023_0003_000002_0' has started.
+2015-04-21 00:27:53,092 INFO org.apache.hama.bsp.GroomServer: Launch 2 tasks.
+2015-04-21 00:27:53,722 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504210023_0003_000000_0' has started.
+2015-04-21 00:27:54,151 INFO org.apache.hama.bsp.GroomServer: adding purge task: attempt_201504210023_0003_000002_0
+2015-04-21 00:27:54,152 INFO org.apache.hama.bsp.GroomServer: About to purge task: attempt_201504210023_0003_000002_0
+2015-04-21 00:27:54,754 INFO org.apache.hama.bsp.GroomServer: adding purge task: attempt_201504210023_0003_000000_0
+2015-04-21 00:27:54,755 INFO org.apache.hama.bsp.GroomServer: About to purge task: attempt_201504210023_0003_000000_0
+2015-04-21 00:27:56,074 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:27:56,075 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0003_000000_1
+2015-04-21 00:27:56,075 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:27:56,585 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_wjc19m/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:27:56,586 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:27:56,586 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0003_000002_1
+2015-04-21 00:27:56,586 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:27:57,049 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_wjc19m/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:27:58,080 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:27:58,080 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0003_000000_2
+2015-04-21 00:27:58,080 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:27:58,595 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_wjc19m/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:27:58,595 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:27:58,595 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0003_000002_2
+2015-04-21 00:27:58,595 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:27:59,107 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_wjc19m/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:28:00,086 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:28:00,086 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0003_000000_3
+2015-04-21 00:28:00,087 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:28:00,647 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_wjc19m/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:28:00,647 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:28:00,647 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0003_000002_3
+2015-04-21 00:28:00,648 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:28:01,152 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_wjc19m/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:28:02,091 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:28:02,092 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0003_000000_4
+2015-04-21 00:28:02,092 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:28:02,740 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_wjc19m/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:28:02,741 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:28:02,741 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0003_000002_4
+2015-04-21 00:28:02,741 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:28:03,258 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_wjc19m/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:30:17,973 INFO org.apache.hama.bsp.GroomServer: Launch 2 tasks.
+2015-04-21 00:30:18,629 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504210023_0005_000001_0' has started.
+2015-04-21 00:30:18,629 INFO org.apache.hama.bsp.GroomServer: Launch 2 tasks.
+2015-04-21 00:30:19,377 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504210023_0005_000000_0' has started.
+2015-04-21 00:30:19,639 INFO org.apache.hama.bsp.GroomServer: adding purge task: attempt_201504210023_0005_000001_0
+2015-04-21 00:30:19,639 INFO org.apache.hama.bsp.GroomServer: About to purge task: attempt_201504210023_0005_000001_0
+2015-04-21 00:30:20,287 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:30:20,287 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0005_000001_1
+2015-04-21 00:30:20,288 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:30:20,959 INFO org.apache.hama.bsp.GroomServer: adding purge task: attempt_201504210023_0005_000000_0
+2015-04-21 00:30:20,960 INFO org.apache.hama.bsp.GroomServer: About to purge task: attempt_201504210023_0005_000000_0
+2015-04-21 00:30:21,071 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504210023_0005_000001_1' has started.
+2015-04-21 00:30:22,290 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:30:22,290 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0005_000000_1
+2015-04-21 00:30:22,290 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:30:23,040 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504210023_0005_000000_1' has started.
+2015-04-21 00:30:31,005 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504210023_0005_000001_1 is done.
+2015-04-21 00:30:33,043 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504210023_0005_000000_1 is done.
+2015-04-21 00:32:50,148 INFO org.apache.hama.bsp.GroomServer: Launch 2 tasks.
+2015-04-21 00:32:51,028 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504210023_0006_000001_0' has started.
+2015-04-21 00:32:51,029 INFO org.apache.hama.bsp.GroomServer: Launch 2 tasks.
+2015-04-21 00:32:52,047 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504210023_0006_000000_0' has started.
+2015-04-21 00:32:52,073 INFO org.apache.hama.bsp.GroomServer: adding purge task: attempt_201504210023_0006_000001_0
+2015-04-21 00:32:52,073 INFO org.apache.hama.bsp.GroomServer: About to purge task: attempt_201504210023_0006_000001_0
+2015-04-21 00:32:52,473 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:32:52,474 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0006_000001_1
+2015-04-21 00:32:52,474 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:32:53,412 INFO org.apache.hama.bsp.GroomServer: adding purge task: attempt_201504210023_0006_000000_0
+2015-04-21 00:32:53,413 INFO org.apache.hama.bsp.GroomServer: About to purge task: attempt_201504210023_0006_000000_0
+2015-04-21 00:32:53,562 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504210023_0006_000001_1' has started.
+2015-04-21 00:32:54,477 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:32:54,478 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0006_000000_1
+2015-04-21 00:32:54,478 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:32:55,789 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504210023_0006_000000_1' has started.
+2015-04-21 00:33:05,648 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504210023_0006_000001_1 is done.
+2015-04-21 00:33:07,757 INFO org.apache.hama.bsp.GroomServer: Task attempt_201504210023_0006_000000_1 is done.
+2015-04-21 00:33:37,979 INFO org.apache.hama.bsp.GroomServer: Launch 2 tasks.
+2015-04-21 00:33:38,868 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504210023_0008_000000_0' has started.
+2015-04-21 00:33:38,868 INFO org.apache.hama.bsp.GroomServer: Launch 2 tasks.
+2015-04-21 00:33:39,835 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504210023_0008_000002_0' has started.
+2015-04-21 00:33:39,884 INFO org.apache.hama.bsp.GroomServer: adding purge task: attempt_201504210023_0008_000000_0
+2015-04-21 00:33:39,884 INFO org.apache.hama.bsp.GroomServer: About to purge task: attempt_201504210023_0008_000000_0
+2015-04-21 00:33:40,541 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:33:40,542 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0008_000000_1
+2015-04-21 00:33:40,542 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:33:41,641 INFO org.apache.hama.bsp.GroomServer: adding purge task: attempt_201504210023_0008_000002_0
+2015-04-21 00:33:41,641 INFO org.apache.hama.bsp.GroomServer: About to purge task: attempt_201504210023_0008_000002_0
+2015-04-21 00:33:41,788 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504210023_0008_000000_1' has started.
+2015-04-21 00:33:42,542 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:33:42,542 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0008_000002_1
+2015-04-21 00:33:42,543 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:33:43,741 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504210023_0008_000002_1' has started.
+2015-04-21 00:33:58,815 INFO org.apache.hama.bsp.GroomServer: adding purge task: attempt_201504210023_0008_000000_1
+2015-04-21 00:33:58,816 INFO org.apache.hama.bsp.GroomServer: About to purge task: attempt_201504210023_0008_000000_1
+2015-04-21 00:33:59,025 INFO org.apache.hama.bsp.GroomServer: adding purge task: attempt_201504210023_0008_000002_1
+2015-04-21 00:33:59,025 INFO org.apache.hama.bsp.GroomServer: About to purge task: attempt_201504210023_0008_000002_1
+2015-04-21 00:34:00,606 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:34:00,606 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0008_000000_2
+2015-04-21 00:34:00,606 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep 2
+2015-04-21 00:34:01,469 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_ir7o0z/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:34:01,469 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:34:01,469 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0008_000002_2
+2015-04-21 00:34:01,469 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep 2
+2015-04-21 00:34:02,340 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_ir7o0z/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:34:02,586 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:34:02,587 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0008_000000_3
+2015-04-21 00:34:02,587 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep 2
+2015-04-21 00:34:03,362 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_ir7o0z/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:34:03,362 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:34:03,362 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0008_000002_3
+2015-04-21 00:34:03,363 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep 2
+2015-04-21 00:34:04,035 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_ir7o0z/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:34:04,589 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:34:04,589 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0008_000000_4
+2015-04-21 00:34:04,590 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep 2
+2015-04-21 00:34:05,432 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_ir7o0z/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:34:05,433 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:34:05,433 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0008_000002_4
+2015-04-21 00:34:05,433 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep 2
+2015-04-21 00:34:06,247 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_ir7o0z/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:37:30,489 INFO org.apache.hama.bsp.GroomServer: Launch 2 tasks.
+2015-04-21 00:37:31,578 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504210023_0010_000000_0' has started.
+2015-04-21 00:37:31,578 INFO org.apache.hama.bsp.GroomServer: Launch 2 tasks.
+2015-04-21 00:37:32,750 INFO org.apache.hama.bsp.GroomServer: adding purge task: attempt_201504210023_0010_000000_0
+2015-04-21 00:37:32,751 INFO org.apache.hama.bsp.GroomServer: About to purge task: attempt_201504210023_0010_000000_0
+2015-04-21 00:37:32,870 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504210023_0010_000002_0' has started.
+2015-04-21 00:37:32,909 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:37:32,909 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0010_000000_1
+2015-04-21 00:37:32,909 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:37:34,124 INFO org.apache.hama.bsp.GroomServer: adding purge task: attempt_201504210023_0010_000002_0
+2015-04-21 00:37:34,124 INFO org.apache.hama.bsp.GroomServer: About to purge task: attempt_201504210023_0010_000002_0
+2015-04-21 00:37:34,254 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504210023_0010_000000_1' has started.
+2015-04-21 00:37:34,910 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:37:34,911 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0010_000002_1
+2015-04-21 00:37:34,911 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:37:36,412 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504210023_0010_000002_1' has started.
+2015-04-21 00:37:49,912 INFO org.apache.hama.bsp.GroomServer: adding purge task: attempt_201504210023_0010_000002_1
+2015-04-21 00:37:49,912 INFO org.apache.hama.bsp.GroomServer: adding purge task: attempt_201504210023_0010_000000_1
+2015-04-21 00:37:49,912 INFO org.apache.hama.bsp.GroomServer: About to purge task: attempt_201504210023_0010_000002_1
+2015-04-21 00:37:49,912 INFO org.apache.hama.bsp.GroomServer: About to purge task: attempt_201504210023_0010_000000_1
+2015-04-21 00:37:50,013 INFO org.apache.hama.bsp.GroomServer: adding purge task: attempt_201504210023_0010_000002_1
+2015-04-21 00:37:50,013 INFO org.apache.hama.bsp.GroomServer: adding purge task: attempt_201504210023_0010_000000_1
+2015-04-21 00:37:50,013 INFO org.apache.hama.bsp.GroomServer: About to purge task: attempt_201504210023_0010_000002_1
+2015-04-21 00:37:50,013 INFO org.apache.hama.bsp.GroomServer: About to purge task: attempt_201504210023_0010_000000_1
+2015-04-21 00:37:50,930 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:37:50,930 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0010_000000_2
+2015-04-21 00:37:50,931 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep 2
+2015-04-21 00:37:51,925 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_7se026/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:37:51,925 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:37:51,926 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0010_000002_2
+2015-04-21 00:37:51,926 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep 2
+2015-04-21 00:37:52,945 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_7se026/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:37:52,945 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:37:52,945 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0010_000000_3
+2015-04-21 00:37:52,945 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep 2
+2015-04-21 00:37:54,006 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_7se026/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:37:54,944 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:37:54,945 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0010_000000_4
+2015-04-21 00:37:54,945 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep 2
+2015-04-21 00:37:55,955 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_7se026/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:37:55,956 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:37:55,956 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0010_000002_3
+2015-04-21 00:37:55,956 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep 2
+2015-04-21 00:37:56,977 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_7se026/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:37:58,951 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:37:58,951 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0010_000002_4
+2015-04-21 00:37:58,951 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep 2
+2015-04-21 00:37:59,982 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_7se026/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:44:31,503 INFO org.apache.hama.bsp.GroomServer: Launch 2 tasks.
+2015-04-21 00:44:32,797 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504210023_0012_000002_0' has started.
+2015-04-21 00:44:32,798 INFO org.apache.hama.bsp.GroomServer: Launch 2 tasks.
+2015-04-21 00:44:34,113 INFO org.apache.hama.bsp.GroomServer: adding purge task: attempt_201504210023_0012_000002_0
+2015-04-21 00:44:34,114 INFO org.apache.hama.bsp.GroomServer: About to purge task: attempt_201504210023_0012_000002_0
+2015-04-21 00:44:34,269 INFO org.apache.hama.bsp.GroomServer: Task 'attempt_201504210023_0012_000000_0' has started.
+2015-04-21 00:44:35,337 INFO org.apache.hama.bsp.GroomServer: adding purge task: attempt_201504210023_0012_000000_0
+2015-04-21 00:44:35,337 INFO org.apache.hama.bsp.GroomServer: About to purge task: attempt_201504210023_0012_000000_0
+2015-04-21 00:44:35,563 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:44:35,563 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0012_000000_1
+2015-04-21 00:44:35,564 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:44:36,832 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_ts861g/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:44:36,832 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:44:36,833 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0012_000002_1
+2015-04-21 00:44:36,833 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:44:38,184 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_ts861g/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:44:38,184 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:44:38,185 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0012_000000_2
+2015-04-21 00:44:38,185 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:44:39,416 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_ts861g/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:44:39,576 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:44:39,577 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0012_000000_3
+2015-04-21 00:44:39,577 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:44:40,918 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_ts861g/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:44:40,918 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:44:40,918 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0012_000002_2
+2015-04-21 00:44:40,918 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:44:42,443 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_ts861g/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:44:42,443 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:44:42,443 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0012_000000_4
+2015-04-21 00:44:42,444 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:44:43,758 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_ts861g/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:44:43,758 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:44:43,758 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0012_000002_3
+2015-04-21 00:44:43,759 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:44:49,373 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_ts861g/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+
+2015-04-21 00:44:49,596 INFO org.apache.hama.bsp.GroomServer: Recovery action task.
+2015-04-21 00:44:49,596 INFO org.apache.hama.bsp.GroomServer: Recovery action task.attempt_201504210023_0012_000002_4
+2015-04-21 00:44:49,596 INFO org.apache.hama.bsp.GroomServer: Starting recovery task at superstep -9223372036854775808
+2015-04-21 00:44:50,826 INFO org.apache.hama.bsp.GroomServer: java.io.FileNotFoundException: File does not exist: hdfs://master:9000/tmp/hadoop-vagrant/bsp/system/submit_ts861g/job.xml
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1122)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$18.doCall(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1114)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)
+	at org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:289)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1970)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1939)
+	at org.apache.hadoop.fs.FileSystem.copyToLocalFile(FileSystem.java:1915)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.localizeTask(GroomServer.java:991)
+	at org.apache.hama.bsp.GroomServer$TaskInProgress.launchTask(GroomServer.java:1015)
+	at org.apache.hama.bsp.GroomServer.launchTaskForJob(GroomServer.java:750)
+	at org.apache.hama.bsp.GroomServer.localizeJob(GroomServer.java:744)
+	at org.apache.hama.bsp.GroomServer.startRecoveryTask(GroomServer.java:616)
+	at org.apache.hama.bsp.GroomServer.access$200(GroomServer.java:86)
+	at org.apache.hama.bsp.GroomServer$DispatchTasksHandler.handle(GroomServer.java:202)
+	at org.apache.hama.bsp.GroomServer$Instructor.run(GroomServer.java:237)
+

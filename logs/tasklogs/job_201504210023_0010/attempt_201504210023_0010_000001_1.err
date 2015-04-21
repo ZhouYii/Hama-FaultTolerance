@@ -1,0 +1,7 @@
+slave:61002 enter the enterbarrier: 0
+znode size 3
+slave:61002 enter the leavebarrier: 0
+znode size:4
+znode size:0
+slave:61002 enter the enterbarrier: 1
+znode size 2

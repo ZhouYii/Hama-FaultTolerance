@@ -1,0 +1,88 @@
+15/04/20 19:45:41 INFO bsp.GroomServer: BSPPeerChild starting
+15/04/20 19:45:43 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/04/20 19:45:44 INFO bsp.GroomServer: Starting peer for step -1 state = RUNNING
+15/04/20 19:45:47 INFO bsp.GroomServer: instantiating BSPPeerImpl
+15/04/20 19:45:47 INFO ipc.Server: Starting Socket Reader #1 for port 61001
+15/04/20 19:45:47 INFO ipc.Server: IPC Server Responder: starting
+15/04/20 19:45:47 INFO ipc.Server: IPC Server listener on 61001: starting
+15/04/20 19:45:47 INFO ipc.Server: IPC Server handler 1 on 61001: starting
+15/04/20 19:45:47 INFO ipc.Server: IPC Server handler 2 on 61001: starting
+15/04/20 19:45:47 INFO ipc.Server: IPC Server handler 3 on 61001: starting
+15/04/20 19:45:47 INFO message.HamaMessageManagerImpl: BSPPeer address:slave port:61001
+15/04/20 19:45:47 INFO ipc.Server: IPC Server handler 4 on 61001: starting
+15/04/20 19:45:47 INFO ipc.Server: IPC Server handler 0 on 61001: starting
+15/04/20 19:45:49 INFO sync.ZKSyncClient: Initializing ZK Sync Client
+15/04/20 19:45:49 INFO sync.ZooKeeperSyncClientImpl: Start connecting to Zookeeper! At slave/172.28.128.5:61001
+15/04/20 19:45:49 INFO bsp.GroomServer: instantiating BSPPeerImpl done, starting BSPTask now!
+15/04/20 19:45:49 INFO bsp.BSPTask: Starting runBSP from BSPTask
+15/04/20 19:45:49 INFO bsp.BSPTask: [BSPTask.java] Starting with bsp.setup
+15/04/20 19:45:49 INFO graph.GraphJobRunner: [GraphJobRunner] Entering setup.
+15/04/20 19:45:49 INFO graph.GraphJobRunner: 50 vertices are loaded into slave:61001
+15/04/20 19:45:50 INFO bsp.BSPTask: [BSPTask.java] Starting with bsp.bsp
+15/04/20 19:45:50 INFO graph.GraphJobRunner: Entered GraphRunner.bsp. Is recovery task? false
+15/04/20 19:45:50 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:45:50 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:45:50 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:45:50 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:45:50 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:45:50 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:45:50 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:45:50 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:45:50 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:45:50 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:45:50 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:45:50 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:45:50 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:45:50 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:45:50 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:45:51 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:45:51 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:45:51 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:45:51 INFO ipc.Server: IPC Server handler 2 on 61001, call put(org.apache.hama.bsp.BSPMessageBundle@16ba29be) from 172.28.128.5:54772: error: java.io.IOException: java.lang.NullPointerException
+java.io.IOException: java.lang.NullPointerException
+	at org.apache.hama.graph.MessagePerVertex.add(MessagePerVertex.java:68)
+	at org.apache.hama.graph.IncomingVertexMessageManager.add(IncomingVertexMessageManager.java:150)
+	at org.apache.hama.graph.IncomingVertexMessageManager.addAll(IncomingVertexMessageManager.java:117)
+	at org.apache.hama.graph.IncomingVertexMessageManager.addBundle(IncomingVertexMessageManager.java:106)
+	at org.apache.hama.bsp.message.AbstractMessageManager.loopBackBundle(AbstractMessageManager.java:260)
+	at org.apache.hama.bsp.message.HamaMessageManagerImpl.put(HamaMessageManagerImpl.java:219)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hama.ipc.RPC$Server.call(RPC.java:615)
+	at org.apache.hama.ipc.Server$Handler$1.run(Server.java:1211)
+	at org.apache.hama.ipc.Server$Handler$1.run(Server.java:1207)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hama.ipc.Server$Handler.run(Server.java:1206)
+15/04/20 19:45:51 ERROR bsp.BSPPeerImpl: Error while sending messages
+org.apache.hama.ipc.RemoteException: java.io.IOException: java.lang.NullPointerException
+	at org.apache.hama.graph.MessagePerVertex.add(MessagePerVertex.java:68)
+	at org.apache.hama.graph.IncomingVertexMessageManager.add(IncomingVertexMessageManager.java:150)
+	at org.apache.hama.graph.IncomingVertexMessageManager.addAll(IncomingVertexMessageManager.java:117)
+	at org.apache.hama.graph.IncomingVertexMessageManager.addBundle(IncomingVertexMessageManager.java:106)
+	at org.apache.hama.bsp.message.AbstractMessageManager.loopBackBundle(AbstractMessageManager.java:260)
+	at org.apache.hama.bsp.message.HamaMessageManagerImpl.put(HamaMessageManagerImpl.java:219)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hama.ipc.RPC$Server.call(RPC.java:615)
+	at org.apache.hama.ipc.Server$Handler$1.run(Server.java:1211)
+	at org.apache.hama.ipc.Server$Handler$1.run(Server.java:1207)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hama.ipc.Server$Handler.run(Server.java:1206)
+
+	at org.apache.hama.ipc.Client.call(Client.java:908)
+	at org.apache.hama.ipc.RPC$Invoker.invoke(RPC.java:239)
+	at com.sun.proxy.$Proxy13.put(Unknown Source)
+	at org.apache.hama.bsp.message.HamaMessageManagerImpl.transfer(HamaMessageManagerImpl.java:162)
+	at org.apache.hama.bsp.BSPPeerImpl.sync(BSPPeerImpl.java:474)
+	at org.apache.hama.graph.GraphJobRunner.bsp(GraphJobRunner.java:208)
+	at org.apache.hama.bsp.BSPTask.runBSP(BSPTask.java:175)
+	at org.apache.hama.bsp.BSPTask.run(BSPTask.java:145)
+	at org.apache.hama.bsp.GroomServer$BSPPeerChild.main(GroomServer.java:1263)
+15/04/20 19:45:51 INFO graph.GraphJobRunner: slave:61001
+15/04/20 19:45:51 INFO graph.GraphJobRunner: simulated failure

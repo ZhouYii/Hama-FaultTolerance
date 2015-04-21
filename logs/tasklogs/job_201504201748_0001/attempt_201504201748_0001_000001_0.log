@@ -1,0 +1,42 @@
+15/04/20 17:49:32 INFO bsp.GroomServer: BSPPeerChild starting
+15/04/20 17:49:34 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/04/20 17:49:34 INFO bsp.GroomServer: Starting peer for step -1 state = RUNNING
+15/04/20 17:49:38 INFO bsp.GroomServer: instantiating BSPPeerImpl
+15/04/20 17:49:38 INFO ipc.Server: Starting Socket Reader #1 for port 61001
+15/04/20 17:49:38 INFO ipc.Server: IPC Server Responder: starting
+15/04/20 17:49:38 INFO ipc.Server: IPC Server listener on 61001: starting
+15/04/20 17:49:38 INFO ipc.Server: IPC Server handler 1 on 61001: starting
+15/04/20 17:49:38 INFO ipc.Server: IPC Server handler 2 on 61001: starting
+15/04/20 17:49:38 INFO ipc.Server: IPC Server handler 3 on 61001: starting
+15/04/20 17:49:38 INFO message.HamaMessageManagerImpl: BSPPeer address:slave port:61001
+15/04/20 17:49:38 INFO ipc.Server: IPC Server handler 0 on 61001: starting
+15/04/20 17:49:38 INFO ipc.Server: IPC Server handler 4 on 61001: starting
+15/04/20 17:49:39 INFO sync.ZKSyncClient: Initializing ZK Sync Client
+15/04/20 17:49:39 INFO sync.ZooKeeperSyncClientImpl: Start connecting to Zookeeper! At slave/172.28.128.5:61001
+15/04/20 17:49:40 INFO bsp.GroomServer: instantiating BSPPeerImpl done, starting BSPTask now!
+15/04/20 17:49:40 INFO bsp.BSPTask: Starting runBSP from BSPTask
+15/04/20 17:49:40 INFO bsp.BSPTask: [BSPTask.java] Starting with bsp.setup
+15/04/20 17:49:40 INFO graph.GraphJobRunner: [GraphJobRunner] Entering setup.
+15/04/20 17:49:40 INFO graph.GraphJobRunner: 50 vertices are loaded into slave:61001
+15/04/20 17:49:40 INFO bsp.BSPTask: [BSPTask.java] Starting with bsp.bsp
+15/04/20 17:49:40 INFO graph.GraphJobRunner: Entered GraphRunner.bsp. Is recovery task? false
+15/04/20 17:49:40 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:49:41 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:49:41 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:49:41 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:49:41 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:49:41 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:49:41 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:49:41 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:49:41 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:49:41 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:49:41 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:49:41 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:49:41 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:49:41 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:49:41 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:49:41 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:49:41 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:49:41 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:49:41 INFO graph.GraphJobRunner: slave:61001
+15/04/20 17:49:41 INFO graph.GraphJobRunner: simulated failure

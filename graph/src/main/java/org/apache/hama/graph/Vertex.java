@@ -31,6 +31,8 @@ import org.apache.hama.HamaConfiguration;
 import org.apache.hama.bsp.BSPPeer;
 import org.apache.hama.bsp.Counters.Counter;
 import org.apache.hama.bsp.Partitioner;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 /**
  * Vertex is a abstract definition of Google Pregel Vertex. For implementing a
@@ -58,6 +60,9 @@ public abstract class Vertex<V extends WritableComparable, E extends Writable, M
   private M oldValue;
   private M value;
   private List<Edge<V, E>> edges;
+
+  private static final Log LOG = LogFactory
+            .getLog(Vertex.class);
 
   private boolean votedToHalt = false;
 
@@ -183,6 +188,7 @@ public abstract class Vertex<V extends WritableComparable, E extends Writable, M
   public void setValue(M value) {
     this.oldValue = this.value;
     this.value = value;
+    //LOG.info("Setting " + vertexID + " value " + value);
   }
 
   public void setVertexID(V vertexID) {

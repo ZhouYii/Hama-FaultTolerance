@@ -1,0 +1,33 @@
+15/04/21 00:23:22 INFO bsp.GroomServer: BSPPeerChild starting
+15/04/21 00:23:24 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/04/21 00:23:25 INFO bsp.GroomServer: Starting peer for step -9223372036854775808 state = RECOVERING
+15/04/21 00:23:28 INFO bsp.GroomServer: instantiating BSPPeerImpl
+15/04/21 00:23:28 INFO ipc.Server: Starting Socket Reader #1 for port 61001
+15/04/21 00:23:28 INFO ipc.Server: IPC Server Responder: starting
+15/04/21 00:23:28 INFO ipc.Server: IPC Server listener on 61001: starting
+15/04/21 00:23:28 INFO ipc.Server: IPC Server handler 0 on 61001: starting
+15/04/21 00:23:28 INFO ipc.Server: IPC Server handler 1 on 61001: starting
+15/04/21 00:23:28 INFO ipc.Server: IPC Server handler 2 on 61001: starting
+15/04/21 00:23:28 INFO ipc.Server: IPC Server handler 3 on 61001: starting
+15/04/21 00:23:28 INFO ipc.Server: IPC Server handler 4 on 61001: starting
+15/04/21 00:23:28 INFO message.HamaMessageManagerImpl: BSPPeer address:slave port:61001
+15/04/21 00:23:29 INFO sync.ZKSyncClient: Initializing ZK Sync Client
+15/04/21 00:23:29 INFO sync.ZooKeeperSyncClientImpl: Start connecting to Zookeeper! At slave/172.28.128.5:61001
+15/04/21 00:23:30 INFO bsp.BSPPeerImpl: Recovery task received 0 messages for previous superstep from alive peers
+15/04/21 00:23:30 INFO bsp.BSPPeerImpl: [BSPPeerImpl.java] Changing taskState from RECOVERING to RUNNING
+15/04/21 00:23:30 INFO bsp.GroomServer: instantiating BSPPeerImpl done, starting BSPTask now!
+15/04/21 00:23:30 INFO bsp.BSPTask: Starting runBSP from BSPTask
+15/04/21 00:23:30 INFO bsp.BSPTask: [BSPTask.java] Starting with bsp.setup
+15/04/21 00:23:30 INFO bsp.BSPTask: [BSPTask.java] Starting with bsp.bsp
+15/04/21 00:23:31 INFO Configuration.deprecation: io.sort.mb is deprecated. Instead, use mapreduce.task.io.sort.mb
+15/04/21 00:23:31 INFO Configuration.deprecation: io.sort.factor is deprecated. Instead, use mapreduce.task.io.sort.factor
+15/04/21 00:23:31 INFO bsp.BSPTask: [BSPTask.java] Done with bsp.bsp
+15/04/21 00:23:31 INFO ipc.Server: Stopping server on 61001
+15/04/21 00:23:31 INFO ipc.Server: IPC Server handler 0 on 61001: exiting
+15/04/21 00:23:31 INFO ipc.Server: IPC Server handler 2 on 61001: exiting
+15/04/21 00:23:31 INFO ipc.Server: IPC Server handler 3 on 61001: exiting
+15/04/21 00:23:31 INFO ipc.Server: Stopping IPC Server listener on 61001
+15/04/21 00:23:31 INFO ipc.Server: IPC Server handler 4 on 61001: exiting
+15/04/21 00:23:31 INFO ipc.Server: IPC Server handler 1 on 61001: exiting
+15/04/21 00:23:31 INFO ipc.Server: Stopping IPC Server Responder
+15/04/21 00:23:31 INFO Configuration.deprecation: mapred.cache.localFiles is deprecated. Instead, use mapreduce.job.cache.local.files

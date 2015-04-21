@@ -18,11 +18,8 @@
 package org.apache.hama.graph;
 
 import java.io.IOException;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Iterator;
+import java.util.*;
 import java.util.Map.Entry;
-import java.util.Set;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -112,7 +109,18 @@ public final class GraphJobRunner<V extends WritableComparable, E extends Writab
   ArrayWritable log = new ArrayWritable(LongWritable.class);
 
   private void redoSuperstep() throws IOException, SyncException, InterruptedException {
-    
+    List<GraphJobMessage> stateHints = peer.retrieveStateHints();
+    for (GraphJobMessage m : stateHints) {
+        if (m.getNumOfValues() != 1)
+            System.out.println("SET MESSAGE NUMVALUES:" + m.getNumOfValues());
+
+        Vertex v = vertices.get((V) m.getSrcVertexId());
+        Iterable<Writable> it = m.getIterableMessages();
+        if (it.iterator().hasNext()) {
+            v.setValue(it.iterator().next());
+        }
+    }
+
     Writable[] info = peer.getLog();
 
     // We are not calling countGlobalVertexCount for the recovering peer. Hence,
@@ -121,7 +129,7 @@ public final class GraphJobRunner<V extends WritableComparable, E extends Writab
     LOG.info("Recovering peer reading from log: " + numberVertices + " vertices");
 
     // update the value of local variables
-    iteration = peer.getSuperstepCount(); 
+    iteration = peer.getSuperstepCount() - 1;
 
     // onPeerInitialized has put messages from prevSuperstep outgoingBundles on
     // alive peers into the localQ
@@ -283,10 +291,12 @@ public final class GraphJobRunner<V extends WritableComparable, E extends Writab
     notComputedVertices.addAll(vertices.keySet());
 
     // Simulating bspPeer failure!
-    if(recoveryTask == false && peer.getPeerName().equals("slave1:61001") && peer.getSuperstepCount()%10 == 0) {
+    LOG.info(peer.getPeerName());
+    if(recoveryTask == false && peer.getPeerName().equals("slave:61001") && peer.getSuperstepCount()%20 == 0) {
       LOG.info("simulated failure");
       System.exit(49);
     }
+
 
     Vertex<V, E, M> vertex = null;
 

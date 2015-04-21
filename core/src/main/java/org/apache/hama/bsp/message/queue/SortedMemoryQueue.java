@@ -46,7 +46,13 @@ public final class SortedMemoryQueue<M extends WritableComparable<M>>
     public List<M> getStateHints(){
         return null;
     }
-  @Override
+
+    @Override
+    public List<M> getRelevantMessages(String peerName) {
+        return null;
+    }
+
+    @Override
   public void setConf(Configuration conf) {
     this.conf = conf;
   }

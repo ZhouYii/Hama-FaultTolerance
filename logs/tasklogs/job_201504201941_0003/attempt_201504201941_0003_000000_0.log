@@ -1,0 +1,79 @@
+15/04/20 19:43:11 INFO bsp.GroomServer: BSPPeerChild starting
+15/04/20 19:43:13 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/04/20 19:43:13 INFO bsp.GroomServer: Starting peer for step -1 state = RUNNING
+15/04/20 19:43:16 INFO bsp.GroomServer: instantiating BSPPeerImpl
+15/04/20 19:43:17 INFO ipc.Server: Starting Socket Reader #1 for port 61001
+15/04/20 19:43:17 INFO ipc.Server: IPC Server Responder: starting
+15/04/20 19:43:17 INFO ipc.Server: IPC Server listener on 61001: starting
+15/04/20 19:43:17 INFO ipc.Server: IPC Server handler 0 on 61001: starting
+15/04/20 19:43:17 INFO ipc.Server: IPC Server handler 1 on 61001: starting
+15/04/20 19:43:17 INFO ipc.Server: IPC Server handler 2 on 61001: starting
+15/04/20 19:43:17 INFO ipc.Server: IPC Server handler 3 on 61001: starting
+15/04/20 19:43:17 INFO message.HamaMessageManagerImpl: BSPPeer address:master port:61001
+15/04/20 19:43:17 INFO ipc.Server: IPC Server handler 4 on 61001: starting
+15/04/20 19:43:18 INFO sync.ZKSyncClient: Initializing ZK Sync Client
+15/04/20 19:43:18 INFO sync.ZooKeeperSyncClientImpl: Start connecting to Zookeeper! At master/172.28.128.6:61001
+15/04/20 19:43:18 INFO bsp.GroomServer: instantiating BSPPeerImpl done, starting BSPTask now!
+15/04/20 19:43:18 INFO bsp.BSPTask: Starting runBSP from BSPTask
+15/04/20 19:43:18 INFO bsp.BSPTask: [BSPTask.java] Starting with bsp.setup
+15/04/20 19:43:18 INFO graph.GraphJobRunner: [GraphJobRunner] Entering setup.
+15/04/20 19:43:19 INFO graph.GraphJobRunner: 50 vertices are loaded into master:61001
+15/04/20 19:43:19 INFO bsp.BSPTask: [BSPTask.java] Starting with bsp.bsp
+15/04/20 19:43:19 INFO graph.GraphJobRunner: Entered GraphRunner.bsp. Is recovery task? false
+15/04/20 19:43:19 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:19 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:19 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:19 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:19 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:19 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:20 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:20 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:20 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:20 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:20 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:20 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:20 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:20 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:20 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:20 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:20 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:20 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:20 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:36 INFO message.HamaMessageManagerImpl: bspPeer master:61001 received request for previous superstep data from bspPeer slave:61001
+15/04/20 19:43:36 INFO ipc.Server: IPC Server handler 4 on 61001, call fetch(slave:61001, false) from 172.28.128.5:57968: error: java.io.IOException: java.lang.NullPointerException
+java.io.IOException: java.lang.NullPointerException
+	at org.apache.hama.graph.IncomingVertexMessageManager.getRelevantMessages(IncomingVertexMessageManager.java:73)
+	at org.apache.hama.bsp.message.HamaMessageManagerImpl.fetch(HamaMessageManagerImpl.java:271)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hama.ipc.RPC$Server.call(RPC.java:615)
+	at org.apache.hama.ipc.Server$Handler$1.run(Server.java:1211)
+	at org.apache.hama.ipc.Server$Handler$1.run(Server.java:1207)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hama.ipc.Server$Handler.run(Server.java:1206)
+15/04/20 19:43:36 INFO message.HamaMessageManagerImpl: bspPeer master:61001 received request for previous superstep data from bspPeer slave:61001
+15/04/20 19:43:36 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:37 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:37 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:37 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:37 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:37 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:37 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:37 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:37 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:37 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:37 INFO graph.GraphJobRunner: master:61001
+15/04/20 19:43:37 INFO bsp.BSPTask: [BSPTask.java] Done with bsp.bsp
+15/04/20 19:43:38 INFO ipc.Server: Stopping server on 61001
+15/04/20 19:43:38 INFO ipc.Server: IPC Server handler 0 on 61001: exiting
+15/04/20 19:43:38 INFO ipc.Server: IPC Server handler 1 on 61001: exiting
+15/04/20 19:43:38 INFO ipc.Server: IPC Server handler 2 on 61001: exiting
+15/04/20 19:43:38 INFO ipc.Server: IPC Server handler 3 on 61001: exiting
+15/04/20 19:43:38 INFO ipc.Server: IPC Server handler 4 on 61001: exiting
+15/04/20 19:43:38 INFO ipc.Server: Stopping IPC Server listener on 61001
+15/04/20 19:43:38 INFO ipc.Server: Stopping IPC Server Responder
+15/04/20 19:43:38 INFO Configuration.deprecation: mapred.cache.localFiles is deprecated. Instead, use mapreduce.job.cache.local.files
